@@ -23,14 +23,18 @@ O objetivo do EAPADados é ...
 
 ## Instalação
 
-Você pode instalar a versão de desenvolvimento do EPADados (ou seu nome) do [GitHub](https://github.com/) com:
+Você pode instalar a versão de desenvolvimento do EPADados a partir d euma versão de release no [GitHub](https://github.com/) com:
 
 ```{r, eval=FALSE}
-# Instala EAPADados a partir do GitHub, usando devtools.
-# Instale o devtools, se ainda não tiver instalado
+# Instala EAPADados a partir de uma Release no GitHub.
 
-# install.packages("devtools") # Se ainda não tiver
-devtools::install_github("astuciasnor/EPADados")
+# No console R (substitua pela URL correta):
+install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.0/EAPADados_0.1.0.zip",
+                 repos = NULL,
+                 type = "win.binary")
+
+library(EAPADados)
+head(tilapia_crescimento)
 ```
 
 ## Exemplo
