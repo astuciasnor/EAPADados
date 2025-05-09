@@ -10,18 +10,15 @@ O objetivo do EAPADados é …
 
 ## Instalação
 
-Você pode instalar a versão de desenvolvimento do EAPADados a partir do
-GitHub com:
+Você pode instalar a versão de desenvolvimento do EPADados (ou seu nome)
+do [GitHub](https://github.com/) com:
 
 ``` r
-# Instala EAPADados a partir do GitHub, usando pak.
-# Se pak ainda não estiver instalado, ele será instalado primeiro.
+# Instala EAPADados a partir do GitHub, usando devtools.
+# Instale o devtools, se ainda não tiver instalado
 
-if (!requireNamespace("pak", quietly = TRUE)) {
-  install.packages("pak")      # instala pak no repositório default (CRAN)
-}
-
-pak::pak("astuciasnor/EAPADados")
+# install.packages("devtools") # Se ainda não tiver
+devtools::install_github("astuciasnor/EPADados")
 ```
 
 ## Exemplo
