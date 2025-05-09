@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md é gerado a partir de README.Rmd. Edite este arquivo. -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# EAPADados
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+O objetivo do EAPADados é ...
+
+## Instalação
+
+Você pode instalar a versão de desenvolvimento do EAPADados a partir do GitHub com:
+
+```{r}
+# install.packages("pak")
+pak::pak("astuciasnor/EAPADados")
+```
+
+## Exemplo
+
+Este é um exemplo básico que mostra como resolver um problema comum:
+
+```{r example}
+library(EAPADados)
+## código de exemplo básico
+```
