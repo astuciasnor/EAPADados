@@ -1,0 +1,26 @@
+Package: EAPADados
+Type: Package
+Title: Conjuntos de Dados para Estatistica Aplicada a Pesca e Aquicultura
+Version: 0.1.0
+Authors@R: c(
+    person(
+      given = "Evaldo", 
+      family = "Silva",
+      email = "astuciasnor@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Este pacote contem os conjuntos de dados utilizados como exemplos
+    no livro "Estatistica Aplicada a Pesca e Aquicultura com R".
+    Os dados abrangem diversas areas da pesca e aquicultura e sao
+    adequados para demonstrar diferentes tecnicas  estatisticas.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.5.0)
+RoxygenNote: 7.3.2.9000
+Roxygen: list(markdown = FALSE)
+Suggests: 
+    ggplot2,
+    knitr,
+    rmarkdown
