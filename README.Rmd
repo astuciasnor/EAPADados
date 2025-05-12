@@ -1,0 +1,38 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# EAPADados
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+Este pacote fornece os conjuntos de dados para o livro "Estatística Aplicada à Pesca e Aquicultura com R".
+
+## Instalação
+
+```{r instalacao, eval=FALSE}
+
+devtools::install_github("astuciasnor/EAPADados") # Substitua 'astuciasnor' pelo seu usuário
+```
+
+## Exemplo de Uso
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example, eval=FALSE}
+library(EAPADados)
+## basic example code
+```
