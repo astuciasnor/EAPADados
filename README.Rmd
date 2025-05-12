@@ -25,7 +25,13 @@ Este pacote fornece os conjuntos de dados para o livro "Estatística Aplicada à
 
 ```{r instalacao, eval=FALSE}
 
-devtools::install_github("astuciasnor/EAPADados") # Substitua 'astuciasnor' pelo seu usuário
+# No console R (substitua pela URL correta):
+install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.0/EAPADados_0.1.0.zip",
+                 repos = NULL,
+                 type = "win.binary")
+
+library(EAPADados)
+head(tilapia_crescimento)
 ```
 
 ## Exemplo de Uso
