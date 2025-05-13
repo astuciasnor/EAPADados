@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Ajuste da Curva de Von Bertalanffy (VBGF) em R com FSA</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #005f73;
+            border-bottom: 2px solid #005f73;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #0a9396;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            position: relative; /* For button positioning */
+        }
+        code {
+            font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .copy-btn:hover {
+            background-color: #4cae4c;
+        }
+        .important-note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        .formula {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .credits {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutorial: Ajuste da Curva de Von Bertalanffy (VBGF) em R</h1>
+        <p>Utilizando o pacote <code>FSA</code> para modelagem de crescimento</p>
+    </header>
+
+    <div class="container">
+        <h2>Introdução</h2>
+        <p>A <strong>Função de Crescimento de Von Bertalanffy (VBGF)</strong> é um modelo matemático amplamente utilizado para descrever o crescimento em tamanho (comprimento ou peso) de organismos, especialmente peixes, ao longo do tempo (idade). Este tutorial guiará você através dos passos para ajustar este modelo aos seus dados usando a linguagem R e o pacote especializado <code>FSA</code> (Fisheries Stock Analysis).</p>
+        <p>A fórmula geral da VBGF é:</p>
+        <div class="formula">
+            L(t) = L<sub>&infin;</sub> * (1 - e<sup>-K * (t - t<sub>0</sub>)</sup>)
+        </div>
+        <p>Onde:</p>
+        <ul>
+            <li><strong>L(t)</strong>: Comprimento no tempo (idade) <em>t</em>.</li>
+            <li><strong>L<sub>&infin;</sub> (L-infinito)</strong>: Comprimento assintótico médio, o tamanho máximo teórico que os indivíduos alcançariam.</li>
+            <li><strong>K</strong>: Coeficiente de crescimento, que descreve quão rapidamente o organismo se aproxima de L<sub>&infin;</sub>.</li>
+            <li><strong>t<sub>0</sub> (t-zero)</strong>: Idade teórica na qual o comprimento do organismo seria zero. É um parâmetro de ajuste.</li>
+        </ul>
+
+        <h2>1. Pré-requisitos: Instalação e Carregamento de Pacotes</h2>
+        <p>Primeiro, precisamos garantir que o pacote <code>FSA</code> esteja instalado. Se não estiver, instale-o. Em seguida, carregue o pacote na sua sessão R.</p>
+        <button class="copy-btn" onclick="copyCode(this)">Copiar Código</button>
+        <pre><code># Instalar o pacote FSA (execute apenas uma vez, se necessário)
+# install.packages("FSA")
+
+# Carregar o pacote FSA
+library(FSA)</code></pre>
+
+        <h2>2. Preparando os Dados</h2>
+        <p>Para este tutorial, vamos criar um conjunto de dados fictício que simula dados de idade e comprimento de peixes. Nos seus projetos reais, você carregaria seus próprios dados (por exemplo, de um arquivo <code>.csv</code> ou <code>.rda</code>).</p>
+        <p>Suponha que seus dados tenham uma coluna para idade (ex: "idade_anos") e uma para comprimento (ex: "comprimento_cm").</p>
+        <button class="copy-btn" onclick="copyCode(this)">Copiar Código</button>
+        <pre><code># Criar dados fictícios de crescimento de peixes
+set.seed(123) # Para reprodutibilidade
+dados_peixes <- data.frame(
+  idade_anos = c(0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6),
+  comprimento_cm = c(8, 15, 21, 26, 30, 33, 35.5, 37.5, 39, 40, 40.8, 41.2) + rnorm(12, 0, 1.5)
+)
+
+# Visualizar os primeiros registros dos dados
+print(head(dados_peixes))
+
+# Plotar os dados brutos para ter uma ideia da relação
+plot(comprimento_cm ~ idade_anos, data = dados_peixes,
+     xlab = "Idade (anos)", ylab = "Comprimento (cm)",
+     main = "Dados de Idade vs. Comprimento (Fictício)",
+     pch = 16, col = "steelblue")</code></pre>
+        <div class="important-note">
+            <strong>Importante:</strong> Ao usar seus próprios dados, substitua <code>dados_peixes</code> pelo nome do seu data.frame e <code>"idade_anos"</code> e <code>"comprimento_cm"</code> pelos nomes reais das suas colunas de idade e comprimento.
+        </div>
+
+        <h2>3. Estimando Valores Iniciais (Starting Values)</h2>
+        <p>O ajuste de modelos não lineares, como a VBGF, requer valores iniciais para os parâmetros (L<sub>&infin;</sub>, K, t<sub>0</sub>). O pacote <code>FSA</code> fornece a função <code>vbStarts()</code> que ajuda a estimar esses valores iniciais a partir dos seus dados.</p>
+        <button class="copy-btn" onclick="copyCode(this)">Copiar Código</button>
+        <pre><code># Estimar valores iniciais para os parâmetros da VBGF
+# A fórmula é comprimento ~ idade
+valores_iniciais <- FSA::vbStarts(comprimento_cm ~ idade_anos, data = dados_peixes)
+
+print("Valores iniciais estimados:")
+print(valores_iniciais)</code></pre>
+        <p>Esses valores iniciais são cruciais para que o algoritmo de otimização (<code>nls</code>) convirja para uma solução razoável.</p>
+
+        <h2>4. Ajustando o Modelo de Von Bertalanffy (VBGF)</h2>
+        <p>Com os dados e os valores iniciais, podemos agora ajustar o modelo VBGF usando a função <code>nls()</code> (Non-linear Least Squares) do R base, em conjunto com as funções de crescimento fornecidas pelo pacote <code>FSA</code>.</p>
+        <p>O pacote <code>FSA</code> oferece diferentes parametrizações da VBGF. A mais comum é a "typical".</p>
+        <button class="copy-btn" onclick="copyCode(this)">Copiar Código</button>
+        <pre><code># Definir a fórmula da VBGF usando a função 'typical' do FSA
+# A fórmula é: comprimento ~ FSA::vbFuns("typical")(idade, Linf, K, t0)
+formula_vbgf <- comprimento_cm ~ FSA::vbFuns("typical")(idade_anos, Linf, K, t0)
+
+# Ajustar o modelo usando nls() e os valores iniciais
+modelo_vbgf <- nls(
+  formula = formula_vbgf,
+  data = dados_peixes,
+  start = valores_iniciais
+)
+
+# Exibir o resumo do modelo ajustado
+print(summary(modelo_vbgf))</code></pre>
+        <div class="important-note">
+            <strong>Interpretação do <code>summary(modelo_vbgf)</code>:</strong>
+            <ul>
+                <li><strong>Estimates:</strong> Os valores estimados para L<sub>&infin;</sub>, K, e t<sub>0</sub>.</li>
+                <li><strong>Std. Error:</strong> O erro padrão das estimativas, indicando a precisão.</li>
+                <li><strong>t value / Pr(&gt;|t|):</strong> Testes de significância para cada parâmetro (valores de p pequenos sugerem que o parâmetro é significativamente diferente de zero).</li>
+                <li><strong>Residual standard error:</strong> Uma medida da qualidade do ajuste do modelo aos dados.</li>
+            </ul>
+        </div>
+
+        <h2>5. Visualizando o Modelo Ajustado</h2>
+        <p>Uma etapa fundamental é visualizar como o modelo ajustado se compara aos dados observados. Isso nos ajuda a avaliar a qualidade do ajuste.</p>
+        <button class="copy-btn" onclick="copyCode(this)">Copiar Código</button>
+        <pre><code># Extrair os coeficientes estimados do modelo
+coeficientes_estimados <- coef(modelo_vbgf)
+Linf_est <- coeficientes_estimados["Linf"]
+K_est <- coeficientes_estimados["K"]
+t0_est <- coeficientes_estimados["t0"]
+
+# Plotar os dados observados
+plot(comprimento_cm ~ idade_anos, data = dados_peixes,
+     xlab = "Idade (anos)", ylab = "Comprimento (cm)",
+     main = "Ajuste da Curva de Von Bertalanffy",
+     pch = 16, col = "steelblue",
+     ylim = c(0, max(dados_peixes$comprimento_cm, Linf_est) * 1.1) # Ajustar limite y
+    )
+
+# Adicionar a curva VBGF ajustada ao gráfico
+# Usamos a função 'vbFuns' novamente para gerar os valores preditos
+curve(FSA::vbFuns("typical")(x, Linf = Linf_est, K = K_est, t0 = t0_est),
+      from = min(dados_peixes$idade_anos),
+      to = max(dados_peixes$idade_anos) + 2, # Estender um pouco a curva
+      add = TRUE,
+      col = "red",
+      lwd = 2)
+
+# Adicionar legenda
+legend("bottomright",
+       legend = c("Dados Observados", "Curva VBGF Ajustada"),
+       pch = c(16, NA),
+       lty = c(NA, 1),
+       col = c("steelblue", "red"),
+       lwd = c(NA, 2))
+
+# Mostrar os parâmetros estimados no gráfico (opcional)
+text_params <- paste0("Linf = ", round(Linf_est, 2), "\n",
+                      "K = ", round(K_est, 3), "\n",
+                      "t0 = ", round(t0_est, 3))
+legend("topleft", legend = text_params, bty = "n", text.col="darkgreen")
+</code></pre>
+        <p>A curva vermelha deve seguir a tendência geral dos pontos azuis (dados observados).</p>
+
+        <h2>6. Criando uma Função Reutilizável (Opcional, mas recomendado)</h2>
+        <p>Para facilitar a aplicação deste processo a diferentes conjuntos de dados ou com diferentes nomes de colunas, podemos encapsular os passos em uma função.</p>
+        <button class="copy-btn" onclick="copyCode(this)">Copiar Código</button>
+        <pre><code>ajustar_vbgf_completo <- function(dados, coluna_idade, coluna_comprimento, plotar_grafico = TRUE) {
+  # Verificar se as colunas existem
+  if (!all(c(coluna_idade, coluna_comprimento) %in% names(dados))) {
+    stop("Uma ou ambas as colunas especificadas (idade, comprimento) não foram encontradas nos dados.")
+  }
+
+  # Criar uma fórmula para vbStarts e nls
+  # Renomear temporariamente as colunas para 'age' e 'len' para compatibilidade com vbStarts
+  # ou usar a abordagem de fórmula string
+  dados_temp <- dados
+  names(dados_temp)[names(dados_temp) == coluna_idade] <- "age_temp"
+  names(dados_temp)[names(dados_temp) == coluna_comprimento] <- "len_temp"
+
+  # Estimar valores iniciais
+  formula_starts_str <- "len_temp ~ age_temp"
+  start_values <- tryCatch({
+    FSA::vbStarts(formula = as.formula(formula_starts_str), data = dados_temp)
+  }, error = function(e) {
+    message("Erro ao obter valores iniciais com vbStarts: ", e$message)
+    message("Verifique seus dados. Pode ser necessário fornecer valores iniciais manualmente.")
+    return(NULL)
+  })
+
+  if (is.null(start_values)) return(NULL)
+
+  # Definir a fórmula da VBGF para nls
+  vbgf_formula_str <- paste("len_temp ~ FSA::vbFuns('typical')(age_temp, Linf, K, t0)")
+  
+  # Ajustar o modelo
+  modelo <- tryCatch({
+    nls(as.formula(vbgf_formula_str), data = dados_temp, start = start_values)
+  }, error = function(e) {
+    message("Erro ao ajustar o modelo com nls: ", e$message)
+    message("Verifique os valores iniciais e a qualidade dos seus dados.")
+    return(NULL)
+  })
+
+  if (is.null(modelo)) return(NULL)
+
+  if (plotar_grafico) {
+    coefs <- coef(modelo)
+    Linf <- coefs["Linf"]
+    K <- coefs["K"]
+    t0 <- coefs["t0"]
+
+    # Usar os nomes originais das colunas para o plot
+    plot_formula_str <- paste(coluna_comprimento, "~", coluna_idade)
+    plot(as.formula(plot_formula_str), data = dados,
+         xlab = paste("Idade (", coluna_idade, ")", sep=""), 
+         ylab = paste("Comprimento (", coluna_comprimento, ")", sep=""),
+         main = "Ajuste da Curva de Von Bertalanffy",
+         pch = 16, col = "steelblue",
+         ylim = c(0, max(dados[[coluna_comprimento]], Linf, na.rm = TRUE) * 1.1))
+    
+    curve(FSA::vbFuns("typical")(x, Linf = Linf, K = K, t0 = t0),
+          from = min(dados[[coluna_idade]], na.rm = TRUE),
+          to = max(dados[[coluna_idade]], na.rm = TRUE) + 2,
+          add = TRUE, col = "red", lwd = 2)
+    
+    legend("bottomright", legend = c("Dados Observados", "Curva VBGF Ajustada"),
+           pch = c(16, NA), lty = c(NA, 1), col = c("steelblue", "red"))
+    
+    text_params <- paste0("Linf = ", round(Linf, 2), "\n",
+                          "K = ", round(K, 3), "\n",
+                          "t0 = ", round(t0, 3))
+    legend("topleft", legend = text_params, bty = "n", text.col="darkgreen")
+  }
+  
+  return(modelo)
+}
+
+# Exemplo de uso da função com os dados fictícios
+modelo_final_peixes <- ajustar_vbgf_completo(dados_peixes, "idade_anos", "comprimento_cm")
+
+# Se você tiver seus próprios dados carregados (ex: 'meus_dados_tilapia')
+# com colunas 'Idade' e 'ComprimentoTotal', você chamaria:
+# load("tilapia_crescimento.rda") # Supondo que carrega 'meus_dados_tilapia'
+# modelo_tilapia <- ajustar_vbgf_completo(meus_dados_tilapia, "Idade", "ComprimentoTotal")
+# if (!is.null(modelo_tilapia)) print(summary(modelo_tilapia))
+
+</code></pre>
+        <div class="important-note">
+            <strong>Usando a função:</strong>
+            <ol>
+                <li>Carregue seus dados (ex: <code>meus_dados <- read.csv("dados.csv")</code> ou <code>load("dados.rda")</code>).</li>
+                <li>Chame a função: <code>modelo_ajustado <- ajustar_vbgf_completo(meus_dados, "nome_coluna_idade", "nome_coluna_comprimento")</code>.</li>
+                <li>Analise o <code>summary(modelo_ajustado)</code>.</li>
+            </ol>
+        </div>
+
+        <h2>Conclusão</h2>
+        <p>Este tutorial demonstrou como ajustar a Função de Crescimento de Von Bertalanffy aos dados de idade e comprimento usando R e o pacote <code>FSA</code>. Lembre-se que a qualidade do ajuste do modelo depende da qualidade e da quantidade dos seus dados, bem como da adequação do modelo VBGF para descrever o crescimento da espécie em estudo.</p>
+        <p>O pacote <code>FSA</code> oferece muitas outras ferramentas para análises pesqueiras, incluindo diferentes parametrizações da VBGF e outros modelos de crescimento.</p>
+
+        <div class="credits">
+            <p>Tutorial gerado com base em funcionalidades do pacote R <code>FSA</code>.</p>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(buttonElement) {
+            const preElement = buttonElement.nextElementSibling;
+            const codeElement = preElement.querySelector('code');
+            const textToCopy = codeElement.innerText;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                buttonElement.innerText = 'Copiado!';
+                setTimeout(() => {
+                    buttonElement.innerText = 'Copiar Código';
+                }, 2000);
+            }).catch(err => {
+                console.error('Erro ao copiar código: ', err);
+                alert('Erro ao copiar. Por favor, selecione e copie manualmente.');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,4 +1,20 @@
-# Conteúdo de data-raw/preparar_dados.R
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#
+#           PROCEDIMENTOS DE PREPARAÇÃO DE DADOS
+#
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Pacotes usados ------------------------------------------------
+  install.packages("rio")
+  install.packages("readxl")
+  install.packages("janitor")
+  install.packages("dplyr")
+
+# Exportando dados com o o pacote "rio" -------------------------
+  library(rio)
+  rio::export(dados_brutos,
+              "data-raw/dados_camarao_sexo.xlsx",
+              format = "xlsx")
 
 # Simulados tilapia_crescimento ----------------------------------
 tilapia_crescimento <- data.frame(
@@ -30,3 +46,13 @@ biometria_caranguejo <- biometria_caranguejo %>%
 glimpse(biometria_caranguejo)
 
 usethis::use_data(biometria_caranguejo, overwrite = TRUE)
+
+# Camarao Sexo - Qui-quadrado --------------------------------------
+df <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 17) |>
+      select(1:2) |>
+      mutate(across(everything(), as.factor))
+
+camaroes_sexo <- df
+usethis::use_data(camaroes_sexo, overwrite = TRUE)
+
+# Proximo Conjunto Dados --------------------------------------------

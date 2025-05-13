@@ -28,5 +28,4 @@
 #'                   x = "Espécie",
 #'                   y = "CPUE (nº de indivíduos)")
 #' }
-#' @export
 "captura_petrechos"

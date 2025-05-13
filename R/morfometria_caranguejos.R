@@ -38,6 +38,5 @@
 #'     )
 #' }
 #'
-#' @export
 "morfometria_caranguejos"
 

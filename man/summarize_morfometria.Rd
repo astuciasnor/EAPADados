@@ -2,43 +2,70 @@
 % Please edit documentation in R/sumarize_morfometria.R
 \name{summarize_morfometria}
 \alias{summarize_morfometria}
-\title{Estatisticas Resumidas da Morfometria de Caranguejos}
+\title{Resumo Estatistico da Morfometria de Caranguejos}
 \usage{
-summarize_morfometria(data = morfometria_caranguejos)
+summarize_morfometria(data = NULL)
 }
 \arguments{
-\item{data}{Um data frame contendo as colunas `Sexo`, `Estacao`, `LC` e `CC`.
-Por padrao, utiliza o dataset `morfometria_caranguejos` do pacote.}
+\item{data}{Um data frame. Espera-se que contenha as colunas `Sexo`, `Estacao`,
+`LC` e `CC`. Se `NULL` (o padrao), a funcao tentara carregar e usar
+o dataset `morfometria_caranguejos` do pacote `EAPADados`.}
 }
 \value{
-Um tibble com as colunas:
-  * `Sexo`     : Sexo dos individuos ("Macho" / "Femea").
-  * `Estacao`  : Estacao de captura ("Seca" / "Chuvosa").
-  * `media_LC` : Media da Largura da Carapaca (mm).
-  * `dp_LC`    : Desvio-padrao da Largura da Carapaca (mm).
-  * `media_CC` : Media do Comprimento da Carapaca (mm).
-  * `dp_CC`    : Desvio-padrao do Comprimento da Carapaca (mm).
-  * `n`        : Numero de observacoes em cada grupo.
+Um `tibble` (data frame do `dplyr`) com as seguintes colunas:
+  \item{Sexo}{Fator indicando o sexo dos individuos.}
+  \item{Estacao}{Fator indicando a estacao de captura.}
+  \item{media_LC}{Media da Largura da Carapaca (LC) em mm.}
+  \item{dp_LC}{Desvio padrao da Largura da Carapaca (LC) em mm.}
+  \item{media_CC}{Media do Comprimento da Carapaca (CC) em mm.}
+  \item{dp_CC}{Desvio padrao do Comprimento da Carapaca (CC) em mm.}
+  \item{n}{Numero de observacoes (tamanho da amostra) para cada grupo.}
 }
 \description{
-Calcula estatisticas descritivas (media, desvio-padrao e tamanho da amostra)
-para as variaveis Largura da Carapaca (LC) e Comprimento da Carapaca (CC),
-agrupadas por Sexo e Estacao, usando o conjunto de dados `morfometria_caranguejos`.
+Calcula estatisticas descritivas (media, desvio padrao e contagem)
+para as variaveis Largura da Carapaca (LC) e Comprimento da Carapaca (CC)
+do conjunto de dados de morfometria de caranguejos, agrupadas por Sexo e Estacao.
 }
 \details{
-Utiliza funcoes do pacote `dplyr` e o operador `%>%` do `magrittr` para agrupar
-  e resumir os dados.
+A funcao utiliza pacotes `dplyr` para manipulacao de dados e `magrittr`
+para o operador pipe `%>%`. Para usar o dataset padrao, o pacote `EAPADados`
+deve estar instalado.
+As colunas `LC` e `CC` devem ser numericas. `Sexo` e `Estacao` devem ser
+fatores ou caracteres que possam ser convertidos em fatores para agrupamento.
 }
 \examples{
+# Para rodar os exemplos, o pacote EAPADados deve estar instalado.
+# Se o pacote estiver carregado (ex: library(EAPADados)),
+# o dataset morfometria_caranguejos estara disponivel.
+
+# Exemplo 1: Usando o dataset padrao (morfometria_caranguejos do pacote)
+if (requireNamespace("EAPADados", quietly = TRUE)) {
+  print("Calculando resumo com dataset padrao:")
+  resumo1 <- summarize_morfometria()
+  print(resumo1)
+} else {
+  print("Pacote EAPADados nao instalado. Exemplo 1 pulado.")
+}
+
+# Exemplo 2: Fornecendo um data frame externo
+# Criando um data frame de exemplo similar ao esperado pela funcao
+dados_exemplo <- data.frame(
+  Sexo = factor(rep(c("Macho", "Femea"), each = 10)),
+  Estacao = factor(rep(c("Seca", "Chuvosa"), times = 10)),
+  LC = rnorm(20, mean = 60, sd = 5),
+  CC = rnorm(20, mean = 40, sd = 4)
+)
+print("Calculando resumo com dataset de exemplo fornecido:")
+resumo2 <- summarize_morfometria(data = dados_exemplo)
+print(resumo2)
+
+# Exemplo 3: Usando um subconjunto do dataset do pacote (se carregado)
 \dontrun{
-library(EAPADados)
-library(dplyr)
-
-# Estatisticas por sexo e estacao
-summarize_morfometria()
-
-# Usando outro data frame como exemplo
-df_exemplo <- head(morfometria_caranguejos, 20)
-summarize_morfometria(df_exemplo)
+if (requireNamespace("EAPADados", quietly = TRUE) && exists("morfometria_caranguejos")) {
+  library(EAPADados) # Garante que morfometria_caranguejos esteja acessivel
+  dados_pequenos <- head(morfometria_caranguejos, 15)
+  resumo3 <- summarize_morfometria(data = dados_pequenos)
+  print(resumo3)
+}
 }
 }

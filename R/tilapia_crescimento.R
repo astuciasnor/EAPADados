@@ -27,5 +27,4 @@
 #'     ggplot2::labs(title = "Crescimento de Tilápias por Tratamento",
 #'                   x = "Semana", y = "Peso médio (g)")
 #' }
-#' @export
 "tilapia_crescimento"
