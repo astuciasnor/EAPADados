@@ -15,7 +15,7 @@ Aplicada à Pesca e Aquicultura com R”.
 ``` r
 
 # No console R (substitua pela URL correta):
-install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.0/EAPADados_0.1.0.zip",
+install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.1/EAPADados_0.1.1.zip",
                  repos = NULL,
                  type = "win.binary")
 
