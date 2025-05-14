@@ -3,18 +3,21 @@
 #           PROCEDIMENTOS DE PREPARAÇÃO DE DADOS
 #
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  rm(list = ls())
+# Pacotes a serem usados -----------------------------------------
+  source("data-raw/instala_carrega-pak.R")
 
-# Pacotes usados ------------------------------------------------
-  install.packages("rio")
-  install.packages("readxl")
-  install.packages("janitor")
-  install.packages("dplyr")
+  # Lista de pacotes necessários para o script de preparação
+  pacotes_para_preparacao <- c("rio", "readxl", "janitor", "dplyr")
+
+  # Garantir que os pacotes estão disponíveis
+  garantir_pacotes(pacotes_para_preparacao)
 
 # Exportando dados com o o pacote "rio" -------------------------
-  library(rio)
-  rio::export(dados_brutos,
-              "data-raw/dados_camarao_sexo.xlsx",
-              format = "xlsx")
+
+      # rio::export(dados_brutos,
+      #             "data-raw/dados_camarao_sexo.xlsx",
+      #             format = "xlsx")
 
 # Simulados tilapia_crescimento ----------------------------------
 tilapia_crescimento <- data.frame(
@@ -38,21 +41,39 @@ usethis::use_data(captura_petrechos, overwrite = TRUE)
 cat("Conjuntos de dados processados e salvos na pasta data/.\n")
 
 # Biometria Caranguejos ------------------------------------------
-library(readxl)
-library(dplyr)
-biometria_caranguejo <- read_excel("data-raw/Aulas_Gerais_Parte1.xlsx", sheet = 20)
-biometria_caranguejo <- biometria_caranguejo %>%
+biometria_caranguejos <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 10)
+biometria_caranguejos <- biometria_caranguejos %>%
   mutate_if(is.character, as.factor)
-glimpse(biometria_caranguejo)
 
-usethis::use_data(biometria_caranguejo, overwrite = TRUE)
+glimpse(biometria_caranguejos)
+
+usethis::use_data(biometria_caranguejos, overwrite = TRUE)
 
 # Camarao Sexo - Qui-quadrado --------------------------------------
-df <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 17) |>
-      select(1:2) |>
-      mutate(across(everything(), as.factor))
+camaroes_sexo <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 17) |>
+  select(1:2) |>
+  clean_names() |>
+  mutate(across(everything(), as.factor))
 
-camaroes_sexo <- df
+
 usethis::use_data(camaroes_sexo, overwrite = TRUE)
+
+# Artemia e alimentaçao --------------------------------------
+
+artemia <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 18) |>
+  select(1:2) |>
+  mutate(across(where(is.character), as.factor)) |>
+  clean_names()
+
+  # Verifique os tipos de dados:
+  artemia |> glimpse()
+
+  # Mude os nomes de variaveis se necessario
+  colnames(artemia) <- c("racao", "taxa_crescimento_mg_dia")
+
+  # Adicione ao pacote (este comando é crucial)
+  usethis::use_data(artemia, overwrite = TRUE)
+
+
 
 # Proximo Conjunto Dados --------------------------------------------

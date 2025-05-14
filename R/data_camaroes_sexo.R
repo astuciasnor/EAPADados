@@ -6,8 +6,8 @@
 #'
 #' @format Um data frame com 170 observações e 2 variáveis:
 #' \describe{
-#'   \item{Sexo}{Sexo do camarão (fator: Macho, Fêmea).}
-#'   \item{Especie}{Espécie do camarão (fator: \emph{P. brasiliensis}, \emph{P. schmitti}).}
+#'   \item{sexo}{Sexo do camarão (fator: Macho, Fêmea).}
+#'   \item{especie}{Espécie do camarão (fator: \emph{P. brasiliensis}, \emph{P. schmitti}).}
 #' }
 #'
 #' @source Dados reais extraídos de livro (referência a ser adicionada posteriormente).
@@ -20,12 +20,12 @@
 #' @examples
 #' data(camaroes_sexo)
 #' # resumo e teste χ²
-#' table(camaroes_sexo$Sexo, camaroes_sexo$Especie) |>
+#' table(camaroes_sexo$sexo, camaroes_sexo$especie) |>
 #'   chisq.test()
 #'
 #' if (requireNamespace("ggplot2", quietly = TRUE)) {
 #'   ggplot2::ggplot(camaroes_sexo,
-#'                   ggplot2::aes(x = Especie, fill = Sexo)) +
+#'                   ggplot2::aes(x = especie, fill = sexo)) +
 #'     ggplot2::geom_bar(position = "dodge") +
 #'     ggplot2::labs(title = "Distribuição de Sexo por Espécie de Camarão")
 #' }

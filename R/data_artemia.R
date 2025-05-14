@@ -1,0 +1,61 @@
+#' Crescimento de Artemia Salina Sob Diferentes Racoes
+#'
+#' @description
+#' Uma determinada fabrica de racao, numa campanha publicitaria, afirma que a
+#' racao farelo de arroz (A) e mais eficiente que a racao farelo de babacu (B)
+#' para acelerar o crescimento de Artemia salina. Este dataset contem dados
+#' para verificar tal afirmacao.
+#' Util para demonstrar testes t de comparacao de medias.
+#'
+#' @format Um data frame com observacoes sobre duas variaveis:
+#' \describe{
+#'   \item{racao}{Fator indicando o tipo de racao utilizada no experimento.
+#'     Niveis: "A" (farelo de arroz) e "B" (farelo de babacu).}
+#'   \item{taxa_crescimento}{Variavel numerica continua medindo a taxa de
+#'     crescimento dos organismos alimentados com cada tipo de racao,
+#'     expressa em miligramas por dia (mg/dia).}
+#' }
+#'
+#' @details
+#' O objetivo principal com este dataset e responder as seguintes perguntas:
+#' \enumerate{
+#'   \item Ha diferenca significativa entre as taxas de crescimento das duas racoes?
+#'   \item Qual das racoes apresenta maior taxa media de crescimento?
+#' }
+#' Recomenda-se a utilizacao de um teste t unilateral com nivel de significancia
+#' alpha = 0,05 para as analises.
+#'
+#' @source Dados ficticios baseados em um problema classico de bioestatistica,
+#'   adaptados do arquivo "pesca_aquic_bioecol.xlsx", planilha 18.
+#' @docType data
+#' @keywords datasets bioestatistica teste-t artemia
+#' @name artemia
+#' @usage data(artemia)
+#'
+#' @examples
+#' data(artemia)
+#' summary(artemia)
+#'
+#' # Exemplo de visualizacao (requer ggplot2)
+#' if (requireNamespace("ggplot2", quietly = TRUE)) {
+#'   library(ggplot2)
+#'   ggplot(artemia, aes(x = racao, y = taxa_crescimento_mg_dia, fill = racao)) +
+#'     geom_boxplot(alpha = 0.7) +
+#'     geom_jitter(width = 0.1, alpha = 0.5) +
+#'     labs(title = "Taxa de Crescimento de Artemia por Tipo de Racao",
+#'          x = "Tipo de Racao",
+#'          y = "Taxa de Crescimento (mg/dia)") +
+#'     theme_minimal()
+#' }
+#'
+#' # Exemplo de teste t (assumindo variancias iguais para simplificar)
+#' # Para uma analise mais robusta, verifique as premissas do teste t.
+#' if (nrow(artemia) > 2 && length(unique(artemia$racao)) == 2) {
+#'   resultado_teste_t <- t.test(taxa_crescimento_mg_dia ~ racao,
+#'                               data = artemia,
+#'                               alternative = "greater")
+#'   # Imprime o resultado do teste t (a hipotese alternativa 'greater'
+#'   # dependeria de qual racao se espera ser melhor, A ou B)
+#'   # print(resultado_teste_t)
+#' }
+"artemia" # CRUCIAL: Nome do objeto entre aspas, SEM @export!

@@ -1,7 +1,7 @@
 Package: EAPADados
 Type: Package
 Title: Conjuntos de Dados para Estatistica Aplicada a Pesca e Aquicultura
-Version: 0.1.1
+Version: 0.1.0
 Authors@R: c(
     person(
       "Evaldo", "Silva",

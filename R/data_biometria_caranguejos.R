@@ -1,4 +1,4 @@
-#' Dados de Morfometria de Caranguejos Capturados no Município de Bragança, PA
+#' Dados de biometria de Caranguejos Capturados no Município de Bragança, PA
 #'
 #' @description
 #' Conjunto de dados reais com medidas de largura e comprimento da carapaça
@@ -19,16 +19,16 @@
 #' @source Dados coletados em estudo de campo no município de Bragança, PA, Brasil.
 #' @docType data
 #' @keywords datasets
-#' @name morfometria_caranguejos
-#' @usage data(morfometria_caranguejos)
+#' @name biometria_caranguejos
+#' @usage data(biometria_caranguejos)
 #'
 #' @examples
-#' data(morfometria_caranguejos)
-#' summary(morfometria_caranguejos)
-#' table(morfometria_caranguejos$Local, morfometria_caranguejos$Estacao)
+#' data(biometria_caranguejos)
+#' summary(biometria_caranguejos)
+#' table(biometria_caranguejos$Local, biometria_caranguejos$Estacao)
 #'
 #' if (requireNamespace("ggplot2", quietly = TRUE)) {
-#'   ggplot2::ggplot(morfometria_caranguejos,
+#'   ggplot2::ggplot(biometria_caranguejos,
 #'                   ggplot2::aes(x = LC, y = CC, color = Sexo)) +
 #'     ggplot2::geom_point() +
 #'     ggplot2::labs(
@@ -38,5 +38,5 @@
 #'     )
 #' }
 #'
-"morfometria_caranguejos"
+"biometria_caranguejos"
 

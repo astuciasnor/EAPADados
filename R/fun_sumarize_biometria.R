@@ -1,13 +1,13 @@
-#' Resumo Estatistico da Morfometria de Caranguejos
+#' Resumo Estatistico da Biometria de Caranguejos
 #'
 #' @description
 #' Calcula estatisticas descritivas (media, desvio padrao e contagem)
 #' para as variaveis Largura da Carapaca (LC) e Comprimento da Carapaca (CC)
-#' do conjunto de dados de morfometria de caranguejos, agrupadas por Sexo e Estacao.
+#' do conjunto de dados de biometria de caranguejos, agrupadas por Sexo e Estacao.
 #'
 #' @param data Um data frame. Espera-se que contenha as colunas `Sexo`, `Estacao`,
 #'   `LC` e `CC`. Se `NULL` (o padrao), a funcao tentara carregar e usar
-#'   o dataset `morfometria_caranguejos` do pacote `EAPADados`.
+#'   o dataset `biometria_caranguejos` do pacote `EAPADados`.
 #'
 #' @return Um `tibble` (data frame do `dplyr`) com as seguintes colunas:
 #'   \item{Sexo}{Fator indicando o sexo dos individuos.}
@@ -33,12 +33,12 @@
 #' @examples
 #' # Para rodar os exemplos, o pacote EAPADados deve estar instalado.
 #' # Se o pacote estiver carregado (ex: library(EAPADados)),
-#' # o dataset morfometria_caranguejos estara disponivel.
+#' # o dataset biometria_caranguejos estara disponivel.
 #'
-#' # Exemplo 1: Usando o dataset padrao (morfometria_caranguejos do pacote)
+#' # Exemplo 1: Usando o dataset padrao (biometria_caranguejos do pacote)
 #' if (requireNamespace("EAPADados", quietly = TRUE)) {
 #'   print("Calculando resumo com dataset padrao:")
-#'   resumo1 <- summarize_morfometria()
+#'   resumo1 <- summarize_biometria()
 #'   print(resumo1)
 #' } else {
 #'   print("Pacote EAPADados nao instalado. Exemplo 1 pulado.")
@@ -53,19 +53,19 @@
 #'   CC = rnorm(20, mean = 40, sd = 4)
 #' )
 #' print("Calculando resumo com dataset de exemplo fornecido:")
-#' resumo2 <- summarize_morfometria(data = dados_exemplo)
+#' resumo2 <- summarize_biometria(data = dados_exemplo)
 #' print(resumo2)
 #'
 #' # Exemplo 3: Usando um subconjunto do dataset do pacote (se carregado)
 #' \dontrun{
-#' if (requireNamespace("EAPADados", quietly = TRUE) && exists("morfometria_caranguejos")) {
-#'   library(EAPADados) # Garante que morfometria_caranguejos esteja acessivel
-#'   dados_pequenos <- head(morfometria_caranguejos, 15)
-#'   resumo3 <- summarize_morfometria(data = dados_pequenos)
+#' if (requireNamespace("EAPADados", quietly = TRUE) && exists("biometria_caranguejos")) {
+#'   library(EAPADados) # Garante que biometria_caranguejos esteja acessivel
+#'   dados_pequenos <- head(biometria_caranguejos, 15)
+#'   resumo3 <- summarize_biometria(data = dados_pequenos)
 #'   print(resumo3)
 #' }
 #' }
-summarize_morfometria <- function(data = NULL) {
+summarize_biometria <- function(data = NULL) {
 
   # Checagem de dependencias de Imports
   if (!requireNamespace("dplyr", quietly = TRUE)) {
@@ -78,15 +78,15 @@ summarize_morfometria <- function(data = NULL) {
   # Se nenhum dado for fornecido, tenta usar o dataset padrao do pacote
   if (is.null(data)) {
     if (requireNamespace("EAPADados", quietly = TRUE)) {
-      # Carrega o dataset 'morfometria_caranguejos' do pacote 'EAPADados'
+      # Carrega o dataset 'biometria_caranguejos' do pacote 'EAPADados'
       # em um ambiente temporario para evitar poluir o ambiente global
       # e para ser explicito para o R CMD check.
       data_env <- new.env(parent = emptyenv())
-      utils::data("morfometria_caranguejos", package = "EAPADados", envir = data_env)
-      if (!exists("morfometria_caranguejos", envir = data_env)) {
-        stop("Dataset 'morfometria_caranguejos' nao encontrado no pacote 'EAPADados'.", call. = FALSE)
+      utils::data("biometria_caranguejos", package = "EAPADados", envir = data_env)
+      if (!exists("biometria_caranguejos", envir = data_env)) {
+        stop("Dataset 'biometria_caranguejos' nao encontrado no pacote 'EAPADados'.", call. = FALSE)
       }
-      data <- data_env$morfometria_caranguejos
+      data <- data_env$biometria_caranguejos
     } else {
       stop("Pacote 'EAPADados' nao instalado. Forneca o argumento 'data' ou instale 'EAPADados'.", call. = FALSE)
     }

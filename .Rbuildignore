@@ -4,3 +4,4 @@
 ^data-raw$
 ^vignettes/.*\.qmd$
 ^README\.Rmd$
+^data-raw/~\\$.*
