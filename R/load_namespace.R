@@ -1,5 +1,5 @@
 #' Garanta o carregamento dos datasets na namespace
-#' Caso queira que apareca o nome do dataset no namespace
+#' Caso queira que apareca o nome do dataset na namespace
 #' Este arquivo nao gera arquivo .Rd
 #'
 #' @noRd
