@@ -2,16 +2,17 @@
 output: github_document
 ---
 
-<!-- layout com imagem e descrição lado a lado -->
-<div style="display: flex; align-items: center;">
-  <img src="man/figures/logo_pacote_eapadados.png" width="150" alt="Logo EAPADados"/>
-  <div style="margin-left: 20px; font-size: 1.2em; line-height: 1.4;">
-    **EAPADados** disponibiliza conjuntos de dados didáticos para  
-    **Estatística Aplicada à Pesca e Aquicultura** com R.  
-    Cada dataset inclui documentação e exemplos de análise,  
-    ideal para ensino e pesquisa aplicada.
-  </div>
+<div style="display:flex;align-items:center;margin-bottom:1em">
+  <img src="man/figures/logo_pacote_eapadados.png" width="120" alt="Logo EAPADados"/>
+  <p style="margin-left:1em;font-size:1.2em;line-height:1.4;">
+    <strong>EAPADados</strong> disponibiliza conjuntos de dados didáticos para
+    <strong>Estatística Aplicada à Pesca e Aquicultura</strong> em R. Cada dataset
+    vem com documentação e exemplos prontos, ideal para aulas, relatórios técnicos
+    e pesquisa aplicada.
+  </p>
 </div>
+
+
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -26,11 +27,12 @@ knitr::opts_chunk$set(
 
 # EAPADados
 
+[![CRAN version](https://www.r-pkg.org/badges/version/EAPADados)](https://CRAN.R-project.org/package=EAPADados)
+[![R-universe build](https://astuciasnor.r-universe.dev/badges/EAPADados)](https://astuciasnor.r-universe.dev)
+
 <!-- badges: start -->
 
 <!-- badges: end -->
-
-
 
 ## Instalação
 
