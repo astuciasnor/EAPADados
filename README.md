@@ -7,21 +7,11 @@
 
 <!-- badges: end -->
 
-<div style="display: flex; align-items: center;">
+|  |  |
+|:--:|:---|
+| <img src="logo_pacote_eapadados.png" width="213"/> | **EAPADados** disponibiliza conjuntos de dados didáticos para **Estatística Aplicada à Pesca e Aquicultura** com R. Cada dataset tem help e exemplos em R, perfeito para aulas, relatórios e análise científica. |
 
-<img src="logo_pacote_eapadados.png" 
-       alt="Logo EAPADados" width="150" />
-
-<div style="margin-left: 20px; line-height: 1.4; font-size: 1.1em;">
-
-    **EAPADados** disponibiliza conjuntos de dados didáticos voltados a 
-    exemplos de **Estatística Aplicada à Pesca e Aquicultura** em R.  
-    Cada dataset vem com documentação e exemplos prontos, ideal para aulas,
-    relatórios técnicos e pesquisa aplicada.
-
-</div>
-
-</div>
+\|
 
 ## Instalação
 
