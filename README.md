@@ -7,9 +7,23 @@
 
 <!-- badges: end -->
 
-|  |  |
-|:--:|:---|
-| <img src="logo_pacote_eapadados.png" width="213"/> | **EAPADados** disponibiliza conjuntos de dados didáticos para **Estatística Aplicada à Pesca e Aquicultura** com R. Cada dataset tem help e exemplos em R, perfeito para aulas, relatórios e análise científica. |
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<tbody>
+<tr>
+<td
+style="text-align: center;"><img src="logo_pacote_eapadados.png" width="213"/></td>
+<td style="text-align: left;"><p><strong>EAPADados</strong>
+disponibiliza conjuntos de dados didáticos para <strong>Estatística
+Aplicada à Pesca e Aquicultura</strong> com R. Cada dataset tem help e
+exemplos em R, perfeito para aulas, relatórios e análise científica.</p>
+<p>yyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p></td>
+</tr>
+</tbody>
+</table>
 
 \|
 
