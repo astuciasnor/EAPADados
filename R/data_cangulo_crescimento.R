@@ -1,0 +1,90 @@
+#' @title Relação Peso-Comprimento do Cangulo (Balistes vetula)
+#'
+#' @description
+#' Este conjunto de dados contém medidas de peso (em gramas) e comprimento
+#' (em centímetros) de exemplares do peixe cangulo (`Balistes vetula`).
+#' Os dados são especialmente úteis para ilustrar análises de regressão não linear,
+#' como o ajuste do modelo de potência (W = a * L^b), e para demonstrar
+#' transformações que visam a linearização de curvas de crescimento.
+#'
+#' @format Um data frame com 16 observações e 7 variáveis:
+#' \describe{
+#'   \item{comprimento_cm}{Numérico. Comprimento total do peixe, em centímetros (cm).}
+#'   \item{p1}{Numérico. Primeira medida de peso do peixe, em gramas (g). Pode representar uma réplica ou aferição específica.}
+#'   \item{p2}{Numérico. Segunda medida de peso do peixe, em gramas (g). Pode representar uma réplica ou aferição específica.}
+#'   \item{p3}{Numérico. Terceira medida de peso do peixe, em gramas (g). Pode representar uma réplica ou aferição específica.}
+#'   \item{peso_g}{Numérico. Peso total do peixe, em gramas (g). Provavelmente a medida de peso principal ou uma média/seleção das anteriores (p1, p2, p3).}
+#'   \item{ln_peso}{Numérico. Logaritmo natural do peso (`log(peso_g)`).}
+#'   \item{ln_comp}{Numérico. Logaritmo natural do comprimento (`log(comprimento_cm)`).}
+#' }
+#'
+#' @details
+#' A espécie `Balistes vetula`, conhecida popularmente como cangulo, cangulo-rei,
+#' cangurro, peixe-porco ou piruá, pertence à família Balistidae. É encontrada
+#' no Atlântico tropical e temperado, podendo atingir até 60 cm de comprimento.
+#' Apresenta dorso verde-azulado, ventre amarelado, faixas azuladas junto ao focinho,
+#' estrias amareladas ao redor dos olhos, uma nódoa azul no pedúnculo caudal e
+#' nadadeira caudal lunada.
+#'
+#' Este conjunto de dados pode ser utilizado para:
+#' \enumerate{
+#'   \item Ajustar um modelo de potência (W = a * L^b) para descrever a relação alométrica entre peso (W) e comprimento (L).
+#'   \item Linearizar a relação peso-comprimento através da transformação logarítmica (ln(W) = ln(a) + b * ln(L)) e aplicar regressão linear simples.
+#'   \item Explorar a variabilidade nas medições de peso (p1, p2, p3) em relação à medida principal (`peso_g`).
+#' }
+#'
+#' @source Dados oriundos do livro Estatística Pesqueira xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+#' @docType data
+#' @keywords datasets biometria ictiologia regressao nao-linear modelo-potencia cangulo Balistes-vetula peso-comprimento
+#' @name cangulo_crescimento
+#' @usage data(cangulo_crescimento)
+#'
+#' @examples
+#' data(cangulo_crescimento)
+#' summary(cangulo_crescimento)
+#'
+#' # Visualização da relação peso-comprimento
+#' plot(peso_g ~ comprimento_cm, data = cangulo_crescimento,
+#'      xlab = "Comprimento (cm)", ylab = "Peso (g)",
+#'      main = "Relação Peso-Comprimento do Cangulo")
+#'
+#' # Visualização da relação log-linearizada
+#' plot(ln_peso ~ ln_comp, data = cangulo_crescimento,
+#'      xlab = "ln(Comprimento)", ylab = "ln(Peso)",
+#'      main = "Relação Log-Linearizada Peso-Comprimento")
+#' abline(lm(ln_peso ~ ln_comp, data = cangulo_crescimento), col = "blue")
+#'
+#' # Exemplo de regressão linear nos dados transformados
+#' if (nrow(cangulo_crescimento) > 1) {
+#'   modelo_linear <- lm(ln_peso ~ ln_comp, data = cangulo_crescimento)
+#'   print(summary(modelo_linear))
+#'
+#'   # Estimativas dos parâmetros 'a' e 'b' do modelo de potência W = a * L^b
+#'   # ln(a) é o intercepto, b é o coeficiente angular
+#'   # coef_ln_a <- coef(modelo_linear)[1]
+#'   # coef_b <- coef(modelo_linear)[2]
+#'   # cat(sprintf("Modelo de Potência estimado: Peso = %.2f * Comprimento^%.2f\n",
+#'   #             exp(coef_ln_a), coef_b))
+#' }
+#'
+#' # Exemplo com ggplot2 (se instalado)
+#' if (requireNamespace("ggplot2", quietly = TRUE)) {
+#'   library(ggplot2)
+#'   p1_gg <- ggplot(cangulo_crescimento, aes(x = comprimento_cm, y = peso_g)) +
+#'     geom_point(color = "steelblue", size = 2) +
+#'     labs(title = "Relação Peso-Comprimento do Cangulo",
+#'          x = "Comprimento (cm)",
+#'          y = "Peso (g)") +
+#'     theme_minimal()
+#'   print(p1_gg)
+#'
+#'   p2_gg <- ggplot(cangulo_crescimento, aes(x = ln_comp, y = ln_peso)) +
+#'     geom_point(color = "darkorange", size = 2) +
+#'     geom_smooth(method = "lm", se = FALSE, color = "dodgerblue") +
+#'     labs(title = "Relação Log-Linearizada Peso-Comprimento",
+#'          x = "ln(Comprimento)",
+#'          y = "ln(Peso)") +
+#'     theme_minimal()
+#'   print(p2_gg)
+#' }
+"cangulo_crescimento" # Nome do objeto de dados como salvo no .rda

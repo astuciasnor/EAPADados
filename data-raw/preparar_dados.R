@@ -9,9 +9,7 @@
 
   # Lista de pacotes necessários para o script de preparação
   pacotes_para_preparacao <- c("rio", "readxl", "janitor", "dplyr")
-
-  # Garantir que os pacotes estão disponíveis
-  garantir_pacotes(pacotes_para_preparacao)
+  garantir_pacotes(pacotes_para_preparacao) # Garantir que os pacotes estão disponíveis
 
 # Exportando dados com o o pacote "rio" -------------------------
 
@@ -74,6 +72,22 @@ artemia <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 18) |>
   # Adicione ao pacote (este comando é crucial)
   usethis::use_data(artemia, overwrite = TRUE)
 
+
+# Cangulo - Peso e Comprimento --------------------------------------
+
+  cangulo_crescimento <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 15) |>
+    # select(1:2) |>
+    mutate(across(where(is.character), as.factor)) |>
+    clean_names()
+
+  # Verifique os tipos de dados:
+  cangulo_crescimento |> glimpse()
+
+  # Mude os nomes de variaveis se necessario
+  # colnames(artemia) <- c("racao", "taxa_crescimento_mg_dia")
+
+  # Adicione ao pacote (este comando é crucial)
+  usethis::use_data(cangulo_crescimento, overwrite = TRUE)
 
 
 # Proximo Conjunto Dados --------------------------------------------
