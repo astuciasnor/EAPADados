@@ -5,8 +5,8 @@ output: github_document
 <div style="display:flex;align-items:center;margin-bottom:1em">
   <img src="man/figures/logo_pacote_eapadados.png" width="120" alt="Logo EAPADados"/>
   <p style="margin-left:1em;font-size:1.2em;line-height:1.4;">
-    <strong>EAPADados</strong> disponibiliza conjuntos de dados didáticos para
-    <strong>Estatística Aplicada à Pesca e Aquicultura</strong> em R. Cada dataset
+    <strong>EAPADados</strong> disponibiliza conjuntos de dados didáticos para o livro
+    <strong>Estatística Aplicada à Pesca e Aquicultura com R</strong>. Cada dataset
     vem com documentação e exemplos prontos, ideal para aulas, relatórios técnicos
     e pesquisa aplicada.
   </p>
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "80%"
 )
 ```
 

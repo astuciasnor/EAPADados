@@ -5,9 +5,9 @@
 <p style="margin-left:1em;font-size:1.2em;line-height:1.4;">
 
 <strong>EAPADados</strong> disponibiliza conjuntos de dados didáticos
-para <strong>Estatística Aplicada à Pesca e Aquicultura</strong> em R.
-Cada dataset vem com documentação e exemplos prontos, ideal para aulas,
-relatórios técnicos e pesquisa aplicada.
+para o livro <strong>Estatística Aplicada à Pesca e Aquicultura com
+R</strong>. Cada dataset vem com documentação e exemplos prontos, ideal
+para aulas, relatórios técnicos e pesquisa aplicada.
 </p>
 
 </div>
