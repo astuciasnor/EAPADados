@@ -1,19 +1,4 @@
 
-<div style="display: flex; align-items: center; margin-bottom: 1em;">
-
-<div style="flex: 1; font-size: 1.1em; line-height: 1.4;">
-
-    <strong>EAPADados</strong> disponibiliza conjuntos de dados didáticos para  
-    <strong>Estatística Aplicada à Pesca e Aquicultura</strong> em R. Cada dataset  
-    vem com documentação e exemplos prontos, ideal para aulas, relatórios técnicos  
-    e pesquisa aplicada.
-
-</div>
-
-<img src="man/figures/logo_pacote_eapadados.png" width="150" alt="Logo EAPADados" />
-
-</div>
-
 <div style="display:flex;align-items:center;margin-bottom:1em">
 
 <img src="man/figures/logo_pacote_eapadados.png" width="120" alt="Logo EAPADados"/>
@@ -55,9 +40,17 @@ head(tilapia_crescimento)
 
 ## Exemplo de Uso
 
-This is a basic example which shows you how to solve a common problem:
+A seguir, vamos visualizar a taxa média de crescimento diário das
+artemias por tipo de ração, usando um gráfico de barras elegante com
+ggplot2:
 
-``` r
-library(EAPADados)
-## basic example code
-```
+    #> 
+    #> Anexando pacote: 'dplyr'
+    #> Os seguintes objetos são mascarados por 'package:stats':
+    #> 
+    #>     filter, lag
+    #> Os seguintes objetos são mascarados por 'package:base':
+    #> 
+    #>     intersect, setdiff, setequal, union
+
+<img src="man/figures/README-example-1.png" width="100%" />

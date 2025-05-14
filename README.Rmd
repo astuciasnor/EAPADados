@@ -2,20 +2,6 @@
 output: github_document
 ---
 
-<div style="display: flex; align-items: center; margin-bottom: 1em;">
-  <div style="flex: 1; font-size: 1.1em; line-height: 1.4;">
-    <strong>EAPADados</strong> disponibiliza conjuntos de dados didáticos para  
-    <strong>Estatística Aplicada à Pesca e Aquicultura</strong> em R. Cada dataset  
-    vem com documentação e exemplos prontos, ideal para aulas, relatórios técnicos  
-    e pesquisa aplicada.
-  </div>
-  <img src="man/figures/logo_pacote_eapadados.png" width="150" alt="Logo EAPADados" />
-</div>
-
-
-
-
-
 <div style="display:flex;align-items:center;margin-bottom:1em">
   <img src="man/figures/logo_pacote_eapadados.png" width="120" alt="Logo EAPADados"/>
   <p style="margin-left:1em;font-size:1.2em;line-height:1.4;">
@@ -25,8 +11,6 @@ output: github_document
     e pesquisa aplicada.
   </p>
 </div>
-
-
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -63,9 +47,40 @@ head(tilapia_crescimento)
 
 ## Exemplo de Uso
 
-This is a basic example which shows you how to solve a common problem:
+A seguir, vamos visualizar a taxa média de crescimento diário das artemias por tipo de ração, usando um gráfico de barras elegante com ggplot2:
 
-```{r example, eval=FALSE}
+```{r example, eval=TRUE, echo=FALSE}
 library(EAPADados)
-## basic example code
+library(dplyr)
+library(ggplot2)
+
+# carrega os dados
+data(artemia)
+
+# sumariza média e erro-padrão da taxa de crescimento por ração
+resumo_art <- artemia |>
+  group_by(racao) |>
+  summarise(
+    media_taxa = mean(taxa_crescimento_mg_dia, na.rm = TRUE),
+    se = sd(taxa_crescimento_mg_dia, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  )
+
+# plota com barras e erro-padrão
+ggplot(resumo_art, aes(x = racao, y = media_taxa, fill = racao)) +
+  geom_col(color = "white", width = 0.6) +
+  geom_errorbar(aes(ymin = media_taxa - se, ymax = media_taxa + se),
+                width = 0.2, color = "black") +
+  labs(
+    title = "Taxa Média de Crescimento Diário das Artemias",
+    x     = "Tipo de Ração",
+    y     = "Taxa (mg/dia)"
+  ) +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    plot.title      = element_text(face = "bold", hjust = 0.5)
+  )
+
 ```
