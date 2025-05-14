@@ -44,13 +44,4 @@ A seguir, vamos visualizar a taxa média de crescimento diário das
 artemias por tipo de ração, usando um gráfico de barras elegante com
 ggplot2:
 
-    #> 
-    #> Anexando pacote: 'dplyr'
-    #> Os seguintes objetos são mascarados por 'package:stats':
-    #> 
-    #>     filter, lag
-    #> Os seguintes objetos são mascarados por 'package:base':
-    #> 
-    #>     intersect, setdiff, setequal, union
-
 <img src="man/figures/README-example-1.png" width="100%" />

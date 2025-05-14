@@ -49,28 +49,33 @@ head(tilapia_crescimento)
 
 A seguir, vamos visualizar a taxa média de crescimento diário das artemias por tipo de ração, usando um gráfico de barras elegante com ggplot2:
 
-```{r example, eval=TRUE, echo=FALSE}
+```{r example, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 library(EAPADados)
 library(dplyr)
 library(ggplot2)
+library(ggpubr)
 
-# carrega os dados
 data(artemia)
 
-# sumariza média e erro-padrão da taxa de crescimento por ração
 resumo_art <- artemia |>
   group_by(racao) |>
   summarise(
     media_taxa = mean(taxa_crescimento_mg_dia, na.rm = TRUE),
-    se = sd(taxa_crescimento_mg_dia, na.rm = TRUE) / sqrt(n()),
-    .groups = "drop"
+    se         = sd(taxa_crescimento_mg_dia, na.rm = TRUE) / sqrt(n()),
+    .groups    = "drop"
   )
 
-# plota com barras e erro-padrão
-ggplot(resumo_art, aes(x = racao, y = media_taxa, fill = racao)) +
+ggplot(resumo_art, aes(racao, media_taxa, fill = racao)) +
   geom_col(color = "white", width = 0.6) +
   geom_errorbar(aes(ymin = media_taxa - se, ymax = media_taxa + se),
-                width = 0.2, color = "black") +
+                width = 0.2) +
+  stat_compare_means(
+    comparisons = list(c("A", "B")),   # define qual par comparar
+    method      = "t.test",
+    label       = "p.signif",          # asteriscos
+    hide.ns     = FALSE,               # mostra “ns” se não houver significância
+    label.y     = max(resumo_art$media_taxa + resumo_art$se) * 1.1
+  ) +
   labs(
     title = "Taxa Média de Crescimento Diário das Artemias",
     x     = "Tipo de Ração",
@@ -82,5 +87,6 @@ ggplot(resumo_art, aes(x = racao, y = media_taxa, fill = racao)) +
     legend.position = "none",
     plot.title      = element_text(face = "bold", hjust = 0.5)
   )
+
 
 ```
