@@ -51,30 +51,25 @@ A seguir, vamos visualizar a taxa média de crescimento diário das artemias por
 
 ```{r example, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 library(EAPADados)
-library(dplyr)
 library(ggplot2)
 library(ggpubr)
 
 data(artemia)
 
-resumo_art <- artemia |>
-  group_by(racao) |>
-  summarise(
-    media_taxa = mean(taxa_crescimento_mg_dia, na.rm = TRUE),
-    se         = sd(taxa_crescimento_mg_dia, na.rm = TRUE) / sqrt(n()),
-    .groups    = "drop"
-  )
-
-ggplot(resumo_art, aes(racao, media_taxa, fill = racao)) +
-  geom_col(color = "white", width = 0.6) +
-  geom_errorbar(aes(ymin = media_taxa - se, ymax = media_taxa + se),
-                width = 0.2) +
+ggplot(artemia, aes(racao, taxa_crescimento_mg_dia, fill = racao)) +
+  stat_summary(fun = mean,
+               geom = "col",
+               color = "white",
+               width = 0.6) +
+  stat_summary(fun.data = mean_se,
+               geom = "errorbar",
+               width = 0.2) +
   stat_compare_means(
-    comparisons = list(c("A", "B")),   # define qual par comparar
+    comparisons = list(c("A", "B")),
     method      = "t.test",
-    label       = "p.signif",          # asteriscos
-    hide.ns     = FALSE,               # mostra “ns” se não houver significância
-    label.y     = max(resumo_art$media_taxa + resumo_art$se) * 1.1
+    label = "p.label", digits = 2,
+    hide.ns     = FALSE,
+    label.y     = max(artemia$taxa_crescimento_mg_dia) * 1.10
   ) +
   labs(
     title = "Taxa Média de Crescimento Diário das Artemias",
