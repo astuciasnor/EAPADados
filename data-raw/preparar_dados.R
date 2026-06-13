@@ -123,6 +123,16 @@ brine_carbonatos$grupo <- factor(brine_carbonatos$grupo)
 # glimpse(brine_carbonatos)  # confira os tipos
 usethis::use_data(brine_carbonatos, overwrite = TRUE)
 
+# pinguins - palmerpenguins contextualizado em portugues (CC0) ------
+# Requer o pacote palmerpenguins instalado:
+#   install.packages("palmerpenguins")
+pinguins <- as.data.frame(palmerpenguins::penguins)
+names(pinguins) <- c("especie", "ilha", "comprimento_bico_mm", "profundidade_bico_mm",
+                     "comprimento_nadadeira_mm", "massa_g", "sexo", "ano")
+levels(pinguins$sexo) <- c("femea", "macho")   # original: female, male
+# glimpse(pinguins)  # confira os tipos (especie/ilha/sexo = fatores; medidas = numericas)
+usethis::use_data(pinguins, overwrite = TRUE)
+
 
 # Proximo Conjunto Dados --------------------------------------------
 
