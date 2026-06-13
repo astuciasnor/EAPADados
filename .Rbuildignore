@@ -5,3 +5,5 @@
 ^vignettes/.*\.qmd$
 ^data-raw/~\\$.*
 ^README\.Rmd$
+^brutos\.xlsx$
+^\.Rhistory$

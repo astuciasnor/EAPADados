@@ -11,7 +11,7 @@
 #' \describe{
 #'   \item{racao}{Fator indicando o tipo de racao utilizada no experimento.
 #'     Niveis: "A" (farelo de arroz) e "B" (farelo de babacu).}
-#'   \item{taxa_crescimento}{Variavel numerica continua medindo a taxa de
+#'   \item{taxa_crescimento_mg_dia}{Variavel numerica continua medindo a taxa de
 #'     crescimento dos organismos alimentados com cada tipo de racao,
 #'     expressa em miligramas por dia (mg/dia).}
 #' }

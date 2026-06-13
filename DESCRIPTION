@@ -18,11 +18,14 @@ URL: https://github.com/astuciasnor/EAPADados.git
 Encoding: UTF-8
 Imports:
     dplyr,
-    magrittr
+    flextable,
+    magrittr,
+    stats,
+    tibble,
+    utils
 Depends: R (>= 4.5.0)
 Roxygen: list(markdown = FALSE)
-RoxygenNote: 7.3.2.9000
 LazyData: true
-Suggests: 
+Suggests:
     ggplot2
-
+Config/roxygen2/version: 8.0.0

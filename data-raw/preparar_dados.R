@@ -106,6 +106,24 @@ artemia <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 18) |>
   usethis::use_data(isoproteica, overwrite = TRUE)
 
 
+# Multivariadas (PCA e AAH/HCA) -------------------------------------
+
+# cabritos_fa_coltro - acidos graxos em carne de cabritos (Coltro et al. 2005)
+cabritos_fa_coltro <- read.csv("data-raw/cabritos_fa_coltro.csv",
+                               stringsAsFactors = FALSE)
+cabritos_fa_coltro$tratamento <- factor(cabritos_fa_coltro$tratamento,
+                                        levels = c("T1", "T2", "T3", "T4"))
+# glimpse(cabritos_fa_coltro)  # confira os tipos
+usethis::use_data(cabritos_fa_coltro, overwrite = TRUE)
+
+# brine_carbonatos - salmouras de unidades carbonaticas (Davis 2002 / KGS)
+brine_carbonatos <- read.csv("data-raw/brine_carbonatos.csv",
+                             stringsAsFactors = FALSE)
+brine_carbonatos$grupo <- factor(brine_carbonatos$grupo)
+# glimpse(brine_carbonatos)  # confira os tipos
+usethis::use_data(brine_carbonatos, overwrite = TRUE)
+
+
 # Proximo Conjunto Dados --------------------------------------------
 
 
