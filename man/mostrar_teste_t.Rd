@@ -7,16 +7,16 @@
 mostrar_teste_t(x, mu = 0, nome = "Variável", conf = 0.95)
 }
 \arguments{
-\item{x}{vetor numerico.}
+\item{x}{vetor numérico.}
 
-\item{mu}{valor de referencia.}
+\item{mu}{valor de referência (média hipotética sob H0).}
 
-\item{nome}{rotulo da variavel.}
+\item{nome}{rótulo da variável.}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 }
 \value{
-Um tibble de uma linha.
+Um tibble de uma linha com os resultados.
 }
 \description{
 Tabela de resultados do teste t para uma amostra

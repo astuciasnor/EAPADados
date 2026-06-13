@@ -2,20 +2,22 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{calcular_teste_t}
 \alias{calcular_teste_t}
-\title{Calculo canonico do teste t para uma amostra}
+\title{Cálculo canônico do teste t para uma amostra}
 \usage{
 calcular_teste_t(x, mu = 0, conf = 0.95)
 }
 \arguments{
-\item{x}{vetor numerico.}
+\item{x}{vetor numérico.}
 
-\item{mu}{valor de referencia (media hipotetica sob H0).}
+\item{mu}{valor de referência (média hipotética sob H0).}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 }
 \value{
-Uma lista com as estatisticas do teste.
+Uma lista com as estatísticas do teste.
 }
 \description{
-Calculo canonico do teste t para uma amostra
+Executa o teste t de uma amostra e devolve uma lista com todas as
+estatísticas (média, t, gl, p, IC, d de Cohen, efeito, significância).
+É a fonte única consumida por \code{mostrar_teste_t} e \code{relatar_teste_t}.
 }

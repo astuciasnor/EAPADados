@@ -7,16 +7,16 @@
 mostrar_teste_t_ind(formula_obj, data, equal_var = FALSE, conf = 0.95)
 }
 \arguments{
-\item{formula_obj}{formula y ~ x.}
+\item{formula_obj}{fórmula y ~ x (ex.: peso ~ grupo).}
 
-\item{data}{data.frame.}
+\item{data}{data.frame com as variáveis.}
 
-\item{equal_var}{logico; FALSE usa Welch.}
+\item{equal_var}{lógico; FALSE usa Welch (variâncias desiguais).}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 }
 \value{
-Um tibble de uma linha.
+Um tibble de uma linha com os resultados.
 }
 \description{
 Tabela do teste t para duas amostras independentes

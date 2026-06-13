@@ -14,20 +14,20 @@ relatar_teste_t_pareado(
 )
 }
 \arguments{
-\item{x1}{vetor numerico (antes).}
+\item{x1}{vetor numérico (momento 1 / antes).}
 
-\item{x2}{vetor numerico (depois).}
+\item{x2}{vetor numérico (momento 2 / depois).}
 
-\item{nome1}{rotulo do momento 1.}
+\item{nome1}{rótulo do momento 1.}
 
-\item{nome2}{rotulo do momento 2.}
+\item{nome2}{rótulo do momento 2.}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 
-\item{label_y}{rotulo da variavel de interesse.}
+\item{label_y}{rótulo da variável de interesse.}
 }
 \value{
-Uma string com marcacao Markdown.
+Uma string com marcação Markdown para itálico no docx.
 }
 \description{
 Relato do teste t pareado

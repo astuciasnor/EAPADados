@@ -13,5 +13,6 @@ flextable_ocean(tab)
 Um objeto flextable formatado.
 }
 \description{
-Formata um tibble na identidade visual Ocean Gradient (flextable, docx)
+Recebe o tibble de qualquer \code{mostrar_*} e devolve um flextable
+formatado. Requer o pacote \pkg{flextable} (em Suggests).
 }

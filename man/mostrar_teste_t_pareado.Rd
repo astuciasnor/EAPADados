@@ -7,18 +7,18 @@
 mostrar_teste_t_pareado(x1, x2, nome1 = "Antes", nome2 = "Depois", conf = 0.95)
 }
 \arguments{
-\item{x1}{vetor numerico (antes).}
+\item{x1}{vetor numérico (momento 1 / antes).}
 
-\item{x2}{vetor numerico (depois).}
+\item{x2}{vetor numérico (momento 2 / depois).}
 
-\item{nome1}{rotulo do momento 1.}
+\item{nome1}{rótulo do momento 1.}
 
-\item{nome2}{rotulo do momento 2.}
+\item{nome2}{rótulo do momento 2.}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 }
 \value{
-Um tibble de uma linha.
+Um tibble de uma linha com os resultados.
 }
 \description{
 Tabela do teste t pareado

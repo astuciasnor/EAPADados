@@ -14,20 +14,20 @@ relatar_teste_t_ind(
 )
 }
 \arguments{
-\item{formula_obj}{formula y ~ x.}
+\item{formula_obj}{fórmula y ~ x (ex.: peso ~ grupo).}
 
-\item{data}{data.frame.}
+\item{data}{data.frame com as variáveis.}
 
-\item{equal_var}{logico; FALSE usa Welch.}
+\item{equal_var}{lógico; FALSE usa Welch (variâncias desiguais).}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 
-\item{label_y}{rotulo da variavel de resposta.}
+\item{label_y}{rótulo da variável de resposta.}
 
-\item{label_x}{rotulo da variavel de agrupamento.}
+\item{label_x}{rótulo da variável de agrupamento.}
 }
 \value{
-Uma string com marcacao Markdown.
+Uma string com marcação Markdown para itálico no docx.
 }
 \description{
 Relato do teste t para duas amostras independentes

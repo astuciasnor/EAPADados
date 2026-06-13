@@ -2,22 +2,22 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{relatar_teste_t}
 \alias{relatar_teste_t}
-\title{Relato textual do teste t para uma amostra}
+\title{Relato textual em português do teste t para uma amostra}
 \usage{
 relatar_teste_t(x, mu = 0, nome = "a variável", conf = 0.95)
 }
 \arguments{
-\item{x}{vetor numerico.}
+\item{x}{vetor numérico.}
 
-\item{mu}{valor de referencia.}
+\item{mu}{valor de referência (média hipotética sob H0).}
 
-\item{nome}{rotulo da variavel.}
+\item{nome}{rótulo da variável.}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 }
 \value{
-Uma string com marcacao Markdown.
+Uma string com marcação Markdown para itálico no docx.
 }
 \description{
-Relato textual do teste t para uma amostra
+Relato textual em português do teste t para uma amostra
 }

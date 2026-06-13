@@ -4,10 +4,10 @@
 # Motor de relato do teste t de Student (uma amostra, duas amostras
 # independentes e amostras pareadas) para o ecossistema EAPA.
 #
-# calcular_*()  -> executa o teste e devolve UMA lista com as estatisticas.
-# mostrar_*()   -> FORMATA a lista canonica como tabela (tibble).
-# relatar_*()   -> FORMATA a lista canonica como frase em portugues.
-# As strings de SAIDA usam acentos escritos com escapes \uxxxx (ASCII no fonte).
+# calcular_*()  -> executa o teste e devolve UMA lista com as estatísticas.
+# mostrar_*()   -> FORMATA a lista canônica como tabela (tibble).
+# relatar_*()   -> FORMATA a lista canônica como frase em português.
+# As strings de saída usam acentos escritos com escapes \uxxxx (código ASCII).
 # =============================================================================
 
 fmt <- function(x, dig = 2) {
@@ -28,12 +28,16 @@ rotulo_ic <- function(conf = 0.95, sufixo = "") {
   paste0("IC ", round(conf * 100), "%", sufixo)
 }
 
-#' Calculo canonico do teste t para uma amostra
+#' Cálculo canônico do teste t para uma amostra
 #'
-#' @param x vetor numerico.
-#' @param mu valor de referencia (media hipotetica sob H0).
-#' @param conf nivel de confianca do IC (padrao 0,95).
-#' @return Uma lista com as estatisticas do teste.
+#' Executa o teste t de uma amostra e devolve uma lista com todas as
+#' estatísticas (média, t, gl, p, IC, d de Cohen, efeito, significância).
+#' É a fonte única consumida por \code{mostrar_teste_t} e \code{relatar_teste_t}.
+#'
+#' @param x vetor numérico.
+#' @param mu valor de referência (média hipotética sob H0).
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @return Uma lista com as estatísticas do teste.
 #' @export
 calcular_teste_t <- function(x, mu = 0, conf = 0.95) {
   teste <- stats::t.test(x, mu = mu, conf.level = conf)
@@ -46,11 +50,11 @@ calcular_teste_t <- function(x, mu = 0, conf = 0.95) {
 
 #' Tabela de resultados do teste t para uma amostra
 #'
-#' @param x vetor numerico.
-#' @param mu valor de referencia.
-#' @param nome rotulo da variavel.
-#' @param conf nivel de confianca do IC.
-#' @return Um tibble de uma linha.
+#' @param x vetor numérico.
+#' @param mu valor de referência (média hipotética sob H0).
+#' @param nome rótulo da variável.
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @return Um tibble de uma linha com os resultados.
 #' @export
 mostrar_teste_t <- function(x, mu = 0, nome = "Vari\u00e1vel", conf = 0.95) {
   r <- calcular_teste_t(x, mu = mu, conf = conf)
@@ -65,13 +69,13 @@ mostrar_teste_t <- function(x, mu = 0, nome = "Vari\u00e1vel", conf = 0.95) {
   tab
 }
 
-#' Relato textual do teste t para uma amostra
+#' Relato textual em português do teste t para uma amostra
 #'
-#' @param x vetor numerico.
-#' @param mu valor de referencia.
-#' @param nome rotulo da variavel.
-#' @param conf nivel de confianca do IC.
-#' @return Uma string com marcacao Markdown.
+#' @param x vetor numérico.
+#' @param mu valor de referência (média hipotética sob H0).
+#' @param nome rótulo da variável.
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @return Uma string com marcação Markdown para itálico no docx.
 #' @export
 relatar_teste_t <- function(x, mu = 0, nome = "a vari\u00e1vel", conf = 0.95) {
   r <- calcular_teste_t(x, mu = mu, conf = conf)
@@ -93,13 +97,13 @@ relatar_teste_t <- function(x, mu = 0, nome = "a vari\u00e1vel", conf = 0.95) {
   )
 }
 
-#' Calculo canonico do teste t para duas amostras independentes
+#' Cálculo canônico do teste t para duas amostras independentes
 #'
-#' @param formula_obj formula y ~ x.
-#' @param data data.frame.
-#' @param equal_var logico; FALSE usa Welch.
-#' @param conf nivel de confianca do IC.
-#' @return Uma lista com as estatisticas.
+#' @param formula_obj fórmula y ~ x (ex.: peso ~ grupo).
+#' @param data data.frame com as variáveis.
+#' @param equal_var lógico; FALSE usa Welch (variâncias desiguais).
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @return Uma lista com as estatísticas do teste.
 #' @export
 calcular_teste_t_ind <- function(formula_obj, data, equal_var = FALSE, conf = 0.95) {
   teste <- stats::t.test(formula_obj, data = data, var.equal = equal_var, conf.level = conf)
@@ -122,7 +126,7 @@ calcular_teste_t_ind <- function(formula_obj, data, equal_var = FALSE, conf = 0.
 #' Tabela do teste t para duas amostras independentes
 #'
 #' @inheritParams calcular_teste_t_ind
-#' @return Um tibble de uma linha.
+#' @return Um tibble de uma linha com os resultados.
 #' @export
 mostrar_teste_t_ind <- function(formula_obj, data, equal_var = FALSE, conf = 0.95) {
   r <- calcular_teste_t_ind(formula_obj, data = data, equal_var = equal_var, conf = conf)
@@ -141,9 +145,9 @@ mostrar_teste_t_ind <- function(formula_obj, data, equal_var = FALSE, conf = 0.9
 #' Relato do teste t para duas amostras independentes
 #'
 #' @inheritParams calcular_teste_t_ind
-#' @param label_y rotulo da variavel de resposta.
-#' @param label_x rotulo da variavel de agrupamento.
-#' @return Uma string com marcacao Markdown.
+#' @param label_y rótulo da variável de resposta.
+#' @param label_x rótulo da variável de agrupamento.
+#' @return Uma string com marcação Markdown para itálico no docx.
 #' @export
 relatar_teste_t_ind <- function(formula_obj, data, equal_var = FALSE, conf = 0.95,
                                 label_y = "a vari\u00e1vel de resposta", label_x = "a vari\u00e1vel de agrupamento") {
@@ -170,12 +174,12 @@ relatar_teste_t_ind <- function(formula_obj, data, equal_var = FALSE, conf = 0.9
   )
 }
 
-#' Calculo canonico do teste t pareado
+#' Cálculo canônico do teste t pareado
 #'
-#' @param x1 vetor numerico (antes).
-#' @param x2 vetor numerico (depois).
-#' @param conf nivel de confianca do IC.
-#' @return Uma lista com as estatisticas.
+#' @param x1 vetor numérico (momento 1 / antes).
+#' @param x2 vetor numérico (momento 2 / depois).
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @return Uma lista com as estatísticas do teste.
 #' @export
 calcular_teste_t_pareado <- function(x1, x2, conf = 0.95) {
   teste <- stats::t.test(x1, x2, paired = TRUE, conf.level = conf)
@@ -189,12 +193,12 @@ calcular_teste_t_pareado <- function(x1, x2, conf = 0.95) {
 
 #' Tabela do teste t pareado
 #'
-#' @param x1 vetor numerico (antes).
-#' @param x2 vetor numerico (depois).
-#' @param nome1 rotulo do momento 1.
-#' @param nome2 rotulo do momento 2.
-#' @param conf nivel de confianca do IC.
-#' @return Um tibble de uma linha.
+#' @param x1 vetor numérico (momento 1 / antes).
+#' @param x2 vetor numérico (momento 2 / depois).
+#' @param nome1 rótulo do momento 1.
+#' @param nome2 rótulo do momento 2.
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @return Um tibble de uma linha com os resultados.
 #' @export
 mostrar_teste_t_pareado <- function(x1, x2, nome1 = "Antes", nome2 = "Depois", conf = 0.95) {
   r <- calcular_teste_t_pareado(x1, x2, conf = conf)
@@ -212,13 +216,13 @@ mostrar_teste_t_pareado <- function(x1, x2, nome1 = "Antes", nome2 = "Depois", c
 
 #' Relato do teste t pareado
 #'
-#' @param x1 vetor numerico (antes).
-#' @param x2 vetor numerico (depois).
-#' @param nome1 rotulo do momento 1.
-#' @param nome2 rotulo do momento 2.
-#' @param conf nivel de confianca do IC.
-#' @param label_y rotulo da variavel de interesse.
-#' @return Uma string com marcacao Markdown.
+#' @param x1 vetor numérico (momento 1 / antes).
+#' @param x2 vetor numérico (momento 2 / depois).
+#' @param nome1 rótulo do momento 1.
+#' @param nome2 rótulo do momento 2.
+#' @param conf nível de confiança do IC (padrão 0,95).
+#' @param label_y rótulo da variável de interesse.
+#' @return Uma string com marcação Markdown para itálico no docx.
 #' @export
 relatar_teste_t_pareado <- function(x1, x2, nome1 = "Antes", nome2 = "Depois", conf = 0.95, label_y = "a vari\u00e1vel de interesse") {
   r <- calcular_teste_t_pareado(x1, x2, conf = conf)
@@ -242,6 +246,9 @@ relatar_teste_t_pareado <- function(x1, x2, nome1 = "Antes", nome2 = "Depois", c
 }
 
 #' Formata um tibble na identidade visual Ocean Gradient (flextable, docx)
+#'
+#' Recebe o tibble de qualquer \code{mostrar_*} e devolve um flextable
+#' formatado. Requer o pacote \pkg{flextable} (em Suggests).
 #'
 #' @param tab um data.frame/tibble.
 #' @return Um objeto flextable formatado.

@@ -2,20 +2,20 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{calcular_teste_t_pareado}
 \alias{calcular_teste_t_pareado}
-\title{Calculo canonico do teste t pareado}
+\title{Cálculo canônico do teste t pareado}
 \usage{
 calcular_teste_t_pareado(x1, x2, conf = 0.95)
 }
 \arguments{
-\item{x1}{vetor numerico (antes).}
+\item{x1}{vetor numérico (momento 1 / antes).}
 
-\item{x2}{vetor numerico (depois).}
+\item{x2}{vetor numérico (momento 2 / depois).}
 
-\item{conf}{nivel de confianca do IC.}
+\item{conf}{nível de confiança do IC (padrão 0,95).}
 }
 \value{
-Uma lista com as estatisticas.
+Uma lista com as estatísticas do teste.
 }
 \description{
-Calculo canonico do teste t pareado
+Cálculo canônico do teste t pareado
 }
