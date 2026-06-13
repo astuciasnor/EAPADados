@@ -1,0 +1,29 @@
+base,variavel,descricao,unidade,tipo,uso_na_amostragem
+walleye_erie,id_peixe,Identificador sequencial do peixe no conjunto de dados preparado.,NA,inteiro,Identificação da unidade amostral.
+walleye_erie,id_lance_rede,Identificador do lance ou conjunto de rede utilizado na amostragem original.,NA,categórica,Pode ser usado para reconhecer agrupamentos operacionais.
+walleye_erie,codigo_local,Código original do local regional de coleta.,NA,categórica,Estrato regional.
+walleye_erie,local_regional,Descrição em português da região de coleta no Lago Erie.,NA,categórica,Estrato regional.
+walleye_erie,grade_amostral,"Grade amostral de 2,5 minutos associada ao local de coleta.",NA,categórica,Estrato espacial mais detalhado.
+walleye_erie,ano,Ano de coleta do registro.,ano,inteiro,Estrato temporal.
+walleye_erie,comprimento_total_mm,Comprimento total do peixe.,mm,numérica,Variável de interesse ou base para criar estratos por tamanho.
+walleye_erie,peso_g,Peso corporal do peixe.,g,numérica,Variável de interesse.
+walleye_erie,sexo,"Sexo do peixe, traduzido para português.",NA,categórica,Estrato biológico.
+walleye_erie,maturidade,"Condição de maturidade do peixe, traduzida para português.",NA,categórica,Estrato biológico.
+walleye_erie,idade_anos,Idade estimada a partir de otólitos.,anos,numérica,Variável de interesse.
+walleye_erie,classe_comprimento,Classe de comprimento criada por quartis.,NA,categórica ordinal,Estrato por tamanho.
+snapper_hg,id_peixe,Identificador sequencial do peixe no conjunto de dados preparado.,NA,inteiro,Identificação da unidade amostral.
+snapper_hg,levantamento,Código do levantamento/local de amostragem.,NA,categórica,Estrato principal para amostragem proporcional.
+snapper_hg,comprimento_cm,Comprimento medido do peixe.,cm,numérica,Variável de interesse ou base para criar estratos por tamanho.
+snapper_hg,idade_anos,Idade atribuída a partir da análise de otólitos.,anos,numérica,Variável de interesse.
+snapper_hg,tem_idade_atribuida,Indica se o peixe possui idade atribuída.,NA,lógica,Controle de seleção dos registros usados.
+snapper_hg,classe_comprimento,Classe de comprimento criada por quartis.,NA,categórica ordinal,Estrato por tamanho.
+crabs_morfometria,id_caranguejo,Identificador sequencial do caranguejo no conjunto de dados preparado.,NA,inteiro,Identificação da unidade amostral.
+crabs_morfometria,forma_cor,"Forma de cor do caranguejo, traduzida para português.",NA,categórica,Estrato morfológico.
+crabs_morfometria,sexo,"Sexo do caranguejo, traduzido para português.",NA,categórica,Estrato biológico.
+crabs_morfometria,indice_no_grupo,Índice de 1 a 50 dentro de cada combinação de forma de cor e sexo.,NA,inteiro,Controle interno do desenho balanceado original.
+crabs_morfometria,largura_lobo_frontal_mm,Largura do lobo frontal.,mm,numérica,Variável de interesse.
+crabs_morfometria,largura_posterior_mm,Largura posterior.,mm,numérica,Variável de interesse.
+crabs_morfometria,comprimento_carapaca_mm,Comprimento da carapaça.,mm,numérica,Variável de interesse.
+crabs_morfometria,largura_carapaca_mm,Largura da carapaça.,mm,numérica,Variável de interesse ou base para criar estratos por tamanho.
+crabs_morfometria,profundidade_corpo_mm,Profundidade do corpo.,mm,numérica,Variável de interesse.
+crabs_morfometria,classe_largura_carapaca,Classe de largura da carapaça criada por quartis.,NA,categórica ordinal,Estrato por tamanho.

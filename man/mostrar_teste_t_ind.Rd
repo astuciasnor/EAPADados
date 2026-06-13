@@ -2,22 +2,22 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{mostrar_teste_t_ind}
 \alias{mostrar_teste_t_ind}
-\title{Tabela de resultados do teste t para duas amostras independentes}
+\title{Tabela do teste t para duas amostras independentes}
 \usage{
 mostrar_teste_t_ind(formula_obj, data, equal_var = FALSE, conf = 0.95)
 }
 \arguments{
-\item{formula_obj}{formula y ~ x (ex.: peso ~ grupo).}
+\item{formula_obj}{formula y ~ x.}
 
-\item{data}{data.frame com as variaveis.}
+\item{data}{data.frame.}
 
-\item{equal_var}{logico; FALSE usa Welch (variancias desiguais).}
+\item{equal_var}{logico; FALSE usa Welch.}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nivel de confianca do IC.}
 }
 \value{
-Um tibble de uma linha com os resultados.
+Um tibble de uma linha.
 }
 \description{
-Tabela de resultados do teste t para duas amostras independentes
+Tabela do teste t para duas amostras independentes
 }

@@ -17,7 +17,5 @@ calcular_teste_t(x, mu = 0, conf = 0.95)
 Uma lista com as estatisticas do teste.
 }
 \description{
-Executa o teste t de uma amostra e devolve uma lista com todas as
-estatisticas (media, t, gl, p, IC, d de Cohen, efeito, significancia).
-E a fonte unica consumida por \code{mostrar_teste_t} e \code{relatar_teste_t}.
+Calculo canonico do teste t para uma amostra
 }

@@ -7,14 +7,14 @@
 calcular_teste_t_pareado(x1, x2, conf = 0.95)
 }
 \arguments{
-\item{x1}{vetor numerico (momento 1 / antes).}
+\item{x1}{vetor numerico (antes).}
 
-\item{x2}{vetor numerico (momento 2 / depois).}
+\item{x2}{vetor numerico (depois).}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nivel de confianca do IC.}
 }
 \value{
-Uma lista com as estatisticas do teste.
+Uma lista com as estatisticas.
 }
 \description{
 Calculo canonico do teste t pareado

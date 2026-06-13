@@ -2,7 +2,7 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{relatar_teste_t_ind}
 \alias{relatar_teste_t_ind}
-\title{Relato textual em portugues do teste t para duas amostras independentes}
+\title{Relato do teste t para duas amostras independentes}
 \usage{
 relatar_teste_t_ind(
   formula_obj,
@@ -14,21 +14,21 @@ relatar_teste_t_ind(
 )
 }
 \arguments{
-\item{formula_obj}{formula y ~ x (ex.: peso ~ grupo).}
+\item{formula_obj}{formula y ~ x.}
 
-\item{data}{data.frame com as variaveis.}
+\item{data}{data.frame.}
 
-\item{equal_var}{logico; FALSE usa Welch (variancias desiguais).}
+\item{equal_var}{logico; FALSE usa Welch.}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nivel de confianca do IC.}
 
 \item{label_y}{rotulo da variavel de resposta.}
 
 \item{label_x}{rotulo da variavel de agrupamento.}
 }
 \value{
-Uma string com marcacao Markdown para italico no docx.
+Uma string com marcacao Markdown.
 }
 \description{
-Relato textual em portugues do teste t para duas amostras independentes
+Relato do teste t para duas amostras independentes
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{relatar_teste_t_pareado}
 \alias{relatar_teste_t_pareado}
-\title{Relato textual em portugues do teste t pareado}
+\title{Relato do teste t pareado}
 \usage{
 relatar_teste_t_pareado(
   x1,
@@ -14,21 +14,21 @@ relatar_teste_t_pareado(
 )
 }
 \arguments{
-\item{x1}{vetor numerico (momento 1 / antes).}
+\item{x1}{vetor numerico (antes).}
 
-\item{x2}{vetor numerico (momento 2 / depois).}
+\item{x2}{vetor numerico (depois).}
 
 \item{nome1}{rotulo do momento 1.}
 
 \item{nome2}{rotulo do momento 2.}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nivel de confianca do IC.}
 
 \item{label_y}{rotulo da variavel de interesse.}
 }
 \value{
-Uma string com marcacao Markdown para italico no docx.
+Uma string com marcacao Markdown.
 }
 \description{
-Relato textual em portugues do teste t pareado
+Relato do teste t pareado
 }

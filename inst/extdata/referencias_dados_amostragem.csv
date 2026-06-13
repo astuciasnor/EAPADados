@@ -1,0 +1,6 @@
+base,citacao_curta,referencia,observacao
+walleye_erie,FSAdata::WalleyeErie2,"Biological data for Walleye from Lake Erie, 2003-2014.","Dados biológicos de Walleye do Lago Erie, preparados com nomes de variáveis em português."
+snapper_hg,FSAdata::SnapperHG1,Age (subsample) and length (all fish) of Snapper from two survey locations.,"No preparo para o EAPADados, foram mantidos por padrão apenas registros com idade atribuída."
+snapper_hg,Davies and Walsh (2002),Snapper age and length samples from Kaharoa research trawl surveys KAH8810 and KAH0012 of the Hauraki Gulf.,Título original mantido conforme documentação do pacote FSAdata.
+crabs_morfometria,MASS::crabs,Morphological Measurements on Leptograpsus Crabs.,"Dados morfométricos de caranguejos, preparados com nomes de variáveis em português."
+crabs_morfometria,Venables and Ripley (2002),Modern Applied Statistics with S.,Referência bibliográfica indicada na documentação do conjunto crabs.

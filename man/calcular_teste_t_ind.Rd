@@ -7,16 +7,16 @@
 calcular_teste_t_ind(formula_obj, data, equal_var = FALSE, conf = 0.95)
 }
 \arguments{
-\item{formula_obj}{formula y ~ x (ex.: peso ~ grupo).}
+\item{formula_obj}{formula y ~ x.}
 
-\item{data}{data.frame com as variaveis.}
+\item{data}{data.frame.}
 
-\item{equal_var}{logico; FALSE usa Welch (variancias desiguais).}
+\item{equal_var}{logico; FALSE usa Welch.}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nivel de confianca do IC.}
 }
 \value{
-Uma lista com as estatisticas do teste.
+Uma lista com as estatisticas.
 }
 \description{
 Calculo canonico do teste t para duas amostras independentes

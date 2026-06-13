@@ -2,24 +2,24 @@
 % Please edit documentation in R/relatos_teste_t.R
 \name{mostrar_teste_t_pareado}
 \alias{mostrar_teste_t_pareado}
-\title{Tabela de resultados do teste t pareado}
+\title{Tabela do teste t pareado}
 \usage{
 mostrar_teste_t_pareado(x1, x2, nome1 = "Antes", nome2 = "Depois", conf = 0.95)
 }
 \arguments{
-\item{x1}{vetor numerico (momento 1 / antes).}
+\item{x1}{vetor numerico (antes).}
 
-\item{x2}{vetor numerico (momento 2 / depois).}
+\item{x2}{vetor numerico (depois).}
 
 \item{nome1}{rotulo do momento 1.}
 
 \item{nome2}{rotulo do momento 2.}
 
-\item{conf}{nivel de confianca do IC (padrao 0,95).}
+\item{conf}{nivel de confianca do IC.}
 }
 \value{
-Um tibble de uma linha com os resultados.
+Um tibble de uma linha.
 }
 \description{
-Tabela de resultados do teste t pareado
+Tabela do teste t pareado
 }
