@@ -1,30 +1,31 @@
-#' Resumo Estatistico da Biometria de Caranguejos
+#' Resumo Estatístico da Biometria de Caranguejos
 #'
 #' @description
-#' Calcula estatisticas descritivas (media, desvio padrao e contagem)
-#' para as variaveis Largura da Carapaca (LC) e Comprimento da Carapaca (CC)
-#' do conjunto de dados de biometria de caranguejos, agrupadas por Sexo e Estacao.
+#' Calcula estatísticas descritivas (média, desvio padrão e contagem)
+#' para as variáveis Largura da Carapaça (LC) e Comprimento da Carapaça (CC)
+#' do conjunto de dados de biometria de caranguejos, agrupadas por Sexo e Estação.
 #'
 #' @param data Um data frame. Espera-se que contenha as colunas `Sexo`, `Estacao`,
-#'   `LC` e `CC`. Se `NULL` (o padrao), a funcao tentara carregar e usar
+#'   `LC` e `CC`. Se `NULL` (o padrão), a função tentará carregar e usar
 #'   o dataset `biometria_caranguejos` do pacote `EAPADados`.
 #'
 #' @return Um `tibble` (data frame do `dplyr`) com as seguintes colunas:
-#'   \item{Sexo}{Fator indicando o sexo dos individuos.}
-#'   \item{Estacao}{Fator indicando a estacao de captura.}
-#'   \item{media_LC}{Media da Largura da Carapaca (LC) em mm.}
-#'   \item{dp_LC}{Desvio padrao da Largura da Carapaca (LC) em mm.}
-#'   \item{media_CC}{Media do Comprimento da Carapaca (CC) em mm.}
-#'   \item{dp_CC}{Desvio padrao do Comprimento da Carapaca (CC) em mm.}
-#'   \item{n}{Numero de observacoes (tamanho da amostra) para cada grupo.}
+#'   \item{Sexo}{Fator indicando o sexo dos indivíduos.}
+#'   \item{Estacao}{Fator indicando a estação de captura.}
+#'   \item{media_LC}{Média da Largura da Carapaça (LC) em mm.}
+#'   \item{dp_LC}{Desvio padrão da Largura da Carapaça (LC) em mm.}
+#'   \item{media_CC}{Média do Comprimento da Carapaça (CC) em mm.}
+#'   \item{dp_CC}{Desvio padrão do Comprimento da Carapaça (CC) em mm.}
+#'   \item{n}{Número de observações (tamanho da amostra) para cada grupo.}
 #'
 #' @details
-#' A funcao utiliza pacotes `dplyr` para manipulacao de dados e `magrittr`
-#' para o operador pipe `%>%`. Para usar o dataset padrao, o pacote `EAPADados`
+#' A função utiliza pacotes `dplyr` para manipulação de dados e `magrittr`
+#' para o operador pipe `%>%`. Para usar o dataset padrão, o pacote `EAPADados`
 #' deve estar instalado.
-#' As colunas `LC` e `CC` devem ser numericas. `Sexo` e `Estacao` devem ser
+#' As colunas `LC` e `CC` devem ser numéricas. `Sexo` e `Estacao` devem ser
 #' fatores ou caracteres que possam ser convertidos em fatores para agrupamento.
 #'
+#' @encoding UTF-8
 #' @importFrom magrittr %>%
 #' @importFrom dplyr group_by summarize n
 #' @importFrom stats sd
@@ -33,19 +34,19 @@
 #' @examples
 #' # Para rodar os exemplos, o pacote EAPADados deve estar instalado.
 #' # Se o pacote estiver carregado (ex: library(EAPADados)),
-#' # o dataset biometria_caranguejos estara disponivel.
+#' # o dataset biometria_caranguejos estará disponível.
 #'
-#' # Exemplo 1: Usando o dataset padrao (biometria_caranguejos do pacote)
+#' # Exemplo 1: Usando o dataset padrão (biometria_caranguejos do pacote)
 #' if (requireNamespace("EAPADados", quietly = TRUE)) {
-#'   print("Calculando resumo com dataset padrao:")
+#'   print("Calculando resumo com dataset padrão:")
 #'   resumo1 <- summarize_biometria()
 #'   print(resumo1)
 #' } else {
-#'   print("Pacote EAPADados nao instalado. Exemplo 1 pulado.")
+#'   print("Pacote EAPADados não instalado. Exemplo 1 pulado.")
 #' }
 #'
 #' # Exemplo 2: Fornecendo um data frame externo
-#' # Criando um data frame de exemplo similar ao esperado pela funcao
+#' # Criando um data frame de exemplo similar ao esperado pela função
 #' dados_exemplo <- data.frame(
 #'   Sexo = factor(rep(c("Macho", "Femea"), each = 10)),
 #'   Estacao = factor(rep(c("Seca", "Chuvosa"), times = 10)),
@@ -59,7 +60,7 @@
 #' # Exemplo 3: Usando um subconjunto do dataset do pacote (se carregado)
 #' \dontrun{
 #' if (requireNamespace("EAPADados", quietly = TRUE) && exists("biometria_caranguejos")) {
-#'   library(EAPADados) # Garante que biometria_caranguejos esteja acessivel
+#'   library(EAPADados) # Garante que biometria_caranguejos esteja acessível
 #'   dados_pequenos <- head(biometria_caranguejos, 15)
 #'   resumo3 <- summarize_biometria(data = dados_pequenos)
 #'   print(resumo3)
@@ -100,7 +101,7 @@ summarize_biometria <- function(data = NULL) {
                paste(colunas_faltantes, collapse = ", ")), call. = FALSE)
   }
   if (!is.numeric(data$LC) || !is.numeric(data$CC)) {
-    stop("As colunas 'LC' e 'CC' devem ser numericas.", call. = FALSE)
+    stop("As colunas 'LC' e 'CC' devem ser numéricas.", call. = FALSE)
   }
 
   # Processamento dos dados

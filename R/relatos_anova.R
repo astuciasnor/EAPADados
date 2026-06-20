@@ -17,20 +17,21 @@
 # As strings de saida usam acentos escritos com escapes \uxxxx.
 # =============================================================================
 
-#' Calculo canonico da ANOVA unifatorial (DIC)
+#' Cálculo canônico da ANOVA unifatorial (DIC)
 #'
 #' Ajusta uma ANOVA de um fator (\code{aov}), avalia os pressupostos
-#' (normalidade dos residuos por Shapiro-Wilk e homogeneidade de variancias
-#' por Bartlett) e executa o pos-teste de Tukey HSD. E a fonte unica consumida
+#' (normalidade dos resíduos por Shapiro-Wilk e homogeneidade de variâncias
+#' por Bartlett) e executa o pós-teste de Tukey HSD. É a fonte única consumida
 #' por \code{mostrar_anova}, \code{mostrar_pressupostos}, \code{mostrar_tukey}
 #' e \code{relatar_anova}.
 #'
 #' @param df data.frame com os dados.
-#' @param dep_var nome (string) da variavel resposta (numerica).
-#' @param ind_var nome (string) do fator (variavel categorica).
-#' @param conf nivel de confianca dos intervalos de Tukey (padrao 0,95).
-#' @return Uma lista com a tabela ANOVA, pressupostos, Tukey e estatisticas
-#'   auxiliares (residuos e valores ajustados para graficos diagnosticos).
+#' @param dep_var nome (string) da variável resposta (numérica).
+#' @param ind_var nome (string) do fator (variável categórica).
+#' @param conf nível de confiança dos intervalos de Tukey (padrão 0,95).
+#' @return Uma lista com a tabela ANOVA, pressupostos, Tukey e estatísticas
+#'   auxiliares (resíduos e valores ajustados para gráficos diagnósticos).
+#' @encoding UTF-8
 #' @export
 #' @examples
 #' data(isoproteica_bagre)
@@ -103,6 +104,7 @@ calcular_anova <- function(df, dep_var, ind_var, conf = 0.95) {
 #'
 #' @param r lista devolvida por \code{calcular_anova}.
 #' @return Um tibble com a tabela ANOVA (fonte, gl, SQ, QM, F, p).
+#' @encoding UTF-8
 #' @export
 mostrar_anova <- function(r) {
   tibble::tibble(
@@ -118,10 +120,11 @@ mostrar_anova <- function(r) {
   )
 }
 
-#' Tabela de validacao dos pressupostos da ANOVA
+#' Tabela de validação dos pressupostos da ANOVA
 #'
 #' @param r lista devolvida por \code{calcular_anova}.
 #' @return Um tibble com os testes de Shapiro-Wilk e Bartlett.
+#' @encoding UTF-8
 #' @export
 mostrar_pressupostos <- function(r) {
   tibble::tibble(
@@ -138,10 +141,11 @@ mostrar_pressupostos <- function(r) {
   )
 }
 
-#' Tabela de comparacoes multiplas de Tukey HSD
+#' Tabela de comparações múltiplas de Tukey HSD
 #'
 #' @param r lista devolvida por \code{calcular_anova}.
-#' @return Um tibble com as comparacoes par a par de Tukey HSD.
+#' @return Um tibble com as comparações par a par de Tukey HSD.
+#' @encoding UTF-8
 #' @export
 mostrar_tukey <- function(r) {
   nivel <- round(r$conf * 100)
@@ -159,13 +163,14 @@ mostrar_tukey <- function(r) {
   tab
 }
 
-#' Relato estatistico formal da ANOVA em portugues
+#' Relato estatístico formal da ANOVA em português
 #'
-#' Sintetiza, em uma frase cientifica, o resultado da ANOVA, a validacao dos
-#' pressupostos e os pares significativos do pos-teste de Tukey HSD.
+#' Sintetiza, em uma frase científica, o resultado da ANOVA, a validação dos
+#' pressupostos e os pares significativos do pós-teste de Tukey HSD.
 #'
 #' @param r lista devolvida por \code{calcular_anova}.
-#' @return Uma string com marcacao Markdown (itialico) para o docx.
+#' @return Uma string com marcação Markdown (itálico) para o docx.
+#' @encoding UTF-8
 #' @export
 relatar_anova <- function(r) {
   p_txt <- if (r$p_anova < 0.001) "p < 0,001" else paste0("p = ", fmt(r$p_anova, 3))
