@@ -90,20 +90,21 @@ artemia <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 18) |>
   usethis::use_data(cangulo_crescimento, overwrite = TRUE)
 
 
-# Bagres e ração isoproteica - ANOVA --------------------------------------
+# Bagres e ração iso-proteica - ANOVA (Bhujel 2011, Tabela 7.4) -----------
+# Renomeado de `isoproteica` para `isoproteica_bagre` (jun/2026).
 
-  isoproteica <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 19) |>
+  isoproteica_bagre <- read_excel("data-raw/pesca_aquic_bioecol.xlsx", sheet = 19) |>
     mutate(across(where(is.character), as.factor)) |>
     clean_names()
 
   # Verifique os tipos de dados:
-  isoproteica |> glimpse()
+  isoproteica_bagre |> glimpse()
 
   # Mude os nomes de variaveis se necessario
-  colnames(isoproteica) <- c("racao", "peso_g")
+  colnames(isoproteica_bagre) <- c("racao", "peso_g")
 
   # Adicione ao pacote (este comando é crucial)
-  usethis::use_data(isoproteica, overwrite = TRUE)
+  usethis::use_data(isoproteica_bagre, overwrite = TRUE)
 
 
 # Multivariadas (PCA e AAH/HCA) -------------------------------------

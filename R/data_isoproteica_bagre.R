@@ -48,7 +48,7 @@
 #'   B (Feed 2) \tab 5 \tab 444 \tab 88,8 \cr
 #'   C (Feed 3) \tab 4 \tab 410 \tab 102,5 \cr
 #'   D (Feed 4) \tab 5 \tab 463 \tab 92,6 \cr
-#'   \strong{Geral} \tab \strong{19} \tab \strong{1748} \tab \tab
+#'   \strong{Geral} \tab \strong{19} \tab \strong{1748} \tab
 #' }
 #' (O livro arredonda as medias de C e D para 102,6 e 92,5; os totais e os
 #' valores brutos aqui sao os exatos da Tabela 7.4.)
