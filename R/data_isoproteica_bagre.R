@@ -85,8 +85,7 @@
 #' @source
 #' Bhujel, R. C. (2011). \emph{Statistics for Aquaculture} (1st ed.).
 #' Wiley-Blackwell. Capitulo 7 (Experimental designs and analysis of variance),
-#' \strong{Tabela 7.4}, p. 103. Disponivel em
-#' \url{https://www.perlego.com/book/1006312/statistics-for-aquaculture-pdf}.
+#' \strong{Tabela 7.4}, p. 103.
 #'
 #' @references
 #' Bhujel, R. C. (2011). \emph{Statistics for Aquaculture} (1st ed.). Wiley.
