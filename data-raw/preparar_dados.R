@@ -143,3 +143,55 @@ usethis::use_data(pinguins, overwrite = TRUE)
 
 
 
+
+# captura_pescada_amarela - capturas de pescada-amarela por embarcacao -------
+# Dados reais (nao publicados) do grupo de pesquisa. Servem de exemplo de
+# TRATAMENTO de dados no livro (cap. 3): o conjunto BRUTO traz defeitos de
+# digitacao de proposito; o conjunto LIMPO e o resultado do tratamento, usado
+# nas analises das Unidades IV e V (CPUE por periodo, aparelho, embarcacao).
+#
+# Requer: readxl, janitor, dplyr, stringr, lubridate
+arq_pescada <- "data-raw/dados-captura-pescada-amarela-lucas-prontos.xlsx"
+
+# (a) VERSAO BRUTA - lida como veio, com TODOS os erros preservados ----------
+#     (nomes com acento/espaco, "chuvoso " com espaco, data "15/10//2020",
+#      mes como texto, CPUE com casas decimais demais)
+bruto_tmp <- suppressWarnings(readxl::read_excel(arq_pescada, sheet = 1))
+
+# A coluna "Data de Chegada" tem uma celula de texto invalida ("15/10//2020")
+# misturada as datas; por isso o readxl devolve a coluna INTEIRA como TEXTO,
+# com as datas boas no formato de numero de serie do Excel ("43831"...).
+# Convertemos os seriais para dd/mm/aaaa e REINSERIMOS o defeito original,
+# para o conjunto bruto servir de exemplo de data malformada.
+ch <- bruto_tmp[["Data de Chegada"]]
+ch_txt <- format(as.Date(suppressWarnings(as.numeric(ch)), origin = "1899-12-30"),
+                 "%d/%m/%Y")
+ch_txt[is.na(ch_txt)] <- ch[is.na(ch_txt)]   # devolve "15/10//2020"
+bruto_tmp[["Data de Chegada"]] <- ch_txt
+
+captura_pescada_amarela_bruta <- as.data.frame(bruto_tmp)
+# glimpse(captura_pescada_amarela_bruta)  # confira os defeitos
+usethis::use_data(captura_pescada_amarela_bruta, overwrite = TRUE)
+
+# (b) VERSAO LIMPA - tratamento espelhando o cap. 3 do livro -----------------
+meses_ord <- c("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+               "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+
+captura_pescada_amarela <- captura_pescada_amarela_bruta |>
+  janitor::clean_names() |>                                  # nomes padronizados
+  dplyr::mutate(
+    periodo_sazonal     = stringr::str_squish(periodo_sazonal),   # apara "chuvoso "
+    nome_aparelho_pesca = stringr::str_squish(nome_aparelho_pesca),
+    data_de_chegada     = lubridate::dmy(stringr::str_replace(data_de_chegada, "//", "/")), # corrige e converte
+    data_de_saida       = as.Date(data_de_saida),   # ja vem como data do Excel
+    mes_ano             = as.Date(mes_ano),
+    embarcacao          = as.factor(embarcacao),
+    periodo_sazonal     = as.factor(periodo_sazonal),
+    nome_aparelho_pesca = as.factor(nome_aparelho_pesca),
+    mes  = factor(mes, levels = meses_ord),                  # ordem de calendario
+    ano  = as.integer(ano),
+    cpue_pescada = round(cpue_pescada, 2),
+    cpue         = round(cpue, 2)
+  )
+# glimpse(captura_pescada_amarela)  # confira os tipos
+usethis::use_data(captura_pescada_amarela, overwrite = TRUE)

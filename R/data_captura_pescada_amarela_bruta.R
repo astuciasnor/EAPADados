@@ -1,0 +1,67 @@
+#' Capturas de Pescada-Amarela por Embarcacao (versao BRUTA, para limpeza)
+#'
+#' @description
+#' Versao \strong{bruta} (nao tratada) de um conjunto real de capturas de
+#' pescada-amarela (\emph{Cynoscion acoupa}) por embarcacoes artesanais, com
+#' registros mensais de varias embarcacoes ao longo de tres anos. Este conjunto
+#' foi mantido \strong{de proposito com os defeitos de digitacao} tipicos de
+#' dados de campo, para servir de exemplo de TRATAMENTO/limpeza de dados no
+#' livro (Unidade I, capitulo de organizacao e leitura de dados). A versao ja
+#' tratada esta em \code{\link{captura_pescada_amarela}}.
+#'
+#' @details
+#' Defeitos presentes (intencionais), uteis para ensino:
+#' \itemize{
+#'   \item nomes de colunas com acento, espaco e parenteses (pedem
+#'         \code{janitor::clean_names()});
+#'   \item categorias com espacos sobrando: \code{"chuvoso "} e \code{"seco  "}
+#'         convivem com \code{"chuvoso"} e \code{"seco"}, gerando 4 niveis onde
+#'         deveriam existir 2 (pedem \code{stringr::str_squish()}); o mesmo
+#'         ocorre em \code{"Espinhel "} vs \code{"Espinhel"};
+#'   \item uma data invalida (\code{"15/10//2020"}, com barra a mais), que faz o
+#'         \code{lubridate} avisar \emph{failed to parse};
+#'   \item mes registrado como texto (ordena alfabeticamente, nao no calendario);
+#'   \item CPUE com casas decimais em excesso.
+#' }
+#'
+#' @format Um data frame com 252 observacoes e 16 variaveis (nomes originais):
+#' \describe{
+#'   \item{Embarcacao}{Identificador da embarcacao (texto; B1 a B7).}
+#'   \item{Tamanho (m)}{Comprimento da embarcacao, em metros (numerico).}
+#'   \item{Precipitação}{Precipitacao acumulada no periodo, em mm (numerico).}
+#'   \item{Mês}{Mes da viagem (texto, em portugues).}
+#'   \item{Ano}{Ano da viagem (inteiro; 2019 a 2021).}
+#'   \item{Período sazonal}{Estacao (texto; com espacos sobrando: "chuvoso",
+#'     "chuvoso ", "seco", "seco  ").}
+#'   \item{Mês/ano}{Mes/ano de referencia (data).}
+#'   \item{Data de Saida}{Data de saida ao mar (data).}
+#'   \item{Data de Chegada}{Data de chegada (texto; contem a entrada invalida
+#'     "15/10//2020").}
+#'   \item{Dias ao mar}{Duracao da viagem, em dias (inteiro).}
+#'   \item{CPUE pescada}{Captura por unidade de esforco da pescada-amarela
+#'     (numerico, casas decimais em excesso).}
+#'   \item{CPUE}{Captura por unidade de esforco total (numerico).}
+#'   \item{Pessoal Embarcado}{Numero de tripulantes (inteiro; 8 ou 10).}
+#'   \item{Peso Balanca}{Peso total registrado na balanca, em kg (inteiro).}
+#'   \item{Nome Aparelho Pesca}{Aparelho de pesca (texto; com espacos sobrando:
+#'     "Espinhel", "Espinhel ", "Rede").}
+#'   \item{Quantidade Aparelho Pesca}{Quantidade/medida do aparelho (inteiro).}
+#' }
+#'
+#' @source Dados reais (ainda nao publicados) do grupo de pesquisa.
+#'   <COMPLETAR: autoria/coleta (Lucas et al.), local, periodo e referencia.>
+#'   Documentacao mais detalhada (metadados e imagens) a ser adicionada.
+#' @docType data
+#' @keywords datasets pesca tratamento-de-dados
+#' @name captura_pescada_amarela_bruta
+#' @usage data(captura_pescada_amarela_bruta)
+#'
+#' @seealso \code{\link{captura_pescada_amarela}} (versao tratada).
+#'
+#' @examples
+#' data(captura_pescada_amarela_bruta)
+#' str(captura_pescada_amarela_bruta)
+#'
+#' # o defeito classico: 4 categorias onde deveriam existir 2
+#' table(captura_pescada_amarela_bruta$`Período sazonal`)
+"captura_pescada_amarela_bruta"

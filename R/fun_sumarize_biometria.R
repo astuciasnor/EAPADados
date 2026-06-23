@@ -101,7 +101,7 @@ summarize_biometria <- function(data = NULL) {
                paste(colunas_faltantes, collapse = ", ")), call. = FALSE)
   }
   if (!is.numeric(data$LC) || !is.numeric(data$CC)) {
-    stop("As colunas 'LC' e 'CC' devem ser numéricas.", call. = FALSE)
+    stop("As colunas 'LC' e 'CC' devem ser num\u00e9ricas.", call. = FALSE)
   }
 
   # Processamento dos dados

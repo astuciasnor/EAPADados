@@ -48,7 +48,7 @@ calcular_anova <- function(df, dep_var, ind_var, conf = 0.95) {
 
   # Tabela ANOVA estruturada
   anova_df <- data.frame(
-    Fonte = c("Entre Grupos (Fator)", "Dentro dos Grupos (Resíduos)", "Total"),
+    Fonte = c("Entre Grupos (Fator)", "Dentro dos Grupos (Res\u00edduos)", "Total"),
     Df = c(anova_summary$Df[1], anova_summary$Df[2], sum(anova_summary$Df)),
     Soma_Quadrados = c(anova_summary$`Sum Sq`[1], anova_summary$`Sum Sq`[2],
                        sum(anova_summary$`Sum Sq`)),
@@ -108,10 +108,10 @@ calcular_anova <- function(df, dep_var, ind_var, conf = 0.95) {
 #' @export
 mostrar_anova <- function(r) {
   tibble::tibble(
-    "Fonte de Variação" = r$anova_df$Fonte,
+    "Fonte de Varia\u00e7\u00e3o" = r$anova_df$Fonte,
     "Graus de Liberdade (gl)" = r$anova_df$Df,
     "Soma dos Quadrados (SQ)" = round(r$anova_df$Soma_Quadrados, 2),
-    "Quadrado Médio (QM)" = sapply(r$anova_df$Quadrados_Medios,
+    "Quadrado M\u00e9dio (QM)" = sapply(r$anova_df$Quadrados_Medios,
       function(x) if (is.na(x)) "-" else as.character(round(x, 2))),
     "F" = sapply(r$anova_df$F_valor,
       function(x) if (is.na(x)) "-" else as.character(round(x, 3))),
@@ -128,15 +128,15 @@ mostrar_anova <- function(r) {
 #' @export
 mostrar_pressupostos <- function(r) {
   tibble::tibble(
-    "Pressuposto" = c("Normalidade dos Resíduos (Shapiro-Wilk)",
-                      "Homocedasticidade das Variâncias (Bartlett)"),
-    "Estatística de Teste" = c(round(r$sh_stat, 4), round(r$bt_stat, 3)),
+    "Pressuposto" = c("Normalidade dos Res\u00edduos (Shapiro-Wilk)",
+                      "Homocedasticidade das Vari\u00e2ncias (Bartlett)"),
+    "Estat\u00edstica de Teste" = c(round(r$sh_stat, 4), round(r$bt_stat, 3)),
     "p-valor" = c(round(r$sh_p, 4), round(r$bt_p, 4)),
     "Resultado" = c(
-      ifelse(r$sh_p >= 0.05, "Resíduos Normais (H0 mantida)",
-             "Resíduos Não Normais (H0 rejeitada)"),
-      ifelse(r$bt_p >= 0.05, "Variâncias Homogêneas (H0 mantida)",
-             "Variâncias Heterogêneas (H0 rejeitada)")
+      ifelse(r$sh_p >= 0.05, "Res\u00edduos Normais (H0 mantida)",
+             "Res\u00edduos N\u00e3o Normais (H0 rejeitada)"),
+      ifelse(r$bt_p >= 0.05, "Vari\u00e2ncias Homog\u00eaneas (H0 mantida)",
+             "Vari\u00e2ncias Heterog\u00eaneas (H0 rejeitada)")
     )
   )
 }
@@ -150,13 +150,13 @@ mostrar_pressupostos <- function(r) {
 mostrar_tukey <- function(r) {
   nivel <- round(r$conf * 100)
   tibble::tibble(
-    "Comparação Par a Par" = r$tukey_df$Comparacao,
-    "Diferença de Médias" = round(r$tukey_df$Diferenca, 2),
+    "Compara\u00e7\u00e3o Par a Par" = r$tukey_df$Comparacao,
+    "Diferen\u00e7a de M\u00e9dias" = round(r$tukey_df$Diferenca, 2),
     "__LWR__" = round(r$tukey_df$Lwr, 2),
     "__UPR__" = round(r$tukey_df$Upr, 2),
     "p-valor ajustado" = round(r$tukey_df$p_adj, 4),
-    "Significância (p < 0,05)" = ifelse(r$tukey_df$Significativo,
-      "Diferença Significativa", "Não Significativa")
+    "Signific\u00e2ncia (p < 0,05)" = ifelse(r$tukey_df$Significativo,
+      "Diferen\u00e7a Significativa", "N\u00e3o Significativa")
   ) -> tab
   names(tab)[names(tab) == "__LWR__"] <- paste0("IC ", nivel, "% Inferior")
   names(tab)[names(tab) == "__UPR__"] <- paste0("IC ", nivel, "% Superior")
@@ -175,27 +175,27 @@ mostrar_tukey <- function(r) {
 relatar_anova <- function(r) {
   p_txt <- if (r$p_anova < 0.001) "p < 0,001" else paste0("p = ", fmt(r$p_anova, 3))
 
-  sh_txt <- if (r$sh_p >= 0.05) "passou na validação de normalidade"
+  sh_txt <- if (r$sh_p >= 0.05) "passou na valida\u00e7\u00e3o de normalidade"
             else "apresentou desvio de normalidade"
-  bt_txt <- if (r$bt_p >= 0.05) "passou na validação de homocedasticidade"
+  bt_txt <- if (r$bt_p >= 0.05) "passou na valida\u00e7\u00e3o de homocedasticidade"
             else "apresentou desvio de homocedasticidade"
 
   relato_base <- paste0(
-    "Foi realizada uma análise de variância (ANOVA) unifatorial para avaliar o efeito do fator categórico '",
-    r$ind_var, "' sobre a variável numérica '", r$dep_var,
-    "'. Os resíduos do modelo foram avaliados e o teste de Shapiro-Wilk (W = ",
+    "Foi realizada uma an\u00e1lise de vari\u00e2ncia (ANOVA) unifatorial para avaliar o efeito do fator categ\u00f3rico '",
+    r$ind_var, "' sobre a vari\u00e1vel num\u00e9rica '", r$dep_var,
+    "'. Os res\u00edduos do modelo foram avaliados e o teste de Shapiro-Wilk (W = ",
     fmt(r$sh_stat, 4), ", p = ", fmt(r$sh_p, 4), ") ", sh_txt,
-    ", enquanto o teste de Bartlett (K² = ", fmt(r$bt_stat, 3), ", p = ",
+    ", enquanto o teste de Bartlett (K\u00b2 = ", fmt(r$bt_stat, 3), ", p = ",
     fmt(r$bt_p, 4), ") ", bt_txt, ". "
   )
 
   if (r$p_anova < 0.05) {
     sig_pairs <- r$tukey_df$Comparacao[r$tukey_df$Significativo]
     sig_txt <- if (length(sig_pairs) > 0)
-      paste0("O pós-teste de comparações múltiplas de Tukey HSD identificou diferenças significativas nos pares: ",
+      paste0("O p\u00f3s-teste de compara\u00e7\u00f5es m\u00faltiplas de Tukey HSD identificou diferen\u00e7as significativas nos pares: ",
              paste(sig_pairs, collapse = "; "), ".")
     else
-      "Contudo, o pós-teste de Tukey HSD não revelou pares com diferenças estatisticamente significativas."
+      "Contudo, o p\u00f3s-teste de Tukey HSD n\u00e3o revelou pares com diferen\u00e7as estatisticamente significativas."
     paste0(
       relato_base,
       "A ANOVA indicou um efeito estatisticamente significativo do fator sobre a resposta, F(",
@@ -204,9 +204,9 @@ relatar_anova <- function(r) {
   } else {
     paste0(
       relato_base,
-      "A ANOVA não indicou efeito estatisticamente significativo do fator sobre a resposta, F(",
+      "A ANOVA n\u00e3o indicou efeito estatisticamente significativo do fator sobre a resposta, F(",
       r$df_entre, ", ", r$df_dentro, ") = ", fmt(r$f_anova, 2), ", ", p_txt,
-      ", não havendo justificativa estatística para a interpretação de pós-testes."
+      ", n\u00e3o havendo justificativa estat\u00edstica para a interpreta\u00e7\u00e3o de p\u00f3s-testes."
     )
   }
 }
