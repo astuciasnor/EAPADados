@@ -26,7 +26,7 @@
 #' alpha = 0,05 para as análises.
 #'
 #' @source Dados fictícios baseados em um problema clássico de bioestatística,
-#'   adaptados do arquivo "pesca_aquic_bioecol.xlsx", planilha 18.
+#'   adaptados. Fonte consolidada em data-raw/dados_brutos_eapadados.xlsx, aba "src_artemia".
 #' @docType data
 #' @encoding UTF-8
 #' @keywords datasets bioestatistica teste-t artemia

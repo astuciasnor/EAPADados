@@ -17,7 +17,7 @@ Um data frame com observações sobre duas variáveis:
 }
 \source{
 Dados fictícios baseados em um problema clássico de bioestatística,
-  adaptados do arquivo "pesca_aquic_bioecol.xlsx", planilha 18.
+  adaptados. Fonte consolidada em data-raw/dados_brutos_eapadados.xlsx, aba "src_artemia".
 }
 \usage{
 data(artemia)
