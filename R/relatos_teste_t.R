@@ -350,23 +350,27 @@ print.arrumo_teste_t <- function(x, ...) {
   print.data.frame(x, right = FALSE, ...)
 }
 
-#' Formata um data.frame como tabela cinza, sem linhas de grade (flextable)
+#' Formata um data.frame como tabela "saída de Viewer", sem linhas de grade
 #'
 #' Dá a impressão de uma saída de console, porém organizada: fonte
-#' monoespaçada, fundo cinza-claro, texto centralizado, cabeçalho em negrito e
-#' \strong{sem linhas de grade}. Recebe qualquer data.frame/tibble (por exemplo,
-#' a saída de \code{arrumar_teste_t}) e devolve um flextable. É irmã de
-#' \code{flextable_ocean()}; requer o pacote \pkg{flextable} (em Suggests).
+#' monoespaçada, fundo \strong{verde acinzentado} (sage), texto centralizado,
+#' cabeçalho em negrito e \strong{sem linhas de grade}. O tom verde a distingue
+#' de duas coisas: do fundo cinza dos blocos de código (que é "código") e das
+#' tabelas referenciadas no tema Ocean (\code{flextable_ocean()}, que levam
+#' legenda). Assim o leitor reconhece, de relance, uma \emph{exibição de
+#' resultado no Viewer}. Recebe qualquer data.frame/tibble (por exemplo, a saída
+#' de \code{arrumar_teste_t}) e devolve um flextable. Requer o pacote
+#' \pkg{flextable} (em Suggests).
 #'
 #' @param tab um data.frame/tibble.
-#' @param bg_corpo cor de fundo do corpo (padrão "#F0F0F0").
-#' @param bg_cabecalho cor de fundo do cabeçalho (padrão "#E3E3E3").
+#' @param bg_corpo cor de fundo do corpo (padrão "#E7EFEA", verde sage claro).
+#' @param bg_cabecalho cor de fundo do cabeçalho (padrão "#C5D8CF", sage médio).
 #' @return Um objeto flextable.
 #' @examples
 #' res <- t.test(extra ~ group, data = sleep)
 #' flextable_cinza(arrumar_teste_t(res))
 #' @export
-flextable_cinza <- function(tab, bg_corpo = "#F0F0F0", bg_cabecalho = "#E3E3E3") {
+flextable_cinza <- function(tab, bg_corpo = "#E7EFEA", bg_cabecalho = "#C5D8CF") {
   if (!requireNamespace("flextable", quietly = TRUE)) {
     stop("O pacote 'flextable' e necessario para formatar a tabela.", call. = FALSE)
   }
