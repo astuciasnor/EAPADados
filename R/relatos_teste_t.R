@@ -269,3 +269,140 @@ flextable_ocean <- function(tab) {
     flextable::padding(padding = 4, part = "all") |>
     flextable::autofit()
 }
+
+#' Arruma o resultado de um teste t num data frame enxuto (em português)
+#'
+#' Recebe um objeto \code{htest} produzido por \code{\link[stats]{t.test}}
+#' (uma amostra, duas amostras independentes ou pareado) e devolve um
+#' \code{data.frame} de uma linha, em português, com as informações essenciais
+#' do teste: médias, diferença, intervalo de confiança (num campo só), \emph{t},
+#' gl, \emph{p}, além do método e da hipótese alternativa (traduzidos e
+#' abreviados). Por ser um \code{data.frame} comum, imprime de forma crua e
+#' limpa, sem os enfeites de tibble (\code{# A tibble}, \code{<dbl>}).
+#'
+#' Diferente de \code{mostrar_teste_t*()}, que recebem os dados e executam o
+#' teste, esta função trabalha sobre um teste \strong{já calculado}.
+#'
+#' @param objeto objeto de classe \code{htest} (saída de \code{stats::t.test}).
+#' @param dig casas decimais para arredondamento (padrão 3).
+#' @return Um \code{data.frame} de uma linha, com colunas em português.
+#' @examples
+#' res <- t.test(extra ~ group, data = sleep)
+#' arrumar_teste_t(res)
+#' @export
+arrumar_teste_t <- function(objeto, dig = 3) {
+  if (!inherits(objeto, "htest")) {
+    stop("'objeto' deve ser o resultado de stats::t.test().", call. = FALSE)
+  }
+  est    <- objeto$estimate
+  ic     <- objeto$conf.int
+  nivel  <- attr(ic, "conf.level"); if (is.null(nivel)) nivel <- 0.95
+  rot_ic <- paste0("IC ", round(nivel * 100), "%")
+  ic_txt <- paste0(round(ic[1], dig), " a ", round(ic[2], dig))
+  t_val  <- round(unname(objeto$statistic), dig)
+  gl_val <- round(unname(objeto$parameter), 1)
+  p_val  <- round(objeto$p.value, dig)
+
+  metodo <- if (grepl("Welch", objeto$method)) "Welch"
+            else if (grepl("Paired", objeto$method)) "pareado"
+            else if (grepl("One Sample", objeto$method)) "1 amostra"
+            else "2 amostras"
+  alt <- switch(objeto$alternative,
+                "two.sided" = "bilateral",
+                "less"      = "unilateral (<)",
+                "greater"   = "unilateral (>)",
+                objeto$alternative)
+
+  if (length(est) == 2) {                       # duas amostras independentes
+    nomes <- sub("^mean (in group|of) ", "", names(est))
+    e <- unname(round(est, dig))
+    out <- data.frame(
+      e[1], e[2], round(e[1] - e[2], dig),
+      t_val, gl_val, p_val, ic_txt, metodo, alt,
+      check.names = FALSE, row.names = NULL, stringsAsFactors = FALSE
+    )
+    names(out) <- c(paste0("m\u00e9dia ", nomes[1]), paste0("m\u00e9dia ", nomes[2]),
+                    "diferen\u00e7a", "t", "gl", "p", rot_ic, "m\u00e9todo", "Tipo")
+  } else if (grepl("Paired", objeto$method)) {  # amostras pareadas
+    out <- data.frame(
+      round(unname(est), dig),
+      t_val, gl_val, p_val, ic_txt, metodo, alt,
+      check.names = FALSE, row.names = NULL, stringsAsFactors = FALSE
+    )
+    names(out) <- c("dif. m\u00e9dia", "t", "gl", "p", rot_ic, "m\u00e9todo", "Tipo")
+  } else {                                      # uma amostra
+    mu <- if (!is.null(objeto$null.value)) unname(objeto$null.value) else 0
+    m  <- round(unname(est), dig)
+    out <- data.frame(
+      m, round(mu, dig), round(m - mu, dig),
+      t_val, gl_val, p_val, ic_txt, metodo, alt,
+      check.names = FALSE, row.names = NULL, stringsAsFactors = FALSE
+    )
+    names(out) <- c("m\u00e9dia", "m\u00e9dia H0", "diferen\u00e7a", "t", "gl", "p",
+                    rot_ic, "m\u00e9todo", "Tipo")
+  }
+  class(out) <- c("arrumo_teste_t", "data.frame")
+  out
+}
+
+#' @export
+print.arrumo_teste_t <- function(x, ...) {
+  print.data.frame(x, right = FALSE, ...)
+}
+
+#' Formata um data.frame como tabela cinza, sem linhas de grade (flextable)
+#'
+#' Dá a impressão de uma saída de console, porém organizada: fonte
+#' monoespaçada, fundo cinza-claro, texto centralizado, cabeçalho em negrito e
+#' \strong{sem linhas de grade}. Recebe qualquer data.frame/tibble (por exemplo,
+#' a saída de \code{arrumar_teste_t}) e devolve um flextable. É irmã de
+#' \code{flextable_ocean()}; requer o pacote \pkg{flextable} (em Suggests).
+#'
+#' @param tab um data.frame/tibble.
+#' @param bg_corpo cor de fundo do corpo (padrão "#F0F0F0").
+#' @param bg_cabecalho cor de fundo do cabeçalho (padrão "#E3E3E3").
+#' @return Um objeto flextable.
+#' @examples
+#' res <- t.test(extra ~ group, data = sleep)
+#' flextable_cinza(arrumar_teste_t(res))
+#' @export
+flextable_cinza <- function(tab, bg_corpo = "#F0F0F0", bg_cabecalho = "#E3E3E3") {
+  if (!requireNamespace("flextable", quietly = TRUE)) {
+    stop("O pacote 'flextable' e necessario para formatar a tabela.", call. = FALSE)
+  }
+  flextable::flextable(as.data.frame(tab)) |>
+    flextable::border_remove() |>
+    flextable::bg(bg = bg_corpo, part = "body") |>
+    flextable::bg(bg = bg_cabecalho, part = "header") |>
+    flextable::bold(part = "header") |>
+    flextable::align(align = "center", part = "all") |>
+    flextable::font(fontname = "Consolas", part = "all") |>   # monoespacada (cara de console)
+    flextable::fontsize(size = 9, part = "all") |>
+    flextable::padding(padding = 5, part = "all") |>
+    flextable::autofit()
+}
+
+#' Exibe o resultado de um teste t como tabela "console organizado"
+#'
+#' Atalho de uma chamada para a saída-padrão do teste \emph{t} no corpo do
+#' livro: arruma o teste e o formata no tema cinza. Equivale a
+#' \code{arrumar_teste_t(objeto) |> flextable_cinza()}, mas numa função só.
+#' Recebe um objeto \code{htest} \strong{já calculado} (saída de
+#' \code{\link[stats]{t.test}}) e devolve um flextable \strong{já arrumado},
+#' que abre no \emph{Viewer} do RStudio. O nome \code{exibir_*} deixa claro que
+#' a saída já vem arrumada — diferente de \code{mostrar_*}, reservado às tabelas
+#' que recebem dados crus e rodam o teste.
+#'
+#' @param objeto objeto de classe \code{htest} (saída de \code{stats::t.test}).
+#' @param dig casas decimais para arredondamento (padrão 3).
+#' @param ... argumentos extras repassados a \code{\link{flextable_cinza}}
+#'   (por exemplo, \code{bg_corpo} e \code{bg_cabecalho}).
+#' @return Um objeto flextable no tema cinza, pronto para o Viewer/relatório.
+#' @seealso \code{\link{arrumar_teste_t}}, \code{\link{flextable_cinza}}
+#' @examples
+#' res <- t.test(extra ~ group, data = sleep)
+#' exibir_teste_t(res)
+#' @export
+exibir_teste_t <- function(objeto, dig = 3, ...) {
+  flextable_cinza(arrumar_teste_t(objeto, dig = dig), ...)
+}
