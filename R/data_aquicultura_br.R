@@ -1,0 +1,51 @@
+#' Produção da Aquicultura Brasileira por Estado e Ano
+#'
+#' @description
+#' Produção da aquicultura (peixes de cultivo) nos 27 estados da Federação,
+#' em toneladas, para os anos de 2016 a 2023. Os dados vêm dos anuários da
+#' **Revista PEIXE BR** (Associação Brasileira da Piscicultura, Peixe-BR) e são
+#' de domínio público. Traz, para cada estado e ano, o ranking nacional e a
+#' produção total. É o conjunto usado nos exemplos de **mapas temáticos
+#' (coropletos)** do ecossistema EAPA — a coluna `uf` (sigla) casa diretamente
+#' com o campo `abbrev_state` dos limites estaduais do pacote \pkg{geobr}.
+#'
+#' @format A data frame with 216 observations and 5 variables:
+#' \describe{
+#'   \item{uf}{Sigla da Unidade da Federação (character; ex.: *PR*, *SP*, *PA*).}
+#'   \item{estado}{Nome do estado por extenso (character; ex.: *PARANÁ*).}
+#'   \item{posicao}{Posição no ranking nacional de produção naquele ano (integer; 1 = maior produtor).}
+#'   \item{producao_t}{Produção da aquicultura no ano, em toneladas (numeric).}
+#'   \item{ano}{Ano de referência (integer; 2016 a 2023).}
+#' }
+#'
+#' @source Revista PEIXE BR / Peixe-BR — Anuários da Piscicultura.
+#'   \url{https://www.peixebr.com.br/}. Dados públicos.
+#' @docType data
+#' @keywords datasets
+#' @name aquicultura_br
+#' @usage data(aquicultura_br)
+#'
+#' @examples
+#' data(aquicultura_br)
+#' summary(aquicultura_br)
+#'
+#' # Produção de 2023, do maior para o menor produtor
+#' aqui_2023 <- subset(aquicultura_br, ano == 2023)
+#' aqui_2023 <- aqui_2023[order(-aqui_2023$producao_t), ]
+#' head(aqui_2023)
+#'
+#' # Dez maiores produtores em 2023 (requer ggplot2)
+#' if (requireNamespace("ggplot2", quietly = TRUE)) {
+#'   top10 <- head(aqui_2023, 10)
+#'   ggplot2::ggplot(top10,
+#'                   ggplot2::aes(x = stats::reorder(uf, producao_t), y = producao_t)) +
+#'     ggplot2::geom_col(fill = "#2E7D8F") +
+#'     ggplot2::coord_flip() +
+#'     ggplot2::labs(title = "Aquicultura: dez maiores produtores (2023)",
+#'                   x = "Estado (UF)", y = "Produção (t)")
+#' }
+#'
+#' # Para o mapa coroplético (geobr + sf), veja o capítulo de Mapas do livro
+#' # e o módulo "Mapas" da CatalyseR.
+#'
+NULL
