@@ -1,7 +1,7 @@
 Package: EAPADados
 Type: Package
 Title: Conjuntos de Dados para Estatistica Aplicada à Pesca e Aquicultura
-Version: 0.1.9
+Version: 0.1.10
 Authors@R: c(
     person(
       "Evaldo", "Silva",
@@ -29,5 +29,6 @@ LazyData: true
 Suggests:
     ggplot2,
     QFASA,
+    rstatix,
     tidyr
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/v
