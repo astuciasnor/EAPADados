@@ -14,7 +14,7 @@ if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
 # 1) Ler da planilha-mãe (aba "aquicultura_br") -----------------------
 #    Fonte única dos dados brutos do pacote, igual aos demais conjuntos.
-aquicultura_br <- readxl::read_excel("data-raw/dados_brutos_eapadados.xlsx",
+aquicultura_br <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                                      sheet = "aquicultura_br")
 aquicultura_br <- as.data.frame(aquicultura_br)
 

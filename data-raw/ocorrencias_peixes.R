@@ -10,7 +10,7 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
-ocorrencias_peixes <- readxl::read_excel("data-raw/dados_brutos_eapadados.xlsx",
+ocorrencias_peixes <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                                          sheet = "ocorrencias_peixes")
 ocorrencias_peixes <- as.data.frame(ocorrencias_peixes)
 ocorrencias_peixes$id        <- as.integer(ocorrencias_peixes$id)

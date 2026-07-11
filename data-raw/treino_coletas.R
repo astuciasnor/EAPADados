@@ -13,7 +13,7 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
-treino_coletas <- readxl::read_excel("data-raw/dados_brutos_eapadados.xlsx",
+treino_coletas <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                                      sheet = "treino_coletas")
 treino_coletas <- as.data.frame(treino_coletas, stringsAsFactors = FALSE)
 

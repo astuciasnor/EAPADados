@@ -17,7 +17,7 @@ Um data frame com observações sobre duas variáveis:
 }
 \source{
 Dados fictícios baseados em um problema clássico de bioestatística,
-  adaptados. Fonte consolidada em data-raw/dados_brutos_eapadados.xlsx, aba "src_artemia".
+  adaptados. Fonte consolidada em CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx, aba "src_artemia".
 }
 \usage{
 data(artemia)

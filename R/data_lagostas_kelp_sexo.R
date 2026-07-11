@@ -1,0 +1,58 @@
+#' Proporção sexual de lagostas em ambientes de kelp
+#'
+#' @description
+#' Lagostas-da-costa-oeste (\emph{Jasus lalandii}) capturadas em dois ambientes
+#' marinhos de kelp próximos a Lüderitz, Namíbia — uma floresta natural e uma
+#' área de cultivo — entre setembro de 2024 e abril de 2025. Cada linha é uma
+#' lagosta. Base pensada para o \strong{teste do qui-quadrado de independência}
+#' entre sexo e ambiente (tabela 2 × 2 construída a partir das contagens).
+#'
+#' @format Um data frame com 1457 observações e 8 variáveis:
+#' \describe{
+#'   \item{id_lagosta}{Texto: identificador da lagosta.}
+#'   \item{data_amostragem}{Data: data do evento de amostragem.}
+#'   \item{ano}{Inteiro: ano da coleta.}
+#'   \item{mes}{Inteiro: mês da coleta (número).}
+#'   \item{mes_nome}{Fator ordenado da temporada: \code{setembro}, \code{outubro}, \code{dezembro}, \code{janeiro}, \code{marco}, \code{abril}.}
+#'   \item{sitio}{Fator: sítio/ambiente de kelp (\code{DIAZ}, \code{SWB}) — os dois ambientes (floresta natural e área de cultivo).}
+#'   \item{sexo}{Fator: \code{femea}, \code{macho}.}
+#'   \item{comprimento_cefalotorax_mm}{Numérico: comprimento do cefalotórax (mm).}
+#' }
+#'
+#' @details
+#' Pergunta principal: a distribuição de machos e fêmeas de \emph{Jasus lalandii}
+#' é independente do ambiente de kelp? A tabela de contingência não vem pronta —
+#' construa-a contando as lagostas em cada combinação de \code{sexo} e
+#' \code{sitio}. Hipóteses: H0, sexo independente do ambiente; H1, existe
+#' associação. Verifique as frequências esperadas; se alguma for muito baixa,
+#' use o teste exato de Fisher. Para tabela 2 × 2, o tamanho da associação pode
+#' ser resumido pelo coeficiente phi.
+#'
+#' Análises complementares: comparar a razão sexual geral com 1:1; comparar o
+#' comprimento entre sexos e entre ambientes; examinar a proporção sexual ao
+#' longo dos meses. Considere o delineamento amostral (armadilhas iscadas, três
+#' por ambiente) ao discutir independência/pseudorrepetição.
+#'
+#' Nota: os dois sítios \code{DIAZ}/\code{SWB} correspondem aos dois ambientes de
+#' kelp (natural e cultivado); a atribuição de qual sítio é qual deve ser
+#' confirmada na fonte antes de rotular como natural/cultivado.
+#'
+#' @source Adaptado de \emph{Abundance, Size Structure, and Sex Ratio Variation
+#'   of West Coast Rock Lobster (Jasus lalandii) in Cultivated and Natural Kelp
+#'   Forests off Lüderitz, Namibia}. Base original no Mendeley Data.
+#' @docType data
+#' @encoding UTF-8
+#' @keywords datasets pesca quiquadrado
+#' @name lagostas_kelp_sexo
+#' @usage data(lagostas_kelp_sexo)
+#'
+#' @examples
+#' data(lagostas_kelp_sexo)
+#' # Tabela de contingencia sexo x ambiente
+#' tab <- table(lagostas_kelp_sexo$sexo, lagostas_kelp_sexo$sitio)
+#' tab
+#' chisq.test(tab)
+#'
+#' # Analise complementar: comprimento por sexo
+#' # boxplot(comprimento_cefalotorax_mm ~ sexo, data = lagostas_kelp_sexo)
+"lagostas_kelp_sexo"

@@ -27,26 +27,40 @@ build](https://astuciasnor.r-universe.dev/badges/EAPADados)](https://astuciasnor
 
 ## Instalação
 
-``` r
+Instale a versão atual direto do GitHub:
 
-# Para Windows (binário .zip), rode no R/RStudio:
-install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.1/EAPADados_0.1.1.zip",
-                 repos = NULL,
-                 type = "win.binary")
+``` r
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+remotes::install_github("astuciasnor/EAPADados")
 
 library(EAPADados)
 head(tilapia_crescimento)
 ```
 
+O EAPADados é 100% R (só dados e funções), mas ele usa `flextable` e
+`dplyr`, que têm dependências com código compilado. Por isso:
+
+**Windows** — instala direto: as dependências vêm como **binário do
+CRAN** (não precisam compilar). Funciona com ou sem Rtools; com o Rtools
+instalado, também.
+
+**Linux** — as dependências **compilam da fonte**. O caminho mais fácil
+é usar os binários do Posit Package Manager (sem compilar, sem
+bibliotecas de sistema) — troque o codinome da distro (`jammy`, `noble`,
+`bookworm`…):
+
 ``` r
-# Para Linux e MacOS (fonte .tar.gz)
+options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+remotes::install_github("astuciasnor/EAPADados")
+```
 
-install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.1/EAPADados_0.1.1.tar.gz",
-                 repos = NULL,
-                 type = "source")
+Alternativamente, para compilar da fonte, instale antes as bibliotecas
+de sistema (Debian/Ubuntu):
 
-library(EAPADados)
-head(tilapia_crescimento)
+``` bash
+sudo apt-get install -y build-essential libfontconfig1-dev libfreetype6-dev \
+  libharfbuzz-dev libfribidi-dev libpng-dev libtiff5-dev libjpeg-dev libcairo2-dev
 ```
 
 ## Exemplo de Uso
@@ -55,4 +69,4 @@ A seguir, vamos visualizar a taxa média de crescimento diário das
 artemias por tipo de ração, usando um gráfico de barras elegante com
 ggplot2:
 
-<img src="man/figures/README-example-1.png" width="80%" />
+<img src="man/figures/README-example-1.png" alt="" width="80%" />

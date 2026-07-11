@@ -2,7 +2,7 @@
 #
 #           PROCEDIMENTOS DE PREPARAÇÃO DE DADOS
 #
-#   Fonte unica dos dados brutos: data-raw/dados_brutos_eapadados.xlsx
+#   Fonte unica dos dados brutos: CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx
 #   (cada conjunto numa aba; ver a aba "Índice" para a descricao).
 #xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   rm(list = ls())
@@ -23,7 +23,7 @@
   garantir_pacotes(pacotes_para_preparacao)
 
 # Arquivo unico de dados brutos ----------------------------------
-  brutos <- "data-raw/dados_brutos_eapadados.xlsx"
+  brutos <- "CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx"
 
 # Simulados tilapia_crescimento ----------------------------------
 tilapia_crescimento <- data.frame(

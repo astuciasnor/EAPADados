@@ -34,27 +34,38 @@ knitr::opts_chunk$set(
 
 ## Instalação
 
-```{r instalacao, eval=FALSE}
+Instale a versão atual direto do GitHub:
 
-# Para Windows (binário .zip), rode no R/RStudio:
-install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.1/EAPADados_0.1.1.zip",
-                 repos = NULL,
-                 type = "win.binary")
+```{r instalacao, eval=FALSE}
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+remotes::install_github("astuciasnor/EAPADados")
 
 library(EAPADados)
 head(tilapia_crescimento)
 ```
 
+O EAPADados é 100% R (só dados e funções), mas ele usa `flextable` e `dplyr`, que têm
+dependências com código compilado. Por isso:
 
-```{r instalacao2, eval=FALSE}
-# Para Linux e MacOS (fonte .tar.gz)
+**Windows** — instala direto: as dependências vêm como **binário do CRAN** (não precisam
+compilar). Funciona com ou sem Rtools; com o Rtools instalado, também.
 
-install.packages("https://github.com/astuciasnor/EAPADados/releases/download/v0.1.1/EAPADados_0.1.1.tar.gz",
-                 repos = NULL,
-                 type = "source")
+**Linux** — as dependências **compilam da fonte**. O caminho mais fácil é usar os binários do
+Posit Package Manager (sem compilar, sem bibliotecas de sistema) — troque o codinome da distro
+(`jammy`, `noble`, `bookworm`…):
 
-library(EAPADados)
-head(tilapia_crescimento)
+```{r instalacao_linux, eval=FALSE}
+options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+remotes::install_github("astuciasnor/EAPADados")
+```
+
+Alternativamente, para compilar da fonte, instale antes as bibliotecas de sistema
+(Debian/Ubuntu):
+
+```bash
+sudo apt-get install -y build-essential libfontconfig1-dev libfreetype6-dev \
+  libharfbuzz-dev libfribidi-dev libpng-dev libtiff5-dev libjpeg-dev libcairo2-dev
 ```
 
 

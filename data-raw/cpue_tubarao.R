@@ -10,7 +10,7 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
-cpue_tubarao <- readxl::read_excel("data-raw/dados_brutos_eapadados.xlsx",
+cpue_tubarao <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                                    sheet = "cpue_tubarao")
 cpue_tubarao <- as.data.frame(cpue_tubarao)
 cpue_tubarao$Vessel <- factor(cpue_tubarao$Vessel)

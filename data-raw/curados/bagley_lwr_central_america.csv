@@ -1,0 +1,307 @@
+no,especie,peso_g,comprimento_padrao_mm,comprimento_total_mm,pais,localidade,latitude,longitude,nadadeira_dorsal,nadadeira_caudal,sexo,log_peso_g,log_sl_mm
+2,Alfaro cultratus,0.3736,31.98,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-0.98457,3.465111
+3,Alfaro cultratus,0.7127,36.86,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-0.338695,3.607127
+4,Alfaro cultratus,0.4455,33.59,,Costa Rica,Trib. to Rio Sixaola,9.620933333,-82.85768333333,,,,-0.808558,3.514228
+5,Alfaro cultratus,0.3991,33.17,,Costa Rica,Trib. to Rio Sixaola,9.620933333,-82.85768333333,,,,-0.918543,3.501646
+6,Alfaro cultratus,0.3557,31.81,,Costa Rica,Trib. to Rio Sixaola,9.620933333,-82.85768333333,,,,-1.033668,3.459781
+7,Alfaro cultratus,0.4099,33.23,,Costa Rica,Trib. to Rio Sixaola,9.620933333,-82.85768333333,,,,-0.891842,3.503453
+8,Alfaro cultratus,0.2256,30.3,,Costa Rica,Trib. to Rio Sixaola,9.620933333,-82.85768333333,,,,-1.488992,3.411148
+9,Alfaro cultratus,0.2716,27.81,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-1.303425,3.325396
+10,Alfaro cultratus,4.393,66.33,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,1.480012,4.194642
+11,Alfaro cultratus,1.0838,41.56,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,0.080473,3.727138
+12,Alfaro cultratus,0.8871,38.32,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,-0.119798,3.645972
+13,Alfaro cultratus,1.2536,44.35,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,0.226019,3.792113
+14,Alfaro cultratus,0.8942,39.9,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,-0.111826,3.686376
+15,Alfaro cultratus,1.0897,42.58,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,0.085902,3.751385
+16,Alfaro cultratus,1.0921,42,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,0.088102,3.73767
+17,Alfaro cultratus,0.5306,46.21,,Costa Rica,Trib. to Rio Parismina,10.1996833333,-83.65873333333,,,,-0.633747,3.833196
+18,Alfaro cultratus,0.5396,34.59,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,-0.616927,3.543565
+19,Alfaro cultratus,0.8777,41.34,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,-0.13045,3.721831
+20,Alfaro cultratus,0.5153,35.59,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,-0.663006,3.572065
+21,Alfaro cultratus,1.0156,42.46,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,0.01548,3.748562
+22,Alfaro cultratus,0.8334,40.92,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,-0.182242,3.711619
+23,Alfaro cultratus,0.3797,31.84,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,-0.968374,3.460723
+24,Alfaro cultratus,0.365,32.15,,Costa Rica,Rio Chimurria,10.7274,-84.55823333333,,,,-1.007858,3.470412
+25,Alfaro cultratus,0.62,36.48,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-0.478036,3.596764
+26,Alfaro cultratus,0.2984,29.7,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-1.20932,3.391147
+27,Alfaro cultratus,0.3618,29.99,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-1.016664,3.400864
+28,Alfaro cultratus,0.1274,22.24,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-2.060424,3.101892
+29,Alfaro cultratus,0.1448,23.57,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-1.932402,3.159975
+30,Alfaro cultratus,0.097,22.54,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-2.333044,3.115292
+31,Alfaro cultratus,0.1005,22.61,,Costa Rica,Rio Venado,10.7274,-84.55823333333,,,,-2.297598,3.118392
+32,Alfaro cultratus,2.359,53.83,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.858238,3.985831
+33,Alfaro cultratus,1.6258,49.55,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.486,3.902982
+34,Alfaro cultratus,2.2771,53.81,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.822903,3.985459
+35,Alfaro cultratus,1.5997,49.08,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.469816,3.893452
+36,Alfaro cultratus,1.5477,48.84,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.43677,3.88855
+37,Alfaro cultratus,1.2707,46.95,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.239568,3.849083
+38,Alfaro cultratus,1.3416,48.75,,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,,0.293863,3.886705
+39,Alfaro cultratus,0.6252,37.45,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-0.469684,3.623007
+40,Alfaro cultratus,0.4651,34.88,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-0.765503,3.551914
+41,Alfaro cultratus,0.2561,30.31,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-1.362187,3.411478
+42,Alfaro cultratus,0.2332,29.07,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-1.455859,3.369707
+43,Alfaro cultratus,0.1895,28.57,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-1.663366,3.352357
+44,Alfaro cultratus,0.2065,29.09,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-1.577455,3.370394
+45,Alfaro cultratus,0.2055,29.41,,Costa Rica,Rio Sapoa,11.0443666667,-85.6159,,,,-1.582309,3.381335
+46,Alfaro cultratus,0.6855,37.78,,Costa Rica,Rio Carbon,9.62312,-82.8552,,,,-0.377607,3.63178
+47,Alfaro cultratus,0.0918,20.8,,Costa Rica,Rio Carbon,9.62312,-82.8552,,,,-2.388143,3.034953
+48,Alfaro cultratus,0.0591,19.92,,Costa Rica,Rio Carbon,9.62312,-82.8552,,,,-2.828524,2.991724
+49,Alfaro cultratus,0.2258,29.77,,Costa Rica,Rio Carbon,9.62312,-82.8552,,,,-1.488106,3.393501
+50,Alfaro cultratus,0.096,23.3,,Costa Rica,Rio Cano Grande,10.37278333,-84.278233333,,,,-2.343407,3.148453
+51,Alfaro cultratus,0.0465,19.77,,Costa Rica,Rio Cano Grande,10.37278333,-84.278233333,,,,-3.068303,2.984166
+52,Alfaro cultratus,0.4367,36.17,,Costa Rica,Rio Cano Grande,10.37278333,-84.278233333,,,,-0.828509,3.58823
+53,Alfaro cultratus,0.0736,21.05,,Costa Rica,Rio Cano Grande,10.37278333,-84.278233333,,,,-2.60911,3.046901
+54,Alfaro cultratus,0.0916,19.38,,Costa Rica,Rio Cano Grande,10.37278333,-84.278233333,,,,-2.390324,2.964242
+55,Alfaro cultratus,1.505,48.91,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,0.408793,3.889982
+56,Alfaro cultratus,0.6952,38.38,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,-0.363556,3.647536
+57,Alfaro cultratus,1.8508,49.31,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,0.615618,3.898127
+58,Alfaro cultratus,1.9045,50.62,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,0.64422,3.924347
+59,Alfaro cultratus,1.9339,50.61,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,0.659539,3.924149
+60,Alfaro cultratus,1.1071,43.87,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,0.101744,3.781231
+61,Alfaro cultratus,1.6288,46.98,,Costa Rica,Trib. to Rio Sarapiqui,10.5245166667,-84.031266666667,,,,0.487844,3.849722
+62,Alfaro cultratus,2.13,54.14,,Costa Rica,Quebrada Piecueca,10.3860666667,-84.57896666667,,,,0.756122,3.991573
+63,Alfaro cultratus,2.0581,53.33,,Costa Rica,Quebrada Piecueca,10.3860666667,-84.57896666667,,,,0.721783,3.976499
+64,Alfaro cultratus,1.4955,50.3,,Costa Rica,Quebrada Piecueca,10.3860666667,-84.57896666667,,,,0.402461,3.918005
+65,Alfaro cultratus,2.0393,52.51,,Costa Rica,Quebrada Piecueca,10.3860666667,-84.57896666667,,,,0.712607,3.961004
+66,Alfaro cultratus,0.3457,33.62,,Costa Rica,Quebrada Piecueca,10.3860666667,-84.57896666667,,,,-1.062184,3.515121
+67,Alfaro cultratus,0.3033,34.07,,Costa Rica,Quebrada Piecueca,10.3860666667,-84.57896666667,,,,-1.193033,3.528417
+68,Alfaro cultratus,1.639,50.54,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,0.494086,3.922765
+69,Alfaro cultratus,0.9425,44.16,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,-0.059219,3.787819
+70,Alfaro cultratus,1.5555,48.73,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,0.441797,3.886295
+71,Alfaro cultratus,2.3067,58.04,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,0.835818,4.061132
+72,Alfaro cultratus,0.6839,41.17,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,-0.379944,3.71771
+73,Alfaro cultratus,1.1085,46.21,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,0.103008,3.833196
+74,Alfaro cultratus,1.0609,45.87,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,0.059118,3.825811
+75,Alfaro cultratus,0.411,35.52,,Costa Rica,Rio Corinto,10.21185,-83.88646666667,,,,-0.889162,3.570096
+76,Alfaro cultratus,1.72,49.31,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,0.542324,3.898127
+77,Alfaro cultratus,0.632,38.27,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,-0.458866,3.644666
+78,Alfaro cultratus,0.6764,38.01,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,-0.390971,3.637849
+79,Alfaro cultratus,0.7227,39.65,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,-0.324761,3.680091
+80,Alfaro cultratus,0.7063,39.64,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,-0.347715,3.679839
+81,Alfaro cultratus,2.3707,55.77,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,0.863185,4.021236
+82,Alfaro cultratus,1.1897,45.07,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,0.173701,3.808217
+83,Alfaro cultratus,1.6658,51.5,,Costa Rica,Rio Salto,10.79823333,-85.0232666667,,,,0.510305,3.941582
+84,Alfaro cultratus,1.2933,45.23,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,0.257197,3.811761
+85,Alfaro cultratus,0.8316,39.94,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-0.184404,3.687378
+86,Alfaro cultratus,0.5917,36.38,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-0.524756,3.594019
+87,Alfaro cultratus,0.5574,37.58,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-0.584472,3.626472
+88,Alfaro cultratus,0.405,33.65,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-0.903868,3.516013
+89,Alfaro cultratus,0.3117,31.85,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-1.165714,3.461037
+90,Alfaro cultratus,0.251,30.64,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-1.382302,3.422306
+91,Alfaro cultratus,0.2683,30.27,,Costa Rica,Isla Grande,10.39301666667,-83.9681666667,,,,-1.31565,3.410157
+92,Alfaro cultratus,0.1812,24.54,,Costa Rica,Rio Celeste,10.73125,-84.88818,,,,-1.708154,3.200304
+93,Alfaro cultratus,0.1196,23.28,,Costa Rica,Rio Celeste,10.73125,-84.88818,,,,-2.123602,3.147595
+94,Alfaro cultratus,0.0599,17.47,,Costa Rica,Rio Celeste,10.73125,-84.88818,,,,-2.815079,2.860485
+95,Alfaro cultratus,1.378,48.38,,Nicaragua,Rio Mico,12.02057,-84.64513,,,,0.320633,3.879087
+96,Alfaro cultratus,1.355,47.84,,Nicaragua,Rio Mico,12.02057,-84.64513,,,,0.303801,3.867862
+97,Alfaro cultratus,0.9683,47.04,,Nicaragua,Rio Mico,12.02057,-84.64513,,,,-0.032213,3.850998
+98,Alfaro cultratus,0.0424,15.94,,Nicaragua,Rio Mico,12.02057,-84.64513,,,,-3.160607,2.768832
+99,Alfaro cultratus,0.7323,39.17,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.311565,3.667911
+100,Alfaro cultratus,0.6985,37.79,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.35882,3.632045
+101,Alfaro cultratus,0.6678,36.81,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.403767,3.60577
+102,Alfaro cultratus,0.4845,33.88,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.724638,3.522825
+103,Atherinella hubbsi,1.1953,53.12,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,0.178397,3.972554
+104,Atherinella hubbsi,1.0638,51.56,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,0.061847,3.942746
+105,Atherinella hubbsi,0.8232,45.12,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,-0.194556,3.809326
+106,Atherinella hubbsi,0.9672,49.24,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,-0.03335,3.896706
+107,Atherinella hubbsi,1.0048,51.81,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,0.004789,3.947583
+108,Atherinella hubbsi,1.1001,51.37,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,0.095401,3.939054
+109,Atherinella hubbsi,1.0896,49.8,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,0.085811,3.908015
+110,Atherinella hubbsi,0.5432,42.75,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,-0.610278,3.755369
+111,Atherinella hubbsi,1.3047,57,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,0.265973,4.043051
+112,Atherinella hubbsi,0.9358,48.6,,Nicaragua,Rio Tipitapa,12.20267,-86.10208,,,,-0.066354,3.883624
+113,Atherinella sp.,0.2509,32.82,,Nicaragua,Rio Malacatoya,12.3266111111111,-85.9555277777778,,,,-1.382701,3.491038
+114,Atherinella hubbsi,0.6459,43.67,,Nicaragua,Teustepe,12.41159,-85.79172,,,,-0.437111,3.776661
+115,Atherinella hubbsi,0.8375,50.89,,Nicaragua,Lago Apoyo,11.93698,-86.052,,,,-0.177334,3.929666
+116,Atherinella hubbsi,1.198,57.43,,Nicaragua,Lago Apoyo,11.93698,-86.052,,,,0.180653,4.050567
+279,Parachromis dovii,0.1155,17.37,21.68,Costa Rica,"Unnamed trib. to Río Tempisque drainage approx. 2 km S of Belén, Nicoya Peninsula",10.39076,-85.59045,,,,-2.158485,2.854745
+282,Parachromis dovii,2.65,48.35,60.12,Nicaragua,Unnamed trib. to Lago Managua between Estelí and León,13.22797,-86.55272,,,,0.97456,3.878466
+288,Parachromis dovii,0.039,12.87,15.24,Nicaragua,Lago Nicaragua at San Miguelito,11.40046,-84.90489,,,,-3.244194,2.554899
+289,Parachromis dovii,0.045,13.22,17.04,Nicaragua,Lago Nicaragua at San Miguelito,11.40046,-84.90489,,,,-3.101093,2.581731
+290,Parachromis dovii,15.822,82.67,106.98,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,2.761401,4.414857
+291,Parachromis dovii,8.94,68.4,87.82,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,2.190536,4.225373
+292,Parachromis dovii,5.405,58.43,74.77,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,1.687324,4.067829
+293,Parachromis dovii,1.584,39.49,50.39,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,0.459953,3.676047
+294,Parachromis dovii,23.691,96.8,121.27,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,3.165095,4.572647
+295,Parachromis dovii,3.041,48.52,61.75,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,1.112186,3.881976
+296,Parachromis dovii,1.447,36.41,47.19,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,0.369492,3.594843
+297,Parachromis dovii,0.583,28.1,36.3,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,-0.539568,3.33577
+298,Parachromis dovii,0.506,26.76,34.91,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,-0.681219,3.286908
+299,Parachromis dovii,2.012,42.02,54.09,Costa Rica,"Río Liberia at outskirts of Liberia, Costa Rica",10.62745,-85.43412,,,,0.699129,3.738146
+300,Parachromis dovii,13.328,78.84,102.7,Nicaragua,Unnamed trib./headwater of Río Mico NE of San Pedro de Lovago,12.1363,-85.04597,,,,2.589867,4.36742
+301,Parachromis dovii,2.664,45.82,58.42,Costa Rica,Río Cabuyo at unnamed province rd to the Reserva Biologica Lomas Bardudal,10.48961,-85.38555,,,,0.979829,3.824721
+302,Parachromis dovii,14.281,77.26,101.9,Costa Rica,"Río Portrero at CA1 SE of Liberia, Nicoya Peninsula",10.53584,-85.31044,,,,2.65893,4.347176
+303,Parachromis dovii,1.593,39.01,50.18,Costa Rica,"Río Portrero at CA1 SE of Liberia, Nicoya Peninsula",10.53584,-85.31044,,,,0.465619,3.663818
+304,Parachromis dovii,2.096,41.58,53.54,Costa Rica,"Río Portrero at CA1 SE of Liberia, Nicoya Peninsula",10.53584,-85.31044,,,,0.740031,3.727619
+305,Parachromis dovii,2.525,42.49,56.17,Costa Rica,Rio Toro,10.01678,-83.21022,,,,0.926241,3.749269
+306,Parachromis dovii,2.809,44.31,59.02,Costa Rica,Rio Toro,10.01678,-83.21022,,,,1.032829,3.79121
+307,Parachromis dovii,6.26,66.185,86.44,Costa Rica,Rio Marole,10.05828,-85.26202,,,,1.83418,4.192454
+280,Parachromis managuensis,4.643,55.51,72.8,Nicaragua,Unnamed trib. to Lago Managua between Estelí and León,13.22797,-86.55272,,,,1.535361,4.016563
+281,Parachromis managuensis,2.369,43.36,57.25,Nicaragua,Unnamed trib. to Lago Managua between Estelí and León,13.22797,-86.55272,,,,0.862468,3.769537
+283,Parachromis managuensis,2.717,45.62,59.47,Nicaragua,Unnamed trib. to Lago Managua between Estelí and León,13.22797,-86.55272,,,,0.999528,3.820346
+284,Parachromis managuensis,1.318,36.81,49.36,Nicaragua,Unnamed trib. to Lago Managua between Estelí and León,13.22797,-86.55272,,,,0.276115,3.60577
+285,Parachromis managuensis,2.381,45.15,57.8,Nicaragua,Unnamed trib. to Lago Managua between Estelí and León,13.22797,-86.55272,,,,0.867521,3.80999
+286,Parachromis managuensis,0.926,32.37,42,Costa Rica,"Río Tempisque on road between Guardia and Comunidad, Nicoya Peninsula",10.5722,-85.58477,,,,-0.076881,3.477232
+287,Parachromis managuensis,4.822,54.36,71.71,Costa Rica,"Río Tempisque on road between Guardia and Comunidad, Nicoya Peninsula",10.5722,-85.58477,,,,1.573189,3.995629
+117,Phallichthys amates,2.2603,42.27,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,0.815498,3.744078
+118,Phallichthys amates,1.289,36.99,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,0.253867,3.610648
+119,Phallichthys amates,0.5903,29.33,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.527124,3.378611
+120,Phallichthys amates,0.415,25.55,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.879477,3.240637
+121,Phallichthys amates,0.469,27.1,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.757153,3.299534
+122,Phallichthys amates,0.1517,21.57,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-1.88585,3.071303
+123,Phallichthys amates,0.3188,25.83,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-1.143191,3.251537
+124,Phallichthys amates,0.5244,29.15,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-0.645501,3.372455
+125,Phallichthys amates,0.1115,20.9,,Nicaragua,Unnamed trib.,11.73855,-84.51068,,,,-2.193731,3.039749
+126,Phallichthys amates,0.1389,17.92,,Nicaragua,–,11.82544,-84.60611,,,,-1.974001,2.885917
+127,Phallichthys amates,0.0604,15.96,,Nicaragua,–,11.82544,-84.60611,,,,-2.806766,2.770086
+128,Phallichthys amates,0.1093,17.43,,Nicaragua,–,12.0034,-85.18153,,,,-2.213659,2.858193
+129,Phallichthys amates,0.895,32.4,,Nicaragua,–,12.0034,-85.18153,,,,-0.110932,3.478158
+130,Phallichthys amates,0.1969,21.42,,Nicaragua,Rio Rama (Unnamed trib. S of Nueva Guinea),11.68127,-84.46019,,,,-1.625059,3.064325
+131,Phallichthys amates,1.734,40.88,,Nicaragua,–,11.74923,-84.55819,,,,0.550431,3.710641
+132,Phallichthys amates,1.4249,39.43,48.34,Costa Rica,Upper Rio Colorado,,,,,,0.354102,3.674527
+133,Phallichthys amates,0.5968,31.99,38.79,Costa Rica,Upper Rio Colorado,,,,,,-0.516173,3.465423
+134,Phallichthys amates,0.499,29.37,,Costa Rica,Upper Rio Colorado,,,,,,-0.695149,3.379974
+135,Phallichthys amates,1.4641,41.25,50.39,Costa Rica,Upper Rio Colorado,,,,,,0.381241,3.719651
+136,Phallichthys amates,0.5996,30.41,38.08,Costa Rica,Upper Rio Colorado,,,,,,-0.511493,3.414772
+137,Phallichthys amates,0.4281,27.87,33.73,Costa Rica,Upper Rio Colorado,,,,,,-0.848398,3.327551
+138,Phallichthys amates,0.3076,24.35,34.63,Costa Rica,Unnamed trib. to Río Zapote near Bijagua (S of Bijagua),10.73142,-85.05535,,,,-1.178955,3.192532
+139,Phallichthys amates,0.8434,30.57,42.2,Costa Rica,Unnamed trib. to Río Zapote near Bijagua (S of Bijagua),10.73142,-85.05535,,,,-0.170314,3.420019
+140,Phallichthys amates,0.5653,30.55,41.22,Costa Rica,Unnamed trib. to Río Zapote near Bijagua (S of Bijagua),10.73142,-85.05535,,,,-0.570399,3.419365
+141,Phallichthys amates,0.4861,28.44,39.4,Costa Rica,Unnamed trib. to Río Zapote near Bijagua (S of Bijagua),10.73142,-85.05535,,,,-0.721341,3.347797
+142,Phallichthys amates,2.3576,40.86,56.2,Costa Rica,"Trib. to Río Sarapiquí on road ~2 km off end-CR Rd. 505, approximately 9 km northwest of Puerto Viejo de Sarapiquí",10.5245166667,-84.031266666667,,,,0.857644,3.710152
+143,Phallichthys amates,0.9254,30.32,42.22,Costa Rica,"Trib. to Río Sarapiquí on road ~2 km off end-CR Rd. 505, approximately 9 km northwest of Puerto Viejo de Sarapiquí",10.5245166667,-84.031266666667,,,,-0.077529,3.411808
+144,Phallichthys amates,0.481,26.26,35.82,Costa Rica,"Trib. to Río Sarapiquí on road ~2 km off end-CR Rd. 505, approximately 9 km northwest of Puerto Viejo de Sarapiquí",10.5245166667,-84.031266666667,,,,-0.731888,3.268047
+145,Phallichthys amates,0.4743,28.36,37.83,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-0.745915,3.34498
+146,Phallichthys amates,1.003,33.53,43.62,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,0.002996,3.512441
+147,Phallichthys amates,0.6594,28.01,38.53,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-0.416425,3.332562
+148,Phallichthys amates,0.5942,28.8,39.11,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-0.520539,3.360375
+149,Phallichthys amates,0.2309,23.52,30.21,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-1.465771,3.157851
+150,Phallichthys amates,0.3498,24.71,32.94,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-1.050394,3.207208
+151,Phallichthys amates,0.1957,20.44,27.55,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-1.631172,3.017494
+152,Phallichthys amates,0.2886,23.42,31.22,Costa Rica,Trib. to Rio Agua Caliente southwest of Volcan Arenal,10.43505,-84.7234,,,,-1.242714,3.15359
+153,Phallichthys amates,0.5622,28.18,37.27,Costa Rica,"Upper Río Tortuguero 0.5 km off of CR 249, 1 km north of San Rafael and approximately 5 km north of Guapiles",10.25942,-83.8122,,,,-0.575898,3.338613
+154,Phallichthys amates,0.3532,24.85,33.37,Costa Rica,"Upper Río Tortuguero 0.5 km off of CR 249, 1 km north of San Rafael and approximately 5 km north of Guapiles",10.25942,-83.8122,,,,-1.040721,3.212858
+155,Phallichthys amates,0.2392,21.43,28.88,Costa Rica,"Upper Río Tortuguero 0.5 km off of CR 249, 1 km north of San Rafael and approximately 5 km north of Guapiles",10.25942,-83.8122,,,,-1.430455,3.064792
+156,Phallichthys amates,0.0182,11.11,,Costa Rica,"Río Barbilla (major trib. to Río Matina) at CR Rd 805 (dirt road) just west of B-Line, 0.5 km from CR Hwy 32",10.04416,-83.33383,,,,-4.006334,2.407846
+157,Phallichthys amates,0.0369,11.27,15.81,Costa Rica,"Río Barbilla (major trib. to Río Matina) at CR Rd 805 (dirt road) just west of B-Line, 0.5 km from CR Hwy 32",10.04416,-83.33383,,,,-3.299544,2.422144
+158,Phallichthys amates,0.4569,27.15,36.11,Costa Rica,Trib. to Rio Sixaola,9.620933333,-82.85768333333,,,male,-0.783291,3.301377
+159,Phallichthys amates,0.3343,24.85,34.62,Costa Rica,Trib. to Río Sixaola,9.620933333,-82.85768333333,,,,-1.095716,3.212858
+160,Phallichthys amates,0.2672,22.72,,Costa Rica,Trib. to Río Sixaola,9.620933333,-82.85768333333,,,male,-1.319758,3.123246
+161,Poecilia gillii,1.532,38.06,,Nicaragua,Rio Caracol,12.35116,-85.8887,,,,0.426574,3.639164
+162,Poecilia gillii,1.2,35.4,,Nicaragua,Rio Ochomogo,11.65664,-85.97319,,,,0.182322,3.566712
+163,Poecilia gillii,0.8763,32.86,,Nicaragua,Rio Ochomogo,11.65664,-85.97319,,,,-0.132047,3.492256
+164,Poecilia gillii,0.7918,32.5,,Nicaragua,Rio Ochomogo,11.65664,-85.97319,,,,-0.233446,3.48124
+165,Poecilia gillii,0.652,30.32,,Nicaragua,Rio Ochomogo,11.65664,-85.97319,,,,-0.427711,3.411808
+166,Poecilia gillii,2.41,49.6,,Nicaragua,Rio Malacatoya,12.32661,-85.95553,,,,0.879627,3.903991
+167,Poecilia gillii,1.9262,43.47,,Nicaragua,Rio Malacatoya,12.32661,-85.95553,,,,0.655549,3.772071
+168,Poecilia gillii,1.0609,37.39,,Nicaragua,Rio Malacatoya,12.32661,-85.95553,,,,0.059118,3.621403
+169,Poecilia gillii,1.5395,38.34,,Nicaragua,Rio La Conquista,11.72472,-86.18469,,,,0.431458,3.646494
+170,Poecilia gillii,2.2283,40.08,,Nicaragua,Rio La Conquista,11.72472,-86.18469,red fin ,,female,0.801239,3.690877
+171,Poecilia gillii,2.0623,43.59,,Nicaragua,Rio La Conquista,11.72472,-86.18469,plain fin (no red),,,0.723822,3.774828
+172,Poecilia gillii,1.6012,39.79,,Nicaragua,Rio La Conquista,11.72472,-86.18469,red fin ,,female,0.470753,3.683616
+173,Poecilia gillii,2.0655,43.35,,Nicaragua,Rio La Conquista,11.72472,-86.18469,plain fin (no red),,,0.725372,3.769307
+174,Poecilia gillii,1.3241,37.93,,Nicaragua,Rio La Conquista,11.72472,-86.18469,red fin,,female,0.280733,3.635742
+175,Poecilia gillii,1.7297,39.1,,Nicaragua,Rio La Conquista,11.72472,-86.18469,plain fin (no red),,,0.547948,3.666122
+176,Poecilia gillii,0.7855,32.67,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,-0.241435,3.486457
+177,Poecilia gillii,0.7602,30.96,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,-0.274174,3.432696
+178,Poecilia gillii,1.542,40.92,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,0.43308,3.711619
+179,Poecilia gillii,0.6251,29.46,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,-0.469844,3.383033
+180,Poecilia gillii,0.2379,23.98,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,-1.435905,3.17722
+181,Poecilia gillii,1.0409,37.16,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,0.040086,3.615233
+182,Poecilia gillii,0.4238,28.18,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,,-0.858494,3.338613
+183,Poecilia gillii,0.2271,22.2,,Nicaragua,Teustepe,12.41159,-85.79172,plain fin (no red),dot fin,female,-1.482365,3.100092
+184,Poecilia gillii,0.1093,19.33,,Panama,Río Frijolito,,,,,,-2.213659,2.961658
+185,Poecilia gillii,2.02,44.49,,Panama,Río Frijolito,,,,,,0.703098,3.795264
+186,Poecilia gillii,0.234,25.84,,Panama,Río Frijolito,,,,,,-1.452434,3.251924
+187,Poecilia gillii,0.6127,34.05,,Panama,Río Frijolito,,,,,,-0.48988,3.52783
+188,Poecilia gillii,0.094,20.03,,Panama,Río Frijolito,,,,,,-2.36446,2.997231
+189,Poecilia gillii,0.0946,16.7,,Panama,Río Antón,8.399295,-80.258427,,,,-2.358098,2.815409
+190,Poecilia gillii,0.5496,31.59,,Panama,Río Antón,8.399295,-80.258427,,,,-0.598565,3.452841
+191,Poecilia gillii,0.1307,22.07,,Panama,Río Antón,8.399295,-80.258427,,,,-2.034851,3.094219
+192,Poecilia gillii,0.1654,22.97,,Panama,Río Antón,8.399295,-80.258427,,,,-1.799388,3.134189
+193,Poecilia gillii,0.1778,23.4,,Panama,Río Antón,8.399295,-80.258427,,,,-1.727096,3.152736
+194,Poecilia gillii,0.2234,26.13,,Panama,Río Antón,8.399295,-80.258427,,,,-1.498791,3.263084
+195,Poecilia gillii,0.0829,19.7,,Panama,Río Antón,8.399295,-80.258427,,,,-2.49012,2.980619
+196,Poecilia gillii,0.199,21.59,,Panama,Río Antón,8.399295,-80.258427,,,,-1.61445,3.07223
+197,Poecilia gillii,1.9075,44.28,,Panama,Río Mendoza (upper),8.399295,-80.258427,,,,0.645793,3.790533
+198,Poecilia gillii,2.6285,50.94,,Panama,Río Mendoza (upper),,,,,,0.966413,3.930648
+199,Poecilia gillii,1.7514,41.77,,Panama,Río Mendoza (upper),,,,,,0.560415,3.732178
+200,Poecilia gillii,2.008,43.64,,Panama,Río Mendoza (upper),,,,,,0.697139,3.775974
+201,Poecilia gillii,1.8807,43.42,,Panama,Río Mendoza (upper),,,,,,0.631644,3.77092
+202,Poecilia gillii,2.0646,45.1,,Panama,Río Mendoza (upper),,,,,,0.724937,3.808882
+203,Poecilia gillii,3.51,53.91,,Panama,Río Mendoza (upper),,,,,,1.255616,3.987316
+204,Poecilia gillii,0.7132,32.85,,Panama,Río Mendoza (upper),,,,,,-0.337993,3.491952
+205,Poecilia gillii,1.2194,39.5,,Panama,Río Mendoza (upper),,,,,,0.198359,3.676301
+206,Poecilia gillii,0.1596,23.8,,Panama,Río Mendoza (upper),,,,,,-1.835085,3.169686
+207,Poecilia gillii,0.229,25.5,,Panama,Río Mendoza (upper),,,,,,-1.474033,3.238678
+208,Poecilia sp.,2.0116,43.46,,Nicaragua,Teustepe,12.41159,-85.79172,,,,0.69893,3.771841
+209,Poecilia sp.,0.8895,36.38,,Nicaragua,Unnamed trib. to Rio Grande de Matagalpa at Chaguitillo,12.88566,-86.07867,,,,-0.117096,3.594019
+210,Priapichthys annectens,0.0585,18.24,,Costa Rica,Rio Belsas,10.17295,-84.49815,,,,-2.838729,2.903617
+211,Priapichthys annectens,0.0723,19.16,,Costa Rica,Rio Belsas,10.17295,-84.49815,,,,-2.626931,2.952825
+212,Priapichthys annectens,0.0445,15.96,,Costa Rica,Rio Belsas,10.17295,-84.49815,,,,-3.112266,2.770086
+213,Priapichthys annectens,0.085,18.21,,Costa Rica,Rio Belsas,10.17295,-84.49815,,,,-2.465104,2.901971
+214,Priapichthys annectens,0.0696,17.4,,Costa Rica,Rio Belsas,10.17295,-84.49815,,,,-2.664991,2.85647
+215,Priapichthys annectens,0.078,18.77,,Costa Rica,Rio Belsas,10.17295,-84.49815,,,,-2.551046,2.93226
+216,Priapichthys annectens,0.1137,17.33,22.36,Costa Rica,–,9.620933333,-82.85768333333,,,female,-2.174192,2.852439
+217,Priapichthys annectens,0.4343,26.99,34.22,Costa Rica,La Vuelta del Borracho,10.42743,-84.75225,,,,-0.83402,3.295466
+218,Priapichthys annectens,0.6309,31.03,38.79,Costa Rica,Edwin's irrigation canal,,,,,,-0.460608,3.434954
+219,Priapichthys annectens,0.2964,24.25,31.43,Costa Rica,Edwin's irrigation canal,,,,,,-1.216045,3.188417
+220,Priapichthys annectens,0.5461,28.3,35.96,Costa Rica,Edwin's irrigation canal,,,,,,-0.604953,3.342862
+221,Priapichthys annectens,0.2074,21.12,26.81,Costa Rica,Edwin's irrigation canal,,,,,,-1.573106,3.05022
+222,Priapichthys annectens,0.1655,19.91,25.89,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-1.798784,2.991222
+223,Priapichthys annectens,0.1298,19.65,25.48,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-2.04176,2.978077
+224,Priapichthys annectens,0.1513,19.95,25.06,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-1.888491,2.993229
+225,Priapichthys annectens,0.1505,19.58,25.2,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-1.893792,2.974509
+226,Priapichthys annectens,0.0543,14.94,19.52,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-2.913231,2.704042
+227,Priapichthys annectens,0.9427,38.35,47.78,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,,-0.059007,3.646755
+228,Priapichthys annectens,2.4172,42.23,53.1,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,,0.88261,3.743131
+229,Priapichthys annectens,0.6799,36.33,45.86,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,,-0.38581,3.592644
+230,Priapichthys annectens,0.3949,29.41,37.73,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,,-0.929123,3.381335
+231,Priapichthys annectens,2.5573,51.94,64.94,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,,0.938952,3.950089
+232,Priapichthys annectens,0.4773,32.49,41.3,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,,-0.73961,3.480932
+233,Priapichthys annectens,1.9907,45.93,57.59,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,female,0.688486,3.827118
+234,Priapichthys annectens,0.4323,29.11,37.665,Nicaragua,"Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia",13.22058,-85.72626,,,female,-0.838635,3.371082
+235,Priapichthys annectens,0.1954,19.78,25.65,Costa Rica,Trib. to Rio Sixaola,9.62427,-82.83273,,,male,-1.632707,2.984671
+236,Priapichthys annectens,0.1986,19.41,25.37,Costa Rica,Trib. to Rio Sixaola,9.62427,-82.83273,,,male,-1.616463,2.965788
+237,Priapichthys annectens,0.2054,19.33,25.26,Costa Rica,Trib. to Rio Sixaola,9.62427,-82.83273,,,male,-1.582796,2.961658
+238,Priapichthys annectens,0.5446,30,37.88,Costa Rica,Trib. to Rio Sixaola,9.62427,-82.83273,,,male,-0.607704,3.401197
+239,Priapichthys annectens,0.1671,20.04,25.1,Costa Rica,Trib. to Rio Sixaola,9.62427,-82.83273,,,male,-1.789163,2.99773
+240,Priapichthys annectens,0.4336,25.48,32.73,Costa Rica,Quebrada La Palma,10.533087,-85.117426,,,male,-0.835633,3.237894
+241,Priapichthys annectens,0.1489,20.5,25.25,Costa Rica,Rio Corinto,10.2112333333,-83.88523333333,,,female,-1.90448,3.020425
+242,Priapichthys annectens,0.1232,18.83,24.03,Costa Rica,Rio Corinto,10.2112333333,-83.88523333333,,,female,-2.093946,2.935451
+243,Priapichthys annectens,0.1646,19.88,23.99,Costa Rica,Rio Corinto,10.2112333333,-83.88523333333,,,female,-1.804237,2.989714
+244,Priapichthys annectens,0.167,20.25,25.85,Costa Rica,Rio Corinto,10.2112333333,-83.88523333333,,,female,-1.789761,3.008155
+245,Priapichthys annectens,0.0957,17.09,21.99,Costa Rica,Rio Corinto,10.2112333333,-83.88523333333,,,female,-2.346537,2.838493
+246,Priapichthys annectens,0.5446,30.06,,Costa Rica,Rio Esquivalto,10.68718,-85.0667,,,female,-0.607704,3.403195
+247,Priapichthys annectens,0.4009,26.49,33.44,Costa Rica,Rio Bijagua,10.73145,-85.0553,,,male,-0.914043,3.276767
+248,Priapichthys annectens,0.458,28.28,35.38,Costa Rica,Rio Bijagua,10.73145,-85.0553,,,male,-0.780886,3.342155
+249,Priapichthys annectens,0.2568,25.69,30.58,Costa Rica,Rio Bijagua,10.73145,-85.0553,,,male,-1.359458,3.246102
+250,Priapichthys annectens,0.1274,19.37,24.85,Costa Rica,Lake Arenal,,,,,female,-2.060424,2.963725
+251,Priapichthys annectens,0.0335,11.98,14.61,Costa Rica,Lake Arenal,,,,,female,-3.39621,2.483239
+252,Priapichthys annectens,0.6453,31.84,41.73,Costa Rica,Quebrada Peru?,10.7035333333333,-85.0800166666667,,,male,-0.43804,3.460723
+253,Priapichthys annectens,0.5929,29.95,39.54,Costa Rica,Quebrada Peru?,10.7035333333333,-85.0800166666667,,,male,-0.52273,3.399529
+254,Priapichthys annectens,0.407,27.17,34.43,Costa Rica,Trib. to Rio Parismina,10.197716666667,-83.652066666667,,,male,-0.898942,3.302113
+255,Priapichthys annectens,0.2882,23.48,30.35,Costa Rica,Trib. to Rio Parismina,10.197716666667,-83.652066666667,,,male,-1.244101,3.156149
+256,Priapichthys annectens,0.2784,23.93,31.07,Costa Rica,Trib. to Rio Parismina,10.197716666667,-83.652066666667,,,male,-1.278696,3.175133
+257,Priapichthys annectens,0.2107,21.03,26.43,Costa Rica,Trib. to Rio Parismina,10.197716666667,-83.652066666667,,,male,-1.55732,3.04595
+258,Priapichthys annectens,0.3649,25.55,32.8,Costa Rica,Trib. to Rio Parismina,10.197716666667,-83.652066666667,,,female,-1.008132,3.240637
+259,Priapichthys annectens,0.1274,19.11,24.39,Costa Rica,Rio Herediana,10.124166666667,-83.5561666667,,,female,-2.060424,2.950212
+260,Priapichthys annectens,0.9237,32.6,42.07,Costa Rica,Trib. to Río Sixaola,9.620933333,-82.85768333333,,,female,-0.079368,3.484312
+261,Priapichthys annectens,0.2811,23.46,29.685,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-1.269045,3.155297
+262,Priapichthys annectens,0.2686,23.4,30.23,Costa Rica,Brazo del Sucio,10.21872,-83.90466,,,,-1.314532,3.152736
+263,Priapichthys annectens,0.8455,32.34,41.21,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-0.167827,3.476305
+264,Priapichthys annectens,0.3568,25.73,33.65,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.03058,3.247658
+265,Priapichthys annectens,0.2905,24.18,30.58,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.236152,3.185526
+266,Priapichthys annectens,0.257,23.42,29.95,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.358679,3.15359
+267,Priapichthys annectens,0.1931,21.69,28.14,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.644547,3.076851
+268,Priapichthys annectens,0.2871,23.54,29.94,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.247925,3.158701
+269,Priapichthys annectens,0.2983,23.64,30.49,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.209656,3.16294
+270,Priapichthys annectens,0.1767,20.18,26.33,Costa Rica,"Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia",11.0192,-85.35766,,,,-1.733302,3.004692
+271,Priapichthys annectens,0.5875,30.21,39.39,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,-0.531879,3.408173
+272,Priapichthys annectens,1.9235,44.3,55.87,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,0.654146,3.790985
+273,Priapichthys annectens,2.0807,43.5,55.4,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,0.732704,3.772761
+274,Priapichthys annectens,1.4831,38.98,49.94,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,0.394134,3.663049
+275,Priapichthys annectens,0.3678,26.23,33.76,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,-1.000216,3.266904
+276,Priapichthys annectens,1.0226,36.28,46.7,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,0.022348,3.591267
+277,Priapichthys annectens,1.1119,37.63,47,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,0.10607,3.627802
+278,Priapichthys annectens,0.4485,28.16,36.41,Costa Rica,"Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras",10.7697166666667,-85.1871166666667,,,,-0.801847,3.337903

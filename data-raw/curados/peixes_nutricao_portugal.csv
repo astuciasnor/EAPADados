@@ -1,0 +1,41 @@
+id_base,nome_comum,nome_cientifico,cluster_autores,perfil_nutricional_autores,energia_kcal_100g,proteina_g_100g,lipideos_g_100g,umidade_g_100g,cinzas_g_100g,sfa_g_100g,mufa_g_100g,pufa_g_100g,epa_g_100g,dha_g_100g,sodio_mg_100g,potassio_mg_100g,calcio_mg_100g,fosforo_mg_100g,magnesio_mg_100g,ferro_mg_100g,zinco_mg_100g
+841,Alfonsino,Beryx splendens,0,magros,80,19,0.4,79.2,1.1,0.1,0.1,0.1,0.12,0.24,72,320,14,210,32,0.2,0.4
+893,Anglerfish/Monkfish,Lophius piscatorius,0,magros,73,17.9,0.2,80.4,1.1,0,0,0.1,0,0,86,330,7,210,27,0.2,0.5
+879,Atlantic Bonito,Sarda sarda,2,gordos,181,19,11.7,67.1,1.3,3.1,3.8,3.5,0.28,0.792,76,370,56,270,30,0.1,2.7
+802,Atlantic Cod,Gadus morhua,0,magros,76,17.8,0.5,80,1.4,0.1,0.1,0.2,0.07,0.17,65,360,15,200,26,0.3,0.5
+817,Atlantic Horse Mackerel,Trachurus trachurus,2,gordos,105,19.7,2.9,75.6,1.4,0.7,0.8,0.9,0.434,0.796,80,400,69,260,33,1.2,1.2
+820,Atlantic Mackerel,Scomber scombrus,2,gordos,202,20.3,13.4,64.3,1.4,3.6,3.7,4.7,1.8,2.8,78,360,39,280,37,1.1,2.2
+876,Atlantic Salmon,Salmo salar,2,gordos,262,16.2,21.9,60.5,1.3,4.2,10,5.1,0.59,0.82,38,300,12,210,23,0.5,0.5
+859,Black Scabbardfish,Aphanopus carbo,0,magros,88,15.7,2.8,79.7,1.2,0.5,1.6,0.2,0.12,0.24,140,330,14,180,29,0.1,0.5
+853,Blackspot Seabream,Pagellus bogaraveo or Pagrus spp.,0,magros,80,18.5,0.7,79.6,1.1,0.1,0.1,0.2,0.6,0.9,81,320,12,180,28,0.5,0.8
+823,Blue Jack Mackerel,Trachurus picturatus,2,gordos,105,19.7,2.9,75.6,1.4,0.7,0.8,0.9,0.509,0.932,80,400,69,260,33,1.2,1.2
+848,Blue Ling,Molva dypterygia,0,magros,70,17.2,0.1,81.7,1,0,0,0.1,0,0,120,260,25,180,25,0.2,0.7
+2120000014,Bream,"Beryx decadactylus, Alfonsino",0,magros,80,18.3,0.7,79,1.25,0.1,0.1,0.2,0.2,0.4,61,320,30,190,28,0.8,0.8
+865,Chilean Hake,Merluccius gayi,0,magros,86,18,1.5,78.7,1.3,0.3,0.4,0.4,0.042,0.089,85,380,43,200,26,0.3,0.5
+850,Common Dentex,Dentex dentex,0,magros,79,19.4,0.2,78.5,1.3,0,0,0.1,0.12,0.24,65,450,7,260,36,0.7,0.7
+815,Dogfish,Scyliorhinus spp.,0,magros,82,20,0.2,79,1.1,0,0,0.1,0.4,1,170,290,14,190,32,0.1,0.3
+875,European Conger,Conger conger,0,magros,109,17.7,4.2,76.4,1,1.2,2.1,0.8,0.4,0.6,84,340,130,220,28,0.2,1.1
+831,European Eel,Anguilla anguilla,1,atipicos,303,13.4,27.7,57.4,1.2,8.6,2.4,9.4,2.2,3.5,77,180,140,250,16,0.5,2.5
+868,European Hake,Merluccius merluccius,0,magros,75,17,0.8,81.1,1.1,0.1,0.1,0.3,0.042,0.089,69,410,15,220,26,0.5,0.7
+891,European Plaice,Pleuronectes platessa,0,magros,90,19,1.6,78.2,1,0.3,0.4,0.4,0.1,0.09,110,230,54,170,29,0.4,0.6
+882,European Sardine (fat grade),Sardina pilchardus,2,gordos,221,18.4,16.4,63.4,1.7,4.7,4,5.6,2.03,2.52,65,370,72,310,31,1,1.6
+885,European Sardine (semi-fat grade),Sardina pilchardus,2,gordos,158,18.9,9.1,68.9,1.6,2.5,2.2,3.3,2.03,2.52,65,400,70,300,29,1.7,1.7
+871,European Seabass,Dicentrarchus labrax,0,magros,106,18.5,3.5,71.8,1.7,0.8,0.9,0.8,0.3,0.5,95,350,52,230,38,0.4,1.2
+800,Forkbeard,Phycis phycis,0,magros,70,17.2,0.1,81.5,1.1,0,0,0,0.042,0.089,63,360,11,230,28,0.2,0.5
+899,Grouper,Epinephelus spp.,0,magros,95,20.5,1.4,76.5,1.4,0.3,0.3,0.4,0.027,0.22,130,300,18,160,31,0.6,0.5
+966,Hake,Merluccius spp.,0,magros,83,17.6,1.4,80,1.3,0.2,0.4,0.4,0.042,0.089,100,360,31,190,31,0.3,0.6
+1900000101,Lamprey,Petromyzon marinus,1,atipicos,314,16.7,27.4,54.3,1.55,5.8,11.8,6,0.28574,0.517426,350,180,7.5,190,15,4.1,2.2
+826,Meagre,Argyrosomus regius,0,magros,94,20.4,1.4,76.7,1.2,0.3,0.5,0.2,0.12,0.24,56,430,13,230,31,0.3,0.5
+2120000015,Pouting,Trisopterus luscus,0,magros,82,19,0.6,78.8,1.22,0.1,0.1,0.2,0.12,0.24,68,530,25,80,24,0.6,0.2
+905,Rainbow Trout,Oncorhynchus mykiss,0,magros,92,17.8,2.3,78,1.3,0.5,0.5,0.9,0.6,1.8,41,400,20,250,24,0.2,0.6
+870,Ray,Raja spp.,0,magros,58,14.1,0.2,77.6,1.9,0,0,0.1,0,0,220,260,160,320,28,0.3,0.8
+2120000013,Red Mullet,Mullus barbatus,0,magros,136,21.7,5.5,71.6,1.36,0.7,4,0.3,0.217,0.108,96,410,23,180,33,0.4,0.4
+837,Red Seabream,Pagellus erythrinus,0,magros,100,18.8,2.7,76.8,1.5,0.7,0.8,0.8,0.6,0.9,100,370,7,260,32,0.4,0.7
+902,Redfish,Helicolenus dactylopterus,0,magros,101,18.6,2.9,77.3,1.2,0.5,0.9,0.5,0.3,0.3,78,310,15,200,29,0.6,0.6
+1920000019,Seabream,Pagellus bogaraveo,0,magros,102,19.5,2.7,75.5,1.4,0.7,0.8,0.7,0.6,0.9,120,400,15,250,40,0.4,0.9
+862,Shallow-water Cape Hake,Merluccius capensis,0,magros,81,17.2,1.3,81,1.3,0.2,0.4,0.4,0.042,0.089,120,330,20,180,37,0.3,0.6
+856,Silver Scabbardfish,Lepidopus caudatus,0,magros,117,20.3,4,74.4,1.3,1,1.7,0.8,0.12,0.24,77,250,16,180,26,0.4,0.6
+845,Sole,Solea solea,0,magros,82,20.1,0.2,78.1,1.4,0,0,0.1,0.137,0.108,88,390,21,220,33,0.3,0.6
+834,Swordfish,Xiphias gladius,0,magros,97,17.8,2.9,77.5,1.3,0.7,1.2,0.5,0.108,0.648,72,390,5,260,30,0.6,0.9
+811,Tuna,Thunnus spp,2,gordos,141,24.1,4.9,68.7,1.5,1.7,1.7,0.8,0.283,0.89,45,360,4,260,37,2.2,1.5
+896,Wreckfish,Polyprion americanus,0,magros,132,17.9,6.7,74.4,1.2,2,2.2,0.9,0.12,0.24,110,290,8,170,27,0.4,0.7
