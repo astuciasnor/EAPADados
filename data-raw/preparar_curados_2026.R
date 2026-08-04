@@ -208,4 +208,52 @@ stopifnot(nrow(idades_savel_repetibilidade) == 53,
           ncol(idades_savel_repetibilidade) == 8)
 usethis::use_data(idades_savel_repetibilidade, overwrite = TRUE)
 
-cat("\nOK: 10 conjuntos curados gravados em data/. Rode devtools::document() e depois devtools::check().\n")
+# -----------------------------------------------------------------------------
+# 11) salvelino_formalina_remocao — ANOVA fatorial 2 x 2
+#     Olk, Lydersen & Wollebæk (2023), DataverseNO, CC BY 4.0. Unidade:
+#     compartimento experimental; versão enxuta com o registro final de cada
+#     unidade. Mantemos as contagens e a porcentagem publicada.
+# -----------------------------------------------------------------------------
+salvelino_formalina_remocao <- rd("salvelino_formalina_remocao.csv") |>
+  mutate(
+    unidade_experimental     = as.character(unidade_experimental),
+    formalin                 = factor(formalin, levels = c("sem", "com")),
+    remocao_semanal          = factor(remocao_semanal, levels = c("sem", "com")),
+    ovos_iniciais            = as.integer(ovos_iniciais),
+    ovos_eclodidos           = as.integer(ovos_eclodidos),
+    mortalidade_total        = as.integer(mortalidade_total),
+    sobrevivencia_eclosao_pct = as.numeric(sobrevivencia_eclosao_pct)
+  )
+stopifnot(nrow(salvelino_formalina_remocao) == 30,
+          !anyNA(salvelino_formalina_remocao),
+          all(salvelino_formalina_remocao$ovos_eclodidos +
+                salvelino_formalina_remocao$mortalidade_total ==
+                salvelino_formalina_remocao$ovos_iniciais),
+          max(abs(salvelino_formalina_remocao$sobrevivencia_eclosao_pct -
+                    100 * salvelino_formalina_remocao$ovos_eclodidos /
+                      salvelino_formalina_remocao$ovos_iniciais)) < 1e-4)
+usethis::use_data(salvelino_formalina_remocao, overwrite = TRUE)
+
+# -----------------------------------------------------------------------------
+# 12) gammarus_dieta_temperatura_resumo — resumo fatorial 3 x 4
+#     Ribes-Navarro et al. (2022), Frontiers in Marine Science, CC BY. A fonte
+#     publica médias, DP e n por combinação; este objeto não contém as 48
+#     repetições e não deve ser usado para recalcular a ANOVA.
+# -----------------------------------------------------------------------------
+gammarus_dieta_temperatura_resumo <- rd("gammarus_dieta_temperatura_resumo.csv") |>
+  mutate(
+    dieta = factor(dieta,
+                   levels = c("Fucus", "Folhas_de_cenoura", "Polpa_de_coco")),
+    temperatura_c = as.numeric(temperatura_c),
+    n_repeticoes = as.integer(n_repeticoes),
+    across(where(is.character), as.numeric)
+  )
+stopifnot(nrow(gammarus_dieta_temperatura_resumo) == 12,
+          nlevels(gammarus_dieta_temperatura_resumo$dieta) == 3,
+          identical(sort(unique(gammarus_dieta_temperatura_resumo$temperatura_c)),
+                    c(5, 10, 15, 20)),
+          all(gammarus_dieta_temperatura_resumo$n_repeticoes == 4),
+          !anyNA(gammarus_dieta_temperatura_resumo))
+usethis::use_data(gammarus_dieta_temperatura_resumo, overwrite = TRUE)
+
+cat("\nOK: 12 conjuntos curados gravados em data/. Rode devtools::document() e depois devtools::check().\n")

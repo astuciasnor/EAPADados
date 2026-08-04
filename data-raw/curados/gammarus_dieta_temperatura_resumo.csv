@@ -1,0 +1,13 @@
+dieta,temperatura_c,n_repeticoes,sobrevivencia_media_pct,sobrevivencia_dp_pct,biomassa_media_mg,biomassa_dp_mg,comprimento_final_medio_mm,comprimento_final_dp_mm,taxa_crescimento_especifica_media_pct_dia,taxa_crescimento_especifica_dp_pct_dia
+Fucus,5,4,73.75,10.31,76.00,11.86,6.92,0.85,0.37,0.12
+Fucus,10,4,65.00,10.80,122.50,31.03,8.28,1.44,0.89,0.11
+Fucus,15,4,71.25,14.93,121.25,38.35,8.24,0.10,0.89,0.13
+Fucus,20,4,45.00,28.28,159.00,36.39,11.59,2.45,1.68,0.32
+Folhas_de_cenoura,5,4,71.25,6.29,67.50,20.04,6.85,0.73,0.53,0.08
+Folhas_de_cenoura,10,4,60.00,10.80,78.00,26.89,7.10,0.32,0.71,0.04
+Folhas_de_cenoura,15,4,66.25,27.80,95.75,41.10,7.62,1.05,0.74,0.04
+Folhas_de_cenoura,20,4,32.50,10.41,86.50,27.74,9.81,1.73,1.29,0.44
+Polpa_de_coco,5,4,47.50,8.66,64.00,43.14,7.26,2.63,0.43,0.36
+Polpa_de_coco,10,4,23.75,23.94,27.25,9.00,5.31,1.57,-0.10,0.58
+Polpa_de_coco,15,4,47.50,8.66,51.25,16.66,6.75,0.30,0.66,0.22
+Polpa_de_coco,20,4,8.75,4.79,27.25,12.47,10.89,8.00,1.48,0.39
