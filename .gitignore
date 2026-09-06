@@ -6,12 +6,9 @@
 
 /.quarto/
 **/*.quarto_ipynb
-CURADORIA_DADOS/tmp/
-CURADORIA_DADOS/provisorios/
 **/node_modules/
 .git/index.lock
 *.Rcheck/
 DESCRIPTION.bak
 *.tar.gz
 *.zip
-CURADORIA_DADOS/

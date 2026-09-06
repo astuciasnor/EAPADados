@@ -12,7 +12,7 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
-tb <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
+tb <- readxl::read_excel("../APOIO/CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                          sheet = "treino_desembarque")
 
 # IMPORTANTE: preservar os nomes de coluna NÃO sintáticos ("2021 - Captura_t").

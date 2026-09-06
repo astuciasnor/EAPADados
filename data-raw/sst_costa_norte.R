@@ -11,7 +11,7 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
-sst_costa_norte <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
+sst_costa_norte <- readxl::read_excel("../APOIO/CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                                       sheet = "sst_costa_norte")
 sst_costa_norte <- as.data.frame(sst_costa_norte)
 sst_costa_norte$lon          <- as.numeric(sst_costa_norte$lon)

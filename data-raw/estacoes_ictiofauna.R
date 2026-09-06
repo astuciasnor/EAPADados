@@ -11,7 +11,7 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
 
-estacoes_ictiofauna <- readxl::read_excel("CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
+estacoes_ictiofauna <- readxl::read_excel("../APOIO/CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx",
                                           sheet = "estacoes_ictiofauna")
 estacoes_ictiofauna <- as.data.frame(estacoes_ictiofauna)
 

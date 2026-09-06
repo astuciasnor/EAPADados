@@ -26,7 +26,8 @@
 #' alpha = 0,05 para as análises.
 #'
 #' @source Dados fictícios baseados em um problema clássico de bioestatística,
-#'   adaptados. Fonte consolidada em CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx, aba "src_artemia".
+#'   adaptados. Fonte consolidada em APOIO/CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx
+#'   (pasta de apoio do ecossistema, fora do pacote), aba "src_artemia".
 #' @docType data
 #' @encoding UTF-8
 #' @keywords datasets bioestatistica teste-t artemia
