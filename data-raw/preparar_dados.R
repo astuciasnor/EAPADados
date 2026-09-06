@@ -26,6 +26,9 @@
   brutos <- "../APOIO/CURADORIA_DADOS/fontes_containers_originais/dados_brutos_eapadados.xlsx"
 
 # Simulados tilapia_crescimento ----------------------------------
+# set.seed() fixa o sorteio: sem ele, cada execucao geraria dados
+# diferentes e o .rda versionado nunca bateria com o script.
+set.seed(2023)
 tilapia_crescimento <- data.frame(
   Tratamento = factor(rep(c("A", "B", "C"), each = 10)),
   Semana = rep(1:10, times = 3),
@@ -35,6 +38,8 @@ tilapia_crescimento <- data.frame(
 usethis::use_data(tilapia_crescimento, overwrite = TRUE)
 
 # Simulados captura_petrechos ------------------------------------
+# Semente propria, para o sorteio deste bloco nao depender do anterior.
+set.seed(2024)
 captura_petrechos <- data.frame(
   Especie = factor(sample(c("Sardinha", "Corvina", "Pescada"), 50, replace = TRUE)),
   Petrecho = factor(sample(c("Rede Emalhe", "Arrasto Fundo", "Linha Anzol"), 50, replace = TRUE)),
