@@ -56,8 +56,8 @@
 #' @format Um data frame com variáveis em português:
 #' \describe{
 #'   \item{id_caranguejo}{Identificador sequencial do caranguejo.}
-#'   \item{forma_cor}{Forma de cor: azul ou laranja.}
-#'   \item{sexo}{Sexo do caranguejo.}
+#'   \item{forma_cor}{Forma de cor: azul ou laranja. Duas categorias de 100 indivíduos.}
+#'   \item{sexo}{Sexo do caranguejo. Duas categorias de 100 indivíduos.}
 #'   \item{indice_no_grupo}{Índice dentro de cada grupo original.}
 #'   \item{largura_lobo_frontal_mm}{Largura do lobo frontal, em milímetros.}
 #'   \item{largura_posterior_mm}{Largura posterior, em milímetros.}
@@ -67,6 +67,16 @@
 #'   \item{classe_largura_carapaca}{Classe de largura da carapaça criada por quartis.}
 #' }
 #'
+#' @details
+#' As duas categorias de \code{forma_cor} são equilibradas (100 e 100) e
+#' cobrem faixas de tamanho sobrepostas, o que permite comparar retas. O
+#' conjunto foi avaliado para ser o exemplo canônico de regressão linear
+#' simples do ecossistema e **não foi adotado**: o Shapiro-Wilk rejeita a
+#' normalidade tanto no modelo global (\emph{p} = 0,0009) quanto dentro do
+#' grupo laranja (\emph{p} = 0,0016), e há curvatura significativa na laranja
+#' (\emph{p} = 0,013). O canônico da regressão é \code{morfometria_barbo}.
+#'
 #' @source MASS::crabs. Título original: "Morphological Measurements on Leptograpsus Crabs."
 #' Venables, W. N. and Ripley, B. D. (2002). "Modern Applied Statistics with S." Fourth edition. Springer.
+#' Licença do MASS: GPL-2 | GPL-3.
 "crabs_morfometria"
