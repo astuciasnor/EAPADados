@@ -1,0 +1,75 @@
+#' Variáveis ambientais e peixes das 30 estações do rio Doubs
+#'
+#' @description
+#' Variáveis ambientais medidas em 30 estações ao longo do rio Doubs
+#' (Jura francês), acompanhadas da riqueza de espécies de peixes e da
+#' classificação de cada estação em trechos do curso (alto, médio, baixo e
+#' trecho impactado). É a base clássica dos livros de ecologia numérica
+#' (Borcard, Gillet e Legendre, 2018), ideal para a \strong{análise de
+#' componentes principais (PCA)} padronizada e para exercícios de
+#' \strong{agrupamento hierárquico (HCA)}.
+#'
+#' @format Um data frame com 30 observações e 13 variáveis. Os nomes das
+#' linhas identificam as estações (\code{E01} a \code{E30}, da nascente para
+#' a foz). As variáveis ambientais vêm do dataset \code{doubs} do pacote
+#' \pkg{ade4}:
+#' \describe{
+#'   \item{dfs}{Numérico: distância da nascente (km).}
+#'   \item{alt}{Numérico: altitude (m).}
+#'   \item{slo}{Numérico: declividade (por mil).}
+#'   \item{flo}{Numérico: vazão mínima média (m³/s).}
+#'   \item{pH}{Numérico: pH da água.}
+#'   \item{har}{Numérico: dureza da água (mg/L de CaCO3).}
+#'   \item{pho}{Numérico: concentração de fosfatos (mg/L).}
+#'   \item{nit}{Numérico: concentração de nitratos (mg/L).}
+#'   \item{amm}{Numérico: concentração de amônio (mg/L).}
+#'   \item{oxy}{Numérico: oxigênio dissolvido (mg/L).}
+#'   \item{bdo}{Numérico: demanda biológica de oxigênio (mg/L).}
+#'   \item{riqueza}{Inteiro: número de espécies de peixes presentes na
+#'     estação (derivada da tabela de abundâncias \code{doubs$fish}).}
+#'   \item{trecho}{Fator: trecho do rio, com níveis \code{Alto curso},
+#'     \code{Médio curso}, \code{Baixo curso} e \code{Trecho impactado}.}
+#' }
+#'
+#' @details
+#' Pergunta sugerida: como as variáveis ambientais se estruturam ao longo do
+#' rio? Faça uma PCA padronizada das 11 variáveis ambientais (colunas 1 a 11),
+#' deixando \code{riqueza} e \code{trecho} como variáveis suplementares, e
+#' projete as estações coloridas por trecho. Compare quantos componentes reter
+#' pelo bastão quebrado, pela permutação e pelo critério de Kaiser (este
+#' último apenas como referência). O trecho \code{Trecho impactado} tem só
+#' duas estações (\code{E23} e \code{E25}): com menos de três pontos não se
+#' estima elipse de concentração.
+#'
+#' Cuidados: as variáveis têm escalas muito diferentes (a altitude vai a mais
+#' de 900 m, o pH fica perto de 8), então a PCA deve ser \strong{padronizada}
+#' (correlação, não covariância). O sinal dos eixos é arbitrário; leia os
+#' resultados pela direção e pela magnitude relativa das setas, não pelo
+#' quadrante isolado. As variáveis ambientais são fortemente correlacionadas
+#' entre si ao longo do gradiente do rio — a interpretação dos componentes
+#' deve considerar esse padrão conjunto, e não cada variável isolada.
+#'
+#' @source Verneaux, J. (1973). \emph{Cours d'eau de Franche-Comté (massif du
+#'   Jura). Recherches écologiques sur le réseau hydrographique du Doubs.
+#'   Essai de biotypologie}. Annales Scientifiques de l'Université de
+#'   Franche-Comté 3:1-260. Obtido do pacote \pkg{ade4} (dataset
+#'   \code{doubs}, componente \code{env}), licença GPL-2 | GPL-3, na
+#'   montagem usada por Borcard, Gillet e Legendre (2018), \emph{Numerical
+#'   Ecology with R}, 2ª ed., Springer.
+#' @docType data
+#' @encoding UTF-8
+#' @keywords datasets ecologia multivariado
+#' @name doubs_ambiente
+#' @usage data(doubs_ambiente)
+#'
+#' @examples
+#' data(doubs_ambiente)
+#' summary(doubs_ambiente)
+#'
+#' # PCA padronizada das 11 variáveis ambientais (riqueza e trecho ficam de fora)
+#' pca <- prcomp(doubs_ambiente[1:11], scale. = TRUE)
+#' round(summary(pca)$importance[, 1:2], 3)
+#'
+#' # Matriz de correlações entre as variáveis ambientais
+#' round(cor(doubs_ambiente[1:11]), 2)
+"doubs_ambiente"
