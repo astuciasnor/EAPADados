@@ -1,0 +1,19 @@
+{
+  "dataset": "Effect of phytosterol supplementation on Artemia growth",
+  "doi": "10.26008/1912/bco-dmo.724179.1",
+  "url": "https://datadocs.bco-dmo.org/dataset/724179/file/933jo9AUxBELnp/Artemia_growth_sterols.csv",
+  "bytes": 3218,
+  "md5": "3e4495f10c1cb70a73c73f00295ed467",
+  "content_type": "binary/octet-stream",
+  "url_final": "https://s3.amazonaws.com/bcodmo-files-prod/933jo9AUxBELnp/Artemia_growth_sterols.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXLAGZQJYZSMZVHVQ%2F20261010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261010T133956Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c828fec8fe2e77815b1f4615aa16878537bfc5bd45bc23f5e2c22fd14ac576c1",
+  "linhas": 69,
+  "colunas": 5,
+  "cabecalho": [
+    "experiment",
+    "sterol_id",
+    "sterol_name",
+    "biomass_mg",
+    "ind_weight_ug"
+  ],
+  "status": "obtido; fonte BCO-DMO; avaliação pendente"
+}

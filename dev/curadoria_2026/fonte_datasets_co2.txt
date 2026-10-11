@@ -1,0 +1,46 @@
+_M_a_u_n_a _L_o_a _A_t_m_o_s_p_h_e_r_i_c _C_O_2 _C_o_n_c_e_n_t_r_a_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Atmospheric concentrations of CO2 are expressed in parts per
+     million (ppm) and reported in the preliminary 1997 SIO manometric
+     mole fraction scale.
+
+_U_s_a_g_e:
+
+     co2
+     
+_F_o_r_m_a_t:
+
+     A time series of 468 observations; monthly from 1959 to 1997.
+
+_D_e_t_a_i_l_s:
+
+     The values for February, March and April of 1964 were missing and
+     have been obtained by interpolating linearly between the values
+     for January and May of 1964.
+
+_S_o_u_r_c_e:
+
+     Keeling, C. D. and Whorf, T. P., Scripps Institution of
+     Oceanography (SIO), University of California, La Jolla, California
+     USA 92093-0220.
+
+     <https://scrippsco2.ucsd.edu/data/atmospheric_co2/>.
+
+     Note that the data are subject to revision (based on recalibration
+     of standard gases) by the Scripps institute, and hence may not
+     agree exactly with the data provided by R.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Cleveland WS (1993). _Visualizing Data_. Hobart Press. ISBN
+     978-0963488404.
+
+_E_x_a_m_p_l_e_s:
+
+     require(graphics)
+     plot(co2, ylab = expression("Atmospheric concentration of CO"[2]),
+          las = 1)
+     title(main = "co2 data set")
+     

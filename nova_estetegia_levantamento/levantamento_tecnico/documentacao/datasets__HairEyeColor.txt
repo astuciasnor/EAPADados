@@ -1,0 +1,77 @@
+Hair and Eye Color of Statistics Students
+
+Description:
+
+     Distribution of hair and eye color and sex in 592 statistics
+     students.
+
+Usage:
+
+     HairEyeColor
+     
+Format:
+
+     A 3-dimensional array resulting from cross-tabulating 592
+     observations on 3 variables.  The variables and their levels are
+     as follows:
+
+       No  Name    Levels                    
+        1  'Hair'  Black, Brown, Red, Blond  
+        2  'Eye'   Brown, Blue, Hazel, Green 
+        3  'Sex'   Male, Female              
+      
+Details:
+
+     The Hair x Eye table comes from a survey of students at the
+     University of Delaware reported by Snee (1974).  The split by
+     'Sex' was added by Friendly (1992) for didactic purposes.
+
+     This data set is useful for illustrating various techniques for
+     the analysis of contingency tables, such as the standard
+     chi-squared test or, more generally, log-linear modelling, and
+     graphical methods such as mosaic plots, sieve diagrams or
+     association plots.
+
+Source:
+
+     <http://www.datavis.ca/sas/vcd/catdata/haireye.sas>
+
+     Snee (1974) gives the two-way table aggregated over 'Sex'.  The
+     'Sex' split of the 'Brown hair, Brown eye' cell was changed to
+     agree with that used by Friendly (2000).
+
+References:
+
+     Friendly M (1992). "Mosaic Displays for Loglinear Models." In
+     _Proceedings of the Statistical Graphics Section_, 61-68. American
+     Statistical Association.
+     <http://www.datavis.ca/papers/asa92.html>.
+
+     Friendly M (1992). "Graphical Methods for Categorical Data." In
+     _Proceedings of the Seventeenth Annual SAS User's Group
+     International Conference_, 1367-1373.
+     <http://datavis.ca/papers/sugi/sugi17.pdf>.
+
+     Friendly M (2000). _Visualizing Categorical Data_, series SAS
+     series in statistical applications. SAS Institute. ISBN
+     9781580256605.
+
+     Snee RD (1974). "Graphical Display of Two-way Contingency Tables."
+     _The American Statistician_, *28*(1), 9-12.
+     doi:10.1080/00031305.1974.10479053
+     <https://doi.org/10.1080/00031305.1974.10479053>.
+
+See Also:
+
+     'chisq.test', 'loglin', 'mosaicplot'
+
+Examples:
+
+     require(graphics)
+     ## Full mosaic
+     mosaicplot(HairEyeColor)
+     ## Aggregate over sex (as in Snee's original data)
+     x <- apply(HairEyeColor, c(1, 2), sum)
+     x
+     mosaicplot(x, main = "Relation between hair and eye color")
+     

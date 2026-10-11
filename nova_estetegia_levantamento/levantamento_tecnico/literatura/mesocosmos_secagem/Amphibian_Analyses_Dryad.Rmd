@@ -1,0 +1,261 @@
+---
+title: "No free refills: prior drying and vertebrate colonization alter ecological functioning and vertebrate fitness within experimental aquatic systems"
+output: html_notebook
+---
+```{r}
+#Journal of Freshwater Biology
+#Manuscript FWB-P-Sep-22-0415
+#Amphibian Analyses
+
+#Load packages required for analyses
+library(readxl)
+library(ggplot2)
+library(MASS)
+library(car)
+library(multcomp)
+library(lattice)
+library(effects)
+library(hrbrthemes)
+library(dplyr)
+library(tidyr)
+library(viridis)
+library(ggformula)
+
+#Selecting working directory (subject to change)
+setwd("C:/Users/krist/Dropbox/WSU Grad Research/1_Ward Mesocosms 2021/Field Data")
+
+#Selecting Excel data sheet
+AData <- read_excel("Emergence and Biomass.xlsx")
+
+#Allocating each variable as a factor or numeric variable
+AData$Treatment <- as.factor(AData$Treatment)
+FrogData <- AData[AData$Emerged>0,]
+FrogData <- droplevels(FrogData)
+FrogData$Pred_Invert <- as.factor(FrogData$Pred_Invert)
+FrogData$First_Emerg <- as.numeric(FrogData$First_Emerg)
+FrogData$Meta_Range <- as.numeric(FrogData$Meta_Range)
+FrogData$Size_Range <- as.numeric(FrogData$Size_Range)
+FrogData$Avg_Mass <- as.numeric(FrogData$Avg_Mass)
+FrogData$Wmax <- as.numeric(FrogData$Wmax)
+FrogData$K <- as.numeric(FrogData$K)
+FrogData$xm <- as.numeric(FrogData$xm)
+FrogData$Treatment <- factor(FrogData$Treatment, levels = c("A:ND", "A:DR"))
+```
+
+
+```{r}
+#Analyzing the number of emerged frogs (survival) between Dry-refill  and Non-dried treatments via ANOVA
+Femerged1<- glm(Emerged ~ Treatment, data=FrogData)
+Anova(Femerged1,type=c("II"))
+summary(Femerged1)
+
+#Graphing the above ANOVA via a vertical box plot
+ggplot(FrogData, aes(x=Treatment, y=Emerged)) + geom_boxplot(size=1) + theme_classic() + scale_x_discrete(limits=c("A:ND", "A:DR")) + stat_summary(fun=mean, geom="point", shape=17, size=2)+ ylab("") + xlab("") + theme(axis.text = element_text(colour = "black", size =12)) + theme(axis.title = element_text(size = 12))
+
+
+```
+
+
+```{r}
+#Analyzing differences in amphibian emergent biomass between Dry-refill and Non-dried treatments via ANOVA
+Biomass1<- glm(Emergent_Biomass ~ Treatment, data=FrogData)
+Anova(Biomass1,type=c("II"))
+summary(Biomass1)
+
+#Graphing the above ANOVA via a vertical box plot
+ggplot(FrogData, aes(x=Treatment, y=Emergent_Biomass)) + geom_boxplot(size=1) + theme_classic() + scale_x_discrete(limits=c("A:ND", "A:DR")) + stat_summary(fun=mean, geom="point", shape=17, size=2)+ ylab("") + xlab("") + theme(axis.text = element_text(colour = "black", size =12),axis.title = element_text(size = 12))
+
+```
+
+
+```{r}
+#Analyzing differences in average amphibian metamorph size (dry mass) between Dry-refill and Non-dried treatments via ANOVA
+Size <- glm(Avg_Mass ~ Treatment, data=FrogData)
+Anova(Size,type=c("II"))
+summary(Size)
+
+#Graphing the above ANOVA via a vertical box plot
+ggplot(FrogData, aes(x=Treatment, y=Avg_Mass)) + geom_boxplot(size=1) + theme_classic() + scale_x_discrete(limits=c("A:ND", "A:DR")) + stat_summary(fun=mean, geom="point", shape=17, size=2)+ ylab("") + xlab("") + theme(axis.text = element_text(colour = "black", size =12)) + theme(axis.title = element_text(size = 12))
+
+```
+
+
+```{r}
+#Analyzing time to first emergence between Dry-refill and Non-dried treatments
+Ftime<- glm(First_Emerg ~ Treatment, data=FrogData)
+Anova(Ftime,type=c("II"))
+summary(Ftime)
+
+```
+
+
+
+```{r}
+#Analyzing size range differences with an interaction between drying treatment and range of amphibian Metamorphosis
+#The "*" symbol represents an interaction between the two variables on either side of the symbol
+Srange<- glm(Size_Range ~ Treatment*Meta_Range, data=FrogData)
+Anova(Srange,type=c("III"))
+summary(Srange)
+
+#Graphing the above interaction 
+ggplot(Srange, aes(Meta_Range,Size_Range,colour=Treatment,fill=Treatment)) +
+  geom_smooth(span = 0.5,method="glm",alpha=0.2)+
+  geom_point(size=0.8) +
+  theme_classic() +
+  scale_color_manual(values=c("blue", "red"))+
+  scale_fill_manual(values=c("blue", "red"))+
+  theme(legend.position = "top",plot.title = element_text(hjust = 0.5))+
+  ggtitle("")+
+  xlab("")+
+  ylab("") +
+  theme(axis.text = element_text(colour = "black", size =12),axis.title = element_text(size = 12))
+
+```
+
+
+```{r}
+#Analyzing differences in Wmax (Gompertz growth curve parameter representing maximum larval size) via ANOVA
+Wmax <- glm(Wmax ~ Treatment, data=FrogData)
+Anova(Wmax,type=c("II"))
+summary(Wmax)
+
+#Analyzing differences in K (Gompertz growth curve parameter representing maximum growth rate) via ANOVA
+K <- glm(K ~ Treatment, data=FrogData)
+Anova(K,type=c("II"))
+summary(K)
+
+#Analyzing differences in xm (Gompertz growth curve parameter representing time that the replicate reached its max growth rate) via ANOVA
+xm <- glm(xm ~ Treatment, data=FrogData)
+Anova(xm,type=c("II"))
+summary(xm)
+```
+
+
+```{r}
+#Gompertz Growth curve lines for each tank
+T2 = function(x){3.079*(exp(-exp(-0.122*(x-17.05))))}
+T4 = function(x){3.622*(exp(-exp(-0.104*(x-18.57))))}
+T5 = function(x){2.803*(exp(-exp(-0.115*(x-16.54))))}
+T15 = function(x){3.034*(exp(-exp(-0.130*(x-16.30))))}
+T21 = function(x){2.740*(exp(-exp(-0.174*(x-14.39))))}
+T22 = function(x){3.542*(exp(-exp(-0.118*(x-17.68))))}
+T52 = function(x){3.219*(exp(-exp(-0.093*(x-18.94))))}
+T53 = function(x){3.649*(exp(-exp(-0.092*(x-19.41))))}
+
+T9 = function(x){5.770*(exp(-exp(-0.226*(x-18.00))))}
+T14 = function(x){5.959*(exp(-exp(-0.133*(x-18.05))))}
+T27 = function(x){4.006*(exp(-exp(-0.228*(x-15.21))))}
+T34 = function(x){5.169*(exp(-exp(-0.224*(x-14.79))))}
+T40 = function(x){4.527*(exp(-exp(-0.181*(x-15.88))))}
+T45 = function(x){5.306*(exp(-exp(-0.094*(x-20.98))))}
+T51 = function(x){4.173*(exp(-exp(-0.267*(x-14.17))))}
+T54 = function(x){6.202*(exp(-exp(-0.170*(x-16.98))))}
+```
+
+
+```{r}
+#Plotting growth curves for each replicate from experimental day 3 to 55
+
+curve(T2, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T4, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T5, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T15, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T21, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T22, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T52, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T53, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+
+curve(T9, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T14, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T27, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T34, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T40, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T45, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T51, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+curve(T54, from=3, to=55, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55),main="Larval Amphibian Growth Curves")
+
+```
+
+
+```{r}
+#Plotting growth curves for each tank from day 3 to day of 50% metamorphosis with data points
+x2 <- c(3,5,8,10,12,16,19,24,26,30,33,40,44,47,51)
+y2 <- c(0.04,0.04,0.12,0.28,0.50,1.10,1.40,1.60,2.25,2.80,2.50,2.50,2.33,3.00,4.00)
+x4 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51,54)
+y4 <- c(0.04,0.06,0.10,0.24,0.50,1.20,1.50,2.00,2.33,2.75,2.50,3.00,3.00,3.25,3.60,3.50,5.50)
+x5 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51,54)
+y5 <- c(0.04,0.04,0.12,0.28,0.52,1.00,1.33,1.75,2.00,2.25,2.67,2.33,3.00,3.00,2.80,2.75,2.75)
+x15 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51,54)
+y15 <- c(0.04,0.04,0.16,0.32,0.50,1.10,1.50,3.00,2.00,2.33,3.50,2.75,3.00,3.25,3.40,3.00,2.67)
+x21 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51)
+y21 <- c(0.04,0.06,0.12,0.32,0.52,1.30,1.75,2.80,2.40,2.40,2.60,2.50,2.67,3.25,3.25,3.40)
+x22 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51)
+y22 <- c(0.04,0.04,0.16,0.28,0.50,1.30,1.38,2.40,2.67,2.75,1.67,3.20,3.00,3.67,3.00,3.67)
+x52 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51,54)
+y52 <- c(0.04,0.06,0.16,0.32,0.50,1.20,1.38,1.60,1.67,2.25,2.25,2.67,3.33,3.00,2.40,3.20,3.00)
+x53 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44,47,51,54)
+y53 <- c(0.04,0.06,0.16,0.28,0.60,1.00,1.50,1.60,2.00,2.50,3.33,2.75,2.50,3.25,4.20,4.00,3.50)
+
+x9 <- c(3,5,8,10,12,16,19,24,26,30,37)
+y9 <- c(0.08,0.06,0.10,0.24,0.50,1.20,2.60,4.00,5.50,6.50,5.00)
+x14 <- c(3,5,8,10,12,16,19,24,26,30,37,40)
+y14 <- c(0.08,0.04,0.16,0.32,0.60,1.60,2.38,4.50,4.20,5.33,5.50,4.50)
+x27 <- c(3,5,8,10,12,16,19,24,26,30,37,44)
+y27 <- c(0.08,0.04,0.16,0.32,0.50,1.50,2.63,3.80,3.50,4.67,3.50,4.00)
+x34 <- c(3,5,8,10,12,16,19,24,26,30,33)
+y34 <- c(0.08,0.06,0.16,0.44,0.80,2.30,3.50,4.80,5.00,5.00,5.00)
+x40 <- c(3,5,8,10,12,16,19,24,26,30,33,37,40,44)
+y40 <- c(0.08,0.08,0.20,0.32,0.60,1.30,2.67,3.60,3.75,4.50,5.33,4.00,4.33,4.50)
+x45 <- c(3,5,8,10,12,16,19,24,26,33)
+y45 <- c(0.08,0.08,0.16,0.32,0.50,1.17,2.75,2.50,2.67,5.00)
+x51 <- c(3,5,8,10,12,16,19,24,26,33,40,44)
+y51 <- c(0.08,0.04,0.18,0.32,0.70,1.60,3.17,4.00,4.00,4.00,4.00,4.67)
+x54 <- c(3,5,8,10,12,16,19,24,26,37)
+y54 <- c(0.04,0.08,0.16,0.32,0.60,1.80,3.13,4.50,5.00,6.00)
+```
+
+
+```{r}
+#Graphing the amphibian growth rate curves along with the corresponding data points
+#Colored lines (Blue for non-dry treatments and red for dry-refill treatments)
+curve(T2, from=3, to=51, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T4, from=3, to=54, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T5, from=3, to=54, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T15, from=3, to=54, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T21, from=3, to=51, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T22, from=3, to=51, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T52, from=3, to=54, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T53, from=3, to=54, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="red",lwd=2, ylim = c(0,7), xlim = c(0,55))
+
+curve(T9, from=3, to=37, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T14, from=3, to=40, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T27, from=3, to=44, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7),xlim = c(0,55))
+curve(T34, from=3, to=33, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7),xlim = c(0,55))
+curve(T40, from=3, to=44, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T45, from=3, to=33, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55))
+curve(T51, from=3, to=44, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7),xlim = c(0,55))
+curve(T54, from=3, to=37, n=50, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", col="blue",lwd=2, ylim = c(0,7), xlim = c(0,55))
+
+#Colored data points (Blue for non-dry treatments and red for dry-refill treatments)
+plot(y2 ~ x2, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y4 ~ x4, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y5 ~ x5, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y15 ~ x15, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y21 ~ x21, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y22~ x22, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y52 ~ x52, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+plot(y53 ~ x53, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "red",pch=20,cex=0.5)
+
+plot(y9 ~ x9, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y14 ~ x14, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y27 ~ x27, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y34 ~ x34, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y40 ~ x40, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y45 ~ x45, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y51 ~ x51, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+plot(y54 ~ x54, par(new = TRUE), xlab="Experimental Day", ylab="Mass (g)", ylim = c(0,7), xlim = c(0,55), col = "blue",pch=20,cex=0.5)
+
+```
+
+
+```{r}

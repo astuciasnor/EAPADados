@@ -8,4 +8,5 @@
 ^brutos\.xlsx$
 ^\.Rhistory$
 ^dev$
+^nova_estetegia_levantamento$
 ^DESCRIPTION\.bak$

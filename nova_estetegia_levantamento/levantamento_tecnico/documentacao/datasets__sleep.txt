@@ -1,0 +1,57 @@
+Student's Sleep Data
+
+Description:
+
+     Data which show the effect of two soporific drugs (increase in
+     hours of sleep compared to control) on 10 patients.
+
+Usage:
+
+     sleep
+     
+Format:
+
+     A data frame with 20 observations on 3 variables.
+
+       [, 1]  extra  numeric  increase in hours of sleep 
+       [, 2]  group  factor   drug given                 
+       [, 3]  ID     factor   patient ID                 
+      
+Details:
+
+     The 'group' variable name may be misleading about the data: They
+     represent measurements on 10 persons, not in groups.
+
+Source:
+
+     Cushny and Peebles (1905); Student (1908).
+
+References:
+
+     Cushny AR, Peebles AR (1905). "The Action of Optical Isomers: II.
+     Hyoscines." _The Journal of Physiology_, *32*(5-6), 501-510.
+     doi:10.1113/jphysiol.1905.sp001097
+     <https://doi.org/10.1113/jphysiol.1905.sp001097>.
+
+     Scheffé H (1959). _The Analysis of Variance_. John Wiley & Sons.
+     ISBN 978-0471758341.
+
+     Student (1908). "The Probable Error of a Mean." _Biometrika_,
+     *6*(1), 1. doi:10.2307/2331554 <https://doi.org/10.2307/2331554>.
+
+Examples:
+
+     require(stats)
+     ## Student's paired t-test
+     with(sleep,
+          t.test(extra[group == 1],
+                 extra[group == 2], paired = TRUE))
+     
+     ## The sleep *prolongations*
+     sleep1 <- with(sleep, extra[group == 2] - extra[group == 1])
+     summary(sleep1)
+     stripchart(sleep1, method = "stack", xlab = "hours",
+                main = "Sleep prolongation (n = 10)")
+     boxplot(sleep1, horizontal = TRUE, add = TRUE,
+             at = .6, pars = list(boxwex = 0.5, staplewex = 0.25))
+     

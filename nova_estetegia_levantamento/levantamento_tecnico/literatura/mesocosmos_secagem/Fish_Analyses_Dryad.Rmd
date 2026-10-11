@@ -1,0 +1,67 @@
+---
+title: "No free refills: prior drying and vertebrate colonization alter ecological functioning and vertebrate fitness within experimental aquatic systems"
+output: html_notebook
+---
+
+```{r}
+#Journal of Freshwater Biology
+#Manuscript FWB-P-Sep-22-0415
+#Amphibian Analyses
+
+#Load packages required for analyses
+library(readxl)
+library(ggplot2)
+library(MASS)
+library(car)
+library(multcomp)
+library(ggplot2)
+library(lattice)
+library(effects)
+
+#Selecting working directory
+setwd("C:/Users/krist/Dropbox/WSU Grad Research/1_Ward Mesocosms 2021/Field Data")
+
+#Selecting Excel data sheet
+FData <- read_excel("Fish Data.xlsx")
+
+#Allocating each variable as a factor or numeric variable
+FData$Treatment <- as.factor(FData$Treatment)
+FData$A_Pres <- as.factor(FData$A_Pres)
+FData$Drying <- as.factor(FData$Drying)
+```
+
+
+```{r}
+#Analyzing the difference in fish growth between amphibian presence and absence treatments via glm and subsequent ANOVA
+Fish1<- glm(Rel_SLGrowth ~ A_Pres, data=FData)
+Anova(Fish1,type=c("II"))
+summary(Fish1)
+
+#Graphing the above ANOVA via ggplot box plot
+ggplot(FData, aes(x=A_Pres, y=Rel_SLGrowth)) + geom_boxplot(size=1) + theme_classic() + stat_summary(fun=mean, geom="point", shape=19, size=2)+  ggtitle("Fish Growth Based on Presence of Amphibians")+ ylab("Relative Growth") + xlab("Amphibian Presence") + theme(axis.text = element_text(colour = "black", size =10)) + theme(axis.title = element_text(size = 12))
+
+```
+
+
+```{r}
+#Analyzing the difference in fish growth between drying treatments via glm and subsequent ANOVA
+Fish2<- glm(Rel_SLGrowth ~ Drying, data=FData)
+Anova(Fish2,type=c("II"))
+summary(Fish2)
+
+#Graphing the above ANOVA via ggplot box plot
+ggplot(FData, aes(x=Drying, y=Rel_SLGrowth)) + geom_boxplot(size=1) + theme_classic() + stat_summary(fun=mean, geom="point", shape=19, size=2)+  ggtitle("Fish Growth Based on Drying")+ ylab("Relative Growth") + xlab("Drying versus Not Drying") + theme(axis.text = element_text(colour = "black", size =10)) + theme(axis.title = element_text(size = 12))
+
+```
+
+
+```{r}
+#Analyzing the difference in fish growth in response to an interaction between amphibian presence and drying treatment via glm and subsequent ANOVA
+#The "*" symbol represents an interaction effect within the glm
+Fish3<- glm(Rel_SLGrowth ~ A_Pres*Drying, data=FData)
+Anova(Fish3,type=c("III"))
+summary(Fish3)
+#Since there was no significant outcome, the ANOVA was not graphed
+
+```
+

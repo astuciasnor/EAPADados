@@ -1,0 +1,24 @@
+tuna
+
+Description:
+
+     Table 8.1: Hunter L Values and Consumer Panel Scores for Nine Lots
+     of Canned Tuna
+
+Usage:
+
+     tuna
+     
+Format:
+
+     2arguments across 9 observations
+
+     lot
+          Lot number for the can
+
+     hunter
+          Hunter's L value
+
+     panel
+          Panel score for the tuna
+

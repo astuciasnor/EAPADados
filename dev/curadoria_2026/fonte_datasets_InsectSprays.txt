@@ -1,0 +1,46 @@
+_E_f_f_e_c_t_i_v_e_n_e_s_s _o_f _I_n_s_e_c_t _S_p_r_a_y_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Counts of an insect, the tobacco hornworm, in agricultural
+     experimental units treated with six different insecticides.
+
+_U_s_a_g_e:
+
+     InsectSprays
+     
+_F_o_r_m_a_t:
+
+     A data frame with 72 observations on 2 variables.
+
+       [,1]  'count'  numeric  Insect count      
+       [,2]  'spray'  factor   The type of spray 
+      
+_S_o_u_r_c_e:
+
+     Beall G (1942). "The Transformation of Data from Entomological
+     Field Experiments so that the Analysis of Variance Becomes
+     Applicable." _Biometrika_, *32*(3-4), 243-262.
+     doi:10.1093/biomet/32.3-4.243
+     <https://doi.org/10.1093/biomet/32.3-4.243>.  Table 7.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     McNeil D (1977). _Interactive Data Analysis: A Practical Primer_.
+     John Wiley & Sons. ISBN 978-0471026310.
+
+_E_x_a_m_p_l_e_s:
+
+     require(stats); require(graphics)
+     boxplot(count ~ spray, data = InsectSprays,
+             xlab = "Type of spray", ylab = "Insect count",
+             main = "InsectSprays data", varwidth = TRUE, col = "lightgray")
+     fm1 <- aov(count ~ spray, data = InsectSprays)
+     summary(fm1)
+     opar <- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0))
+     plot(fm1)
+     fm2 <- aov(sqrt(count) ~ spray, data = InsectSprays)
+     summary(fm2)
+     plot(fm2)
+     par(opar)
+     

@@ -1,0 +1,17 @@
+{
+  "friedman": "OK: 27 sujeitos x 4 idades",
+  "repetidas": "OK: grade completa; F da ocasiao finito, erro sem estatistica F por definicao",
+  "mcnemar": {
+    "pares": 44,
+    "p": 0.0433
+  },
+  "contagem": {
+    "ships_celulas": 34,
+    "ships_poisson_dispersao": 1.691,
+    "ships_nb_limite": "Ajuste NB com tipo + periodos em fatores emitiu aviso de limite de iteracoes para theta; nao adotar como exemplo NB garantido",
+    "insectsprays_poisson_dispersao": 1.5077,
+    "insectsprays_nb_theta": 28.0995,
+    "insectsprays_nb_convergiu": true
+  },
+  "limite": "Valida encaixe de entrada e cálculo, não garante pressupostos científicos. Nenhuma alteração de conjunto aplicada."
+}

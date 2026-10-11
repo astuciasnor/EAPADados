@@ -1,0 +1,35 @@
+_S_h_i_p_s _D_a_m_a_g_e _D_a_t_a
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Data frame giving the number of damage incidents and aggregate
+     months of service by ship type, year of construction, and period
+     of operation.
+
+_U_s_a_g_e:
+
+     ships
+     
+_F_o_r_m_a_t:
+
+     'type'
+          type: '"A"' to '"E"'.
+
+     'year'
+          year of construction: 1960-64, 65-69, 70-74, 75-79 (coded as
+          '"60"', '"65"', '"70"', '"75"').
+
+     'period'
+          period of operation : 1960-74, 75-79.
+
+     'service'
+          aggregate months of service.
+
+     'incidents'
+          number of damage incidents.
+
+_S_o_u_r_c_e:
+
+     P. McCullagh and J. A. Nelder, (1983), _Generalized Linear
+     Models._ Chapman & Hall, section 6.3.2, page 137
+

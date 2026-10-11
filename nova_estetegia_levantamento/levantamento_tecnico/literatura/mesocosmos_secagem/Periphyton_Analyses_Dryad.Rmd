@@ -1,0 +1,113 @@
+---
+title: "No free refills: prior drying and vertebrate colonization alter ecological functioning and vertebrate fitness within experimental aquatic systems"
+output: html_notebook
+---
+
+```{r}
+#Journal of Freshwater Biology
+#Manuscript FWB-P-Sep-22-0415
+#Amphibian Analyses
+
+#Load packages required for analyses
+library(readxl)
+library(ggplot2)
+library(bbmle)
+library(multcomp)
+library(mgcv)
+library(gamm4)
+library(tidyverse)
+library(mgcViz)
+library(nlme)
+library(gratia)
+library(tidyr)
+library(dbplyr)
+library(itsadug)
+library(mgcViz)
+library(scales)
+
+#Selecting working directory
+setwd("C:/Users/krist/Dropbox/WSU Grad Research/1_Ward Mesocosms 2021/Field Data")
+
+#Selecting Excel data sheet
+PerData <- read_excel("Periphyton Data.xlsx")
+
+#Omitting experimental tank replicate #1 due to a separate (not included within experimental design) amphibian species ovipositing within the tank
+PData1 <- PerData[PerData$Tank!=1,]
+
+#Restricting data to any data collected after experimental day 16 (data sampling techniques were not standardized until day 15)
+PData <- PData1[PData1$Day>16,]
+
+#Creating a column for the log base 10 of each periphyton mass data point (the data were extremely small and therefore, the log of the data was analyzed)
+PData$lgP_Mass <- log((PData$P_Mass+0.5),base=10)
+
+#Subsetting the data into smaller datasets to be analyzed separately based on their corresponding treatment combinations
+PDData <- PData[PData$Drying_Treatment=="Dry_Rewet",]
+PNData <- PData[PData$Drying_Treatment=="Not_Dried",]
+PCData <- PData[PData$Trophic_Treatment=="Control",]
+PFData <- PData[PData$Trophic_Treatment=="Fish",]
+PAData <- PData[PData$Trophic_Treatment=="Amphibian",]
+PFAData <- PData[PData$Trophic_Treatment=="Fish_Amphibian",]
+
+#Allocating each variable as a factor or numeric variable
+PData$Trophic_Treatment <- factor(PData$Trophic_Treatment, levels = c("Control", "Fish", "Amphibian", "Fish_Amphibian"))
+PData$Treatment <- as.factor(PData$Treatment)
+PData$Trophic_Treatment <- as.factor(PData$Trophic_Treatment)
+PData$Drying_Treatment <- as.factor(PData$Drying_Treatment)
+PData$Tank <- as.factor(PData$Tank)
+PData$Day <- as.numeric(PData$Day)
+PData$Location <- as.factor(PData$Location)
+PData$P_Mass <- as.numeric(PData$P_Mass)
+```
+
+"cr" is cubic regression and it places knots by quartile, not evenly. 
+
+We chose "cr" spline type because it places knots by quartile, so it places knots unevenly where there is more data. So more knots in the beginning where we have more sampling periods.
+```{r}
+#Analyzing the difference in periphyton mass between trophic and drying treatment combinations
+#Using a generalized additive model due to non-linierity of the data
+#The trophic and drying treatments are analyzed as parametric effects
+#"tropic treatment by day", "drying treatment by day", and "day" were analyzed as cubic regression smoother terms
+#"tank #" and "tank by day" are analyzed as random effects
+Pgam <- gam(lgP_Mass~Trophic_Treatment + Drying_Treatment + s(Day,by=Trophic_Treatment,k=-1,bs="cr")+ s(Day,by=Drying_Treatment,k=-1,bs="cr") + s(Day,k=-1,bs="cr") + s(Tank,k=-1,bs='re') + s(Tank,Day,k=-1,bs='re'), data = PData, method = 'REML')
+
+#Checking the gam model fit and running a subsequent ANOVA
+gam.check(Pgam) 
+anova.gam(Pgam)
+summary.gam(Pgam)
+```
+
+
+```{r}
+#Graphing the parametric effects (drying treatment and trophic treatment) on periphyton mass within the context of the above gam model 
+par(mfrow=c(1,2),cex=1.1)
+
+plot_parametric(Pgam,pred=list(Drying_Treatment = levels(PData$Drying_Treatment)),xlab = "Periphyton Mass log(g)", main = "",xlim=c(0.025,0.55),rm.ranef=TRUE)
+
+plot_parametric(Pgam,pred=list(Trophic_Treatment = levels(PData$Trophic_Treatment)),xlab = "Periphyton Mass log(g)", main = "",xlim=c(0.025,0.55),rm.ranef=TRUE)
+
+```
+
+
+```{r}
+#Graphing the result of the above gam model (Dry-refill and non-dried treatments only) and their corresponding raw data points
+plot(PNData$lgP_Mass ~ jitter(PNData$Day,1.7), ylim = c(-0.5,1.8), xlim = c(19,80), xlab = "Experimental Day", ylab = "Periphyton Mass log(g)", col = rgb(0,0,1,alpha=0.35),pch=16,cex=0.6)
+plot(PDData$lgP_Mass ~ jitter(PDData$Day,1.7), par(new = TRUE), ylim = c(-0.5,1.8), xlim = c(19,80), xlab = "Experimental Day", ylab = "Periphyton Mass log(g)", col = rgb(1,0,0,alpha=0.35), pch=16,cex=0.6,add=TRUE)
+plot_smooth(Pgam,view = "Day", cond = list(Drying_Treatment = "Dry_Rewet"),par(new = TRUE),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "Periphyton Mass log(g)",col="red",ylim=c(-0.5,1.8),xlim=c(19,80),lwd = 2.5, rug = FALSE)
+plot_smooth(Pgam,view = "Day", cond = list(Drying_Treatment = "Not_Dried"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "Periphyton Mass log(g)",col="blue",ylim=c(-0.5,1.8),xlim=c(19,80),lwd = 2.5, rug = FALSE, add=TRUE)
+legend(x = "topleft", bty = "n", legend = c("Undried","Dried-refilled"), fill = c("blue","red"))
+
+```
+
+
+```{r}
+#Graphing the result of the above gam model (Trophic treatments only) and their corresponding raw data points
+plot(PCData$lgP_Mass ~ jitter(PCData$Day,1.7),  ylim = c(-0.5,1.8), xlim = c(19,80), xlab = "Experimental Day", ylab = "Periphyton Mass log(g)", col = "darkgrey", pch=16,cex=0.6)
+plot(PFData$lgP_Mass ~ jitter(PFData$Day,1.7), par(new = TRUE), ylim = c(-0.5,1.8), xlim = c(19,80), xlab = "Experimental Day", ylab = "Periphyton Mass log(g)", col = rgb(0,1,0,alpha=0.35), pch=16,cex=0.6)
+plot(PAData$lgP_Mass ~ jitter(PAData$Day,1.7), par(new = TRUE), ylim = c(-0.5,1.8), xlim = c(19,80), xlab = "Experimental Day", ylab = "Periphyton Mass log(g)", col = rgb(1,0,0,alpha=0.35),pch=16,cex=0.6)
+plot(PFAData$lgP_Mass ~ jitter(PFAData$Day,1.7), par(new = TRUE), ylim = c(-0.5,1.8), xlim = c(19,80), xlab = "Experimental Day", ylab = "Periphyton Mass log(g)", col = rgb(0,0,1,alpha=0.35), pch=16,cex=0.6)
+plot_smooth(Pgam,view = "Day", cond = list(Trophic_Treatment = "Control"),par(new = TRUE),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "Periphyton Mass log(g)",col="black",ylim=c(-0.5,1.8),xlim=c(19,80),lwd = 2.5, rug = FALSE)
+plot_smooth(Pgam,view = "Day", cond = list(Trophic_Treatment = "Fish"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "Periphyton Mass log(g)",col="green",ylim=c(-0.5,1.8),xlim=c(19,80),lwd = 2.5,rug = FALSE, add=TRUE)
+plot_smooth(Pgam,view = "Day", cond = list(Trophic_Treatment = "Amphibian"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "Periphyton Mass log(g)",col="red",ylim=c(-0.5,1.8),xlim=c(19,80),lwd = 2.5,rug = FALSE, add=TRUE)
+plot_smooth(Pgam,view = "Day", cond = list(Trophic_Treatment = "Fish_Amphibian"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "Periphyton Mass logg)",col="blue",ylim=c(-0.5,1.8),xlim=c(19,80),lwd = 2.5,rug = FALSE, add=TRUE)
+legend(x = "topleft", bty = "n", legend = c("No vertebrate control","Larval anurans","Fish","Larval anurans and fish"), fill = c("black","red","green","blue"))
+```

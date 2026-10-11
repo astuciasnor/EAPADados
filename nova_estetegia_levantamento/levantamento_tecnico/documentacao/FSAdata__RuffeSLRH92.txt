@@ -1,0 +1,83 @@
+Biological data for Ruffe captured from the St. Louis River in 1992.
+
+Description:
+
+     Biological data for Ruffe (_Gymnocephalus cernuus_) captured in
+     the St. Louis River, Lake Superior in 1992.
+
+Format:
+
+     A data frame of 738 observations on the following 11 variables:
+
+     fish.id
+          A unique fish identification number (across all years, most
+          of which are not shown in this file
+
+     month
+          Month (numeric) of capture
+
+     day
+          Day of capture
+
+     year
+          Year of capture
+
+     indiv
+          A unique fish identification number within the year
+
+     location
+          Grid location of capture
+
+     length
+          Total length (mm)
+
+     weight
+          Weight (g)
+
+     sex
+          Sex factor ('female', 'male', or 'unknown')
+
+     maturity
+          Maturity stage factor ('developing', 'immature', 'mature',
+          'nearly.ripe', 'nearly.spent', 'recovering', 'ripe',
+          'running', 'spent', 'unknown', or 'yoy')
+
+     age
+          Age (yrs) from scales
+
+Topic(s):
+
+        * Length Frequency
+
+        * Weight-Length
+
+        * Growth
+
+        * von Bertalanffy
+
+        * Maturity
+
+Source:
+
+     personal collection by the United States Geological Survey, Lake
+     Superior Biological Station, Ashland, WI. CSV file
+
+Examples:
+
+     data(RuffeSLRH92)
+     str(RuffeSLRH92)
+     head(RuffeSLRH92)
+     op <- par(mfrow=c(2,2),pch=19)
+     hist(RuffeSLRH92$length,main="")
+     hist(RuffeSLRH92$age,main="")
+     plot(weight~length,data=RuffeSLRH92)
+     plot(length~age,data=RuffeSLRH92)
+     par(op)
+     xtabs(~age,data=RuffeSLRH92)
+     xtabs(~sex,data=RuffeSLRH92)
+     tmp <- c("yoy","immature","developing","mature","nearly.ripe","ripe",
+              "running","nearly.spent","spent","recovering","unknown")
+     RuffeSLRH92$maturity <- ordered(RuffeSLRH92$maturity,levels=tmp)
+     xtabs(~maturity,data=RuffeSLRH92)
+     xtabs(~maturity+month+sex,data=RuffeSLRH92)
+     

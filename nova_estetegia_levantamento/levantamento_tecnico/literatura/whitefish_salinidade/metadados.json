@@ -1,0 +1,143 @@
+{
+  "conjunto": "whitefish_salinidade",
+  "doi": "10.5061/dryad.bg79cnpph",
+  "titulo": "Stress, growth, and osmoregulatory data for the Atlantic Whitefish at different salinities",
+  "autores": [
+    {
+      "firstName": "Emily",
+      "lastName": "Yeung",
+      "email": "emilyyeung@cmail.carleton.ca",
+      "affiliation": "Carleton University",
+      "affiliationROR": "https://ror.org/02qtvee93",
+      "affiliations": [
+        {
+          "organization": "Carleton University",
+          "identifier": "https://ror.org/02qtvee93"
+        }
+      ],
+      "orcid": "0000-0002-2641-5605"
+    },
+    {
+      "firstName": "Zaina",
+      "lastName": "Lamontagne",
+      "email": "zaina.lamontagne@halifax.ca",
+      "affiliation": "Dalhousie University",
+      "affiliationROR": "https://ror.org/01e6qks80",
+      "affiliations": [
+        {
+          "organization": "Dalhousie University",
+          "identifier": "https://ror.org/01e6qks80"
+        }
+      ],
+      "order": 1
+    },
+    {
+      "firstName": "Annie",
+      "lastName": "Grigg-Branchflower",
+      "email": "annie.branchflower@queensu.ca",
+      "affiliation": "Queen's University",
+      "affiliationROR": "https://ror.org/02y72wh86",
+      "affiliations": [
+        {
+          "organization": "Queen's University",
+          "identifier": "https://ror.org/02y72wh86"
+        }
+      ],
+      "order": 2
+    },
+    {
+      "firstName": "John",
+      "lastName": "Batt",
+      "email": "john.batt@dal.ca",
+      "affiliation": "Dalhousie University",
+      "affiliationROR": "https://ror.org/01e6qks80",
+      "affiliations": [
+        {
+          "organization": "Dalhousie University",
+          "identifier": "https://ror.org/01e6qks80"
+        }
+      ],
+      "order": 3
+    },
+    {
+      "firstName": "Jeremy",
+      "lastName": "Broome",
+      "email": "jeremy.broome@dfo-mpo.gc.ca",
+      "affiliation": "Fisheries and Oceans Canada",
+      "affiliationROR": "https://ror.org/02qa1x782",
+      "affiliations": [
+        {
+          "organization": "Fisheries and Oceans Canada",
+          "identifier": "https://ror.org/02qa1x782"
+        }
+      ],
+      "order": 4
+    },
+    {
+      "firstName": "Paul",
+      "lastName": "Bentzen",
+      "email": "paul.bentzen@dal.ca",
+      "affiliation": "Dalhousie University",
+      "affiliationROR": "https://ror.org/01e6qks80",
+      "affiliations": [
+        {
+          "organization": "Dalhousie University",
+          "identifier": "https://ror.org/01e6qks80"
+        }
+      ],
+      "orcid": "0000-0003-4288-7730",
+      "order": 5
+    },
+    {
+      "firstName": "Anne",
+      "lastName": "Dalziel",
+      "email": "anne.dalziel@smu.ca",
+      "affiliation": "Saint Mary's University",
+      "affiliationROR": "https://ror.org/010zh7098",
+      "affiliations": [
+        {
+          "organization": "Saint Mary's University",
+          "identifier": "https://ror.org/010zh7098"
+        }
+      ],
+      "orcid": "0000-0002-3032-4714",
+      "order": 6
+    }
+  ],
+  "versao": 3,
+  "data_publicacao": "2026-04-23",
+  "tamanho_origem": 38671,
+  "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.bg79cnpph",
+  "zip": "whitefish_salinidade.zip",
+  "bytes_zip": 39352,
+  "sha256_zip": "2b180c25bb04ab5297e3afd744080603f5b8ffc4a9eb78b552260a505d75c8ef",
+  "content_type": "application/zip",
+  "arquivos_extraidos": [
+    {
+      "arquivo": "File_A.csv",
+      "bytes": 3203,
+      "sha256": "02880d78bd5a2f1e39180c4d413fa13babf7ff02e05d0a01dce5c7e8ac4f244b"
+    },
+    {
+      "arquivo": "File_B.csv",
+      "bytes": 4726,
+      "sha256": "0fdb36182add91c434c3aee84d664102ea9bb840934e3fcf8ed8c96b1cf2b0b1"
+    },
+    {
+      "arquivo": "File_C.csv",
+      "bytes": 2961,
+      "sha256": "04a8fcb483cd73c66223b6dc6113fcd87d0b9e065ccfb546970ebe8f1f966050"
+    },
+    {
+      "arquivo": "File_D.csv",
+      "bytes": 17845,
+      "sha256": "997d93603b8e48af8e21ee2792841297a002a582a986357e90c53bba7a5005eb"
+    },
+    {
+      "arquivo": "README.md",
+      "bytes": 9936,
+      "sha256": "6e56f6458e31d43958cf8abb6644e593a6f16633e9a24a44ed938ac7a992df59"
+    }
+  ],
+  "status": "obtido para avaliação; não incorporado ao EAPADados"
+}

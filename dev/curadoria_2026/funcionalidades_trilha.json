@@ -1,0 +1,1106 @@
+{
+  "data": "10/10/2026",
+  "criterio": [
+    "Consulta ao menu e ao código local da TRILHA em 10/10/2026.",
+    "Disponível significa conectado ao menu e com implementação identificada. Este levantamento não é uma homologação de todos os fluxos pela interface nem teste de todas as bases.",
+    "Em preparação significa tela informativa/placeholder no fluxo atual. Código legado ou arquivo isolado não foi contado como funcionalidade disponível.",
+    "Planejamento de DBC, DQL, parcelas subdivididas ou BACI não implica disponibilidade de um motor específico de análise para todo esse desenho.",
+    "Diagnósticos, pós-testes, gráficos e exportações variam por módulo e por dependências instaladas. Não há garantia de que todos os módulos participem do Projeto R integrado.",
+    "A planilha é uma referência de funcionalidades. As decisões sobre os conjuntos continuam exclusivamente em curadoria_eapadados_revisao.xlsx; nenhum dado foi alterado.",
+    "A estrutura indicada orienta a busca de exemplos; não constitui aprovação para remover linhas, criar dados sintéticos, imputar, recodificar ou incorporar conjuntos."
+  ],
+  "itens": [
+    {
+      "area": "Planejamento observacional",
+      "funcionalidade": "Transversal comparativo",
+      "situacao": "Disponível",
+      "descricao": "Planeja a comparação de grupos preexistentes em um período.",
+      "estrutura": "Grupos; unidades independentes; resposta; possíveis subunidades.",
+      "curadoria": "Preservar grupo e unidade amostral; distinguir indivíduo de pool.",
+      "fonte": "inst/app/modules/mod_planejamento_observacional.R",
+      "id": "TR001"
+    },
+    {
+      "area": "Planejamento observacional",
+      "funcionalidade": "Longitudinal comparativo",
+      "situacao": "Disponível",
+      "descricao": "Planeja o acompanhamento das mesmas unidades ao longo do tempo.",
+      "estrutura": "Identificador estável; grupo; ocasião; resposta em formato longo.",
+      "curadoria": "Identificadores e ocasiões são indispensáveis; não tratar visitas como réplicas independentes.",
+      "fonte": "inst/app/modules/mod_planejamento_observacional.R",
+      "id": "TR002"
+    },
+    {
+      "area": "Planejamento observacional",
+      "funcionalidade": "Estudo de gradiente",
+      "situacao": "Disponível",
+      "descricao": "Organiza observações ao longo de um gradiente contínuo.",
+      "estrutura": "Estação/unidade; variável de gradiente; resposta; possíveis subunidades.",
+      "curadoria": "Manter gradiente contínuo e identidade de estação; não criar grupos arbitrários.",
+      "fonte": "inst/app/modules/mod_planejamento_observacional.R",
+      "id": "TR003"
+    },
+    {
+      "area": "Planejamento observacional",
+      "funcionalidade": "Estudos de impacto: BA, CI e BACI",
+      "situacao": "Disponível",
+      "descricao": "Planeja antes/depois, controle/impacto e a combinação BACI.",
+      "estrutura": "Local; condição; período; unidade; resposta; replicação espacial e temporal.",
+      "curadoria": "Buscar desenho real completo; o planejamento não garante um motor geral de análise BACI.",
+      "fonte": "inst/app/modules/mod_planejamento_observacional.R",
+      "id": "TR004"
+    },
+    {
+      "area": "Planejamento e coleta",
+      "funcionalidade": "Monitoramento e séries temporais",
+      "situacao": "Disponível",
+      "descricao": "Organiza o plano de acompanhamento temporal.",
+      "estrutura": "Indicador; unidade; frequência; datas; locais de acompanhamento.",
+      "curadoria": "Manter periodicidade, lacunas e mudanças no esforço de observação.",
+      "fonte": "inst/app/modules/mod_monitoramento.R",
+      "id": "TR005"
+    },
+    {
+      "area": "Planejamento e coleta",
+      "funcionalidade": "Variáveis e ficha de coleta",
+      "situacao": "Disponível",
+      "descricao": "Define variáveis e organiza a estrutura da coleta nos fluxos de planejamento.",
+      "estrutura": "Nomes, tipos, unidades e unidade observacional.",
+      "curadoria": "A ficha deve preservar a hierarquia amostral e separar identificação de resposta.",
+      "fonte": "inst/app/modules/mod_planejamento_variaveis.R",
+      "id": "TR006"
+    },
+    {
+      "area": "Planejamento experimental",
+      "funcionalidade": "DIC — inteiramente casualizado",
+      "situacao": "Disponível",
+      "descricao": "Planeja e casualiza tratamentos entre unidades experimentais.",
+      "estrutura": "Tratamento; repetição; unidade experimental; resposta futura.",
+      "curadoria": "Réplicas são unidades experimentais, não medições dentro de um tanque.",
+      "fonte": "inst/app/modules/mod_experimental_design.R",
+      "id": "TR007"
+    },
+    {
+      "area": "Planejamento experimental",
+      "funcionalidade": "DBC — blocos casualizados",
+      "situacao": "Disponível",
+      "descricao": "Planeja tratamentos controlando a variação entre blocos.",
+      "estrutura": "Bloco; tratamento; unidade experimental.",
+      "curadoria": "Preservar blocos; não confundir disponibilidade do planejamento com análise específica de DBC.",
+      "fonte": "inst/app/modules/mod_experimental_design.R",
+      "id": "TR008"
+    },
+    {
+      "area": "Planejamento experimental",
+      "funcionalidade": "DQL — quadrado latino",
+      "situacao": "Disponível",
+      "descricao": "Planeja tratamentos com controle por linhas e colunas.",
+      "estrutura": "Linha; coluna; tratamento; unidade experimental.",
+      "curadoria": "Manter as duas restrições de casualização; análise específica não aparece como módulo próprio.",
+      "fonte": "inst/app/modules/mod_experimental_design.R",
+      "id": "TR009"
+    },
+    {
+      "area": "Planejamento experimental",
+      "funcionalidade": "Fatorial em DIC",
+      "situacao": "Disponível",
+      "descricao": "Planeja combinações de fatores e repetições.",
+      "estrutura": "Fatores; combinações; unidades experimentais.",
+      "curadoria": "Preferir cruzamento completo; não inventar combinações ausentes.",
+      "fonte": "inst/app/modules/mod_experimental_design.R",
+      "id": "TR010"
+    },
+    {
+      "area": "Planejamento experimental",
+      "funcionalidade": "Parcelas subdivididas",
+      "situacao": "Disponível",
+      "descricao": "Planeja fatores aplicados em parcelas e subparcelas.",
+      "estrutura": "Parcela; subparcela; fatores; resposta.",
+      "curadoria": "Exige dois níveis de unidade/erro; não é sinônimo de ANOVA com subamostras.",
+      "fonte": "inst/app/modules/mod_experimental_design.R",
+      "id": "TR011"
+    },
+    {
+      "area": "Dimensionamento amostral",
+      "funcionalidade": "Uma média: precisão",
+      "situacao": "Disponível",
+      "descricao": "Dimensiona n a partir de variabilidade, confiança e margem de erro.",
+      "estrutura": "Estimativa de desvio-padrão e precisão desejada; população finita opcional.",
+      "curadoria": "Um conjunto piloto com unidade e escala documentadas é útil.",
+      "fonte": "inst/app/modules/mod_n_poder.R",
+      "id": "TR012"
+    },
+    {
+      "area": "Dimensionamento amostral",
+      "funcionalidade": "Uma proporção: precisão",
+      "situacao": "Disponível",
+      "descricao": "Dimensiona n para estimar uma proporção.",
+      "estrutura": "Proporção esperada; confiança; margem; população finita opcional.",
+      "curadoria": "Documentar sucesso, denominador e população-alvo.",
+      "fonte": "inst/app/modules/mod_n_poder.R",
+      "id": "TR013"
+    },
+    {
+      "area": "Dimensionamento amostral",
+      "funcionalidade": "Comparação de médias: poder",
+      "situacao": "Disponível",
+      "descricao": "Dimensiona duas médias por teste t ou três ou mais por ANOVA.",
+      "estrutura": "Efeito esperado; variabilidade; alfa; poder; número de grupos.",
+      "curadoria": "Dados piloto devem permitir estimar efeito e variabilidade entre unidades.",
+      "fonte": "inst/app/modules/mod_n_poder.R",
+      "id": "TR014"
+    },
+    {
+      "area": "Dimensionamento amostral",
+      "funcionalidade": "Comparação de proporções: poder",
+      "situacao": "Disponível",
+      "descricao": "Dimensiona a comparação de duas proporções.",
+      "estrutura": "Proporções esperadas; alfa; poder.",
+      "curadoria": "Escolher exemplo com eventos e denominadores claros.",
+      "fonte": "inst/app/modules/mod_n_poder.R",
+      "id": "TR015"
+    },
+    {
+      "area": "Dimensionamento amostral",
+      "funcionalidade": "Correlação: poder",
+      "situacao": "Disponível",
+      "descricao": "Dimensiona n para detectar associação por correlação.",
+      "estrutura": "Correlação esperada; alfa; poder.",
+      "curadoria": "Usar pares de medidas de unidades independentes.",
+      "fonte": "inst/app/modules/mod_n_poder.R",
+      "id": "TR016"
+    },
+    {
+      "area": "Seleção da amostra",
+      "funcionalidade": "Amostragem aleatória simples",
+      "situacao": "Disponível",
+      "descricao": "Sorteia unidades a partir de um cadastro, com semente.",
+      "estrutura": "Cadastro da população e identificador único.",
+      "curadoria": "Preservar o cadastro completo; resposta medida não é necessária.",
+      "fonte": "inst/app/modules/mod_sampling.R",
+      "id": "TR017"
+    },
+    {
+      "area": "Seleção da amostra",
+      "funcionalidade": "Amostragem estratificada proporcional",
+      "situacao": "Disponível",
+      "descricao": "Distribui a amostra proporcionalmente entre estratos e sorteia unidades.",
+      "estrutura": "Identificador; estrato de cada unidade.",
+      "curadoria": "Não remover estratos raros sem avaliar a alocação.",
+      "fonte": "inst/app/modules/mod_sampling.R",
+      "id": "TR018"
+    },
+    {
+      "area": "Seleção da amostra",
+      "funcionalidade": "Amostragem sistemática",
+      "situacao": "Disponível",
+      "descricao": "Seleciona unidades de uma lista ordenada com intervalo de seleção.",
+      "estrutura": "Cadastro ordenado; identificador; tamanho da amostra.",
+      "curadoria": "A ordem do cadastro faz parte do desenho.",
+      "fonte": "inst/app/modules/mod_sampling.R",
+      "id": "TR019"
+    },
+    {
+      "area": "Seleção da amostra",
+      "funcionalidade": "Amostragem por conglomerados",
+      "situacao": "Disponível",
+      "descricao": "Sorteia conglomerados em um estágio ou unidades dentro deles em dois estágios.",
+      "estrutura": "Conglomerado; identificador das unidades; cadastro.",
+      "curadoria": "Manter vínculo unidade–conglomerado; não contar indivíduos como conglomerados.",
+      "fonte": "inst/app/modules/mod_sampling.R",
+      "id": "TR020"
+    },
+    {
+      "area": "Importação e organização",
+      "funcionalidade": "Importar CSV ou Excel",
+      "situacao": "Disponível",
+      "descricao": "Lê CSV, XLSX e XLS; permite selecionar planilha e convenções de separador/decimal.",
+      "estrutura": "Arquivo tabular com cabeçalhos e tipos reconhecíveis.",
+      "curadoria": "Boa base para mostrar decimal com vírgula, cabeçalhos e dados ausentes.",
+      "fonte": "inst/app/app.R",
+      "id": "TR021"
+    },
+    {
+      "area": "Importação e organização",
+      "funcionalidade": "Abrir conjuntos do EAPADados",
+      "situacao": "Disponível",
+      "descricao": "Seleciona conjuntos do pacote para exploração e análise.",
+      "estrutura": "Objeto disponível no pacote instalado.",
+      "curadoria": "A disponibilidade no seletor depende da versão instalada.",
+      "fonte": "inst/app/app.R",
+      "id": "TR022"
+    },
+    {
+      "area": "Importação e organização",
+      "funcionalidade": "Empilhar colunas",
+      "situacao": "Disponível",
+      "descricao": "Converte dados de formato largo para longo.",
+      "estrutura": "Identificadores e várias colunas de medidas/ocasiões.",
+      "curadoria": "Exemplo útil para medidas repetidas; preservar os identificadores.",
+      "fonte": "inst/app/app.R",
+      "id": "TR023"
+    },
+    {
+      "area": "Importação e organização",
+      "funcionalidade": "Alargar planilha",
+      "situacao": "Disponível",
+      "descricao": "Converte formato longo para largo.",
+      "estrutura": "Chaves de identificação; coluna de nomes; coluna de valores.",
+      "curadoria": "Conferir unicidade das combinações de chaves.",
+      "fonte": "inst/app/app.R",
+      "id": "TR024"
+    },
+    {
+      "area": "Importação e organização",
+      "funcionalidade": "Separar colunas",
+      "situacao": "Disponível",
+      "descricao": "Desmembra informação composta em colunas.",
+      "estrutura": "Coluna textual com separador ou padrão reconhecível.",
+      "curadoria": "Manter a correspondência com o registro original.",
+      "fonte": "inst/app/app.R",
+      "id": "TR025"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Organizar variáveis",
+      "situacao": "Disponível",
+      "descricao": "Seleciona, renomeia e ajusta tipos de variáveis na preparação.",
+      "estrutura": "Tabela com tipos e significados documentados.",
+      "curadoria": "Não descartar ID, bloco, unidade, tempo, esforço ou coordenadas por parecerem auxiliares.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR026"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Tratar valores ausentes",
+      "situacao": "Disponível",
+      "descricao": "Remove linhas ou imputa média, mediana, moda ou constante, conforme a opção.",
+      "estrutura": "Variável com NA e explicação de sua origem.",
+      "curadoria": "Imputação e exclusão não são limpezas neutras; dependem de aprovação na curadoria.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR027"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Remover duplicatas",
+      "situacao": "Disponível",
+      "descricao": "Mantém a primeira linha por combinação das colunas escolhidas.",
+      "estrutura": "Identificador ou chave que defina duplicação real.",
+      "curadoria": "Linhas iguais de indivíduos distintos não são duplicatas indevidas.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR028"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Padronizar texto",
+      "situacao": "Disponível",
+      "descricao": "Ajusta espaços e caixa: minúsculas, maiúsculas ou título.",
+      "estrutura": "Colunas textuais/categorias.",
+      "curadoria": "Conferir se rótulos distintos não serão fundidos inadvertidamente.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR029"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Filtrar linhas",
+      "situacao": "Disponível",
+      "descricao": "Recorta observações por condições numéricas ou categóricas.",
+      "estrutura": "Variável de filtro e critérios explícitos.",
+      "curadoria": "Registrar critério, n antes/depois e impacto na estrutura amostral.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR030"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Sortear subamostras",
+      "situacao": "Disponível",
+      "descricao": "Seleciona uma amostra de linhas, inclusive dentro de grupos.",
+      "estrutura": "Base com registros e grupos opcionais.",
+      "curadoria": "Não confundir sorteio didático com amostragem independente em dados hierárquicos.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR031"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Calcular variáveis",
+      "situacao": "Disponível",
+      "descricao": "Cria variáveis derivadas por expressões na receita de preparação.",
+      "estrutura": "Colunas necessárias ao cálculo.",
+      "curadoria": "Documentar fórmula, unidade e significado da nova variável.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR032"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Reescalar unidades",
+      "situacao": "Disponível",
+      "descricao": "Altera a escala de uma variável por conversão configurada.",
+      "estrutura": "Variável numérica; unidade original e unidade de destino.",
+      "curadoria": "Confirmar unidade original antes de converter ou renomear.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR033"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Padronizar valores numéricos",
+      "situacao": "Disponível",
+      "descricao": "Oferece z-score, centralização e escala min–max de 0 a 1.",
+      "estrutura": "Variáveis numéricas.",
+      "curadoria": "Preservar as medidas originais e explicar a escala derivada.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR034"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Criar classes",
+      "situacao": "Disponível",
+      "descricao": "Agrupa uma variável em intervalos de mesma largura ou por quantis.",
+      "estrutura": "Variável numérica.",
+      "curadoria": "Classes são derivadas; preservar a variável contínua.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR035"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Dicotomizar",
+      "situacao": "Disponível",
+      "descricao": "Cria 0/1 por limiar numérico ou seleção de categorias.",
+      "estrutura": "Variável numérica ou categórica.",
+      "curadoria": "Definir claramente o evento 1 e justificar o limiar.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR036"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Agrupar e sumarizar",
+      "situacao": "Disponível",
+      "descricao": "Produz resumos por combinações de grupos; encerra a receita dessa base.",
+      "estrutura": "Grupos; respostas numéricas; unidades identificadas.",
+      "curadoria": "Não substituir dados individuais por médias quando a análise precisa de réplicas.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR037"
+    },
+    {
+      "area": "Tratamento dos dados",
+      "funcionalidade": "Construir tabela de contingência",
+      "situacao": "Disponível",
+      "descricao": "Conta combinações categóricas e calcula percentuais por linha, coluna ou total.",
+      "estrutura": "Variáveis categóricas; unidades observacionais.",
+      "curadoria": "Conservar contagens; percentuais sozinhos não bastam para os testes.",
+      "fonte": "inst/app/modules/registro_tratamentos.R",
+      "id": "TR038"
+    },
+    {
+      "area": "Bases e reprodutibilidade",
+      "funcionalidade": "Base compartilhada e bases derivadas",
+      "situacao": "Disponível",
+      "descricao": "Mantém preparação comum e ramificações com receitas específicas de tratamento.",
+      "estrutura": "Uma base de origem e receitas ordenadas.",
+      "curadoria": "Derivações partem da base compartilhada; preservam contexto de preparação.",
+      "fonte": "inst/app/modules/mod_bases_derivadas.R",
+      "id": "TR039"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Panorama do conjunto",
+      "situacao": "Disponível",
+      "descricao": "Apresenta dimensões, tipos e ausências para conhecer a base.",
+      "estrutura": "Tabela numérica e/ou categórica.",
+      "curadoria": "Exemplo deve permitir discutir significado das linhas e dados ausentes.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR040"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Resumo das variáveis",
+      "situacao": "Disponível",
+      "descricao": "Apresenta estatísticas descritivas, distribuições e frequências.",
+      "estrutura": "Variáveis numéricas e categóricas.",
+      "curadoria": "Incluir unidades e níveis compreensíveis.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR041"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Relações entre variáveis",
+      "situacao": "Disponível",
+      "descricao": "Explora associações e comparações conforme os tipos das variáveis.",
+      "estrutura": "Pares de variáveis e grupos opcionais.",
+      "curadoria": "Associação exploratória não define causalidade.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR042"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Pressupostos e valores extremos",
+      "situacao": "Disponível",
+      "descricao": "Ajuda a avaliar normalidade, gráficos Q–Q e observações extremas.",
+      "estrutura": "Variáveis numéricas; resíduos nos módulos de modelos.",
+      "curadoria": "Não excluir valores extremos automaticamente.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR043"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Comparar transformações",
+      "situacao": "Disponível",
+      "descricao": "Compara original, log, raiz quadrada e Box–Cox quando admissíveis.",
+      "estrutura": "Variável numérica; positividade conforme a transformação.",
+      "curadoria": "Exploração não altera a base; zeros e valores negativos restringem opções.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR044"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Histograma e densidade",
+      "situacao": "Disponível",
+      "descricao": "Mostra a distribuição de uma variável numérica.",
+      "estrutura": "Variável numérica.",
+      "curadoria": "Escolher exemplos com formas de distribuição distintas.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR045"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Gráfico de barras",
+      "situacao": "Disponível",
+      "descricao": "Mostra frequências e comparações categóricas.",
+      "estrutura": "Variável categórica e agrupamento quando pertinente.",
+      "curadoria": "Preservar níveis e denominadores.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR046"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Comparar grupos graficamente",
+      "situacao": "Disponível",
+      "descricao": "Oferece boxplot, violino, pontos e resumos com média, IC e n.",
+      "estrutura": "Resposta numérica; grupo.",
+      "curadoria": "Informar se n representa indivíduos, tanques ou outra unidade.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR047"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Dispersão e tendência",
+      "situacao": "Disponível",
+      "descricao": "Mostra pares numéricos, com reta linear, suavização LOESS ou sem tendência.",
+      "estrutura": "Duas variáveis numéricas; grupo opcional.",
+      "curadoria": "Buscar gradientes, não linearidade e amplitude útil.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR048"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Linhas em eixo ordenado",
+      "situacao": "Disponível",
+      "descricao": "Conecta medidas ao longo de um eixo ordenado.",
+      "estrutura": "Eixo ordenado; resposta; série/grupo se houver.",
+      "curadoria": "Conservar ordem e espaçamento; não confundir com análise formal temporal.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR049"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Matriz de dispersão",
+      "situacao": "Disponível",
+      "descricao": "Compara visualmente vários pares de variáveis numéricas.",
+      "estrutura": "Várias variáveis numéricas nas mesmas unidades.",
+      "curadoria": "Útil para biometria e qualidade da água.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR050"
+    },
+    {
+      "area": "Exploração e gráficos",
+      "funcionalidade": "Mapa de calor de correlações",
+      "situacao": "Disponível",
+      "descricao": "Resume correlações entre variáveis em uma matriz colorida.",
+      "estrutura": "Várias variáveis numéricas.",
+      "curadoria": "Correlações exigem observações correspondentes.",
+      "fonte": "inst/app/modules/mod_descrevendo_dados.R",
+      "id": "TR051"
+    },
+    {
+      "area": "Frequências e proporções",
+      "funcionalidade": "Uma proporção",
+      "situacao": "Disponível",
+      "descricao": "Teste binomial exato contra uma proporção de referência, com IC.",
+      "estrutura": "Resposta binária por unidade independente.",
+      "curadoria": "Informar evento de sucesso e hipótese de referência.",
+      "fonte": "inst/app/modules/mod_proporcoes.R",
+      "id": "TR052"
+    },
+    {
+      "area": "Frequências e proporções",
+      "funcionalidade": "Duas proporções independentes",
+      "situacao": "Disponível",
+      "descricao": "Compara proporções de dois grupos por prop.test; a receita também inclui Fisher.",
+      "estrutura": "Resposta binária e grupo com dois níveis.",
+      "curadoria": "Pares, blocos e agrupamentos não são atendidos por este procedimento.",
+      "fonte": "inst/app/modules/mod_proporcoes.R",
+      "id": "TR053"
+    },
+    {
+      "area": "Frequências e proporções",
+      "funcionalidade": "Qui-quadrado de aderência",
+      "situacao": "Disponível",
+      "descricao": "Compara frequências observadas com proporções esperadas especificadas.",
+      "estrutura": "Resposta categórica e hipótese de distribuição esperada.",
+      "curadoria": "A distribuição esperada precisa ter justificativa substantiva.",
+      "fonte": "inst/app/modules/mod_proporcoes.R",
+      "id": "TR054"
+    },
+    {
+      "area": "Frequências e proporções",
+      "funcionalidade": "Qui-quadrado de independência",
+      "situacao": "Disponível",
+      "descricao": "Avalia associação em tabela de contingência.",
+      "estrutura": "Duas categorias por observação ou tabela longa com frequência n.",
+      "curadoria": "Não entregar apenas percentuais; conferir contagens esperadas.",
+      "fonte": "inst/app/app.R",
+      "id": "TR055"
+    },
+    {
+      "area": "Frequências e proporções",
+      "funcionalidade": "McNemar",
+      "situacao": "Disponível",
+      "descricao": "Compara respostas binárias pareadas.",
+      "estrutura": "Duas respostas binárias do mesmo par/unidade.",
+      "curadoria": "Preservar correspondência antes/depois; buscar pares com mudanças em ambas as direções.",
+      "fonte": "inst/app/app.R",
+      "id": "TR056"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "Teste t: uma amostra",
+      "situacao": "Disponível",
+      "descricao": "Compara uma média com valor de referência.",
+      "estrutura": "Resposta numérica de unidades independentes.",
+      "curadoria": "Documentar a referência e a unidade da resposta.",
+      "fonte": "inst/app/app.R",
+      "id": "TR057"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "Teste t: dois grupos independentes",
+      "situacao": "Disponível",
+      "descricao": "Compara duas médias; Welch ou Student com variâncias iguais.",
+      "estrutura": "Resposta numérica; grupo com dois níveis.",
+      "curadoria": "Não converter dados pareados em independentes.",
+      "fonte": "inst/app/app.R",
+      "id": "TR058"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "Teste t pareado",
+      "situacao": "Disponível",
+      "descricao": "Compara duas medidas correspondentes.",
+      "estrutura": "Duas medidas numéricas por unidade/par.",
+      "curadoria": "ID e pareamento não podem se perder no recorte.",
+      "fonte": "inst/app/app.R",
+      "id": "TR059"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "ANOVA de um fator",
+      "situacao": "Disponível",
+      "descricao": "Compara grupos; opção clássica/Tukey ou Welch/Games–Howell.",
+      "estrutura": "Resposta numérica; fator; réplicas independentes.",
+      "curadoria": "Médias, DP e n não substituem as observações para este fluxo.",
+      "fonte": "inst/app/app.R",
+      "id": "TR060"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "ANOVA com subamostras",
+      "situacao": "Disponível",
+      "descricao": "Separa unidades e subunidades, com efeito aleatório da unidade; contrasta abordagens didáticas.",
+      "estrutura": "Tratamento; unidade experimental; subunidade; resposta.",
+      "curadoria": "Prioridade de curadoria: dados hierárquicos reais e documentação da unidade experimental.",
+      "fonte": "inst/app/app.R",
+      "id": "TR061"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "ANOVA de medidas repetidas",
+      "situacao": "Disponível",
+      "descricao": "Compara momentos das mesmas unidades no fluxo de um fator temporal.",
+      "estrutura": "ID; momento; resposta em formato longo; grade completa.",
+      "curadoria": "Buscar seguimento real; não assumir suporte geral a desenhos longitudinais mistos.",
+      "fonte": "inst/app/app.R",
+      "id": "TR062"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "ANOVA de dois fatores",
+      "situacao": "Disponível",
+      "descricao": "Estima efeitos de dois fatores e sua interação.",
+      "estrutura": "Dois fatores; resposta; réplicas nas combinações.",
+      "curadoria": "Preferir fatorial completo; verificar células vazias e controles externos ao fatorial.",
+      "fonte": "inst/app/app.R",
+      "id": "TR063"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "ANCOVA",
+      "situacao": "Disponível",
+      "descricao": "Compara grupos ajustando por covariável numérica.",
+      "estrutura": "Fator; covariável contínua; resposta numérica.",
+      "curadoria": "Buscar sobreposição da covariável entre grupos e relação interpretável.",
+      "fonte": "inst/app/app.R",
+      "id": "TR064"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "Uma variância: qui-quadrado",
+      "situacao": "Disponível",
+      "descricao": "Testa uma variância contra valor de referência.",
+      "estrutura": "Resposta numérica e variância de referência.",
+      "curadoria": "Referência deve usar a unidade ao quadrado; pressuposto de normalidade.",
+      "fonte": "inst/app/app.R",
+      "id": "TR065"
+    },
+    {
+      "area": "Testes paramétricos",
+      "funcionalidade": "Duas variâncias: teste F",
+      "situacao": "Disponível",
+      "descricao": "Compara variâncias de dois grupos.",
+      "estrutura": "Resposta numérica; dois grupos independentes.",
+      "curadoria": "Exemplo deve permitir discutir sensibilidade à não normalidade.",
+      "fonte": "inst/app/app.R",
+      "id": "TR066"
+    },
+    {
+      "area": "Testes não paramétricos",
+      "funcionalidade": "Mann–Whitney",
+      "situacao": "Disponível",
+      "descricao": "Compara dois grupos independentes por postos.",
+      "estrutura": "Resposta numérica/ordenável; dois grupos.",
+      "curadoria": "Preservar observações individuais e empates.",
+      "fonte": "inst/app/modules/mod_nonparametric.R",
+      "id": "TR067"
+    },
+    {
+      "area": "Testes não paramétricos",
+      "funcionalidade": "Wilcoxon pareado",
+      "situacao": "Disponível",
+      "descricao": "Testa diferenças entre pares por postos sinalizados.",
+      "estrutura": "Duas medidas correspondentes por unidade.",
+      "curadoria": "Manter pares e diferenças nulas; não reordenar as colunas separadamente.",
+      "fonte": "inst/app/modules/mod_nonparametric.R",
+      "id": "TR068"
+    },
+    {
+      "area": "Testes não paramétricos",
+      "funcionalidade": "Kruskal–Wallis e Dunn",
+      "situacao": "Disponível",
+      "descricao": "Compara vários grupos independentes e oferece pós-teste de Dunn com ajustes.",
+      "estrutura": "Resposta ordenável; fator com três ou mais grupos.",
+      "curadoria": "Pós-teste depende dos pacotes auxiliares disponíveis.",
+      "fonte": "inst/app/modules/mod_nonparametric.R",
+      "id": "TR069"
+    },
+    {
+      "area": "Testes não paramétricos",
+      "funcionalidade": "Friedman",
+      "situacao": "Disponível",
+      "descricao": "Compara condições pareadas; comparações Wilcoxon com ajuste de Holm.",
+      "estrutura": "Unidade/bloco; condição; resposta; grade completa.",
+      "curadoria": "Prioridade: medidas repetidas reais sem perda de identificação.",
+      "fonte": "inst/app/app.R",
+      "id": "TR070"
+    },
+    {
+      "area": "Correlação e regressão",
+      "funcionalidade": "Correlação de Pearson, Spearman e Kendall",
+      "situacao": "Disponível",
+      "descricao": "Quantifica associação entre duas variáveis com alternativas paramétrica e por postos.",
+      "estrutura": "Duas variáveis correspondentes por unidade.",
+      "curadoria": "Incluir exemplos com empates, relação monotônica e valores extremos.",
+      "fonte": "inst/app/modules/mod_correlacao.R",
+      "id": "TR071"
+    },
+    {
+      "area": "Correlação e regressão",
+      "funcionalidade": "Regressão linear simples",
+      "situacao": "Disponível",
+      "descricao": "Ajusta resposta numérica por um preditor numérico e apresenta diagnósticos.",
+      "estrutura": "Resposta contínua; preditor numérico.",
+      "curadoria": "Priorizar amplitude do preditor e unidades independentes.",
+      "fonte": "inst/app/modules/mod_regression.R",
+      "id": "TR072"
+    },
+    {
+      "area": "Correlação e regressão",
+      "funcionalidade": "Regressão logística binária",
+      "situacao": "Disponível",
+      "descricao": "Modela probabilidade de resposta 0/1.",
+      "estrutura": "Resposta binária; preditor(es) admitidos pelo módulo.",
+      "curadoria": "Conferir sucesso/fracasso e evitar separação completa.",
+      "fonte": "inst/app/app.R",
+      "id": "TR073"
+    },
+    {
+      "area": "Modelos de contagem",
+      "funcionalidade": "Regressão de Poisson",
+      "situacao": "Disponível",
+      "descricao": "Modela contagens; permite múltiplos preditores e exposição positiva como offset.",
+      "estrutura": "Contagem inteira não negativa; preditores; esforço/exposição opcional.",
+      "curadoria": "Preservar zeros e esforço; CPUE contínua não substitui a contagem com offset.",
+      "fonte": "inst/app/modules/mod_regressao_contagem.R",
+      "id": "TR074"
+    },
+    {
+      "area": "Modelos de contagem",
+      "funcionalidade": "Regressão binomial negativa",
+      "situacao": "Disponível",
+      "descricao": "Modela contagens com sobredispersão; aceita exposição como offset.",
+      "estrutura": "Contagem; preditores; exposição opcional.",
+      "curadoria": "Buscar sobredispersão real; não produzir contagens artificiais por arredondamento.",
+      "fonte": "inst/app/modules/mod_regressao_contagem.R",
+      "id": "TR075"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Descobrindo o modelo",
+      "situacao": "Disponível",
+      "descricao": "Apoia a exploração de formas de relação e escolha de curva.",
+      "estrutura": "Pares de variáveis numéricas.",
+      "curadoria": "Escolher exemplo com mecanismo e domínio conhecidos.",
+      "fonte": "inst/app/app.R",
+      "id": "TR076"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Modelo exponencial",
+      "situacao": "Disponível",
+      "descricao": "Ajusta Y = a × exp(bX).",
+      "estrutura": "X e Y numéricos; domínio apropriado.",
+      "curadoria": "Dados reais com amplitude suficiente para identificar a curvatura.",
+      "fonte": "inst/app/modules/mod_nonlinear.R",
+      "id": "TR077"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Modelo de potência / alometria",
+      "situacao": "Disponível",
+      "descricao": "Ajusta Y = a × X^b; inclui relação peso–comprimento.",
+      "estrutura": "Comprimento e peso, ou outro par positivo.",
+      "curadoria": "Confirmar unidades, espécies, estágios e possíveis grupos.",
+      "fonte": "inst/app/modules/mod_nonlinear.R",
+      "id": "TR078"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Crescimento de von Bertalanffy",
+      "situacao": "Disponível",
+      "descricao": "Ajusta curva de crescimento por idade/tempo.",
+      "estrutura": "Idade/tempo e tamanho; cobertura de idades.",
+      "curadoria": "Buscar medidas reais; poucos indivíduos jovens não identificam bem a assíntota.",
+      "fonte": "inst/app/modules/mod_nonlinear.R",
+      "id": "TR079"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Modelo logístico de crescimento",
+      "situacao": "Disponível",
+      "descricao": "Ajusta curva sigmoidal contínua.",
+      "estrutura": "Tempo e tamanho/biomassa com fases da curva.",
+      "curadoria": "É crescimento logístico, diferente da regressão logística de resposta binária.",
+      "fonte": "inst/app/modules/mod_nonlinear.R",
+      "id": "TR080"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Modelo polinomial quadrático",
+      "situacao": "Disponível",
+      "descricao": "Ajusta relação com termo de segundo grau.",
+      "estrutura": "X e Y numéricos.",
+      "curadoria": "Não extrapolar além do domínio observado.",
+      "fonte": "inst/app/modules/mod_nonlinear.R",
+      "id": "TR081"
+    },
+    {
+      "area": "Curvas e crescimento",
+      "funcionalidade": "Modelo logarítmico",
+      "situacao": "Disponível",
+      "descricao": "Ajusta Y = a + b × ln(X).",
+      "estrutura": "X positivo; Y numérico.",
+      "curadoria": "Não deslocar zeros arbitrariamente para permitir o ajuste.",
+      "fonte": "inst/app/modules/mod_nonlinear.R",
+      "id": "TR082"
+    },
+    {
+      "area": "Séries temporais",
+      "funcionalidade": "Visualizar e suavizar séries",
+      "situacao": "Disponível",
+      "descricao": "Mostra a evolução, agrega por médias mensais/anuais e aplica média móvel.",
+      "estrutura": "Data; resposta numérica; série identificada.",
+      "curadoria": "Conservar datas, lacunas, periodicidade e significado da agregação.",
+      "fonte": "inst/app/modules/mod_series_temporais.R",
+      "id": "TR083"
+    },
+    {
+      "area": "Séries temporais",
+      "funcionalidade": "Decomposição aditiva",
+      "situacao": "Disponível",
+      "descricao": "Separa tendência, sazonalidade e resíduos de séries mensais.",
+      "estrutura": "Série mensal com pelo menos 24 meses.",
+      "curadoria": "O módulo usa interpolação temporária para lacunas; não altera a base original.",
+      "fonte": "inst/app/modules/mod_series_temporais.R",
+      "id": "TR084"
+    },
+    {
+      "area": "Séries temporais",
+      "funcionalidade": "Autocorrelação — ACF",
+      "situacao": "Disponível",
+      "descricao": "Examina dependência entre observações defasadas.",
+      "estrutura": "Série temporal ordenada e espaçamento regular.",
+      "curadoria": "Evitar tratar as observações como unidades independentes; conferir tratamento das lacunas.",
+      "fonte": "inst/app/modules/mod_series_temporais.R",
+      "id": "TR085"
+    },
+    {
+      "area": "Análise multivariada",
+      "funcionalidade": "PCA — componentes principais",
+      "situacao": "Disponível",
+      "descricao": "Resume várias variáveis numéricas; padronização, componentes e biplots; opção de imputação.",
+      "estrutura": "Matriz de unidades × variáveis numéricas; grupo opcional.",
+      "curadoria": "Conferir escalas, ausências e unidade da linha; imputação via missMDA é opcional.",
+      "fonte": "inst/app/modules/mod_pca.R",
+      "id": "TR086"
+    },
+    {
+      "area": "Análise multivariada",
+      "funcionalidade": "Agrupamento hierárquico — HCA",
+      "situacao": "Disponível",
+      "descricao": "Agrupa linhas; distâncias euclidiana, Manhattan e binária/Jaccard; ligações Ward, completa, simples e média.",
+      "estrutura": "Matriz numérica; presença/ausência para distância binária.",
+      "curadoria": "A orientação da matriz define quem é agrupado; Jaccard/binária não usa z-score.",
+      "fonte": "inst/app/modules/mod_hca.R",
+      "id": "TR087"
+    },
+    {
+      "area": "Mapas",
+      "funcionalidade": "Mapa de pontos / onde amostrar",
+      "situacao": "Disponível",
+      "descricao": "Localiza estações e unidades por latitude/longitude.",
+      "estrutura": "Latitude; longitude; identificação do local.",
+      "curadoria": "Conferir datum, sinal e convenção de longitude; sorteio espacial ainda não é recurso disponível.",
+      "fonte": "inst/app/modules/mod_mapa_pontos.R",
+      "id": "TR088"
+    },
+    {
+      "area": "Mapas",
+      "funcionalidade": "Mapa de bolhas proporcionais",
+      "situacao": "Disponível",
+      "descricao": "Representa magnitude por tamanho de bolha; permite grupos e rótulos.",
+      "estrutura": "Coordenadas e magnitude numérica não negativa.",
+      "curadoria": "Prioridade: dados reais georreferenciados com metadados e variável mapeável.",
+      "fonte": "inst/app/modules/mod_mapa_pontos.R",
+      "id": "TR089"
+    },
+    {
+      "area": "Mapas",
+      "funcionalidade": "Mapa coroplético por UF",
+      "situacao": "Disponível",
+      "descricao": "Colore unidades federativas do Brasil por indicador.",
+      "estrutura": "UF reconhecível e valor por estado.",
+      "curadoria": "Compatibilizar códigos de UF e ano; evitar misturar total e taxa.",
+      "fonte": "inst/app/modules/mod_mapa.R",
+      "id": "TR090"
+    },
+    {
+      "area": "Laboratório de conceitos",
+      "funcionalidade": "Teorema do Limite Central: médias",
+      "situacao": "Disponível",
+      "descricao": "Simula distribuições de médias amostrais.",
+      "estrutura": "Parâmetros da simulação; não exige conjunto empírico.",
+      "curadoria": "Simulação didática interna não corresponde à incorporação de novo conjunto sintético.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR091"
+    },
+    {
+      "area": "Laboratório de conceitos",
+      "funcionalidade": "Simuladores de teste t e ANOVA",
+      "situacao": "Disponível",
+      "descricao": "Exploram resultados por simulação nos painéis de testes.",
+      "estrutura": "Parâmetros de grupos, variabilidade e tamanho amostral.",
+      "curadoria": "Não exige novos conjuntos de dados para o pacote.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR092"
+    },
+    {
+      "area": "Comunicação dos resultados",
+      "funcionalidade": "Projeto R e relatório reproduzível",
+      "situacao": "Disponível",
+      "descricao": "Seleciona execuções integradas, organiza texto/componentes e exporta projeto ZIP com código e Quarto.",
+      "estrutura": "Análises registradas e suas bases/receitas.",
+      "curadoria": "Word e HTML são gerados ao renderizar no RStudio; nem todo módulo está integrado ao registro.",
+      "fonte": "inst/app/modules/mod_comunicacao.R",
+      "id": "TR093"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "Regressão linear múltipla",
+      "situacao": "Em preparação",
+      "descricao": "Entrada de menu ainda apresenta módulo em desenvolvimento.",
+      "estrutura": "Resposta numérica e múltiplos preditores, quando implementado.",
+      "curadoria": "Distinguir da regressão de contagem, que já aceita múltiplos preditores.",
+      "fonte": "inst/app/app.R",
+      "id": "TR094"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "Previsão de séries temporais",
+      "situacao": "Em preparação",
+      "descricao": "Tela introdutória em preparação; não há fluxo de previsão pronto.",
+      "estrutura": "Série regular suficientemente longa, quando implementado.",
+      "curadoria": "Não escolher dados pressupondo ARIMA/ETS já disponíveis.",
+      "fonte": "inst/app/app.R",
+      "id": "TR095"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "K-means",
+      "situacao": "Em preparação",
+      "descricao": "Entrada de menu em preparação.",
+      "estrutura": "Matriz numérica, quando implementado.",
+      "curadoria": "Pode ser atendido futuramente por dados já adequados à PCA/HCA.",
+      "fonte": "inst/app/app.R",
+      "id": "TR096"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "PERMANOVA",
+      "situacao": "Em preparação",
+      "descricao": "Entrada de menu em preparação.",
+      "estrutura": "Matriz multivariada e desenho/grupos, quando implementado.",
+      "curadoria": "Conservar desenho amostral e matriz original para uso futuro.",
+      "fonte": "inst/app/app.R",
+      "id": "TR097"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "Densidade de ocorrências",
+      "situacao": "Em preparação",
+      "descricao": "Tela de mapa em preparação; arquivo de módulo existente não equivale a integração ativa.",
+      "estrutura": "Ocorrências georreferenciadas, quando implementado.",
+      "curadoria": "Não classificar o recurso como operacional apenas por existir arquivo de código.",
+      "fonte": "inst/app/app.R",
+      "id": "TR098"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "Dependência espacial",
+      "situacao": "Em preparação",
+      "descricao": "Tela em preparação.",
+      "estrutura": "Dados espaciais e definição de vizinhança, quando implementado.",
+      "curadoria": "Não há fluxo ativo de análise espacial nesse item.",
+      "fonte": "inst/app/app.R",
+      "id": "TR099"
+    },
+    {
+      "area": "Recursos em preparação",
+      "funcionalidade": "Ambiente nos pontos",
+      "situacao": "Em preparação",
+      "descricao": "Tela em preparação.",
+      "estrutura": "Pontos e dados ambientais/raster, quando implementado.",
+      "curadoria": "Extração ambiental/raster não está disponível nesse fluxo de menu.",
+      "fonte": "inst/app/app.R",
+      "id": "TR100"
+    },
+    {
+      "area": "Laboratório em preparação",
+      "funcionalidade": "LLN, IC e TLC para proporções",
+      "situacao": "Em preparação",
+      "descricao": "Lei dos Grandes Números, cobertura de IC e TLC de proporções são telas em construção.",
+      "estrutura": "Simulações futuras.",
+      "curadoria": "Não exigem novos conjuntos empíricos.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR101"
+    },
+    {
+      "area": "Laboratório em preparação",
+      "funcionalidade": "Distribuições de probabilidade",
+      "situacao": "Em preparação",
+      "descricao": "Visualizadores Normal, binomial, Poisson, t, F e qui-quadrado estão em construção neste laboratório.",
+      "estrutura": "Parâmetros de distribuição.",
+      "curadoria": "Isto não impede o uso dessas distribuições nos testes já implementados.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR102"
+    },
+    {
+      "area": "Laboratório em preparação",
+      "funcionalidade": "P-valor, permutação, erros e poder",
+      "situacao": "Em preparação",
+      "descricao": "Visualizadores conceituais em construção.",
+      "estrutura": "Simulações futuras.",
+      "curadoria": "Dimensionamento amostral por poder já existe em outro módulo.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR103"
+    },
+    {
+      "area": "Laboratório em preparação",
+      "funcionalidade": "Simuladores qui-quadrado e correlação",
+      "situacao": "Em preparação",
+      "descricao": "Abas em construção; simuladores t e ANOVA já estão disponíveis.",
+      "estrutura": "Simulações futuras.",
+      "curadoria": "Testes reais de qui-quadrado e correlação já existem em outros menus.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR104"
+    },
+    {
+      "area": "Laboratório em preparação",
+      "funcionalidade": "Anscombe/Datasaurus, teste de fila e dispersão",
+      "situacao": "Em preparação",
+      "descricao": "Painéis conceituais de visualização em construção.",
+      "estrutura": "Exemplos pedagógicos futuros.",
+      "curadoria": "Não confundir presença no catálogo com ferramenta executável.",
+      "fonte": "inst/app/modules/mod_laboratorio.R",
+      "id": "TR105"
+    }
+  ],
+  "prioridades": [
+    [
+      "Pares e seguimento",
+      "t pareado, Wilcoxon, McNemar, Friedman e medidas repetidas",
+      "ID estável, ocasiões/condições e respostas correspondentes; binárias e contínuas."
+    ],
+    [
+      "Hierarquia amostral",
+      "ANOVA com subamostras",
+      "Tratamento, unidade experimental e subunidades reais; réplicas independentes identificadas."
+    ],
+    [
+      "Dois fatores e covariáveis",
+      "ANOVA de dois fatores e ANCOVA",
+      "Fatorial com replicação; ou grupos com covariável contínua e sobreposição de valores."
+    ],
+    [
+      "Eventos e esforço",
+      "Logística binária, Poisson e binomial negativa",
+      "Eventos reais 0/1; contagens inteiras com zeros, exposição e preditores; sobredispersão documentada."
+    ],
+    [
+      "Tempo e sazonalidade",
+      "Séries, decomposição e ACF",
+      "Datas regulares, pelo menos dois ciclos anuais mensais, lacunas e esforço documentados."
+    ],
+    [
+      "Múltiplas variáveis",
+      "PCA e HCA",
+      "Unidades × medidas numéricas; ou presença/ausência com orientação explícita."
+    ],
+    [
+      "Espaço",
+      "Pontos, bolhas e coroplético",
+      "Coordenadas verificadas com indicador; ou UF e indicador comparável por estado."
+    ],
+    [
+      "Cadastros e delineamentos",
+      "Amostragem e planejamento",
+      "Lista completa de unidades, estratos, conglomerados, blocos e níveis de casualização."
+    ]
+  ]
+}

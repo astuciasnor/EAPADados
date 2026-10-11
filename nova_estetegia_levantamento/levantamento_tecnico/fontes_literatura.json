@@ -1,0 +1,14 @@
+[
+  {
+    "conjunto": "whitefish_salinidade",
+    "doi": "10.5061/dryad.bg79cnpph",
+    "status": "pendente",
+    "erro": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "conjunto": "mesocosmos_secagem",
+    "doi": "10.5061/dryad.hx3ffbgkn",
+    "status": "pendente",
+    "erro": "HTTP Error 401: Unauthorized"
+  }
+]

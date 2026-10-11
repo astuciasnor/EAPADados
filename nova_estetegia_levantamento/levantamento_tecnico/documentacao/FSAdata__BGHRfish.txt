@@ -1,0 +1,53 @@
+Fish information from samples collected from Big Hill Reservoir, KS,
+2014.
+
+Description:
+
+     Fish information from samples collected from Big Hill Reservoir,
+     KS, in May, 2014.
+
+Format:
+
+     A data frame with 266 observations on the following 6 variables.
+
+     UID
+          Unique sample identification number (see 'BGHRsample')
+
+     fishID
+          Unique fish identification number
+
+     specCode
+          Numeric code for each species ('116'="Smallmouth Bass",
+          '118'="Largemouth Bass", and '122'="Bluegill")
+
+     length
+          Total length (mm)
+
+     weight
+          Weight (g)
+
+     count
+          Number of fish sampled of that species and length
+
+Topic(s):
+
+        * Data Manipulation
+
+Note:
+
+     Used in the Introductory Fisheries Analyses with R book.
+
+Source:
+
+     Obtained directly from Ben Neely. CSV file
+
+See Also:
+
+     See 'BGHRfish' for individual fish collected in these samples.
+
+Examples:
+
+     data(BGHRfish)
+     str(BGHRfish)
+     head(BGHRfish)
+     

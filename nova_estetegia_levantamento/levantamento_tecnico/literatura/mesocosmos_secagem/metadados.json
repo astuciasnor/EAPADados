@@ -1,0 +1,87 @@
+{
+  "conjunto": "mesocosmos_secagem",
+  "doi": "10.5061/dryad.hx3ffbgkn",
+  "titulo": "An analysis of the effects of prior drying and vertebrate colonization on ecological functioning and vertebrate fitness",
+  "autores": [
+    {
+      "firstName": "Krista",
+      "lastName": "Ward",
+      "email": "kristajoy.ward@gmail.com",
+      "affiliation": "Wichita State University",
+      "affiliationROR": "https://ror.org/00c4e7y75",
+      "affiliations": [
+        {
+          "organization": "Wichita State University",
+          "identifier": "https://ror.org/00c4e7y75"
+        }
+      ],
+      "orcid": "0000-0001-7358-3508"
+    }
+  ],
+  "versao": 3,
+  "data_publicacao": "2023-06-26",
+  "tamanho_origem": 585406,
+  "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.hx3ffbgkn",
+  "zip": "mesocosmos_secagem.zip",
+  "bytes_zip": 587247,
+  "sha256_zip": "b813a6b587d7856248892a91991ddff50b350e64a211d6ed536a79f8e1766b3b",
+  "content_type": "application/zip",
+  "arquivos_extraidos": [
+    {
+      "arquivo": "README_PriorDryingAnalyses_Ward.txt",
+      "bytes": 22120,
+      "sha256": "88dd277c2c7a7b7fb987d4354f02022864a9d4f06602eb069770de07b1e3d764"
+    },
+    {
+      "arquivo": "Amphibian_Biomass_Dryad.xlsx",
+      "bytes": 34360,
+      "sha256": "5fd600872ddcd60cd20b082bed049e1d496cebc72826e4b452f9d3329f23aa72"
+    },
+    {
+      "arquivo": "Emergence_and_Biomass_Dryad.xlsx",
+      "bytes": 18229,
+      "sha256": "9f961819c6513c814a2ae8b738398a6cd6c0d23e42c380b29ff081bd13f01567"
+    },
+    {
+      "arquivo": "Fish_Data_Dryad.xlsx",
+      "bytes": 15412,
+      "sha256": "85e16cbe7aa3f070546a6e6d80bae585956fa6f19e3eb2d70b6d04f45760a928"
+    },
+    {
+      "arquivo": "Frog_Metamorph_Data_Dryad.xlsx",
+      "bytes": 40595,
+      "sha256": "cc879383de5a35a7ee57c9e6b446bb9c364bc9fd7007452e55ba39ea06f2fef4"
+    },
+    {
+      "arquivo": "Periphyton_Data_Dryad.xlsx",
+      "bytes": 85635,
+      "sha256": "a7c6c1f5e9b6a49ce1727da4f52e6c79c8706179885f8c3d50f4354af638c2d7"
+    },
+    {
+      "arquivo": "Revised_YSI_Data_Dryad.xlsx",
+      "bytes": 337140,
+      "sha256": "67d70c65132ccd3badc70b0fa8c3b79a8b52d29a934e7d931d9864f5deeb09da"
+    },
+    {
+      "arquivo": "Amphibian_Analyses_Dryad.Rmd",
+      "bytes": 15707,
+      "sha256": "4e768213222260d34c5b5c3e48677461676c46fd9d91323b2df963de5a32f19f"
+    },
+    {
+      "arquivo": "Fish_Analyses_Dryad.Rmd",
+      "bytes": 2495,
+      "sha256": "a28f6c67a98726ea5efbb5f06e4ef2c97d7d664116a0dd7452e745c4a794861c"
+    },
+    {
+      "arquivo": "Periphyton_Analyses_Dryad.Rmd",
+      "bytes": 6979,
+      "sha256": "e191f92518b3e7524908cf69a3dbc4d9a1d5287e4898453d1f52647df322f4af"
+    },
+    {
+      "arquivo": "Revised_YSI_Analyses_Dryad.Rmd",
+      "bytes": 6734,
+      "sha256": "146edd2bc77cca562064bbf8d9f736aa7e83f88d7124d8e25a24e9e72abdbd48"
+    }
+  ],
+  "status": "obtido para avaliação; não incorporado ao EAPADados"
+}

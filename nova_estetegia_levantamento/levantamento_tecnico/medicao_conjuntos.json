@@ -1,0 +1,4540 @@
+{
+  "conjuntos": {
+    "datasets::PlantGrowth": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "PlantGrowth",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 30,
+      "colunas": 2,
+      "variaveis": ["weight", "group"],
+      "bytes_rda_xz": 372,
+      "bytes_memoria": 1800,
+      "bytes_csv": 405,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__PlantGrowth.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "weight": {
+          "min": 3.59,
+          "max": 6.31,
+          "distintos": 29,
+          "na": 0
+        },
+        "group": {
+          "niveis": ["ctrl", "trt1", "trt2"],
+          "na": 0
+        }
+      }
+    },
+    "datasets::npk": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "npk",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 24,
+      "colunas": 5,
+      "variaveis": ["block", "N", "P", "K", "yield"],
+      "bytes_rda_xz": 364,
+      "bytes_memoria": 4232,
+      "bytes_csv": 543,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__npk.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "block": {
+          "niveis": ["1", "2", "3", "4", "5", "6"],
+          "na": 0
+        },
+        "N": {
+          "niveis": ["0", "1"],
+          "na": 0
+        },
+        "P": {
+          "niveis": ["1", "0"],
+          "na": 0
+        },
+        "K": {
+          "niveis": ["1", "0"],
+          "na": 0
+        },
+        "yield": {
+          "min": 44.2,
+          "max": 69.5,
+          "distintos": 21,
+          "na": 0
+        }
+      }
+    },
+    "datasets::ToothGrowth": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "ToothGrowth",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 60,
+      "colunas": 3,
+      "variaveis": ["len", "supp", "dose"],
+      "bytes_rda_xz": 408,
+      "bytes_memoria": 2696,
+      "bytes_csv": 821,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__ToothGrowth.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "len": {
+          "min": 4.2,
+          "max": 33.9,
+          "distintos": 43,
+          "na": 0
+        },
+        "supp": {
+          "niveis": ["VC", "OJ"],
+          "na": 0
+        },
+        "dose": {
+          "min": 0.5,
+          "max": 2,
+          "distintos": 3,
+          "na": 0
+        }
+      }
+    },
+    "datasets::ChickWeight": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "ChickWeight",
+      "status": "obtido",
+      "classe": ["nfnGroupedData", "nfGroupedData", "groupedData", "data.frame"],
+      "linhas": 578,
+      "colunas": 4,
+      "variaveis": ["weight", "Time", "Chick", "Diet"],
+      "bytes_rda_xz": 1532,
+      "bytes_memoria": 22696,
+      "bytes_csv": 9230,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__ChickWeight.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "weight": {
+          "min": 35,
+          "max": 373,
+          "distintos": 212,
+          "na": 0
+        },
+        "Time": {
+          "min": 0,
+          "max": 21,
+          "distintos": 12,
+          "na": 0
+        },
+        "Chick": {
+          "niveis": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"],
+          "na": 0
+        },
+        "Diet": {
+          "niveis": ["1", "2", "3", "4"],
+          "na": 0
+        }
+      }
+    },
+    "datasets::UCBAdmissions": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "UCBAdmissions",
+      "status": "obtido",
+      "classe": "table",
+      "linhas": 2,
+      "colunas": 2,
+      "variaveis": ["Male", "Female"],
+      "bytes_rda_xz": 308,
+      "bytes_memoria": 1992,
+      "bytes_csv": {},
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__UCBAdmissions.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "datasets::HairEyeColor": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "HairEyeColor",
+      "status": "obtido",
+      "classe": "table",
+      "linhas": 4,
+      "colunas": 4,
+      "variaveis": ["Brown", "Blue", "Hazel", "Green"],
+      "bytes_rda_xz": 308,
+      "bytes_memoria": 2040,
+      "bytes_csv": {},
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__HairEyeColor.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "datasets::sleep": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "sleep",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 20,
+      "colunas": 3,
+      "variaveis": ["extra", "group", "ID"],
+      "bytes_rda_xz": 388,
+      "bytes_memoria": 2984,
+      "bytes_csv": 285,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__sleep.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "extra": {
+          "min": -1.6,
+          "max": 5.5,
+          "distintos": 17,
+          "na": 0
+        },
+        "group": {
+          "niveis": ["1", "2"],
+          "na": 0
+        },
+        "ID": {
+          "niveis": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+          "na": 0
+        }
+      }
+    },
+    "datasets::warpbreaks": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "warpbreaks",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 54,
+      "colunas": 3,
+      "variaveis": ["breaks", "wool", "tension"],
+      "bytes_rda_xz": 364,
+      "bytes_memoria": 2944,
+      "bytes_csv": 675,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__warpbreaks.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "breaks": {
+          "min": 10,
+          "max": 70,
+          "distintos": 31,
+          "na": 0
+        },
+        "wool": {
+          "niveis": ["A", "B"],
+          "na": 0
+        },
+        "tension": {
+          "niveis": ["L", "M", "H"],
+          "na": 0
+        }
+      }
+    },
+    "datasets::CO2": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "CO2",
+      "status": "obtido",
+      "classe": ["nfnGroupedData", "nfGroupedData", "groupedData", "data.frame"],
+      "linhas": 84,
+      "colunas": 5,
+      "variaveis": ["Plant", "Type", "Treatment", "conc", "uptake"],
+      "bytes_rda_xz": 892,
+      "bytes_memoria": 9976,
+      "bytes_csv": 3300,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__CO2.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Plant": {
+          "niveis": ["Qn1", "Qn2", "Qn3", "Qc1", "Qc2", "Qc3", "Mn1", "Mn2", "Mn3", "Mc1", "Mc2", "Mc3"],
+          "na": 0
+        },
+        "Type": {
+          "niveis": ["Quebec", "Mississippi"],
+          "na": 0
+        },
+        "Treatment": {
+          "niveis": ["nonchilled", "chilled"],
+          "na": 0
+        },
+        "conc": {
+          "min": 95,
+          "max": 1000,
+          "distintos": 7,
+          "na": 0
+        },
+        "uptake": {
+          "min": 7.7,
+          "max": 45.5,
+          "distintos": 76,
+          "na": 0
+        }
+      }
+    },
+    "datasets::InsectSprays": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "InsectSprays",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 72,
+      "colunas": 2,
+      "variaveis": ["count", "spray"],
+      "bytes_rda_xz": 348,
+      "bytes_memoria": 2480,
+      "bytes_csv": 555,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__InsectSprays.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "count": {
+          "min": 0,
+          "max": 26,
+          "distintos": 24,
+          "na": 0
+        },
+        "spray": {
+          "niveis": ["A", "B", "C", "D", "E", "F"],
+          "na": 0
+        }
+      }
+    },
+    "datasets::airquality": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "airquality",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 153,
+      "colunas": 6,
+      "variaveis": ["Ozone", "Solar.R", "Wind", "Temp", "Month", "Day"],
+      "bytes_rda_xz": 1024,
+      "bytes_memoria": 5632,
+      "bytes_csv": 3056,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__airquality.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Ozone": {
+          "min": 1,
+          "max": 168,
+          "distintos": 68,
+          "na": 37
+        },
+        "Solar.R": {
+          "min": 7,
+          "max": 334,
+          "distintos": 118,
+          "na": 7
+        },
+        "Wind": {
+          "min": 1.7,
+          "max": 20.7,
+          "distintos": 31,
+          "na": 0
+        },
+        "Temp": {
+          "min": 56,
+          "max": 97,
+          "distintos": 40,
+          "na": 0
+        },
+        "Month": {
+          "min": 5,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "Day": {
+          "min": 1,
+          "max": 31,
+          "distintos": 31,
+          "na": 0
+        }
+      }
+    },
+    "datasets::cars": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "cars",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 50,
+      "colunas": 2,
+      "variaveis": ["speed", "dist"],
+      "bytes_rda_xz": 308,
+      "bytes_memoria": 1648,
+      "bytes_csv": 359,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__cars.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "speed": {
+          "min": 4,
+          "max": 25,
+          "distintos": 19,
+          "na": 0
+        },
+        "dist": {
+          "min": 2,
+          "max": 120,
+          "distintos": 35,
+          "na": 0
+        }
+      }
+    },
+    "datasets::nottem": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "nottem",
+      "status": "obtido",
+      "classe": "ts",
+      "linhas": 240,
+      "colunas": 1,
+      "variaveis": {},
+      "bytes_rda_xz": 640,
+      "bytes_memoria": 2384,
+      "bytes_csv": {},
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__nottem.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "datasets::Nile": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "Nile",
+      "status": "obtido",
+      "classe": "ts",
+      "linhas": 100,
+      "colunas": 1,
+      "variaveis": {},
+      "bytes_rda_xz": 384,
+      "bytes_memoria": 1264,
+      "bytes_csv": {},
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__Nile.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "datasets::quakes": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "quakes",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 1000,
+      "colunas": 5,
+      "variaveis": ["lat", "long", "depth", "mag", "stations"],
+      "bytes_rda_xz": 7316,
+      "bytes_memoria": 33232,
+      "bytes_csv": 25065,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__quakes.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "lat": {
+          "min": -38.59,
+          "max": -10.72,
+          "distintos": 721,
+          "na": 0
+        },
+        "long": {
+          "min": 165.67,
+          "max": 188.13,
+          "distintos": 605,
+          "na": 0
+        },
+        "depth": {
+          "min": 40,
+          "max": 680,
+          "distintos": 422,
+          "na": 0
+        },
+        "mag": {
+          "min": 4,
+          "max": 6.4,
+          "distintos": 22,
+          "na": 0
+        },
+        "stations": {
+          "min": 10,
+          "max": 132,
+          "distintos": 102,
+          "na": 0
+        }
+      }
+    },
+    "datasets::Orange": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "Orange",
+      "status": "obtido",
+      "classe": ["nfnGroupedData", "nfGroupedData", "groupedData", "data.frame"],
+      "linhas": 35,
+      "colunas": 3,
+      "variaveis": ["Tree", "age", "circumference"],
+      "bytes_rda_xz": 520,
+      "bytes_memoria": 5232,
+      "bytes_csv": 492,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__Orange.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Tree": {
+          "niveis": ["1", "2", "3", "4", "5"],
+          "na": 0
+        },
+        "age": {
+          "min": 118,
+          "max": 1582,
+          "distintos": 7,
+          "na": 0
+        },
+        "circumference": {
+          "min": 30,
+          "max": 214,
+          "distintos": 30,
+          "na": 0
+        }
+      }
+    },
+    "datasets::co2": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "co2",
+      "status": "obtido",
+      "classe": "ts",
+      "linhas": 468,
+      "colunas": 1,
+      "variaveis": {},
+      "bytes_rda_xz": 1260,
+      "bytes_memoria": 4208,
+      "bytes_csv": {},
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__co2.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "datasets::chickwts": {
+      "pacote": "datasets",
+      "versao": "4.6.1",
+      "objeto": "chickwts",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 71,
+      "colunas": 2,
+      "variaveis": ["weight", "feed"],
+      "bytes_rda_xz": 440,
+      "bytes_memoria": 2496,
+      "bytes_csv": 1125,
+      "licenca_pacote": "Part of R 4.6.1",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/datasets__chickwts.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "weight": {
+          "min": 108,
+          "max": 423,
+          "distintos": 66,
+          "na": 0
+        },
+        "feed": {
+          "niveis": ["horsebean", "linseed", "soybean", "sunflower", "meatmeal", "casein"],
+          "na": 0
+        }
+      }
+    },
+    "MASS::oats": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "oats",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 72,
+      "colunas": 4,
+      "variaveis": ["B", "V", "N", "Y"],
+      "bytes_rda_xz": 424,
+      "bytes_memoria": 4248,
+      "bytes_csv": 2228,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__oats.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "B": {
+          "niveis": ["I", "II", "III", "IV", "V", "VI"],
+          "na": 0
+        },
+        "V": {
+          "niveis": ["Victory", "Golden.rain", "Marvellous"],
+          "na": 0
+        },
+        "N": {
+          "niveis": ["0.0cwt", "0.2cwt", "0.4cwt", "0.6cwt"],
+          "na": 0
+        },
+        "Y": {
+          "min": 53,
+          "max": 174,
+          "distintos": 51,
+          "na": 0
+        }
+      }
+    },
+    "MASS::immer": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "immer",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 30,
+      "colunas": 4,
+      "variaveis": ["Loc", "Var", "Y1", "Y2"],
+      "bytes_rda_xz": 456,
+      "bytes_memoria": 3304,
+      "bytes_csv": 620,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__immer.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Loc": {
+          "niveis": ["UF", "W", "M", "C", "GR", "D"],
+          "na": 0
+        },
+        "Var": {
+          "niveis": ["M", "S", "V", "T", "P"],
+          "na": 0
+        },
+        "Y1": {
+          "min": 69.1,
+          "max": 191.5,
+          "distintos": 30,
+          "na": 0
+        },
+        "Y2": {
+          "min": 49.9,
+          "max": 147.7,
+          "distintos": 29,
+          "na": 0
+        }
+      }
+    },
+    "MASS::quine": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "quine",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 146,
+      "colunas": 5,
+      "variaveis": ["Eth", "Sex", "Age", "Lrn", "Days"],
+      "bytes_rda_xz": 504,
+      "bytes_memoria": 6320,
+      "bytes_csv": 3179,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__quine.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Eth": {
+          "niveis": ["A", "N"],
+          "na": 0
+        },
+        "Sex": {
+          "niveis": ["M", "F"],
+          "na": 0
+        },
+        "Age": {
+          "niveis": ["F0", "F1", "F2", "F3"],
+          "na": 0
+        },
+        "Lrn": {
+          "niveis": ["SL", "AL"],
+          "na": 0
+        },
+        "Days": {
+          "min": 0,
+          "max": 81,
+          "distintos": 49,
+          "na": 0
+        }
+      }
+    },
+    "MASS::Insurance": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "Insurance",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 64,
+      "colunas": 5,
+      "variaveis": ["District", "Group", "Age", "Holders", "Claims"],
+      "bytes_rda_xz": 548,
+      "bytes_memoria": 4560,
+      "bytes_csv": 1708,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__Insurance.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "District": {
+          "niveis": ["1", "2", "3", "4"],
+          "na": 0
+        },
+        "Group": {
+          "niveis": ["<1l", "1-1.5l", "1.5-2l", ">2l"],
+          "na": 0
+        },
+        "Age": {
+          "niveis": ["<25", "25-29", "30-35", ">35"],
+          "na": 0
+        },
+        "Holders": {
+          "min": 3,
+          "max": 3582,
+          "distintos": 63,
+          "na": 0
+        },
+        "Claims": {
+          "min": 0,
+          "max": 400,
+          "distintos": 46,
+          "na": 0
+        }
+      }
+    },
+    "MASS::wtloss": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "wtloss",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 52,
+      "colunas": 2,
+      "variaveis": ["Days", "Weight"],
+      "bytes_rda_xz": 424,
+      "bytes_memoria": 1472,
+      "bytes_csv": 568,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__wtloss.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Days": {
+          "min": 0,
+          "max": 246,
+          "distintos": 49,
+          "na": 0
+        },
+        "Weight": {
+          "min": 112.6,
+          "max": 184.35,
+          "distintos": 48,
+          "na": 0
+        }
+      }
+    },
+    "MASS::ships": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "ships",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 40,
+      "colunas": 5,
+      "variaveis": ["type", "year", "period", "service", "incidents"],
+      "bytes_rda_xz": 408,
+      "bytes_memoria": 2744,
+      "bytes_csv": 746,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__ships.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "type": {
+          "niveis": ["A", "B", "C", "D", "E"],
+          "na": 0
+        },
+        "year": {
+          "min": 60,
+          "max": 75,
+          "distintos": 4,
+          "na": 0
+        },
+        "period": {
+          "min": 60,
+          "max": 75,
+          "distintos": 2,
+          "na": 0
+        },
+        "service": {
+          "min": 0,
+          "max": 44882,
+          "distintos": 34,
+          "na": 0
+        },
+        "incidents": {
+          "min": 0,
+          "max": 58,
+          "distintos": 16,
+          "na": 0
+        }
+      }
+    },
+    "MASS::bacteria": {
+      "pacote": "MASS",
+      "versao": "7.3-65",
+      "objeto": "bacteria",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 220,
+      "colunas": 6,
+      "variaveis": ["y", "ap", "hilo", "week", "ID", "trt"],
+      "bytes_rda_xz": 680,
+      "bytes_memoria": 12312,
+      "bytes_csv": 6809,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/MASS__bacteria.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "y": {
+          "niveis": ["y", "n"],
+          "na": 0
+        },
+        "ap": {
+          "niveis": ["p", "a"],
+          "na": 0
+        },
+        "hilo": {
+          "niveis": ["hi", "lo"],
+          "na": 0
+        },
+        "week": {
+          "min": 0,
+          "max": 11,
+          "distintos": 5,
+          "na": 0
+        },
+        "ID": {
+          "niveis": ["X01", "X02", "X03", "X04", "X05", "X06", "X07", "X08", "X09", "X10", "X11", "X12", "X13", "X14", "X15", "X16", "X17", "X18", "X19", "X20", "X21", "Y01", "Y02", "Y03", "Y04", "Y05", "Y06", "Y07", "Y08", "Y09", "Y10", "Y11", "Y12", "Y13", "Y14", "Z01", "Z02", "Z03", "Z05", "Z06", "Z07", "Z09", "Z10", "Z11", "Z14", "Z15", "Z19", "Z20", "Z24", "Z26"],
+          "na": 0
+        },
+        "trt": {
+          "niveis": ["placebo", "drug+", "drug"],
+          "na": 0
+        }
+      }
+    },
+    "FSA::ChinookArg": {
+      "pacote": "FSA",
+      "versao": "0.10.1",
+      "objeto": "ChinookArg",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 112,
+      "colunas": 3,
+      "variaveis": ["tl", "w", "loc"],
+      "bytes_rda_xz": 724,
+      "bytes_memoria": 3824,
+      "bytes_csv": 2332,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSA__ChinookArg.rda",
+      "alerta_origem": "Possível reconstrução/digitalização de figura: conferir fonte",
+      "resumo_numerico": {
+        "tl": {
+          "min": 18,
+          "max": 120.1,
+          "distintos": 98,
+          "na": 0
+        },
+        "w": {
+          "min": 0.1,
+          "max": 17.9,
+          "distintos": 73,
+          "na": 0
+        },
+        "loc": {
+          "niveis": ["Argentina", "Petrohue", "Puyehue"],
+          "na": 0
+        }
+      }
+    },
+    "FSA::WhitefishLC": {
+      "pacote": "FSA",
+      "versao": "0.10.1",
+      "objeto": "WhitefishLC",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 151,
+      "colunas": 11,
+      "variaveis": ["fishID", "tl", "scale1", "scale2", "scaleC", "finray1", "finray2", "finrayC", "otolith1", "otolith2", "otolithC"],
+      "bytes_rda_xz": 1308,
+      "bytes_memoria": 8720,
+      "bytes_csv": 4334,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSA__WhitefishLC.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "fishID": {
+          "min": 1,
+          "max": 218,
+          "distintos": 151,
+          "na": 0
+        },
+        "tl": {
+          "min": 135,
+          "max": 658,
+          "distintos": 127,
+          "na": 0
+        },
+        "scale1": {
+          "min": 1,
+          "max": 15,
+          "distintos": 15,
+          "na": 0
+        },
+        "scale2": {
+          "min": 1,
+          "max": 16,
+          "distintos": 15,
+          "na": 0
+        },
+        "scaleC": {
+          "min": 1,
+          "max": 15,
+          "distintos": 15,
+          "na": 0
+        },
+        "finray1": {
+          "min": 1,
+          "max": 14,
+          "distintos": 14,
+          "na": 0
+        },
+        "finray2": {
+          "min": 1,
+          "max": 14,
+          "distintos": 13,
+          "na": 0
+        },
+        "finrayC": {
+          "min": 1,
+          "max": 14,
+          "distintos": 13,
+          "na": 0
+        },
+        "otolith1": {
+          "min": 1,
+          "max": 23,
+          "distintos": 20,
+          "na": 0
+        },
+        "otolith2": {
+          "min": 1,
+          "max": 23,
+          "distintos": 19,
+          "na": 0
+        },
+        "otolithC": {
+          "min": 1,
+          "max": 23,
+          "distintos": 20,
+          "na": 0
+        }
+      }
+    },
+    "FSA::SpotVA1": {
+      "pacote": "FSA",
+      "versao": "0.10.1",
+      "objeto": "SpotVA1",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 403,
+      "colunas": 2,
+      "variaveis": ["tl", "age"],
+      "bytes_rda_xz": 708,
+      "bytes_memoria": 5688,
+      "bytes_csv": 2929,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSA__SpotVA1.rda",
+      "alerta_origem": "Há menção a simulação: revisar antes de admitir",
+      "resumo_numerico": {
+        "tl": {
+          "min": 6.3,
+          "max": 13.9,
+          "distintos": 70,
+          "na": 0
+        },
+        "age": {
+          "min": 0,
+          "max": 5,
+          "distintos": 6,
+          "na": 0
+        }
+      }
+    },
+    "FSAdata::WhiteGrunt2": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "WhiteGrunt2",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 465,
+      "colunas": 3,
+      "variaveis": ["age", "tl", "sex"],
+      "bytes_rda_xz": 1376,
+      "bytes_memoria": 8944,
+      "bytes_csv": 8062,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__WhiteGrunt2.rda",
+      "alerta_origem": "Possível reconstrução/digitalização de figura: conferir fonte",
+      "resumo_numerico": {
+        "age": {
+          "min": 2.8,
+          "max": 28.3,
+          "distintos": 141,
+          "na": 0
+        },
+        "tl": {
+          "min": 219,
+          "max": 378,
+          "distintos": 118,
+          "na": 0
+        },
+        "sex": {
+          "niveis": ["male", "female"],
+          "na": 0
+        }
+      }
+    },
+    "FSAdata::Cabezon": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "Cabezon",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 525,
+      "colunas": 5,
+      "variaveis": ["date", "length", "age", "maturity", "stage"],
+      "bytes_rda_xz": 2304,
+      "bytes_memoria": 32888,
+      "bytes_csv": 15475,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__Cabezon.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "date": {
+          "niveis": ["4/28/2003", "5/4/2003", "7/6/2003", "7/30/2003", "7/29/2003", "11/9/2003", "3/2/2004", "3/17/2004", "7/12/2004", "7/14/2004", "7/16/2004", "7/17/2004", "7/18/2004", "7/26/2004", "7/31/2004", "8/4/2004", "8/12/2004", "8/14/2004", "2/2/2005", "2/5/2005", "2/24/2005", "2/26/2005", "3/11/2005", "3/20/2005", "3/23/2005", "3/24/2005", "3/25/2005", "4/4/2005", "4/9/2005", "4/23/2005", "4/27/2005", "5/4/2005", "5/28/2005", "6/4/2005", "6/8/2005", "6/9/2005", "6/24/2005", "6/27/2005", "7/10/2005", "7/12/2005", "7/18/2005", "7/21/2005", "7/28/2005", "7/3/2003", "7/5/2003", "10/26/2003", "4/19/2004", "5/1/2004", "6/17/2004", "7/6/2004", "7/9/2004", "7/20/2004", "7/23/2004", "7/27/2004", "7/30/2004", "8/9/2004", "8/10/2004", "8/11/2004", "8/15/2004", "4/14/2005", "4/21/2005", "4/30/2005", "4/30/2006", "5/13/2005", "5/21/2006", "5/14/2005", "5/28/2006", "5/31/2005", "6/1/2005", "6/3/2005", "3/27/2006", "4/3/2006", "6/11/2005", "6/12/2005", "6/9/2006", "6/22/2005", "6/11/2006", "6/23/2005", "6/22/2006", "6/28/2005", "6/23/2006", "6/24/2006", "6/30/2005", "7/1/2005", "6/29/2006", "7/3/2005", "6/30/2006", "7/1/2006", "7/16/2005", "7/19/2005", "7/20/2005", "7/22/2005", "7/23/2005", "7/24/2005", "7/29/2005", "7/30/2005", "8/3/2005", "4/23/2006", "5/4/2006", "5/6/2006", "7/3/2006", "5/14/2006", "7/6/2006", "5/20/2006", "5/24/2006", "5/30/2006", "6/2/2006", "7/15/2006", "4/4/2006", "4/8/2006", "4/9/2006", "7/18/2006", "6/7/2006", "6/10/2006", "6/26/2006", "6/28/2006", "7/2/2006", "8/15/2006", "7/7/2006", "7/5/2006", "8/23/2006", "7/8/2006", "7/9/2006", "7/13/2006", "9/1/2006", "9/5/2006", "9/8/2006", "9/9/2006", "7/17/2006", "9/10/2006", "9/23/2006", "3/16/2007", "3/17/2007", "3/25/2007", "3/26/2007", "3/31/2007", "7/20/2006", "4/3/2007", "7/22/2006", "7/23/2006", "7/24/2006", "7/26/2006", "7/27/2006", "7/31/2006", "4/5/2007", "8/2/2006", "4/12/2007", "8/5/2006", "8/7/2006", "8/9/2006", "4/26/2007", "8/10/2006", "8/11/2006", "8/12/2006", "8/13/2006", "8/16/2006", "8/17/2006", "8/20/2006", "8/21/2006", "5/16/2007", "5/17/2007", "5/13/2007", "5/25/2007", "5/26/2007", "5/27/2007", "8/26/2006", "6/3/2007", "8/27/2006", "8/31/2006", "6/19/2007", "4/2/2007", "4/4/2007", "6/22/2007", "6/23/2007", "4/21/2007", "4/25/2007", "5/6/2007", "5/7/2007", "5/12/2007", "5/14/2007", "5/18/2007", "6/16/2007", "6/17/2007", "6/20/2007", "6/21/2007", "8/5/2005", "8/7/2005", "8/9/2005", "6/24/2007", "6/25/2007", "6/26/2007", "6/27/2007", "6/30/2007", "7/3/2007", "7/1/2007", "7/2/2007", "7/8/2007", "7/14/2007", "7/5/2007", "7/6/2007", "7/16/2007", "7/10/2007", "7/13/2007", "7/20/2007", "7/26/2007", "7/15/2007", "7/28/2007", "7/17/2007", "7/18/2007", "7/31/2007", "7/24/2007", "7/25/2007", "8/1/2007", "7/27/2007", "8/2/2007", "7/30/2007", "8/3/2007", "8/5/2007", "8/6/2007", "8/9/2007", "8/4/2007", "8/10/2007", "4/2/2008", "4/8/2008", "4/20/2008", "4/25/2008", "4/27/2008", "5/1/2008", "5/7/2008", "5/10/2008", "5/14/2008", "5/18/2008", "4/12/2008", "5/24/2008", "1/26/2008", "3/9/2008", "3/30/2008", "5/25/2008", "5/4/2008", "5/5/2008", "5/9/2008", "5/26/2008", "5/31/2008", "6/8/2008", "6/15/2008", "6/17/2008", "6/18/2008", "6/19/2008", "6/20/2008", "6/22/2008", "6/16/2008", "6/24/2008", "6/30/2008", "6/17/2003", "7/9/2003", "7/16/2003", "10/25/2003", "7/1/2008", "7/2/2008", "7/3/2008", "7/4/2008", "7/10/2008", "7/11/2008", "7/14/2008", "7/16/2008", "7/19/2008", "7/21/2008", "7/22/2008", "7/24/2008", "7/25/2008", "8/2/2008", "8/3/2008", "8/4/2008", "8/6/2008", "8/7/2008", "8/8/2008", "8/9/2008", "8/17/2008", "8/19/2008", "8/7/2007"],
+          "na": 0
+        },
+        "length": {
+          "min": 39,
+          "max": 77,
+          "distintos": 35,
+          "na": 0
+        },
+        "age": {
+          "min": 3,
+          "max": 19,
+          "distintos": 14,
+          "na": 226
+        },
+        "maturity": {
+          "niveis": ["Mature", "Immature", "Unknown"],
+          "na": 0
+        },
+        "stage": {
+          "min": 1,
+          "max": 7,
+          "distintos": 7,
+          "na": 0
+        }
+      }
+    },
+    "FSAdata::RuffeSLRH92": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "RuffeSLRH92",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 738,
+      "colunas": 11,
+      "variaveis": ["fish.id", "month", "day", "year", "indiv", "location", "length", "weight", "sex", "maturity", "age"],
+      "bytes_rda_xz": 6676,
+      "bytes_memoria": 42152,
+      "bytes_csv": 44666,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__RuffeSLRH92.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "fish.id": {
+          "min": 1992.0001,
+          "max": 1992.0736,
+          "distintos": 735,
+          "na": 0
+        },
+        "month": {
+          "min": 4,
+          "max": 10,
+          "distintos": 7,
+          "na": 0
+        },
+        "day": {
+          "min": 1,
+          "max": 29,
+          "distintos": 24,
+          "na": 0
+        },
+        "year": {
+          "min": 1992,
+          "max": 1992,
+          "distintos": 1,
+          "na": 0
+        },
+        "indiv": {
+          "min": 1,
+          "max": 736,
+          "distintos": 735,
+          "na": 0
+        },
+        "location": {
+          "min": 10,
+          "max": 380010,
+          "distintos": 135,
+          "na": 0
+        },
+        "length": {
+          "min": 13,
+          "max": 192,
+          "distintos": 166,
+          "na": 0
+        },
+        "weight": {
+          "min": 0.1,
+          "max": 93.1,
+          "distintos": 372,
+          "na": 2
+        },
+        "sex": {
+          "niveis": ["male", "female", "unknown"],
+          "na": 0
+        },
+        "maturity": {
+          "niveis": ["ripe", "unknown", "immature", "mature", "running", "nearly.spent", "developing", "spent", "yoy", "recovering", "nearly.ripe"],
+          "na": 0
+        },
+        "age": {
+          "min": 1,
+          "max": 4,
+          "distintos": 5,
+          "na": 726
+        }
+      }
+    },
+    "FSAdata::BGHRsample": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "BGHRsample",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 20,
+      "colunas": 4,
+      "variaveis": ["UID", "date", "loc", "effort"],
+      "bytes_rda_xz": 328,
+      "bytes_memoria": 2128,
+      "bytes_csv": 480,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__BGHRsample.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "UID": {
+          "min": 1,
+          "max": 20,
+          "distintos": 20,
+          "na": 0
+        },
+        "date": {
+          "niveis": ["5/15/2014", "5/14/2014"],
+          "na": 0
+        },
+        "loc": {
+          "min": 196,
+          "max": 281,
+          "distintos": 20,
+          "na": 0
+        },
+        "effort": {
+          "min": 10,
+          "max": 10,
+          "distintos": 1,
+          "na": 0
+        }
+      }
+    },
+    "FSAdata::BGHRfish": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "BGHRfish",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 266,
+      "colunas": 6,
+      "variaveis": ["UID", "fishID", "specCode", "length", "weight", "count"],
+      "bytes_rda_xz": 1160,
+      "bytes_memoria": 7720,
+      "bytes_csv": 5282,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__BGHRfish.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "UID": {
+          "min": 1,
+          "max": 20,
+          "distintos": 20,
+          "na": 0
+        },
+        "fishID": {
+          "min": 1,
+          "max": 26,
+          "distintos": 27,
+          "na": 81
+        },
+        "specCode": {
+          "min": 116,
+          "max": 122,
+          "distintos": 3,
+          "na": 0
+        },
+        "length": {
+          "min": 40,
+          "max": 498,
+          "distintos": 127,
+          "na": 0
+        },
+        "weight": {
+          "min": 60,
+          "max": 1790,
+          "distintos": 73,
+          "na": 91
+        },
+        "count": {
+          "min": 1,
+          "max": 3,
+          "distintos": 3,
+          "na": 0
+        }
+      }
+    },
+    "FSAdata::YERockfish": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "YERockfish",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 158,
+      "colunas": 5,
+      "variaveis": ["date", "length", "age", "maturity", "stage"],
+      "bytes_rda_xz": 1032,
+      "bytes_memoria": 11424,
+      "bytes_csv": 5055,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__YERockfish.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "date": {
+          "niveis": ["9/2/2003", "10/7/2002", "7/18/2000", "6/11/2001", "8/8/2000", "10/4/2003", "7/17/2000", "8/18/2002", "7/12/2000", "7/25/2000", "7/13/2002", "8/6/2000", "7/16/2003", "8/27/2003", "5/13/2000", "6/21/2002", "6/3/2002", "8/12/2000", "6/16/2002", "10/3/2003", "8/30/2002", "8/31/2003", "10/6/2002", "10/6/2003", "5/10/2000", "5/21/2001", "6/9/2003", "5/26/2002", "10/1/2003", "7/29/2003", "5/4/2000", "10/25/2003", "9/17/2003", "4/7/2001", "5/27/2001", "9/13/2002", "9/8/2002", "9/4/2003", "9/9/2003", "6/11/2002", "5/4/2003", "6/16/2003", "8/6/2002", "7/1/2003", "9/29/2003", "8/23/2003", "10/27/2003", "10/2/2003", "8/25/2002", "8/12/2002", "5/27/2002", "6/10/2004", "5/13/2008", "8/5/2002", "8/3/2002", "8/19/2002", "7/26/2003", "9/7/2003", "4/28/2003", "8/8/2002", "8/26/2003", "9/1/2002", "7/5/2003", "5/3/2003", "7/28/2002", "6/13/2003", "7/26/2002", "5/18/2001", "4/23/2001", "8/14/2003", "8/9/2002"],
+          "na": 0
+        },
+        "length": {
+          "min": 31,
+          "max": 70,
+          "distintos": 35,
+          "na": 0
+        },
+        "age": {
+          "min": 6,
+          "max": 94,
+          "distintos": 37,
+          "na": 0
+        },
+        "maturity": {
+          "niveis": ["Immature", "Mature", null],
+          "na": 10
+        },
+        "stage": {
+          "niveis": ["1", "2", "6", "7", "3", "4", "5", "8", "N/A", null],
+          "na": 1
+        }
+      }
+    },
+    "FSAdata::BlackDrum2001": {
+      "pacote": "FSAdata",
+      "versao": "0.4.1",
+      "objeto": "BlackDrum2001",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 141,
+      "colunas": 9,
+      "variaveis": ["year", "agid", "spname", "month", "day", "weight", "tl", "sex", "otoage"],
+      "bytes_rda_xz": 1256,
+      "bytes_memoria": 9136,
+      "bytes_csv": 6723,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/FSAdata__BlackDrum2001.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "year": {
+          "min": 2001,
+          "max": 2001,
+          "distintos": 1,
+          "na": 0
+        },
+        "agid": {
+          "min": 1,
+          "max": 141,
+          "distintos": 141,
+          "na": 0
+        },
+        "spname": {
+          "niveis": "Black Drum",
+          "na": 0
+        },
+        "month": {
+          "min": 4,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "day": {
+          "min": 2,
+          "max": 30,
+          "distintos": 16,
+          "na": 0
+        },
+        "weight": {
+          "min": 0.34,
+          "max": 74,
+          "distintos": 38,
+          "na": 102
+        },
+        "tl": {
+          "min": 210,
+          "max": 1315,
+          "distintos": 105,
+          "na": 0
+        },
+        "sex": {
+          "niveis": ["male", "female", "unknown", "immature"],
+          "na": 0
+        },
+        "otoage": {
+          "min": 0,
+          "max": 61,
+          "distintos": 45,
+          "na": 0
+        }
+      }
+    },
+    "ade4::doubs": {
+      "pacote": "ade4",
+      "versao": "1.7-24",
+      "objeto": "doubs",
+      "status": "obtido",
+      "classe": "list",
+      "linhas": 4,
+      "colunas": 1,
+      "variaveis": ["env", "fish", "xy", "species"],
+      "bytes_rda_xz": 2412,
+      "bytes_memoria": 31792,
+      "bytes_csv": {},
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/ade4__doubs.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "tidyr::fish_encounters": {
+      "pacote": "tidyr",
+      "versao": "1.3.2",
+      "objeto": "fish_encounters",
+      "status": "obtido",
+      "classe": ["tbl_df", "tbl", "data.frame"],
+      "linhas": 114,
+      "colunas": 3,
+      "variaveis": ["fish", "station", "seen"],
+      "bytes_rda_xz": 432,
+      "bytes_memoria": 5216,
+      "bytes_csv": 2072,
+      "licenca_pacote": "MIT + file LICENSE",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/tidyr__fish_encounters.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "fish": {
+          "niveis": ["4842", "4843", "4844", "4845", "4847", "4848", "4849", "4850", "4851", "4854", "4855", "4857", "4858", "4859", "4861", "4862", "4863", "4864", "4865"],
+          "na": 0
+        },
+        "station": {
+          "niveis": ["Release", "I80_1", "Lisbon", "Rstr", "Base_TD", "BCE", "BCW", "BCE2", "BCW2", "MAE", "MAW"],
+          "na": 0
+        },
+        "seen": {
+          "min": 1,
+          "max": 1,
+          "distintos": 1,
+          "na": 0
+        }
+      }
+    },
+    "tidyr::who2": {
+      "pacote": "tidyr",
+      "versao": "1.3.2",
+      "objeto": "who2",
+      "status": "obtido",
+      "classe": ["tbl_df", "tbl", "data.frame"],
+      "linhas": 7240,
+      "colunas": 58,
+      "variaveis": ["country", "year", "sp_m_014", "sp_m_1524", "sp_m_2534", "sp_m_3544", "sp_m_4554", "sp_m_5564", "sp_m_65", "sp_f_014", "sp_f_1524", "sp_f_2534", "sp_f_3544", "sp_f_4554", "sp_f_5564", "sp_f_65", "sn_m_014", "sn_m_1524", "sn_m_2534", "sn_m_3544", "sn_m_4554", "sn_m_5564", "sn_m_65", "sn_f_014", "sn_f_1524", "sn_f_2534", "sn_f_3544", "sn_f_4554", "sn_f_5564", "sn_f_65", "ep_m_014", "ep_m_1524", "ep_m_2534", "ep_m_3544", "ep_m_4554", "ep_m_5564", "ep_m_65", "ep_f_014", "ep_f_1524", "ep_f_2534", "ep_f_3544", "ep_f_4554", "ep_f_5564", "ep_f_65", "rel_m_014", "rel_m_1524", "rel_m_2534", "rel_m_3544", "rel_m_4554", "rel_m_5564", "rel_m_65", "rel_f_014", "rel_f_1524", "rel_f_2534", "rel_f_3544", "rel_f_4554", "rel_f_5564", "rel_f_65"],
+      "bytes_rda_xz": 116264,
+      "bytes_memoria": 3381480,
+      "bytes_csv": 1362213,
+      "licenca_pacote": "MIT + file LICENSE",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/tidyr__who2.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "country": {
+          "niveis": ["Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia (Plurinational State of)", "Bonaire, Saint Eustatius and Saba", "Bosnia and Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "China, Hong Kong SAR", "China, Macao SAR", "Colombia", "Comoros", "Congo", "Cook Islands", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Curacao", "Cyprus", "Czech Republic", "Democratic People's Republic of Korea", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "French Polynesia", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guam", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran (Islamic Republic of)", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia (Federated States of)", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Republic of Korea", "Republic of Moldova", "Romania", "Russian Federation", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Serbia & Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Sint Maarten (Dutch part)", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syrian Arab Republic", "Tajikistan", "Thailand", "The Former Yugoslav Republic of Macedonia", "Timor-Leste", "Togo", "Tokelau", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom of Great Britain and Northern Ireland", "United Republic of Tanzania", "United States of America", "Uruguay", "US Virgin Islands", "Uzbekistan", "Vanuatu", "Venezuela (Bolivarian Republic of)", "Viet Nam", "Wallis and Futuna Islands", "West Bank and Gaza Strip", "Yemen", "Zambia", "Zimbabwe"],
+          "na": 0
+        },
+        "year": {
+          "min": 1980,
+          "max": 2013,
+          "distintos": 34,
+          "na": 0
+        },
+        "sp_m_014": {
+          "min": 0,
+          "max": 5001,
+          "distintos": 416,
+          "na": 4067
+        },
+        "sp_m_1524": {
+          "min": 0,
+          "max": 78278,
+          "distintos": 1089,
+          "na": 4031
+        },
+        "sp_m_2534": {
+          "min": 0,
+          "max": 84003,
+          "distintos": 1279,
+          "na": 4034
+        },
+        "sp_m_3544": {
+          "min": 0,
+          "max": 90830,
+          "distintos": 1205,
+          "na": 4021
+        },
+        "sp_m_4554": {
+          "min": 0,
+          "max": 82921,
+          "distintos": 1072,
+          "na": 4017
+        },
+        "sp_m_5564": {
+          "min": 0,
+          "max": 63814,
+          "distintos": 901,
+          "na": 4022
+        },
+        "sp_m_65": {
+          "min": 0,
+          "max": 70376,
+          "distintos": 846,
+          "na": 4031
+        },
+        "sp_f_014": {
+          "min": 0,
+          "max": 8576,
+          "distintos": 452,
+          "na": 4066
+        },
+        "sp_f_1524": {
+          "min": 0,
+          "max": 53975,
+          "distintos": 1023,
+          "na": 4046
+        },
+        "sp_f_2534": {
+          "min": 0,
+          "max": 49887,
+          "distintos": 1086,
+          "na": 4040
+        },
+        "sp_f_3544": {
+          "min": 0,
+          "max": 34698,
+          "distintos": 926,
+          "na": 4041
+        },
+        "sp_f_4554": {
+          "min": 0,
+          "max": 23977,
+          "distintos": 798,
+          "na": 4036
+        },
+        "sp_f_5564": {
+          "min": 0,
+          "max": 18203,
+          "distintos": 664,
+          "na": 4045
+        },
+        "sp_f_65": {
+          "min": 0,
+          "max": 21339,
+          "distintos": 663,
+          "na": 4043
+        },
+        "sn_m_014": {
+          "min": 0,
+          "max": 22355,
+          "distintos": 263,
+          "na": 6195
+        },
+        "sn_m_1524": {
+          "min": 0,
+          "max": 60246,
+          "distintos": 304,
+          "na": 6210
+        },
+        "sn_m_2534": {
+          "min": 0,
+          "max": 50282,
+          "distintos": 343,
+          "na": 6218
+        },
+        "sn_m_3544": {
+          "min": 0,
+          "max": 250051,
+          "distintos": 333,
+          "na": 6215
+        },
+        "sn_m_4554": {
+          "min": 0,
+          "max": 57181,
+          "distintos": 330,
+          "na": 6213
+        },
+        "sn_m_5564": {
+          "min": 0,
+          "max": 64972,
+          "distintos": 303,
+          "na": 6219
+        },
+        "sn_m_65": {
+          "min": 0,
+          "max": 74282,
+          "distintos": 321,
+          "na": 6220
+        },
+        "sn_f_014": {
+          "min": 0,
+          "max": 21406,
+          "distintos": 255,
+          "na": 6200
+        },
+        "sn_f_1524": {
+          "min": 0,
+          "max": 35518,
+          "distintos": 285,
+          "na": 6218
+        },
+        "sn_f_2534": {
+          "min": 0,
+          "max": 28753,
+          "distintos": 305,
+          "na": 6224
+        },
+        "sn_f_3544": {
+          "min": 0,
+          "max": 148811,
+          "distintos": 275,
+          "na": 6220
+        },
+        "sn_f_4554": {
+          "min": 0,
+          "max": 23869,
+          "distintos": 251,
+          "na": 6222
+        },
+        "sn_f_5564": {
+          "min": 0,
+          "max": 26085,
+          "distintos": 238,
+          "na": 6223
+        },
+        "sn_f_65": {
+          "min": 0,
+          "max": 29630,
+          "distintos": 268,
+          "na": 6221
+        },
+        "ep_m_014": {
+          "min": 0,
+          "max": 7869,
+          "distintos": 248,
+          "na": 6202
+        },
+        "ep_m_1524": {
+          "min": 0,
+          "max": 8558,
+          "distintos": 280,
+          "na": 6214
+        },
+        "ep_m_2534": {
+          "min": 0,
+          "max": 11843,
+          "distintos": 307,
+          "na": 6220
+        },
+        "ep_m_3544": {
+          "min": 0,
+          "max": 105825,
+          "distintos": 281,
+          "na": 6216
+        },
+        "ep_m_4554": {
+          "min": 0,
+          "max": 5875,
+          "distintos": 258,
+          "na": 6220
+        },
+        "ep_m_5564": {
+          "min": 0,
+          "max": 3957,
+          "distintos": 218,
+          "na": 6225
+        },
+        "ep_m_65": {
+          "min": 0,
+          "max": 3061,
+          "distintos": 239,
+          "na": 6222
+        },
+        "ep_f_014": {
+          "min": 0,
+          "max": 6960,
+          "distintos": 231,
+          "na": 6208
+        },
+        "ep_f_1524": {
+          "min": 0,
+          "max": 7866,
+          "distintos": 263,
+          "na": 6219
+        },
+        "ep_f_2534": {
+          "min": 0,
+          "max": 10759,
+          "distintos": 301,
+          "na": 6219
+        },
+        "ep_f_3544": {
+          "min": 0,
+          "max": 101015,
+          "distintos": 265,
+          "na": 6219
+        },
+        "ep_f_4554": {
+          "min": 0,
+          "max": 6759,
+          "distintos": 242,
+          "na": 6223
+        },
+        "ep_f_5564": {
+          "min": 0,
+          "max": 4684,
+          "distintos": 208,
+          "na": 6223
+        },
+        "ep_f_65": {
+          "min": 0,
+          "max": 2548,
+          "distintos": 217,
+          "na": 6226
+        },
+        "rel_m_014": {
+          "min": 0,
+          "max": 18617,
+          "distintos": 112,
+          "na": 7050
+        },
+        "rel_m_1524": {
+          "min": 0,
+          "max": 84785,
+          "distintos": 141,
+          "na": 7058
+        },
+        "rel_m_2534": {
+          "min": 0,
+          "max": 76917,
+          "distintos": 147,
+          "na": 7057
+        },
+        "rel_m_3544": {
+          "min": 0,
+          "max": 84565,
+          "distintos": 144,
+          "na": 7056
+        },
+        "rel_m_4554": {
+          "min": 0,
+          "max": 100297,
+          "distintos": 146,
+          "na": 7056
+        },
+        "rel_m_5564": {
+          "min": 0,
+          "max": 112558,
+          "distintos": 134,
+          "na": 7055
+        },
+        "rel_m_65": {
+          "min": 0,
+          "max": 124476,
+          "distintos": 137,
+          "na": 7058
+        },
+        "rel_f_014": {
+          "min": 0,
+          "max": 18054,
+          "distintos": 113,
+          "na": 7050
+        },
+        "rel_f_1524": {
+          "min": 0,
+          "max": 49491,
+          "distintos": 135,
+          "na": 7056
+        },
+        "rel_f_2534": {
+          "min": 0,
+          "max": 44985,
+          "distintos": 140,
+          "na": 7058
+        },
+        "rel_f_3544": {
+          "min": 0,
+          "max": 38804,
+          "distintos": 128,
+          "na": 7057
+        },
+        "rel_f_4554": {
+          "min": 0,
+          "max": 37138,
+          "distintos": 130,
+          "na": 7057
+        },
+        "rel_f_5564": {
+          "min": 0,
+          "max": 40892,
+          "distintos": 125,
+          "na": 7057
+        },
+        "rel_f_65": {
+          "min": 0,
+          "max": 47438,
+          "distintos": 133,
+          "na": 7055
+        }
+      }
+    },
+    "tidyr::billboard": {
+      "pacote": "tidyr",
+      "versao": "1.3.2",
+      "objeto": "billboard",
+      "status": "obtido",
+      "classe": ["tbl_df", "tbl", "data.frame"],
+      "linhas": 317,
+      "colunas": 79,
+      "variaveis": ["artist", "track", "date.entered", "wk1", "wk2", "wk3", "wk4", "wk5", "wk6", "wk7", "wk8", "wk9", "wk10", "wk11", "wk12", "wk13", "wk14", "wk15", "wk16", "wk17", "wk18", "wk19", "wk20", "wk21", "wk22", "wk23", "wk24", "wk25", "wk26", "wk27", "wk28", "wk29", "wk30", "wk31", "wk32", "wk33", "wk34", "wk35", "wk36", "wk37", "wk38", "wk39", "wk40", "wk41", "wk42", "wk43", "wk44", "wk45", "wk46", "wk47", "wk48", "wk49", "wk50", "wk51", "wk52", "wk53", "wk54", "wk55", "wk56", "wk57", "wk58", "wk59", "wk60", "wk61", "wk62", "wk63", "wk64", "wk65", "wk66", "wk67", "wk68", "wk69", "wk70", "wk71", "wk72", "wk73", "wk74", "wk75", "wk76"],
+      "bytes_rda_xz": 12744,
+      "bytes_memoria": 233280,
+      "bytes_csv": 86055,
+      "licenca_pacote": "MIT + file LICENSE",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/tidyr__billboard.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "artist": {
+          "niveis": ["2 Pac", "2Ge+her", "3 Doors Down", "504 Boyz", "98^0", "A*Teens", "Aaliyah", "Adams, Yolanda", "Adkins, Trace", "Aguilera, Christina", "Alice Deejay", "Allan, Gary", "Amber", "Anastacia", "Anthony, Marc", "Avant", "BBMak", "Backstreet Boys, The", "Badu, Erkyah", "Baha Men", "Barenaked Ladies", "Beenie Man", "Before Dark", "Bega, Lou", "Big Punisher", "Black Rob", "Black, Clint", "Blaque", "Blige, Mary J.", "Blink-182", "Bloodhound Gang", "Bon Jovi", "Braxton, Toni", "Brock, Chad", "Brooks & Dunn", "Brooks, Garth", "Byrd, Tracy", "Cagle, Chris", "Cam'ron", "Carey, Mariah", "Carter, Aaron", "Carter, Torrey", "Changing Faces", "Chesney, Kenny", "Clark Family Experience", "Clark, Terri", "Common", "Counting Crows", "Creed", "Cyrus, Billy Ray", "D'Angelo", "DMX", "Da Brat", "Davidson, Clay", "De La Soul", "Destiny's Child", "Diffie, Joe", "Dion, Celine", "Dixie Chicks, The", "Dr. Dre", "Drama", "Dream", "Eastsidaz, The", "Eiffel 65", "Elliott, Missy \"Misdemeanor\"", "Eminem", "En Vogue", "Estefan, Gloria", "Evans, Sara", "Eve", "Everclear", "Fabian, Lara", "Fatboy Slim", "Filter", "Foo Fighters", "Fragma", "Funkmaster Flex", "Ghostface Killah", "Gill, Vince", "Gilman, Billy", "Ginuwine", "Goo Goo Dolls", "Gray, Macy", "Griggs, Andy", "Guy", "Hanson", "Hart, Beth", "Heatherly, Eric", "Henley, Don", "Herndon, Ty", "Hill, Faith", "Hoku", "Hollister, Dave", "Hot Boys", "Houston, Whitney", "IMx", "Ice Cube", "Ideal", "Iglesias, Enrique", "J-Shin", "Ja Rule", "Jackson, Alan", "Jagged Edge", "Janet", "Jay-Z", "Jean, Wyclef", "Joe", "John, Elton", "Jones, Donell", "Jordan, Montell", "Juvenile", "Kandi", "Keith, Toby", "Kelis", "Kenny G", "Kid Rock", "Kravitz, Lenny", "Kumbia Kings", "LFO", "LL Cool J", "Larrieux, Amel", "Lawrence, Tracy", "Levert, Gerald", "Lil Bow Wow", "Lil Wayne", "Lil' Kim", "Lil' Mo", "Lil' Zane", "Limp Bizkit", "Lonestar", "Lopez, Jennifer", "Loveless, Patty", "Lox", "Lucy Pearl", "Ludacris", "M2M", "Madison Avenue", "Madonna", "Martin, Ricky", "Mary Mary", "Master P", "McBride, Martina", "McEntire, Reba", "McGraw, Tim", "McKnight, Brian", "Messina, Jo Dee", "Metallica", "Montgomery Gentry", "Montgomery, John Michael", "Moore, Chante", "Moore, Mandy", "Mumba, Samantha", "Musiq", "Mya", "Mystikal", "N'Sync", "Nas", "Nelly", "Next", "Nine Days", "No Doubt", "Nu Flavor", "Offspring, The", "Paisley, Brad", "Papa Roach", "Pearl Jam", "Pink", "Price, Kelly", "Profyle", "Puff Daddy", "Q-Tip", "R.E.M.", "Rascal Flatts", "Raye, Collin", "Red Hot Chili Peppers", "Rimes, LeAnn", "Rogers, Kenny", "Ruff Endz", "Sammie", "Santana", "Savage Garden", "SheDaisy", "Sheist, Shade", "Shyne", "Simpson, Jessica", "Sisqo", "Sister Hazel", "Smash Mouth", "Smith, Will", "Son By Four", "Sonique", "SoulDecision", "Spears, Britney", "Spencer, Tracie", "Splender", "Sting", "Stone Temple Pilots", "Stone, Angie", "Strait, George", "Sugar Ray", "TLC", "Tamar", "Tamia", "Third Eye Blind", "Thomas, Carl", "Tippin, Aaron", "Train", "Trick Daddy", "Trina", "Tritt, Travis", "Tuesday", "Urban, Keith", "Usher", "Vassar, Phil", "Vertical Horizon", "Vitamin C", "Walker, Clay", "Wallflowers, The", "Westlife", "Williams, Robbie", "Wills, Mark", "Worley, Darryl", "Wright, Chely", "Yankee Grey", "Yearwood, Trisha", "Ying Yang Twins", "Zombie Nation", "matchbox twenty"],
+          "na": 0
+        },
+        "track": {
+          "niveis": ["Baby Don't Cry (Keep...", "The Hardest Part Of ...", "Kryptonite", "Loser", "Wobble Wobble", "Give Me Just One Nig...", "Dancing Queen", "I Don't Wanna", "Try Again", "Open My Heart", "More", "Come On Over Baby (A...", "I Turn To You", "What A Girl Wants", "Better Off Alone", "Smoke Rings In The D...", "Sexual", "I'm Outta Love", "My Baby You", "You Sang To Me", "My First Love", "Separated", "Back Here", "Shape Of My Heart", "Show Me The Meaning ...", "The One", "Bag Lady", "Who Let The Dogs Out", "Pinch Me", "Girls Dem Sugar", "Monica", "Tricky Tricky", "It's So Hard", "Whoa!", "Been There", "Bring It All To Me", "Deep Inside", "Give Me You", "All The Small Things", "The Bad Touch", "It's My Life", "He Wasn't Man Enough", "Just Be A Man About ...", "Spanish Guitar", "A Country Boy Can Su...", "Yes!", "You'll Always Be Lov...", "Do What You Gotta Do", "Put Your Hand In Min...", "My Love Goes On And ...", "What Means The World...", "Crybaby", "Thank God I Found Yo...", "Aaron's Party (Come ...", "Take That", "That Other Woman", "I Lost It", "What I Need To Do", "Meanwhile Back At Th...", "A Little Gasoline", "The Light", "Hanginaround", "Higher", "With Arms Wide Open", "You Won't Be Lonely ...", "Left & Right", "Untitled (How Does I...", "Party Up (Up In Here...", "What You Want", "What's My Name", "That's What I'm Look...", "What'Chu Like", "Unconditional", "All Good?", "Independent Women Pa...", "Jumpin' Jumpin'", "Say My Name", "It's Always Somethin...", "The Quittin' Kind", "That's The Way It Is", "Cold Day In July", "Cowboy Take Me Away", "Goodbye Earl", "Without You", "Forgot About Dre", "The Next Episode", "Left, Right, Left", "He Loves U Not", "G'D Up", "Got Beef", "Blue", "Hot Boyz", "Stan", "The Real Slim Shady", "The Way I Am", "Riddle", "No Me Dejes De Quere...", "Born To Fly", "Got It All", "Love Is Blind", "Wonderful", "I Will Love Again", "The Rockafeller Skan...", "Take A Picture", "Learn To Fly", "Toca's Miracle", "Do You", "Cherchez LaGhost", "Feels Like Love", "One Voice", "None Of Ur Friends B...", "The Best Man I Can B...", "Broadway", "I Try", "She's More", "Dancin'", "This Time Around", "L.A. Song", "Flowers On The Wall", "Taking You Home", "No Mercy", "Breathe", "Let's Make Love", "Another Dumb Blonde", "Can't Stay", "I Need A Hot Girl", "Could I Have This Ki...", "I Learned From The B...", "My Love Is Your Love", "Same Script, Differe...", "Stay The Night", "You Can Do It", "Whatever", "Be With You", "Rhythm Divine", "One Night Stand", "Between Me And You", "It Must Be Love", "Pop A Top", "www.memory", "He Can't Love U", "Let's Get Married", "Doesn't Really Matte...", "Anything", "Big Pimpin'", "Do It Again (Put Ya ...", "Hey Papi", "I Just Wanna Love U ...", "911", "I Wanna Know", "Treat Her Like A Lad...", "Someday Out Of The B...", "Where I Wanna Be", "Get It On.. Tonite", "U Understand", "Don't Think I'm Not", "Country Comes To Tow...", "How Do You Like Me N...", "Caught Out There", "Auld Lang Syne (The ...", "Only God Knows Why", "I Belong To You", "U Don't Love Me", "I Don't Wanna Kiss Y...", "West Side Story", "Imagine That", "Get Up", "Lessons Learned", "Baby U Are", "Mr. Too Damn Good", "Bounce With Me", "Tha Block Is Hot", "How Many Licks?", "No Matter What They ...", "Ta Da", "Callin' Me", "N 2 Gether Now", "Re-Arranged", "Rollin'", "Amazed", "Smile", "What About Now", "Feelin' Good", "That's The Kind Of M...", "Ryde or Die, Chick", "Dance Tonight", "What's Your Fantasy", "Don't Say You Love M...", "Mirror Mirror", "Don't Call Me Baby", "American Pie", "Music", "Private Emotion", "Shake Your Bon-Bon", "She Bangs", "Shackles (Praise You...", "Souljas", "Love's The Only Hous...", "There You Are", "I'll Be", "What Do You Say", "My Best Friend", "My Next Thirty Years", "Some Things Never Ch...", "Stay Or Let It Go", "Because You Love Me", "That's The Way", "I Disappear", "No Leaf Clover (Live...", "Daddy Won't Sell The...", "The Little Girl", "Straight Up", "I Wanna Be With You", "Gotta Tell You", "Just Friends", "Case Of The Ex (What...", "The Best Of Me", "Shake Ya Ass", "Bye Bye Bye", "It's Gonna Be Me", "This I Promise You", "You Owe Me", "(Hot S**t) Country G...", "Wifey", "Absolutely (Story Of...", "If I Am", "Simple Kind Of Life", "3 Little Words", "Original Prankster", "Me Neither", "We Danced", "Last Resort", "Nothing As It Seems", "Most Girls", "There U Go", "As We Lay", "Love Sets You Free", "You Should've Told M...", "Liar", "Best Friend", "Breathe And Stop", "The Great Beyond", "Prayin' For Daylight", "Couldn't Last A Mome...", "Californication", "Otherside", "Big Deal", "Can't Fight The Moon...", "I Need You", "Buy Me A Rose", "No More", "I Like It", "Maria, Maria", "Crash And Burn", "I Knew I Loved You", "Deck The Halls", "I Will.. But", "This Woman Needs", "Bad Boyz", "I Think I'm In Love ...", "Where You Are", "Got To Get It", "Incomplete", "Thong Song", "Change Your Mind", "Then The Morning Com...", "Freakin' It", "A Puro Dolor (Purest...", "It Feels So Good", "Faded", "From The Bottom Of M...", "Lucky", "Oops!.. I Did It Aga...", "Still In My Heart", "I Think God Can Expl...", "Desert Rose", "Sour Girl", "No More Rain (In Thi...", "Go On", "The Best Day", "Falls Apart", "Dear Lie", "If You Don't Wanna L...", "Can't Go For That", "Deep Inside Of You", "Never Let You Go", "Emotional", "I Wish", "Summer Rain", "Kiss This", "Meet Virginia", "Shut Up", "Pull Over", "Best Of Intentions", "I Know", "Your Everything", "Pop Ya Collar", "Carlene", "Just Another Day In ...", "Everything You Want", "You're A God", "Graduation (Friends ...", "The Itch", "Live, Laugh, Love", "The Chain Of Love", "Sleepwalker", "Swear It Again", "Angels", "Back At One", "When You Need My Lov...", "It Was", "Another Nine Minutes", "Real Live Woman", "Whistle While You Tw...", "Kernkraft 400", "Bent"],
+          "na": 0
+        },
+        "date.entered": {
+          "niveis": ["2000-02-26", "2000-09-02", "2000-04-08", "2000-10-21", "2000-04-15", "2000-08-19", "2000-07-08", "2000-01-29", "2000-03-18", "2000-08-26", "2000-04-29", "2000-08-05", "1999-11-27", "2000-01-22", "1999-07-17", "2000-04-01", "2000-09-16", "2000-11-04", "2000-10-14", "2000-01-01", "2000-05-27", "2000-07-22", "2000-09-09", "2000-05-20", "2000-04-22", "2000-03-04", "2000-02-19", "1999-10-23", "1999-11-13", "1999-12-04", "2000-08-12", "2000-07-29", "2000-12-02", "2000-06-10", "2000-06-24", "1999-12-11", "2000-09-30", "2000-11-18", "2000-12-16", "1999-11-06", "1999-09-11", "2000-05-13", "2000-09-23", "2000-07-01", "2000-01-15", "2000-06-03", "2000-03-25", "2000-12-23", "1999-12-25", "2000-10-07", "2000-02-12", "2000-01-08", "2000-05-06", "2000-06-17", "2000-07-15", "1999-10-16", "2000-10-28", "2000-11-11", "2000-03-11", "1999-12-18", "1999-09-04", "1999-10-09", "2000-02-05", "2000-11-25", "1999-06-05", "1999-11-20", "1999-10-30", "2000-12-30"],
+          "na": 0
+        },
+        "wk1": {
+          "min": 15,
+          "max": 100,
+          "distintos": 63,
+          "na": 0
+        },
+        "wk2": {
+          "min": 8,
+          "max": 100,
+          "distintos": 73,
+          "na": 5
+        },
+        "wk3": {
+          "min": 6,
+          "max": 100,
+          "distintos": 80,
+          "na": 10
+        },
+        "wk4": {
+          "min": 5,
+          "max": 100,
+          "distintos": 89,
+          "na": 17
+        },
+        "wk5": {
+          "min": 2,
+          "max": 100,
+          "distintos": 92,
+          "na": 25
+        },
+        "wk6": {
+          "min": 1,
+          "max": 99,
+          "distintos": 93,
+          "na": 37
+        },
+        "wk7": {
+          "min": 1,
+          "max": 100,
+          "distintos": 91,
+          "na": 48
+        },
+        "wk8": {
+          "min": 1,
+          "max": 99,
+          "distintos": 92,
+          "na": 57
+        },
+        "wk9": {
+          "min": 1,
+          "max": 100,
+          "distintos": 93,
+          "na": 64
+        },
+        "wk10": {
+          "min": 1,
+          "max": 100,
+          "distintos": 93,
+          "na": 73
+        },
+        "wk11": {
+          "min": 1,
+          "max": 100,
+          "distintos": 93,
+          "na": 81
+        },
+        "wk12": {
+          "min": 1,
+          "max": 100,
+          "distintos": 92,
+          "na": 95
+        },
+        "wk13": {
+          "min": 1,
+          "max": 100,
+          "distintos": 87,
+          "na": 107
+        },
+        "wk14": {
+          "min": 1,
+          "max": 100,
+          "distintos": 88,
+          "na": 113
+        },
+        "wk15": {
+          "min": 1,
+          "max": 100,
+          "distintos": 87,
+          "na": 120
+        },
+        "wk16": {
+          "min": 1,
+          "max": 100,
+          "distintos": 79,
+          "na": 135
+        },
+        "wk17": {
+          "min": 1,
+          "max": 100,
+          "distintos": 80,
+          "na": 140
+        },
+        "wk18": {
+          "min": 1,
+          "max": 100,
+          "distintos": 84,
+          "na": 151
+        },
+        "wk19": {
+          "min": 1,
+          "max": 99,
+          "distintos": 78,
+          "na": 161
+        },
+        "wk20": {
+          "min": 2,
+          "max": 100,
+          "distintos": 74,
+          "na": 171
+        },
+        "wk21": {
+          "min": 3,
+          "max": 97,
+          "distintos": 39,
+          "na": 252
+        },
+        "wk22": {
+          "min": 3,
+          "max": 100,
+          "distintos": 38,
+          "na": 262
+        },
+        "wk23": {
+          "min": 3,
+          "max": 91,
+          "distintos": 33,
+          "na": 269
+        },
+        "wk24": {
+          "min": 3,
+          "max": 91,
+          "distintos": 33,
+          "na": 271
+        },
+        "wk25": {
+          "min": 2,
+          "max": 90,
+          "distintos": 28,
+          "na": 279
+        },
+        "wk26": {
+          "min": 1,
+          "max": 89,
+          "distintos": 33,
+          "na": 281
+        },
+        "wk27": {
+          "min": 1,
+          "max": 86,
+          "distintos": 26,
+          "na": 288
+        },
+        "wk28": {
+          "min": 2,
+          "max": 58,
+          "distintos": 20,
+          "na": 293
+        },
+        "wk29": {
+          "min": 2,
+          "max": 49,
+          "distintos": 17,
+          "na": 297
+        },
+        "wk30": {
+          "min": 2,
+          "max": 45,
+          "distintos": 17,
+          "na": 297
+        },
+        "wk31": {
+          "min": 3,
+          "max": 49,
+          "distintos": 19,
+          "na": 298
+        },
+        "wk32": {
+          "min": 3,
+          "max": 47,
+          "distintos": 15,
+          "na": 299
+        },
+        "wk33": {
+          "min": 2,
+          "max": 50,
+          "distintos": 13,
+          "na": 305
+        },
+        "wk34": {
+          "min": 3,
+          "max": 49,
+          "distintos": 10,
+          "na": 307
+        },
+        "wk35": {
+          "min": 4,
+          "max": 34,
+          "distintos": 9,
+          "na": 308
+        },
+        "wk36": {
+          "min": 5,
+          "max": 41,
+          "distintos": 9,
+          "na": 308
+        },
+        "wk37": {
+          "min": 5,
+          "max": 48,
+          "distintos": 9,
+          "na": 308
+        },
+        "wk38": {
+          "min": 9,
+          "max": 40,
+          "distintos": 6,
+          "na": 309
+        },
+        "wk39": {
+          "min": 3,
+          "max": 50,
+          "distintos": 9,
+          "na": 309
+        },
+        "wk40": {
+          "min": 1,
+          "max": 47,
+          "distintos": 7,
+          "na": 310
+        },
+        "wk41": {
+          "min": 1,
+          "max": 50,
+          "distintos": 7,
+          "na": 310
+        },
+        "wk42": {
+          "min": 2,
+          "max": 22,
+          "distintos": 7,
+          "na": 311
+        },
+        "wk43": {
+          "min": 3,
+          "max": 32,
+          "distintos": 7,
+          "na": 311
+        },
+        "wk44": {
+          "min": 4,
+          "max": 45,
+          "distintos": 7,
+          "na": 311
+        },
+        "wk45": {
+          "min": 4,
+          "max": 31,
+          "distintos": 6,
+          "na": 312
+        },
+        "wk46": {
+          "min": 5,
+          "max": 37,
+          "distintos": 6,
+          "na": 312
+        },
+        "wk47": {
+          "min": 6,
+          "max": 41,
+          "distintos": 6,
+          "na": 312
+        },
+        "wk48": {
+          "min": 8,
+          "max": 39,
+          "distintos": 5,
+          "na": 313
+        },
+        "wk49": {
+          "min": 9,
+          "max": 42,
+          "distintos": 4,
+          "na": 313
+        },
+        "wk50": {
+          "min": 10,
+          "max": 49,
+          "distintos": 5,
+          "na": 313
+        },
+        "wk51": {
+          "min": 12,
+          "max": 49,
+          "distintos": 5,
+          "na": 313
+        },
+        "wk52": {
+          "min": 15,
+          "max": 48,
+          "distintos": 5,
+          "na": 313
+        },
+        "wk53": {
+          "min": 17,
+          "max": 49,
+          "distintos": 5,
+          "na": 313
+        },
+        "wk54": {
+          "min": 17,
+          "max": 22,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk55": {
+          "min": 21,
+          "max": 22,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk56": {
+          "min": 25,
+          "max": 26,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk57": {
+          "min": 26,
+          "max": 29,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk58": {
+          "min": 31,
+          "max": 32,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk59": {
+          "min": 32,
+          "max": 39,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk60": {
+          "min": 37,
+          "max": 39,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk61": {
+          "min": 42,
+          "max": 43,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk62": {
+          "min": 42,
+          "max": 47,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk63": {
+          "min": 45,
+          "max": 50,
+          "distintos": 3,
+          "na": 315
+        },
+        "wk64": {
+          "min": 50,
+          "max": 50,
+          "distintos": 2,
+          "na": 315
+        },
+        "wk65": {
+          "min": 49,
+          "max": 49,
+          "distintos": 2,
+          "na": 316
+        },
+        "wk66": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk67": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk68": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk69": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk70": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk71": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk72": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk73": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk74": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk75": {
+          "niveis": null,
+          "na": 317
+        },
+        "wk76": {
+          "niveis": null,
+          "na": 317
+        }
+      }
+    },
+    "palmerpenguins::penguins": {
+      "pacote": "palmerpenguins",
+      "versao": "0.1.1",
+      "objeto": "penguins",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 344,
+      "colunas": 8,
+      "variaveis": ["species", "island", "bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g", "sex", "year"],
+      "bytes_rda_xz": 2372,
+      "bytes_memoria": 17072,
+      "bytes_csv": 17644,
+      "licenca_pacote": "CC0",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/palmerpenguins__penguins.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "species": {
+          "niveis": ["Adelie", "Gentoo", "Chinstrap"],
+          "na": 0
+        },
+        "island": {
+          "niveis": ["Torgersen", "Biscoe", "Dream"],
+          "na": 0
+        },
+        "bill_length_mm": {
+          "min": 32.1,
+          "max": 59.6,
+          "distintos": 165,
+          "na": 2
+        },
+        "bill_depth_mm": {
+          "min": 13.1,
+          "max": 21.5,
+          "distintos": 81,
+          "na": 2
+        },
+        "flipper_length_mm": {
+          "min": 172,
+          "max": 231,
+          "distintos": 56,
+          "na": 2
+        },
+        "body_mass_g": {
+          "min": 2700,
+          "max": 6300,
+          "distintos": 95,
+          "na": 2
+        },
+        "sex": {
+          "niveis": ["male", "female", null],
+          "na": 11
+        },
+        "year": {
+          "min": 2007,
+          "max": 2009,
+          "distintos": 3,
+          "na": 0
+        }
+      }
+    },
+    "palmerpenguins::penguins_raw": {
+      "pacote": "palmerpenguins",
+      "versao": "0.1.1",
+      "objeto": "penguins_raw",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 344,
+      "colunas": 17,
+      "variaveis": ["studyName", "Sample Number", "Species", "Region", "Island", "Stage", "Individual ID", "Clutch Completion", "Date Egg", "Culmen Length (mm)", "Culmen Depth (mm)", "Flipper Length (mm)", "Body Mass (g)", "Sex", "Delta 15 N (o/oo)", "Delta 13 C (o/oo)", "Comments"],
+      "bytes_rda_xz": 8192,
+      "bytes_memoria": 71888,
+      "bytes_csv": 58325,
+      "licenca_pacote": "CC0",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/palmerpenguins__penguins_raw.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "studyName": {
+          "niveis": ["PAL0708", "PAL0809", "PAL0910"],
+          "na": 0
+        },
+        "Sample Number": {
+          "min": 1,
+          "max": 152,
+          "distintos": 152,
+          "na": 0
+        },
+        "Species": {
+          "niveis": ["Adelie Penguin (Pygoscelis adeliae)", "Gentoo penguin (Pygoscelis papua)", "Chinstrap penguin (Pygoscelis antarctica)"],
+          "na": 0
+        },
+        "Region": {
+          "niveis": "Anvers",
+          "na": 0
+        },
+        "Island": {
+          "niveis": ["Torgersen", "Biscoe", "Dream"],
+          "na": 0
+        },
+        "Stage": {
+          "niveis": "Adult, 1 Egg Stage",
+          "na": 0
+        },
+        "Individual ID": {
+          "niveis": ["N1A1", "N1A2", "N2A1", "N2A2", "N3A1", "N3A2", "N4A1", "N4A2", "N5A1", "N5A2", "N6A1", "N6A2", "N7A1", "N7A2", "N8A1", "N8A2", "N9A1", "N9A2", "N10A1", "N10A2", "N11A1", "N11A2", "N12A1", "N12A2", "N13A1", "N13A2", "N17A1", "N17A2", "N18A1", "N18A2", "N21A1", "N21A2", "N22A1", "N22A2", "N23A1", "N23A2", "N24A1", "N24A2", "N25A1", "N25A2", "N26A1", "N26A2", "N27A1", "N27A2", "N28A1", "N28A2", "N29A1", "N29A2", "N30A1", "N30A2", "N32A1", "N32A2", "N34A1", "N34A2", "N35A1", "N35A2", "N36A1", "N36A2", "N37A1", "N37A2", "N38A1", "N38A2", "N39A1", "N39A2", "N40A1", "N40A2", "N41A1", "N41A2", "N42A1", "N42A2", "N44A1", "N44A2", "N45A1", "N45A2", "N46A1", "N46A2", "N48A1", "N48A2", "N49A1", "N49A2", "N50A1", "N50A2", "N47A1", "N47A2", "N51A1", "N51A2", "N53A1", "N53A2", "N55A1", "N55A2", "N58A1", "N58A2", "N60A1", "N60A2", "N61A1", "N61A2", "N63A1", "N63A2", "N64A1", "N64A2", "N66A1", "N66A2", "N67A1", "N67A2", "N69A1", "N69A2", "N71A1", "N71A2", "N72A1", "N72A2", "N73A1", "N73A2", "N76A1", "N76A2", "N77A1", "N77A2", "N78A1", "N78A2", "N79A1", "N79A2", "N80A1", "N80A2", "N81A1", "N81A2", "N82A1", "N82A2", "N83A1", "N83A2", "N84A1", "N84A2", "N85A1", "N85A2", "N31A1", "N31A2", "N33A1", "N33A2", "N56A1", "N56A2", "N14A1", "N14A2", "N15A1", "N15A2", "N16A1", "N16A2", "N19A1", "N19A2", "N20A1", "N20A2", "N54A1", "N54A2", "N43A1", "N43A2", "N62A1", "N62A2", "N68A1", "N68A2", "N70A1", "N70A2", "N89A1", "N89A2", "N65A1", "N65A2", "N74A1", "N74A2", "N75A1", "N75A2", "N86A1", "N86A2", "N87A1", "N87A2", "N88A1", "N88A2", "N90A1", "N90A2", "N92A1", "N92A2", "N93A1", "N93A2", "N94A1", "N94A2", "N95A1", "N95A2", "N96A1", "N96A2", "N98A1", "N98A2", "N99A1", "N99A2", "N100A1", "N100A2"],
+          "na": 0
+        },
+        "Clutch Completion": {
+          "niveis": ["Yes", "No"],
+          "na": 0
+        },
+        "Date Egg": {
+          "niveis": ["2007-11-11", "2007-11-16", "2007-11-15", "2007-11-09", "2007-11-12", "2007-11-10", "2007-11-13", "2007-11-19", "2008-11-06", "2008-11-09", "2008-11-15", "2008-11-13", "2008-11-11", "2008-11-14", "2008-11-08", "2008-11-02", "2008-11-07", "2008-11-17", "2008-11-05", "2008-11-10", "2009-11-09", "2009-11-15", "2009-11-20", "2009-11-12", "2009-11-17", "2009-11-18", "2009-11-22", "2009-11-16", "2009-11-21", "2009-11-23", "2009-11-10", "2009-11-13", "2009-11-14", "2007-11-27", "2007-11-18", "2007-11-29", "2007-12-03", "2008-11-04", "2008-11-03", "2009-11-25", "2009-12-01", "2009-11-27", "2007-11-26", "2007-11-21", "2007-11-28", "2007-11-22", "2007-11-30", "2008-11-25", "2008-11-24", "2009-11-19"],
+          "na": 0
+        },
+        "Culmen Length (mm)": {
+          "min": 32.1,
+          "max": 59.6,
+          "distintos": 165,
+          "na": 2
+        },
+        "Culmen Depth (mm)": {
+          "min": 13.1,
+          "max": 21.5,
+          "distintos": 81,
+          "na": 2
+        },
+        "Flipper Length (mm)": {
+          "min": 172,
+          "max": 231,
+          "distintos": 56,
+          "na": 2
+        },
+        "Body Mass (g)": {
+          "min": 2700,
+          "max": 6300,
+          "distintos": 95,
+          "na": 2
+        },
+        "Sex": {
+          "niveis": ["MALE", "FEMALE", null],
+          "na": 11
+        },
+        "Delta 15 N (o/oo)": {
+          "min": 7.6322,
+          "max": 10.0254,
+          "distintos": 331,
+          "na": 14
+        },
+        "Delta 13 C (o/oo)": {
+          "min": -27.0185,
+          "max": -23.7877,
+          "distintos": 332,
+          "na": 13
+        },
+        "Comments": {
+          "niveis": ["Not enough blood for isotopes.", null, "Adult not sampled.", "Nest never observed with full clutch.", "No blood sample obtained.", "No blood sample obtained for sexing.", "Nest never observed with full clutch. Not enough blood for isotopes.", "Sexing primers did not amplify. Not enough blood for isotopes.", "Sexing primers did not amplify.", "Adult not sampled. Nest never observed with full clutch.", "No delta15N data received from lab."],
+          "na": 290
+        }
+      }
+    },
+    "astsa::rec": {
+      "pacote": "astsa",
+      "versao": "2.5",
+      "objeto": "rec",
+      "status": "obtido",
+      "classe": "ts",
+      "linhas": 453,
+      "colunas": 1,
+      "variaveis": {},
+      "bytes_rda_xz": 1456,
+      "bytes_memoria": 4088,
+      "bytes_csv": {},
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/astsa__rec.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "astsa::soi": {
+      "pacote": "astsa",
+      "versao": "2.5",
+      "objeto": "soi",
+      "status": "obtido",
+      "classe": "ts",
+      "linhas": 453,
+      "colunas": 1,
+      "variaveis": {},
+      "bytes_rda_xz": 1112,
+      "bytes_memoria": 4088,
+      "bytes_csv": {},
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/astsa__soi.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {}
+    },
+    "agridat::cochran.latin": {
+      "pacote": "agridat",
+      "versao": "1.26",
+      "objeto": "cochran.latin",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 36,
+      "colunas": 4,
+      "variaveis": ["row", "col", "operator", "diff"],
+      "bytes_rda_xz": 372,
+      "bytes_memoria": 2296,
+      "bytes_csv": 492,
+      "licenca_pacote": "MIT + file LICENSE",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/agridat__cochran.latin.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "row": {
+          "min": 1,
+          "max": 6,
+          "distintos": 6,
+          "na": 0
+        },
+        "col": {
+          "min": 1,
+          "max": 6,
+          "distintos": 6,
+          "na": 0
+        },
+        "operator": {
+          "niveis": ["f", "b", "a", "d", "c", "e"],
+          "na": 0
+        },
+        "diff": {
+          "min": -3.3,
+          "max": 10.5,
+          "distintos": 30,
+          "na": 0
+        }
+      }
+    },
+    "agridat::grover.rcb.subsample": {
+      "pacote": "agridat",
+      "versao": "1.26",
+      "objeto": "grover.rcb.subsample",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 144,
+      "colunas": 4,
+      "variaveis": ["tiller", "trt", "block", "unit"],
+      "bytes_rda_xz": 472,
+      "bytes_memoria": 6072,
+      "bytes_csv": 2767,
+      "licenca_pacote": "MIT + file LICENSE",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/agridat__grover.rcb.subsample.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "tiller": {
+          "min": 20,
+          "max": 82,
+          "distintos": 49,
+          "na": 0
+        },
+        "trt": {
+          "niveis": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9"],
+          "na": 0
+        },
+        "block": {
+          "niveis": ["R1", "R2", "R3", "R4"],
+          "na": 0
+        },
+        "unit": {
+          "niveis": ["S1", "S2", "S3", "S4"],
+          "na": 0
+        }
+      }
+    },
+    "lme4::Pastes": {
+      "pacote": "lme4",
+      "versao": "2.0-6",
+      "objeto": "Pastes",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 60,
+      "colunas": 4,
+      "variaveis": ["strength", "batch", "cask", "sample"],
+      "bytes_rda_xz": 544,
+      "bytes_memoria": 6256,
+      "bytes_csv": 1224,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/lme4__Pastes.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "strength": {
+          "min": 54.2,
+          "max": 66,
+          "distintos": 44,
+          "na": 0
+        },
+        "batch": {
+          "niveis": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+          "na": 0
+        },
+        "cask": {
+          "niveis": ["a", "b", "c"],
+          "na": 0
+        },
+        "sample": {
+          "niveis": ["A:a", "A:b", "A:c", "B:a", "B:b", "B:c", "C:a", "C:b", "C:c", "D:a", "D:b", "D:c", "E:a", "E:b", "E:c", "F:a", "F:b", "F:c", "G:a", "G:b", "G:c", "H:a", "H:b", "H:c", "I:a", "I:b", "I:c", "J:a", "J:b", "J:c"],
+          "na": 0
+        }
+      }
+    },
+    "carData::USPop": {
+      "pacote": "carData",
+      "versao": "3.0-6",
+      "objeto": "USPop",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 22,
+      "colunas": 2,
+      "variaveis": ["year", "population"],
+      "bytes_rda_xz": 416,
+      "bytes_memoria": 1160,
+      "bytes_csv": 378,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/carData__USPop.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "year": {
+          "min": 1790,
+          "max": 2000,
+          "distintos": 22,
+          "na": 0
+        },
+        "population": {
+          "min": 3.9292,
+          "max": 281.4219,
+          "distintos": 22,
+          "na": 0
+        }
+      }
+    },
+    "vegan::dune": {
+      "pacote": "vegan",
+      "versao": "2.7-6",
+      "objeto": "dune",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 20,
+      "colunas": 30,
+      "variaveis": ["Achimill", "Agrostol", "Airaprae", "Alopgeni", "Anthodor", "Bellpere", "Bromhord", "Chenalbu", "Cirsarve", "Comapalu", "Eleopalu", "Elymrepe", "Empenigr", "Hyporadi", "Juncarti", "Juncbufo", "Lolipere", "Planlanc", "Poaprat", "Poatriv", "Ranuflam", "Rumeacet", "Sagiproc", "Salirepe", "Scorautu", "Trifprat", "Trifrepe", "Vicilath", "Bracruta", "Callcusp"],
+      "bytes_rda_xz": 736,
+      "bytes_memoria": 10504,
+      "bytes_csv": 1549,
+      "licenca_pacote": "GPL-2",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/vegan__dune.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Achimill": {
+          "min": 0,
+          "max": 4,
+          "distintos": 5,
+          "na": 0
+        },
+        "Agrostol": {
+          "min": 0,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "Airaprae": {
+          "min": 0,
+          "max": 3,
+          "distintos": 3,
+          "na": 0
+        },
+        "Alopgeni": {
+          "min": 0,
+          "max": 8,
+          "distintos": 7,
+          "na": 0
+        },
+        "Anthodor": {
+          "min": 0,
+          "max": 4,
+          "distintos": 4,
+          "na": 0
+        },
+        "Bellpere": {
+          "min": 0,
+          "max": 3,
+          "distintos": 3,
+          "na": 0
+        },
+        "Bromhord": {
+          "min": 0,
+          "max": 4,
+          "distintos": 4,
+          "na": 0
+        },
+        "Chenalbu": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "Cirsarve": {
+          "min": 0,
+          "max": 2,
+          "distintos": 2,
+          "na": 0
+        },
+        "Comapalu": {
+          "min": 0,
+          "max": 2,
+          "distintos": 2,
+          "na": 0
+        },
+        "Eleopalu": {
+          "min": 0,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "Elymrepe": {
+          "min": 0,
+          "max": 6,
+          "distintos": 3,
+          "na": 0
+        },
+        "Empenigr": {
+          "min": 0,
+          "max": 2,
+          "distintos": 2,
+          "na": 0
+        },
+        "Hyporadi": {
+          "min": 0,
+          "max": 5,
+          "distintos": 3,
+          "na": 0
+        },
+        "Juncarti": {
+          "min": 0,
+          "max": 4,
+          "distintos": 3,
+          "na": 0
+        },
+        "Juncbufo": {
+          "min": 0,
+          "max": 4,
+          "distintos": 4,
+          "na": 0
+        },
+        "Lolipere": {
+          "min": 0,
+          "max": 7,
+          "distintos": 6,
+          "na": 0
+        },
+        "Planlanc": {
+          "min": 0,
+          "max": 5,
+          "distintos": 4,
+          "na": 0
+        },
+        "Poaprat": {
+          "min": 0,
+          "max": 5,
+          "distintos": 6,
+          "na": 0
+        },
+        "Poatriv": {
+          "min": 0,
+          "max": 9,
+          "distintos": 7,
+          "na": 0
+        },
+        "Ranuflam": {
+          "min": 0,
+          "max": 4,
+          "distintos": 3,
+          "na": 0
+        },
+        "Rumeacet": {
+          "min": 0,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "Sagiproc": {
+          "min": 0,
+          "max": 5,
+          "distintos": 5,
+          "na": 0
+        },
+        "Salirepe": {
+          "min": 0,
+          "max": 5,
+          "distintos": 3,
+          "na": 0
+        },
+        "Scorautu": {
+          "min": 0,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "Trifprat": {
+          "min": 0,
+          "max": 5,
+          "distintos": 3,
+          "na": 0
+        },
+        "Trifrepe": {
+          "min": 0,
+          "max": 6,
+          "distintos": 6,
+          "na": 0
+        },
+        "Vicilath": {
+          "min": 0,
+          "max": 2,
+          "distintos": 3,
+          "na": 0
+        },
+        "Bracruta": {
+          "min": 0,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "Callcusp": {
+          "min": 0,
+          "max": 4,
+          "distintos": 3,
+          "na": 0
+        }
+      }
+    },
+    "nsm3data::tuna": {
+      "pacote": "nsm3data",
+      "versao": "0.1",
+      "objeto": "tuna",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 9,
+      "colunas": 3,
+      "variaveis": ["lot", "hunter", "panel"],
+      "bytes_rda_xz": 268,
+      "bytes_memoria": 1288,
+      "bytes_csv": 128,
+      "licenca_pacote": "GPL-2",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/nsm3data__tuna.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "lot": {
+          "min": 1,
+          "max": 9,
+          "distintos": 9,
+          "na": 0
+        },
+        "hunter": {
+          "min": 41.9,
+          "max": 60.1,
+          "distintos": 9,
+          "na": 0
+        },
+        "panel": {
+          "min": 2.5,
+          "max": 5.2,
+          "distintos": 9,
+          "na": 0
+        }
+      }
+    },
+    "SensoMineR::hedochoc": {
+      "pacote": "SensoMineR",
+      "versao": "1.28",
+      "objeto": "hedochoc",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 6,
+      "colunas": 222,
+      "variaveis": ["j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "j11", "j12", "j13", "j14", "j15", "j16", "j17", "j18", "j19", "j20", "j21", "j22", "j23", "j24", "j25", "j26", "j27", "j28", "j29", "j30", "j31", "j32", "j33", "j34", "j35", "j36", "j37", "j38", "j39", "j40", "j41", "j42", "j43", "j44", "j45", "j46", "j47", "j48", "j49", "j50", "j51", "j52", "j53", "j54", "j55", "j56", "j57", "j58", "j59", "j60", "j61", "j62", "j63", "j64", "j65", "j66", "j67", "j68", "j69", "j70", "j71", "j72", "j73", "j74", "j75", "j76", "j77", "j78", "j79", "j80", "j81", "j82", "j83", "j84", "j85", "j86", "j87", "j88", "j89", "j90", "j91", "j92", "j93", "j94", "j95", "j96", "j97", "j98", "j99", "j100", "j101", "j102", "j103", "j104", "j105", "j106", "j107", "j108", "j109", "j110", "j111", "j112", "j113", "j114", "j115", "j116", "j117", "j118", "j119", "j120", "j121", "j122", "j123", "j124", "j125", "j126", "j127", "j128", "j129", "j130", "j131", "j132", "j133", "j134", "j135", "j136", "j137", "j138", "j139", "j140", "j141", "j142", "j143", "j144", "j145", "j146", "j147", "j148", "j149", "j150", "j151", "j152", "j153", "j154", "j155", "j156", "j157", "j158", "j159", "j160", "j161", "j162", "j163", "j164", "j165", "j166", "j167", "j168", "j169", "j170", "j171", "j172", "j173", "j174", "j175", "j176", "j177", "j178", "j179", "j180", "j181", "j182", "j183", "j184", "j185", "j186", "j187", "j188", "j189", "j190", "j191", "j192", "j193", "j194", "j195", "j196", "j197", "j198", "j199", "j200", "j201", "j202", "j203", "j204", "j205", "j206", "j207", "j208", "j209", "j210", "j211", "j212", "j213", "j214", "j215", "j216", "j217", "j218", "j219", "j220", "j221", "j222"],
+      "bytes_rda_xz": 1476,
+      "bytes_memoria": 38280,
+      "bytes_csv": 4137,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/SensoMineR__hedochoc.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "j1": {
+          "min": 3,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j2": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j3": {
+          "min": 4,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j4": {
+          "min": 1,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j5": {
+          "min": 2,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j6": {
+          "min": 3,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j7": {
+          "min": 2,
+          "max": 5,
+          "distintos": 4,
+          "na": 0
+        },
+        "j8": {
+          "min": 2,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j9": {
+          "min": 2,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j10": {
+          "min": 1,
+          "max": 7,
+          "distintos": 6,
+          "na": 0
+        },
+        "j11": {
+          "min": 2,
+          "max": 6,
+          "distintos": 4,
+          "na": 0
+        },
+        "j12": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j13": {
+          "min": 2,
+          "max": 6,
+          "distintos": 3,
+          "na": 0
+        },
+        "j14": {
+          "min": 1,
+          "max": 5,
+          "distintos": 5,
+          "na": 0
+        },
+        "j15": {
+          "min": 1,
+          "max": 4,
+          "distintos": 4,
+          "na": 0
+        },
+        "j16": {
+          "min": 3,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j17": {
+          "min": 1,
+          "max": 9,
+          "distintos": 6,
+          "na": 0
+        },
+        "j18": {
+          "min": 2,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j19": {
+          "min": 2,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j20": {
+          "min": 1,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j21": {
+          "min": 1,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j22": {
+          "min": 2,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j23": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j24": {
+          "min": 2,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j25": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j26": {
+          "min": 4,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j27": {
+          "min": 6,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j28": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j29": {
+          "min": 4,
+          "max": 10,
+          "distintos": 6,
+          "na": 0
+        },
+        "j30": {
+          "min": 6,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j31": {
+          "min": 4,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j32": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j33": {
+          "min": 4,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j34": {
+          "min": 5,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j35": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j36": {
+          "min": 5,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j37": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j38": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j39": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j40": {
+          "min": 7,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j41": {
+          "min": 4,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j42": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j43": {
+          "min": 7,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j44": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j45": {
+          "min": 4,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j46": {
+          "min": 8,
+          "max": 9,
+          "distintos": 2,
+          "na": 0
+        },
+        "j47": {
+          "min": 4,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j48": {
+          "min": 1,
+          "max": 9,
+          "distintos": 6,
+          "na": 0
+        },
+        "j49": {
+          "min": 2,
+          "max": 7,
+          "distintos": 6,
+          "na": 0
+        },
+        "j50": {
+          "min": 4,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j51": {
+          "min": 4,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j52": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j53": {
+          "min": 1,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j54": {
+          "min": 3,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j55": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j56": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j57": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j58": {
+          "min": 3,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j59": {
+          "min": 3,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j60": {
+          "min": 1,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j61": {
+          "min": 4,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j62": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j63": {
+          "min": 1,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j64": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j65": {
+          "min": 1,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j66": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j67": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j68": {
+          "min": 1,
+          "max": 5,
+          "distintos": 4,
+          "na": 0
+        },
+        "j69": {
+          "min": 1,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j70": {
+          "min": 7,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j71": {
+          "min": 6,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j72": {
+          "min": 6,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j73": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j74": {
+          "min": 4,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j75": {
+          "min": 2,
+          "max": 6,
+          "distintos": 3,
+          "na": 0
+        },
+        "j76": {
+          "min": 3,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j77": {
+          "min": 1,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j78": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j79": {
+          "min": 2,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j80": {
+          "min": 1,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j81": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j82": {
+          "min": 4,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j83": {
+          "min": 4,
+          "max": 9,
+          "distintos": 6,
+          "na": 0
+        },
+        "j84": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j85": {
+          "min": 7,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j86": {
+          "min": 3,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j87": {
+          "min": 8,
+          "max": 9,
+          "distintos": 2,
+          "na": 0
+        },
+        "j88": {
+          "min": 1,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j89": {
+          "min": 2,
+          "max": 6,
+          "distintos": 4,
+          "na": 0
+        },
+        "j90": {
+          "min": 1,
+          "max": 6,
+          "distintos": 4,
+          "na": 0
+        },
+        "j91": {
+          "min": 3,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j92": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j93": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j94": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j95": {
+          "min": 1,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j96": {
+          "min": 1,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j97": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j98": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j99": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j100": {
+          "min": 1,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j101": {
+          "min": 2,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j102": {
+          "min": 4,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j103": {
+          "min": 2,
+          "max": 6,
+          "distintos": 4,
+          "na": 0
+        },
+        "j104": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j105": {
+          "min": 2,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j106": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j107": {
+          "min": 4,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j108": {
+          "min": 1,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j109": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j110": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j111": {
+          "min": 5,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j112": {
+          "min": 4,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j113": {
+          "min": 3,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j114": {
+          "min": 6,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j115": {
+          "min": 6,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j116": {
+          "min": 5,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j117": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j118": {
+          "min": 4,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j119": {
+          "min": 3,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j120": {
+          "min": 6,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j121": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j122": {
+          "min": 4,
+          "max": 6,
+          "distintos": 3,
+          "na": 0
+        },
+        "j123": {
+          "min": 1,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j124": {
+          "min": 1,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j125": {
+          "min": 5,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j126": {
+          "min": 4,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j127": {
+          "min": 4,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j128": {
+          "min": 5,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j129": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j130": {
+          "min": 3,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j131": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j132": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j133": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j134": {
+          "min": 1,
+          "max": 5,
+          "distintos": 3,
+          "na": 0
+        },
+        "j135": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j136": {
+          "min": 3,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j137": {
+          "min": 2,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j138": {
+          "min": 5,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j139": {
+          "min": 1,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j140": {
+          "min": 1,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j141": {
+          "min": 1,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j142": {
+          "min": 2,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j143": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j144": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j145": {
+          "min": 4,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j146": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j147": {
+          "min": 1,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j148": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j149": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j150": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j151": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j152": {
+          "min": 6,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j153": {
+          "min": 1,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j154": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j155": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j156": {
+          "min": 4,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j157": {
+          "min": 3,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j158": {
+          "min": 4,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j159": {
+          "min": 2,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j160": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j161": {
+          "min": 6,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j162": {
+          "min": 3,
+          "max": 9,
+          "distintos": 6,
+          "na": 0
+        },
+        "j163": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j164": {
+          "min": 0,
+          "max": 10,
+          "distintos": 6,
+          "na": 0
+        },
+        "j165": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j166": {
+          "min": 6,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "j167": {
+          "min": 3,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j168": {
+          "min": 5,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "j169": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j170": {
+          "min": 1,
+          "max": 10,
+          "distintos": 5,
+          "na": 0
+        },
+        "j171": {
+          "min": 1,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j172": {
+          "min": 4,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "j173": {
+          "min": 2,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j174": {
+          "min": 3,
+          "max": 10,
+          "distintos": 5,
+          "na": 0
+        },
+        "j175": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j176": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j177": {
+          "min": 3,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j178": {
+          "min": 1,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        },
+        "j179": {
+          "min": 3,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j180": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j181": {
+          "min": 1,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j182": {
+          "min": 0,
+          "max": 10,
+          "distintos": 6,
+          "na": 0
+        },
+        "j183": {
+          "min": 0,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j184": {
+          "min": 2,
+          "max": 10,
+          "distintos": 5,
+          "na": 0
+        },
+        "j185": {
+          "min": 3,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j186": {
+          "min": 2,
+          "max": 7,
+          "distintos": 6,
+          "na": 0
+        },
+        "j187": {
+          "min": 2,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j188": {
+          "min": 5,
+          "max": 8,
+          "distintos": 3,
+          "na": 0
+        },
+        "j189": {
+          "min": 2,
+          "max": 7,
+          "distintos": 5,
+          "na": 0
+        },
+        "j190": {
+          "min": 0,
+          "max": 10,
+          "distintos": 6,
+          "na": 0
+        },
+        "j191": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j192": {
+          "min": 4,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j193": {
+          "min": 4,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j194": {
+          "min": 5,
+          "max": 10,
+          "distintos": 5,
+          "na": 0
+        },
+        "j195": {
+          "min": 0,
+          "max": 9,
+          "distintos": 6,
+          "na": 0
+        },
+        "j196": {
+          "min": 3,
+          "max": 10,
+          "distintos": 5,
+          "na": 0
+        },
+        "j197": {
+          "min": 4,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j198": {
+          "min": 2,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j199": {
+          "min": 3,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j200": {
+          "min": 6,
+          "max": 9,
+          "distintos": 3,
+          "na": 0
+        },
+        "j201": {
+          "min": 5,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j202": {
+          "min": 5,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j203": {
+          "min": 4,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j204": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j205": {
+          "min": 1,
+          "max": 10,
+          "distintos": 6,
+          "na": 0
+        },
+        "j206": {
+          "min": 1,
+          "max": 8,
+          "distintos": 5,
+          "na": 0
+        },
+        "j207": {
+          "min": 4,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j208": {
+          "min": 3,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "j209": {
+          "min": 3,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "j210": {
+          "min": 6,
+          "max": 9,
+          "distintos": 4,
+          "na": 0
+        },
+        "j211": {
+          "min": 0,
+          "max": 10,
+          "distintos": 6,
+          "na": 0
+        },
+        "j212": {
+          "min": 2,
+          "max": 10,
+          "distintos": 4,
+          "na": 0
+        },
+        "j213": {
+          "min": 3,
+          "max": 9,
+          "distintos": 6,
+          "na": 0
+        },
+        "j214": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j215": {
+          "min": 2,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j216": {
+          "min": 2,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j217": {
+          "min": 0,
+          "max": 8,
+          "distintos": 4,
+          "na": 0
+        },
+        "j218": {
+          "min": 1,
+          "max": 9,
+          "distintos": 5,
+          "na": 0
+        },
+        "j219": {
+          "min": 5,
+          "max": 7,
+          "distintos": 3,
+          "na": 0
+        },
+        "j220": {
+          "min": 3,
+          "max": 7,
+          "distintos": 4,
+          "na": 0
+        },
+        "j221": {
+          "min": 0,
+          "max": 6,
+          "distintos": 5,
+          "na": 0
+        },
+        "j222": {
+          "min": 2,
+          "max": 8,
+          "distintos": 6,
+          "na": 0
+        }
+      }
+    },
+    "SensoMineR::sensochoc": {
+      "pacote": "SensoMineR",
+      "versao": "1.28",
+      "objeto": "sensochoc",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 348,
+      "colunas": 18,
+      "variaveis": ["Panelist", "Session", "Rank", "Product", "CocoaA", "MilkA", "CocoaF", "MilkF", "Caramel", "Vanilla", "Sweetness", "Acidity", "Bitterness", "Astringency", "Crunchy", "Melting", "Sticky", "Granular"],
+      "bytes_rda_xz": 3488,
+      "bytes_memoria": 54416,
+      "bytes_csv": 17572,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/SensoMineR__sensochoc.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Panelist": {
+          "niveis": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29"],
+          "na": 0
+        },
+        "Session": {
+          "niveis": ["1", "2"],
+          "na": 0
+        },
+        "Rank": {
+          "niveis": ["1", "6", "3", "5", "2", "4"],
+          "na": 0
+        },
+        "Product": {
+          "niveis": ["choc6", "choc3", "choc2", "choc1", "choc4", "choc5"],
+          "na": 0
+        },
+        "CocoaA": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "MilkA": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "CocoaF": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "MilkF": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Caramel": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Vanilla": {
+          "min": 0,
+          "max": 9,
+          "distintos": 10,
+          "na": 0
+        },
+        "Sweetness": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Acidity": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Bitterness": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Astringency": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Crunchy": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Melting": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Sticky": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        },
+        "Granular": {
+          "min": 0,
+          "max": 10,
+          "distintos": 11,
+          "na": 0
+        }
+      }
+    },
+    "ClustBlock::fish": {
+      "pacote": "ClustBlock",
+      "versao": "6.1.0",
+      "objeto": "fish",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 204,
+      "colunas": 30,
+      "variaveis": ["Rep", "Panelist", "Sample", "beany O", "cooked fish O", "crab O", "fermen bean O", "fishy O", "hay fermented O", "haylike O", "molasses O", "sulph meaty O", "sundried tom O", "tuna O", "amine", "beany", "cooked fish", "fermented bean", "fishy", "hay fermented", "hay like", "molasses", "oily", "pea", "sulphury meaty", "sundried tomato", "tuna", "Sweet", "Bitter", "Umami"],
+      "bytes_rda_xz": 1608,
+      "bytes_memoria": 54392,
+      "bytes_csv": 15830,
+      "licenca_pacote": "MIT + file LICENSE",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/ClustBlock__fish.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Rep": {
+          "min": 1,
+          "max": 3,
+          "distintos": 3,
+          "na": 0
+        },
+        "Panelist": {
+          "niveis": ["Panelist_6", "Panelist_5", "Panelist_7", "Panelist_9", "Panelist_8", "Panelist_10", "Panelist_11", "Panelist_4", "Panelist_2", "Panelist_1", "Panelist_3", "Panelist_12"],
+          "na": 0
+        },
+        "Sample": {
+          "niveis": ["TARGET", "P1", "P2", "P3", "P4", "P5"],
+          "na": 0
+        },
+        "beany O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "cooked fish O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "crab O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "fermen bean O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "fishy O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "hay fermented O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "haylike O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "molasses O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "sulph meaty O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "sundried tom O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "tuna O": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "amine": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "beany": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "cooked fish": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "fermented bean": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "fishy": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "hay fermented": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "hay like": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "molasses": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "oily": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "pea": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "sulphury meaty": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "sundried tomato": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "tuna": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "Sweet": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "Bitter": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        },
+        "Umami": {
+          "min": 0,
+          "max": 1,
+          "distintos": 2,
+          "na": 0
+        }
+      }
+    },
+    "nlme::Orthodont": {
+      "pacote": "nlme",
+      "versao": "3.1-169",
+      "objeto": "Orthodont",
+      "status": "obtido",
+      "classe": ["nfnGroupedData", "nfGroupedData", "groupedData", "data.frame"],
+      "linhas": 108,
+      "colunas": 4,
+      "variaveis": ["distance", "age", "Subject", "Sex"],
+      "bytes_rda_xz": 912,
+      "bytes_memoria": 17936,
+      "bytes_csv": 2357,
+      "licenca_pacote": "GPL (>= 2)",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/nlme__Orthodont.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "distance": {
+          "min": 16.5,
+          "max": 31.5,
+          "distintos": 27,
+          "na": 0
+        },
+        "age": {
+          "min": 8,
+          "max": 14,
+          "distintos": 4,
+          "na": 0
+        },
+        "Subject": {
+          "niveis": ["M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10", "M11", "M12", "M13", "M14", "M15", "M16", "F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11"],
+          "na": 0
+        },
+        "Sex": {
+          "niveis": ["Male", "Female"],
+          "na": 0
+        }
+      }
+    },
+    "rpart::kyphosis": {
+      "pacote": "rpart",
+      "versao": "4.1.27",
+      "objeto": "kyphosis",
+      "status": "obtido",
+      "classe": "data.frame",
+      "linhas": 81,
+      "colunas": 4,
+      "variaveis": ["Kyphosis", "Age", "Number", "Start"],
+      "bytes_rda_xz": 532,
+      "bytes_memoria": 2920,
+      "bytes_csv": 1512,
+      "licenca_pacote": "GPL-2 | GPL-3",
+      "arquivo": "D:/Claude/EAPA-Ecossistema/EAPADados/nova_estetegia_levantamento/levantamento_tecnico/objetos_originais/rpart__kyphosis.rda",
+      "alerta_origem": "",
+      "resumo_numerico": {
+        "Kyphosis": {
+          "niveis": ["absent", "present"],
+          "na": 0
+        },
+        "Age": {
+          "min": 1,
+          "max": 206,
+          "distintos": 64,
+          "na": 0
+        },
+        "Number": {
+          "min": 2,
+          "max": 10,
+          "distintos": 8,
+          "na": 0
+        },
+        "Start": {
+          "min": 1,
+          "max": 18,
+          "distintos": 16,
+          "na": 0
+        }
+      }
+    }
+  },
+  "resumo": {
+    "objetos_atuais": 43,
+    "bytes_atuais": 337401,
+    "candidatos_obtidos": 54,
+    "bytes_candidatos_xz": 193300,
+    "bytes_total_bruto": 530701,
+    "limite_mb_decimal": 1000000,
+    "limite_mib": 1048576,
+    "observacao": "Total bruto mantém conjuntos sobrepostos, variantes e candidatos que poderão ser recusados. Inclui dados de origem ainda em avaliação; não é o tamanho final do pacote nem de suas dependências."
+  }
+}

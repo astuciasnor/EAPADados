@@ -12,3 +12,6 @@
 DESCRIPTION.bak
 *.tar.gz
 *.zip
+
+# Pacotes de terceiros descompactados no levantamento; refeitos por obter_fontes.py
+nova_estetegia_levantamento/levantamento_tecnico/fontes_extraidas/

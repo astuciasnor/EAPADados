@@ -1,0 +1,84 @@
+_P_r_e_s_e_n_c_e _o_f _B_a_c_t_e_r_i_a _a_f_t_e_r _D_r_u_g _T_r_e_a_t_m_e_n_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Tests of the presence of the bacteria _H. influenzae_ in children
+     with otitis media in the Northern Territory of Australia.
+
+_U_s_a_g_e:
+
+     bacteria
+     
+_F_o_r_m_a_t:
+
+     This data frame has 220 rows and the following columns:
+
+     y
+          presence or absence: a factor with levels 'n' and 'y'.
+
+     ap
+          active/placebo: a factor with levels 'a' and 'p'.
+
+     hilo
+          hi/low compliance: a factor with levels 'hi' amd 'lo'.
+
+     week
+          numeric: week of test.
+
+     ID
+          subject ID: a factor.
+
+     trt
+          a factor with levels 'placebo', 'drug' and 'drug+', a
+          re-coding of 'ap' and 'hilo'.
+
+_D_e_t_a_i_l_s:
+
+     Dr A. Leach tested the effects of a drug on 50 children with a
+     history of otitis media in the Northern Territory of Australia.
+     The children were randomized to the drug or the a placebo, and
+     also to receive active encouragement to comply with taking the
+     drug.
+
+     The presence of _H. influenzae_ was checked at weeks 0, 2, 4, 6
+     and 11: 30 of the checks were missing and are not included in this
+     data frame.
+
+_S_o_u_r_c_e:
+
+     Dr Amanda Leach _via_ Mr James McBroom.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Menzies School of Health Research 1999-2000 Annual Report. p.20.
+     <https://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf>.
+
+     Venables, W. N. and Ripley, B. D. (2002) _Modern Applied
+     Statistics with S._ Fourth edition.  Springer.
+
+_E_x_a_m_p_l_e_s:
+
+     contrasts(bacteria$trt) <- structure(contr.sdif(3),
+          dimnames = list(NULL, c("drug", "encourage")))
+     ## fixed effects analyses
+     summary(glm(y ~ trt * week, binomial, data = bacteria))
+     summary(glm(y ~ trt + week, binomial, data = bacteria))
+     summary(glm(y ~ trt + I(week > 2), binomial, data = bacteria))
+     
+     # conditional random-effects analysis
+     library(survival)
+     bacteria$Time <- rep(1, nrow(bacteria))
+     coxph(Surv(Time, unclass(y)) ~ week + strata(ID),
+           data = bacteria, method = "exact")
+     coxph(Surv(Time, unclass(y)) ~ factor(week) + strata(ID),
+           data = bacteria, method = "exact")
+     coxph(Surv(Time, unclass(y)) ~ I(week > 2) + strata(ID),
+           data = bacteria, method = "exact")
+     
+     # PQL glmm analysis
+     library(nlme)
+     ## IGNORE_RDIFF_BEGIN
+     summary(glmmPQL(y ~ trt + I(week > 2), random = ~ 1 | ID,
+                     family = binomial, data = bacteria))
+     ## IGNORE_RDIFF_END
+     

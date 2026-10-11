@@ -1,0 +1,68 @@
+Weight Versus Age of Chicks on Different Diets
+
+Description:
+
+     The 'ChickWeight' data frame has 578 rows and 4 columns from an
+     experiment on the effect of diet on early growth of chicks.
+
+Usage:
+
+     ChickWeight
+     
+Format:
+
+     An object of class 'c("nfnGroupedData", "nfGroupedData",
+     "groupedData", "data.frame")' containing the following columns:
+
+     'weight'
+          a numeric vector giving the body weight of the chick (gm).
+
+     'Time'
+          a numeric vector giving the number of days since birth when
+          the measurement was made.
+
+     'Chick'
+          an ordered factor with levels '18' < ... < '48' giving a
+          unique identifier for the chick.  The ordering of the levels
+          groups chicks on the same diet together and orders them
+          according to their final weight (lightest to heaviest) within
+          diet.
+
+     'Diet'
+          a factor with levels '1', ..., '4' indicating which
+          experimental diet the chick received.
+
+Details:
+
+     The body weights of the chicks were measured at birth and every
+     second day thereafter until day 20.  They were also measured on
+     day 21.  There were four groups of chicks on different protein
+     diets.
+
+     This dataset was originally part of package 'nlme', and that has
+     methods (including for '[', 'as.data.frame', 'plot' and 'print')
+     for its grouped-data classes.
+
+Source:
+
+     Crowder MJ, Hand DJ (1990). _Analysis of Repeated Measures_.
+     Chapman & Hall, London. ISBN 041231830X. Example 5.3, pages 74-78.
+
+     Hand DJ, Crowder MJ (1996). _Practical Longitudinal Data
+     Analysis_. Chapman & Hall, London. ISBN 0412599406. Table A.2,
+     page 172.
+
+     Pinheiro J, Bates DM (2000). _Mixed-Effects Models in S and
+     S-PLUS_, series Statistics and Computing. Springer New York. ISBN
+     9780387989570.
+
+See Also:
+
+     'SSlogis' for models fitted to this dataset.
+
+Examples:
+
+     require(graphics)
+     coplot(weight ~ Time | Chick, data = ChickWeight,
+            type = "b", show.given = FALSE)
+     

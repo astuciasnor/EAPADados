@@ -1,0 +1,65 @@
+[
+  {
+    "pacote": "FSAdata",
+    "versao": "0.4.1",
+    "url": "https://cloud.r-project.org/src/contrib/FSAdata_0.4.1.tar.gz",
+    "bytes_download": 696794,
+    "sha256": "517b98444a87086c689fc4b010ebcea28303ce9773d89798c4dac74ffd7c007e",
+    "arquivos_extraidos": 335,
+    "status": "obtido"
+  },
+  {
+    "pacote": "astsa",
+    "versao": "2.5",
+    "url": "https://cloud.r-project.org/src/contrib/astsa_2.5.tar.gz",
+    "bytes_download": 879001,
+    "sha256": "91904efea2660a1c476bb70a9dda13e0657dcd16bf6c4b43f32ed0fc2122322b",
+    "arquivos_extraidos": 197,
+    "status": "obtido"
+  },
+  {
+    "pacote": "agridat",
+    "versao": "1.26",
+    "url": "https://cloud.r-project.org/src/contrib/agridat_1.26.tar.gz",
+    "bytes_download": 2995026,
+    "sha256": "e5f07bc4a5157899cba05270adee66921769922344dbeba1088b34fa6320e064",
+    "arquivos_extraidos": 767,
+    "status": "obtido"
+  },
+  {
+    "pacote": "nsm3data",
+    "versao": "0.1",
+    "url": "https://cloud.r-project.org/src/contrib/nsm3data_0.1.tar.gz",
+    "bytes_download": 70646,
+    "sha256": "561fb52c3ed7c417bb9903ff7406cb6c14218e4943965d8cce03565ee5e9a396",
+    "arquivos_extraidos": 193,
+    "status": "obtido"
+  },
+  {
+    "pacote": "palmerpenguins",
+    "versao": "0.1.1",
+    "url": "https://cloud.r-project.org/src/contrib/palmerpenguins_0.1.1.tar.gz",
+    "bytes_download": 2995960,
+    "sha256": "2a40d48ba6c7978fdf2a6daf647ccb39cd17590680138931d11194d3dd1a30b4",
+    "arquivos_extraidos": 14,
+    "status": "obtido"
+  },
+  {
+    "pacote": "SensoMineR",
+    "versao": "1.28",
+    "url": "https://cloud.r-project.org/src/contrib/SensoMineR_1.28.tar.gz",
+    "bytes_download": 343296,
+    "sha256": "16d7b7aceb1af1b595d824281e5334a8c6edee1cb79f610650be97fc33d3c5f4",
+    "arquivos_extraidos": 95,
+    "status": "obtido"
+  },
+  {
+    "pacote": "ClustBlock",
+    "versao": "6.1.0",
+    "url": "https://cloud.r-project.org/src/contrib/ClustBlock_6.1.0.tar.gz",
+    "bytes_download": 103722,
+    "sha256": "807b58e638d47b38ac655e60a21f954a817899aa9fb90388c49bbb2e0e01b13d",
+    "arquivos_extraidos": 67,
+    "status": "obtido"
+  }
+]

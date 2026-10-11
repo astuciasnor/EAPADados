@@ -1,0 +1,116 @@
+---
+title: "No free refills: prior drying and vertebrate colonization alter ecological functioning and vertebrate fitness within experimental aquatic systems" 
+output: html_notebook
+---
+
+```{r}
+#Journal of Freshwater Biology
+#Manuscript FWB-P-Sep-22-0415
+#Amphibian Analyses
+
+#Load packages required for analyses
+library(readxl)
+library(ggplot2)
+library(bbmle)
+library(multcomp)
+library(mgcv)
+library(gamm4)
+library(tidyverse)
+library(mgcViz)
+library(nlme)
+library(gratia)
+library(tidyr)
+library(dbplyr)
+library(itsadug)
+library(mgcViz)
+
+#Selecting working directory
+setwd("C:/Users/krist/Dropbox/WSU Grad Research/1_Ward Mesocosms 2021/Field Data")
+
+#Selecting Excel data sheet
+YSIData <- read_excel("Revised YSI Data.xlsx", 
+    col_types = c("numeric", "text", "text", 
+        "text", "skip", "numeric", "skip", 
+        "skip", "skip", "skip", "skip", "skip", 
+        "skip", "skip", "numeric", "skip", 
+        "skip", "skip", "numeric", "numeric", 
+        "numeric", "numeric", "numeric"))
+
+#Omitting experimental tank replicate #1 due to a separate (not included within experimental design) amphibian species ovipositing within the tank
+YData <- YSIData[YSIData$Tank!=1,]
+
+#Allocating each variable as a factor or numeric variable
+YData$Trophic_Treatment <- factor(YData$Trophic_Treatment, levels = c("Control", "Fish", "Amphibian", "Fish_Amphibian"))
+YData$Treatment <- as.factor(YData$Treatment)
+YData$Trophic_Treatment <- as.factor(YData$Trophic_Treatment)
+YData$Drying_Treatment <- as.factor(YData$Drying_Treatment)
+YData$Tank <- as.factor(YData$Tank)
+YData$Day <- as.numeric(YData$Day)
+YData$GPP <- as.numeric(YData$GPP)
+YData$Temp_PM <- as.numeric(YData$Temp_PM)
+YData$Temp_AM <- as.numeric(YData$Temp_AM)
+
+#Subsetting the data into smaller datasets to be analyzed separately based on their corresponding treatment combinations
+YDRData <- YData[YData$Drying_Treatment=="Dry_Rewet",]
+YNDData <- YData[YData$Drying_Treatment=="Not_Dried",]
+YCData <- YData[YData$Trophic_Treatment=="Control",]
+YFData <- YData[YData$Trophic_Treatment=="Fish",]
+YAData <- YData[YData$Trophic_Treatment=="Amphibian",]
+YFAData <- YData[YData$Trophic_Treatment=="Fish_Amphibian",]
+
+```
+
+"cr" is cubic regression and it places knots by quartile, not evenly. 
+
+We chose "cr" spline type because it places knots by quartile, so it places knots unevenly where there is more data. So more knots in the beginning where we have more sampling periods.
+```{r}
+#Analyzing the difference in gross primary productivity between trophic and drying treatment combinations
+#Using a generalized additive model due to non-linierity of the data
+#The trophic and drying treatments are analyzed as parametric effects
+#"tropic treatment by day", "drying treatment by day", and "day" were analyzed as cubic regression smoother terms
+#"tank #" and "tank by day" are analyzed as random effects
+Ygam_2 <- gam(DO_m2_hr~Trophic_Treatment + Drying_Treatment + s(Day,by=Trophic_Treatment,k=-1,bs="cr")+ s(Day,by=Drying_Treatment,k=-1,bs="cr") + s(Day,k=-1,bs="cr") + s(Tank,k=-1,bs='re') + s(Tank,Day,k=-1,bs='re'), data = YData, method = 'REML')
+
+#Checking the gam model fit and running a subsequent ANOVA
+gam.check(Ygam_2) 
+anova.gam(Ygam_2)
+
+```
+``
+Plotting "summed" effects (e.g., generalized pattern across tanks)
+
+```{r}
+#Graphing the parametric effects (drying treatment and trophic treatment) on periphyton mass within the context of the above gam model 
+par(mfrow=c(1,2),cex=1.1)
+
+plot_parametric(Ygam_2,pred=list(Drying_Treatment = levels(YData$Drying_Treatment)),xlim=c(0,0.1),xlab = "Gross Primary Productivity",rm.ranef=TRUE)
+
+plot_parametric(Ygam_2,pred=list(Trophic_Treatment = levels(YData$Trophic_Treatment)),xlim=c(0,0.1),xlab = "Gross Primary Productivity", rm.ranef=TRUE)
+
+```
+
+```{r}
+#Graphing the result of the above gam model (Dry-refill and non-dried treatments only) and their corresponding raw data points
+plot(YNDData$DO_m2_hr ~ jitter(YNDData$Day,1.7), ylim = c(0,0.16), xlim = c(0,80), xlab = "Experimental Day", ylab = "GPP", col = rgb(0,0,1,alpha=0.25),pch=16,cex=0.6)
+plot(YDRData$DO_m2_hr ~ jitter(YDRData$Day,1.7), par(new = TRUE), ylim = c(0,0.16), xlim = c(0,80), xlab = "Experimental Day", ylab = "GPP", col = rgb(1,0,0,alpha=0.25), pch=16,cex=0.6,add=TRUE)
+plot_smooth(Ygam_2,view = "Day", cond = list(Drying_Treatment = "Dry_Rewet"),par(new = TRUE),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "GPP",col="red",ylim=c(0,0.16), xlim=c(0,80), lwd = 2.5, rug = FALSE, add = TRUE)
+plot_smooth(Ygam_2,view = "Day", cond = list(Drying_Treatment = "Not_Dried"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "GPP",col="blue",ylim=c(0,0.16),xlim=c(0,80),lwd = 2.5, rug = FALSE, add=TRUE)
+legend(x = "topleft", bty = "n", legend = c("Undried","Dried-refilled"), fill = c("blue","red"))
+
+```
+
+
+```{r}
+#Graphing the result of the above gam model (Trophic treatments only) and their corresponding raw data points
+plot(YCData$DO_m2_hr ~ jitter(YCData$Day,1.7),  ylim = c(0,0.16), xlim = c(0,80), xlab = "Experimental Day", ylab = "GPP",col = "grey",pch=16,cex=0.6,add=TRUE)
+plot(YFData$DO_m2_hr ~ jitter(YFData$Day,1.7), par(new = TRUE), ylim = c(0,0.16), xlim = c(0,80), xlab = "Experimental Day", ylab = "GPP", col = "grey",pch=16,cex=0.6,add=TRUE)
+plot(YAData$DO_m2_hr ~ jitter(YAData$Day,1.7), par(new = TRUE), ylim = c(0,0.16), xlim = c(0,80), xlab = "Experimental Day", ylab = "GPP", col = rgb(1,0,0,alpha=0.25), pch=16,cex=0.6,add=TRUE)
+plot(YFAData$DO_m2_hr ~ jitter(YFAData$Day,1.7), par(new = TRUE), ylim = c(0,0.16), xlim = c(0,80), xlab = "Experimental Day", ylab = "GPP", col = "grey",pch=16,cex=0.6,add=TRUE)
+plot_smooth(Ygam_2,view = "Day", cond = list(Trophic_Treatment = "Control"),par(new = TRUE),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "GPP",col="grey",ylim=c(0,0.16),xlim=c(0,80),lwd = 2.5,rug = FALSE, add = TRUE)
+plot_smooth(Ygam_2,view = "Day", cond = list(Trophic_Treatment = "Fish"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "GPP",col="grey",ylim=c(0,0.16),xlim=c(0,80),lwd = 2.5,rug = FALSE,add=TRUE)
+plot_smooth(Ygam_2,view = "Day", cond = list(Trophic_Treatment = "Amphibian"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "GPP",col="red",ylim=c(0,0.16),xlim=c(0,80),lwd = 2.5,rug = FALSE,add=TRUE)
+plot_smooth(Ygam_2,view = "Day", cond = list(Trophic_Treatment = "Fish_Amphibian"),rm.ranef = TRUE,xlab = "Experimental Day", ylab = "GPP",col="grey",ylim=c(0,0.16),xlim=c(0,80),lwd = 2.5,rug = FALSE,add=TRUE)
+legend(x = "topleft", bty = "n", legend = c("No vertebrate control","Larval anurans","Fish","Larval anurans and fish"), fill = c("grey","red","grey","grey"))
+
+```
+

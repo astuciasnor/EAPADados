@@ -1,0 +1,43 @@
+Ages, lengths, and sexes of White Grunt.
+
+Description:
+
+     Ages, lengths, and sexes of White Grunt (_Haemulon plumierii_)
+     collected from the central coast of Brazil
+
+Format:
+
+     A data frame with 465 observations on the following 3 variables.
+
+     age
+          Age (from otoliths to the nearest 0.1 years)
+
+     tl
+          Total length (mm)
+
+     sex
+          Sex ('male' and 'female')
+
+Topic(s):
+
+        * Growth
+
+        * von Bertalanffy
+
+Source:
+
+     From (approximately) Figure 6 of Araujo, J.N. and A.S. Martins.
+     2007. Age, growth and mortality of white grunt (_Haemulon
+     plumierii_) from the central coast of Brazil. Scientia Marina
+     71:793-800. CSV file
+
+Examples:
+
+     data(WhiteGrunt2)
+     str(WhiteGrunt2)
+     head(WhiteGrunt2)
+     op <- par(mfrow=c(1,2),pch=19)
+     plot(tl~age,data=WhiteGrunt2,subset=sex=="female",main="Female")
+     plot(tl~age,data=WhiteGrunt2,subset=sex=="male",main="Male")
+     par(op)
+     

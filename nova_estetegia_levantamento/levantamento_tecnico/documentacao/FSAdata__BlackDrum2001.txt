@@ -1,0 +1,64 @@
+Biological data for Black Drum from Virginia waters of the Atlantic
+Ocean, 2001.
+
+Description:
+
+     Biological data (lengths, weights, ages (from otoliths), and sex)
+     for Black Drum (_Pogonias cromis_) from Virginia waters of the
+     Atlantic Ocean, 2001.
+
+Format:
+
+     A data frame with 141 observations on the following 9 variables.
+
+     year
+          Year of capture (all 2001)
+
+     agid
+          Unique identification number
+
+     spname
+          Species name (all "Black Drum")
+
+     month
+          Month of capture
+
+     day
+          Day of capture
+
+     weight
+          Weight (lbs) - most are missing
+
+     tl
+          Total length (mm)
+
+     sex
+          Sex ('female', 'male', and 'unknown')
+
+     otoage
+          Age (yrs; from otoliths)
+
+Topic(s):
+
+        * Growth
+
+        * von Bertalanffy
+
+        * Weight-Length
+
+Note:
+
+     Used in the Introductory Fisheries Analyses with R book.
+
+Source:
+
+     Obtained directly from the Virginia Marine Resources Commission
+     via Hank Liao. CSV file
+
+Examples:
+
+     data(BlackDrum2001)
+     str(BlackDrum2001)
+     head(BlackDrum2001)
+     plot(tl~otoage,data=BlackDrum2001)
+     

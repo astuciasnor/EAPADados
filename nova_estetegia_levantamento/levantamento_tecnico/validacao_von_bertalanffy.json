@@ -1,0 +1,140 @@
+{
+  "WhiteGrunt2::todos": {
+    "conjunto": "WhiteGrunt2",
+    "grupo": "todos",
+    "n_original": 465,
+    "n_ajuste": 465,
+    "ausencias_excluidas_so_no_calculo": 0,
+    "idade_min": 2.8,
+    "idade_max": 28.3,
+    "idades_distintas": 141,
+    "comprimento_min": 219,
+    "comprimento_max": 378,
+    "parametros": {
+      "Linf": 312.7384,
+      "k": 0.4941,
+      "t0": -0.1328
+    },
+    "pseudo_r2": 0.1528,
+    "rse": 25.5359,
+    "shapiro_p": 0.002,
+    "convergiu": true,
+    "mesmo_fallback": true,
+    "avisos": []
+  },
+  "WhiteGrunt2::male": {
+    "conjunto": "WhiteGrunt2",
+    "grupo": "male",
+    "n_original": 232,
+    "n_ajuste": 232,
+    "ausencias_excluidas_so_no_calculo": 0,
+    "idade_min": 2.8,
+    "idade_max": 25.7,
+    "idades_distintas": 104,
+    "comprimento_min": 219,
+    "comprimento_max": 378,
+    "parametros": {
+      "Linf": 332.7606,
+      "k": 0.3356,
+      "t0": -1.3503
+    },
+    "pseudo_r2": 0.2904,
+    "rse": 22.519,
+    "shapiro_p": 0.0018,
+    "convergiu": true,
+    "mesmo_fallback": true,
+    "avisos": []
+  },
+  "WhiteGrunt2::female": {
+    "conjunto": "WhiteGrunt2",
+    "grupo": "female",
+    "n_original": 233,
+    "n_ajuste": 233,
+    "ausencias_excluidas_so_no_calculo": 0,
+    "idade_min": 2.8,
+    "idade_max": 28.3,
+    "idades_distintas": 110,
+    "comprimento_min": 229,
+    "comprimento_max": 358,
+    "parametros": {
+      "Linf": 297.6788,
+      "k": 0.5678,
+      "t0": 0.0101
+    },
+    "pseudo_r2": 0.1448,
+    "rse": 20.9862,
+    "shapiro_p": 0.0681,
+    "convergiu": true,
+    "mesmo_fallback": true,
+    "avisos": []
+  },
+  "Cabezon::todos": {
+    "conjunto": "Cabezon",
+    "grupo": "todos",
+    "n_original": 525,
+    "n_ajuste": 299,
+    "ausencias_excluidas_so_no_calculo": 226,
+    "idade_min": 3,
+    "idade_max": 19,
+    "idades_distintas": 13,
+    "comprimento_min": 39,
+    "comprimento_max": 77,
+    "parametros": {
+      "Linf": 80.0455,
+      "k": 0.1389,
+      "t0": -1.9223
+    },
+    "pseudo_r2": 0.7373,
+    "rse": 4.0642,
+    "shapiro_p": 0.1949,
+    "convergiu": true,
+    "mesmo_fallback": true,
+    "avisos": []
+  },
+  "RuffeSLRH92::todos": {
+    "conjunto": "RuffeSLRH92",
+    "grupo": "todos",
+    "n_original": 738,
+    "n_ajuste": 12,
+    "ausencias_excluidas_so_no_calculo": 726,
+    "idade_min": 1,
+    "idade_max": 4,
+    "idades_distintas": 4,
+    "comprimento_min": 51,
+    "comprimento_max": 176,
+    "parametros": {
+      "Linf": 205.674,
+      "k": 0.4307,
+      "t0": 0.2657
+    },
+    "pseudo_r2": 0.9268,
+    "rse": 14.304,
+    "shapiro_p": 0.9872,
+    "convergiu": true,
+    "mesmo_fallback": true,
+    "avisos": []
+  },
+  "BlackDrum2001::todos": {
+    "conjunto": "BlackDrum2001",
+    "grupo": "todos",
+    "n_original": 141,
+    "n_ajuste": 141,
+    "ausencias_excluidas_so_no_calculo": 0,
+    "idade_min": 0,
+    "idade_max": 61,
+    "idades_distintas": 45,
+    "comprimento_min": 210,
+    "comprimento_max": 1315,
+    "parametros": {
+      "Linf": 1206.3458,
+      "k": 0.1465,
+      "t0": -1.5907
+    },
+    "pseudo_r2": 0.972,
+    "rse": 51.0524,
+    "shapiro_p": 2.2365e-06,
+    "convergiu": true,
+    "mesmo_fallback": true,
+    "avisos": []
+  }
+}

@@ -1,0 +1,46 @@
+Information for each electrofishing sample from Big Hill Reservoir, KS,
+2014.
+
+Description:
+
+     Information for each electrofishing sample from Big Hill
+     Reservoir, KS, in May, 2014.
+
+Format:
+
+     A data frame with 20 observations on the following 4 variables.
+
+     UID
+          Unique sample identification number
+
+     date
+          Data sample was collected
+
+     loc
+          Location code for where the sample was collected
+
+     effort
+          Effort (minutes) expended for the sample
+
+Topic(s):
+
+        * Data Manipulation
+
+Note:
+
+     Used in the Introductory Fisheries Analyses with R book.
+
+Source:
+
+     Obtained directly from Ben Neely. CSV file
+
+See Also:
+
+     See 'BGHRfish' for individual fish collected in these samples.
+
+Examples:
+
+     data(BGHRsample)
+     str(BGHRsample)
+     head(BGHRsample)
+     

@@ -1,0 +1,70 @@
+experiment,sterol_id,sterol_name,biomass_mg,ind_weight_ug
+exp_1,sterol_2,24-methylenecholesterol,2.76,41.8
+exp_1,sterol_2,24-methylenecholesterol,1.70,36.2
+exp_1,sterol_2,24-methylenecholesterol,4.00,31.3
+exp_1,sterol_15,gorgosterol,1.70,22.4
+exp_1,sterol_15,gorgosterol,2.00,37.0
+exp_1,sterol_15,gorgosterol,2.30,35.4
+exp_1,sterol_20,24-methyl-androsterone,2.30,35.4
+exp_1,sterol_20,24-methyl-androsterone,1.00,18.2
+exp_1,sterol_20,24-methyl-androsterone,2.50,35.7
+exp_1,sterol_21,24 methylpavlovol,3.10,40.3
+exp_1,sterol_21,24 methylpavlovol,1.90,22.9
+exp_1,sterol_21,24 methylpavlovol,1.20,14.5
+exp_1,sterol_24,4-methylenecholestanol,0.90,11.5
+exp_1,sterol_24,4-methylenecholestanol,1.20,12.8
+exp_1,sterol_24,4-methylenecholestanol,1.40,16.3
+exp_1,sterol_25,petrosterol,1.50,12.5
+exp_1,sterol_25,petrosterol,1.20,19.4
+exp_1,sterol_25,petrosterol,2.50,24.8
+exp_2,sterol_1,cholesterol,6.90,17.1
+exp_2,sterol_1,cholesterol,6.70,20.2
+exp_2,sterol_1,cholesterol,7.00,19.4
+exp_2,sterol_6,24-propylidenecholesterol,6.30,18.3
+exp_2,sterol_6,24-propylidenecholesterol,5.80,24.2
+exp_2,sterol_6,24-propylidenecholesterol,6.90,13.9
+exp_2,sterol_7,27-norbrassicasterol,6.70,13.6
+exp_2,sterol_7,27-norbrassicasterol,7.70,18.3
+exp_2,sterol_7,27-norbrassicasterol,5.90,12.7
+exp_2,sterol_9,23-methylbrassicasterol,6.30,16.4
+exp_2,sterol_9,23-methylbrassicasterol,6.50,16.8
+exp_2,sterol_9,23-methylbrassicasterol,6.30,19.7
+exp_2,sterol_13,brevesterol,8.40,18.3
+exp_2,sterol_13,brevesterol,6.30,20.2
+exp_2,sterol_13,brevesterol,7.60,17.6
+exp_2,sterol_19,pfiesterol,7.30,17.7
+exp_2,sterol_19,pfiesterol,7.40,18.5
+exp_2,sterol_19,pfiesterol,6.20,17.0
+exp_3,sterol_1,cholesterol,12.30,26.5
+exp_3,sterol_1,cholesterol,9.60,20.3
+exp_3,sterol_1,cholesterol,6.70,14.0
+exp_3,sterol_10,"24,25-methylenecholesterol",10.50,16.4
+exp_3,sterol_10,"24,25-methylenecholesterol",11.20,20.8
+exp_3,sterol_10,"24,25-methylenecholesterol",9.40,16.8
+exp_3,sterol_11,delta-0 4a-methylcholestanol,12.20,15.3
+exp_3,sterol_11,delta-0 4a-methylcholestanol,3.40,9.3
+exp_3,sterol_11,delta-0 4a-methylcholestanol,0.60,5.8
+exp_3,sterol_12,delta-8(14)4a-methylcholestanol ,11.30,16.1
+exp_3,sterol_12,delta-8(14)4a-methylcholestanol ,11.40,20.4
+exp_3,sterol_12,delta-8(14)4a-methylcholestanol ,10.80,16.5
+exp_3,sterol_13,brevesterol,11.50,17.3
+exp_3,sterol_13,brevesterol,12.10,21.0
+exp_3,sterol_13,brevesterol,10.40,21.5
+exp_3,sterol_14,gymnodynosterol,13.70,29.8
+exp_3,sterol_14,gymnodynosterol,11.90,18.4
+exp_3,sterol_14,gymnodynosterol,9.90,12.3
+exp_4,sterol_3,24-methylcholesterol,7.10,29.8
+exp_4,sterol_3,24-methylcholesterol,5.10,21.4
+exp_4,sterol_3,24-methylcholesterol,7.60,32.1
+exp_4,sterol_4,24-ethylidenecholesterol ,6.30,25.9
+exp_4,sterol_4,24-ethylidenecholesterol ,6.50,27.2
+exp_4,sterol_4,24-ethylidenecholesterol ,4.20,17.7
+exp_4,sterol_11,delta-0 4a-methylcholestanol,6.90,27.6
+exp_4,sterol_11,delta-0 4a-methylcholestanol,7.40,31.1
+exp_4,sterol_11,delta-0 4a-methylcholestanol,6.60,27.6
+exp_4,sterol_24,4-methylenecholestanol,6.50,27.3
+exp_4,sterol_24,4-methylenecholestanol,6.00,25.0
+exp_4,sterol_24,4-methylenecholestanol,5.30,21.6
+exp_4,sterol_25,petrosterol,6.70,28.6
+exp_4,sterol_25,petrosterol,5.00,20.3
+exp_4,sterol_25,petrosterol,6.10,25.4

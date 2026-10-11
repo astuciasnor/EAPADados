@@ -1,0 +1,155 @@
+{
+  "FESta::DEstd_dataset": {
+    "chave": "FESta__DEstd_dataset",
+    "classe": "data.frame",
+    "linhas": 32,
+    "colunas": 5,
+    "bytes_xz": 492
+  },
+  "FESta::GAMstd_dataset": {
+    "chave": "FESta__GAMstd_dataset",
+    "classe": "data.frame",
+    "linhas": 4200,
+    "colunas": 6,
+    "bytes_xz": 28440
+  },
+  "FESta::GLMMstd_dataset": {
+    "chave": "FESta__GLMMstd_dataset",
+    "classe": "data.frame",
+    "linhas": 1000,
+    "colunas": 5,
+    "bytes_xz": 7308
+  },
+  "FESta::GLMstd_dataset": {
+    "chave": "FESta__GLMstd_dataset",
+    "classe": "data.frame",
+    "linhas": 1000,
+    "colunas": 4,
+    "bytes_xz": 5860
+  },
+  "FESta::MGMSstd_dataset": {
+    "chave": "FESta__MGMSstd_dataset",
+    "classe": "data.frame",
+    "linhas": 375,
+    "colunas": 4,
+    "bytes_xz": 720
+  },
+  "FESta::ORQGLMstd_dataset": {
+    "chave": "FESta__ORQGLMstd_dataset",
+    "classe": "data.frame",
+    "linhas": 1000,
+    "colunas": 4,
+    "bytes_xz": 5860
+  },
+  "FESta::REstd_dataset": {
+    "chave": "FESta__REstd_dataset",
+    "classe": "data.frame",
+    "linhas": 30,
+    "colunas": 5,
+    "bytes_xz": 320
+  },
+  "FESta::SVstd_dataset": {
+    "chave": "FESta__SVstd_dataset",
+    "classe": "data.frame",
+    "linhas": 1000,
+    "colunas": 4,
+    "bytes_xz": 5896
+  },
+  "FESta::StdEffort_dataset": {
+    "chave": "FESta__StdEffort_dataset",
+    "classe": "list",
+    "linhas": 3,
+    "colunas": 1,
+    "bytes_xz": 1836
+  },
+  "FSAdata::YPerchRL": {
+    "chave": "FSAdata__YPerchRL",
+    "classe": "data.frame",
+    "linhas": 19,
+    "colunas": 2,
+    "bytes_xz": 248
+  },
+  "File_A.csv": {
+    "chave": "File_A.csv",
+    "classe": "data.frame",
+    "linhas": 59,
+    "colunas": 11,
+    "bytes_xz": 1584
+  },
+  "File_B.csv": {
+    "chave": "File_B.csv",
+    "classe": "data.frame",
+    "linhas": 59,
+    "colunas": 12,
+    "bytes_xz": 2196
+  },
+  "File_C.csv": {
+    "chave": "File_C.csv",
+    "classe": "data.frame",
+    "linhas": 32,
+    "colunas": 13,
+    "bytes_xz": 1608
+  },
+  "File_D.csv": {
+    "chave": "File_D.csv",
+    "classe": "data.frame",
+    "linhas": 505,
+    "colunas": 8,
+    "bytes_xz": 2056
+  },
+  "Artemia_growth_sterols.csv": {
+    "chave": "Artemia_growth_sterols.csv",
+    "classe": "data.frame",
+    "linhas": 69,
+    "colunas": 5,
+    "bytes_xz": 820
+  },
+  "Amphibian_Biomass_Dryad.xlsx": {
+    "chave": "Amphibian_Biomass_Dryad.xlsx",
+    "classe": "data.frame",
+    "linhas": 592,
+    "colunas": 7,
+    "bytes_xz": 1948
+  },
+  "Emergence_and_Biomass_Dryad.xlsx": {
+    "chave": "Emergence_and_Biomass_Dryad.xlsx",
+    "classe": "data.frame",
+    "linhas": 32,
+    "colunas": 16,
+    "bytes_xz": 1172
+  },
+  "Fish_Data_Dryad.xlsx": {
+    "chave": "Fish_Data_Dryad.xlsx",
+    "classe": "data.frame",
+    "linhas": 30,
+    "colunas": 12,
+    "bytes_xz": 872
+  },
+  "Frog_Metamorph_Data_Dryad.xlsx": {
+    "chave": "Frog_Metamorph_Data_Dryad.xlsx",
+    "classe": "data.frame",
+    "linhas": 485,
+    "colunas": 10,
+    "bytes_xz": 4832
+  },
+  "Periphyton_Data_Dryad.xlsx": {
+    "chave": "Periphyton_Data_Dryad.xlsx",
+    "classe": "data.frame",
+    "linhas": 1152,
+    "colunas": 12,
+    "bytes_xz": 6680
+  },
+  "Revised_YSI_Data_Dryad.xlsx": {
+    "chave": "Revised_YSI_Data_Dryad.xlsx",
+    "classe": "data.frame",
+    "linhas": 1536,
+    "colunas": 23,
+    "bytes_xz": 71948
+  },
+  "readxl_example::datasets.xlsx": {
+    "chave": "readxl_example::datasets.xlsx",
+    "classe": "arquivo Excel para exercício de importação",
+    "bytes_original": 44265,
+    "bytes_xz": null
+  }
+}

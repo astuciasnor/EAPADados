@@ -1,0 +1,5641 @@
+{
+  "abalone_adultos": {
+    "nome": "abalone_adultos",
+    "arquivo": "abalone_adultos.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 2641,
+    "colunas": 9,
+    "bytes": 26862,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "sexo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Femea", "Macho"]
+      },
+      {
+        "nome": "comprimento_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 51,
+        "max": 163,
+        "niveis": {}
+      },
+      {
+        "nome": "diametro_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 84,
+        "min": 39,
+        "max": 130,
+        "niveis": {}
+      },
+      {
+        "nome": "altura_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 38,
+        "min": 3,
+        "max": 50,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_total_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 1773,
+        "min": 16,
+        "max": 565.1,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_carne_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 1270,
+        "min": 6.3,
+        "max": 297.6,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_visceras_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 782,
+        "min": 3.6,
+        "max": 152,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_concha_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 713,
+        "min": 5.4,
+        "max": 201,
+        "niveis": {}
+      },
+      {
+        "nome": "aneis",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 21,
+        "min": 8,
+        "max": 29,
+        "niveis": {}
+      }
+    ]
+  },
+  "aquicultura_br": {
+    "nome": "aquicultura_br",
+    "arquivo": "aquicultura_br.rda",
+    "classe": "data.frame",
+    "linhas": 216,
+    "colunas": 5,
+    "bytes": 1762,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "uf",
+        "classe": "character",
+        "na": 0,
+        "distintos": 27,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "estado",
+        "classe": "character",
+        "na": 0,
+        "distintos": 27,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "posicao",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 27,
+        "min": 1,
+        "max": 27,
+        "niveis": {}
+      },
+      {
+        "nome": "producao_t",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 173,
+        "min": 650,
+        "max": 213300,
+        "niveis": {}
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 8,
+        "min": 2016,
+        "max": 2023,
+        "niveis": {}
+      }
+    ]
+  },
+  "artemia": {
+    "nome": "artemia",
+    "arquivo": "artemia.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 14,
+    "colunas": 2,
+    "bytes": 286,
+    "duplicadas": 1,
+    "colunas_detalhe": [
+      {
+        "nome": "racao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["A", "B"]
+      },
+      {
+        "nome": "taxa_crescimento_mg_dia",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 2.9,
+        "max": 4.6,
+        "niveis": {}
+      }
+    ]
+  },
+  "bagley_lwr_central_america": {
+    "nome": "bagley_lwr_central_america",
+    "arquivo": "bagley_lwr_central_america.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 306,
+    "colunas": 14,
+    "bytes": 12637,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "no",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 306,
+        "min": 2,
+        "max": 307,
+        "niveis": {}
+      },
+      {
+        "nome": "especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 9,
+        "min": {},
+        "max": {},
+        "niveis": ["Alfaro cultratus", "Atherinella hubbsi", "Atherinella sp.", "Parachromis dovii", "Parachromis managuensis", "Phallichthys amates", "Poecilia gillii", "Poecilia sp.", "Priapichthys annectens"]
+      },
+      {
+        "nome": "peso_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 301,
+        "min": 0.0182,
+        "max": 23.691,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_padrao_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 291,
+        "min": 11.11,
+        "max": 96.8,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_total_mm",
+        "classe": "numeric",
+        "na": 189,
+        "distintos": 115,
+        "min": 14.61,
+        "max": 121.27,
+        "niveis": {}
+      },
+      {
+        "nome": "pais",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Costa Rica", "Nicaragua", "Panama"]
+      },
+      {
+        "nome": "localidade",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 58,
+        "min": {},
+        "max": {},
+        "niveis": ["–", "Brazo del Sucio", "Edwin's irrigation canal", "Isla Grande", "La Vuelta del Borracho", "Lago Apoyo", "Lago Nicaragua at San Miguelito", "Lake Arenal", "Quebrada El Carmen, trib. to unnamed trib. of Rio Nino (Rio Pizote), at Costa Rica Rd 164 approximately 6 km south of Aguas Claras", "Quebrada La Palma", "Quebrada Peru?", "Quebrada Piecueca", "Río Antón", "Río Barbilla (major trib. to Río Matina) at CR Rd 805 (dirt road) just west of B-Line, 0.5 km from CR Hwy 32", "Rio Belsas", "Rio Bijagua", "Río Cabuyo at unnamed province rd to the Reserva Biologica Lomas Bardudal", "Rio Cano Grande", "Rio Caracol", "Rio Carbon", "Rio Celeste", "Rio Chimurria", "Rio Corinto", "Rio Esquivalto", "Río Frijolito", "Rio Herediana", "Rio La Conquista", "Río Liberia at outskirts of Liberia, Costa Rica", "Rio Malacatoya", "Rio Marole", "Río Mendoza (upper)", "Rio Mico", "Rio Ochomogo", "Río Portrero at CA1 SE of Liberia, Nicoya Peninsula", "Rio Rama (Unnamed trib. S of Nueva Guinea)", "Rio Salto", "Rio Sapoa", "Río Tempisque on road between Guardia and Comunidad, Nicoya Peninsula", "Rio Tipitapa", "Rio Toro", "Rio Venado", "Teustepe", "Trib. to Rio Agua Caliente southwest of Volcan Arenal", "Trib. to Rio Parismina", "Trib. to Rio Sarapiqui", "Trib. to Río Sarapiquí on road ~2 km off end-CR Rd. 505, approximately 9 km northwest of Puerto Viejo de Sarapiquí", "Trib. to Rio Sixaola", "Trib. to Río Sixaola", "Unnamed trib.", "Unnamed trib. to Lago Managua between Estelí and León", "Unnamed trib. to Rio Grande de Matagalpa at Chaguitillo", "Unnamed trib. to Río Grande de Matagalpa, W of La Mora and slightly further W of La Dalia", "Unnamed trib. to Río Haciendas at CR Hwy 4, approximately 7.5 km east of Santa Cecilia", "Unnamed trib. to Río Tempisque drainage approx. 2 km S of Belén, Nicoya Peninsula", "Unnamed trib. to Río Zapote near Bijagua (S of Bijagua)", "Unnamed trib./headwater of Río Mico NE of San Pedro de Lovago", "Upper Rio Colorado", "Upper Río Tortuguero 0.5 km off of CR 249, 1 km north of San Rafael and approximately 5 km north of Guapiles"]
+      },
+      {
+        "nome": "latitude",
+        "classe": "numeric",
+        "na": 27,
+        "distintos": 57,
+        "min": 8.3993,
+        "max": 13.228,
+        "niveis": {}
+      },
+      {
+        "nome": "longitude",
+        "classe": "numeric",
+        "na": 27,
+        "distintos": 57,
+        "min": -86.5527,
+        "max": -80.2584,
+        "niveis": {}
+      },
+      {
+        "nome": "nadadeira_dorsal",
+        "classe": "factor",
+        "na": 292,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["plain fin (no red)", "red fin"]
+      },
+      {
+        "nome": "nadadeira_caudal",
+        "classe": "factor",
+        "na": 298,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": "dot fin"
+      },
+      {
+        "nome": "sexo",
+        "classe": "factor",
+        "na": 271,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["female", "male"]
+      },
+      {
+        "nome": "log_peso_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 301,
+        "min": -4.0063,
+        "max": 3.1651,
+        "niveis": {}
+      },
+      {
+        "nome": "log_sl_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 291,
+        "min": 2.4078,
+        "max": 4.5726,
+        "niveis": {}
+      }
+    ]
+  },
+  "biometria_caranguejos": {
+    "nome": "biometria_caranguejos",
+    "arquivo": "biometria_caranguejos.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 993,
+    "colunas": 5,
+    "bytes": 1754,
+    "duplicadas": 551,
+    "colunas_detalhe": [
+      {
+        "nome": "Local",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Ajuruteua", "Caratateua"]
+      },
+      {
+        "nome": "Sexo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Fêmea", "Macho"]
+      },
+      {
+        "nome": "Estacao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Chuvosa", "Seca"]
+      },
+      {
+        "nome": "LC",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 35,
+        "min": 45,
+        "max": 81,
+        "niveis": {}
+      },
+      {
+        "nome": "CC",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 38,
+        "min": 29,
+        "max": 72,
+        "niveis": {}
+      }
+    ]
+  },
+  "brine_carbonatos": {
+    "nome": "brine_carbonatos",
+    "arquivo": "brine_carbonatos.rda",
+    "classe": "data.frame",
+    "linhas": 19,
+    "colunas": 8,
+    "bytes": 803,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "amostra",
+        "classe": "character",
+        "na": 0,
+        "distintos": 19,
+        "min": {},
+        "max": {},
+        "niveis": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "G08", "G09", "G10", "G11", "G12", "G13", "V14", "V15", "V16", "V17", "V18", "V19"]
+      },
+      {
+        "nome": "grupo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Ellenburger_Dolomite", "Grayburg_Dolomite", "Viola_Limestone"]
+      },
+      {
+        "nome": "HCO3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 0.8,
+        "max": 25.6,
+        "niveis": {}
+      },
+      {
+        "nome": "SO4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 0,
+        "max": 104.6,
+        "niveis": {}
+      },
+      {
+        "nome": "Cl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 134.7,
+        "max": 3399.5,
+        "niveis": {}
+      },
+      {
+        "nome": "Ca",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 12.7,
+        "max": 532.3,
+        "niveis": {}
+      },
+      {
+        "nome": "Mg",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 7.1,
+        "max": 235.6,
+        "niveis": {}
+      },
+      {
+        "nome": "Na",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 134.7,
+        "max": 3093.9,
+        "niveis": {}
+      }
+    ]
+  },
+  "cabritos_fa_coltro": {
+    "nome": "cabritos_fa_coltro",
+    "arquivo": "cabritos_fa_coltro.rda",
+    "classe": "data.frame",
+    "linhas": 32,
+    "colunas": 10,
+    "bytes": 2035,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "amostra",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 32,
+        "min": 1,
+        "max": 32,
+        "niveis": {}
+      },
+      {
+        "nome": "tratamento",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["T1", "T2", "T3", "T4"]
+      },
+      {
+        "nome": "energia_mj_kg",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 9.6,
+        "max": 12.4,
+        "niveis": {}
+      },
+      {
+        "nome": "n3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 31,
+        "min": 0.2534,
+        "max": 0.3536,
+        "niveis": {}
+      },
+      {
+        "nome": "n6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 31,
+        "min": 3.1981,
+        "max": 3.8066,
+        "niveis": {}
+      },
+      {
+        "nome": "n6_n3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 32,
+        "min": 9.0741,
+        "max": 14.7119,
+        "niveis": {}
+      },
+      {
+        "nome": "sfa",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 31,
+        "min": 42.0623,
+        "max": 53.752,
+        "niveis": {}
+      },
+      {
+        "nome": "mufa",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 31,
+        "min": 40.8164,
+        "max": 53.1285,
+        "niveis": {}
+      },
+      {
+        "nome": "pufa",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 4.2341,
+        "max": 7.8568,
+        "niveis": {}
+      },
+      {
+        "nome": "pufa_sfa",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 0.0942,
+        "max": 0.1549,
+        "niveis": {}
+      }
+    ]
+  },
+  "camarao_vannamei_biometria": {
+    "nome": "camarao_vannamei_biometria",
+    "arquivo": "camarao_vannamei_biometria.rda",
+    "classe": "data.frame",
+    "linhas": 170,
+    "colunas": 9,
+    "bytes": 1910,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_camarao",
+        "classe": "character",
+        "na": 0,
+        "distintos": 170,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "base",
+        "classe": "character",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["DB1", "DB2", "DB3", "DB4", "DB5"]
+      },
+      {
+        "nome": "origem",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["fazenda_industrial", "viveiro_academico"]
+      },
+      {
+        "nome": "arquivo_origem",
+        "classe": "character",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["DB1_INDUSTRIAL_FARM_1.xlsx", "DB2_INDUSTRIAL_FARM_2_C1.xlsx", "DB3_INDUSTRIAL_FARM_2_C2.xlsx", "DB4_ACADEMIC_POND_S1.xlsx", "DB5_ACADEMIC_POND_S2.xlsx"]
+      },
+      {
+        "nome": "amostra",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 58,
+        "min": 1,
+        "max": 58,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_cm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 71,
+        "min": 4,
+        "max": 14.4,
+        "niveis": {}
+      },
+      {
+        "nome": "cefalotorax_cm",
+        "classe": "numeric",
+        "na": 22,
+        "distintos": 68,
+        "min": 1.3,
+        "max": 3.89,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 31,
+        "min": 1,
+        "max": 41,
+        "niveis": {}
+      },
+      {
+        "nome": "imagem_completa",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 2,
+        "min": 0,
+        "max": 1,
+        "niveis": {}
+      }
+    ]
+  },
+  "camaroes_sexo": {
+    "nome": "camaroes_sexo",
+    "arquivo": "camaroes_sexo.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 170,
+    "colunas": 2,
+    "bytes": 279,
+    "duplicadas": 166,
+    "colunas_detalhe": [
+      {
+        "nome": "sexo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Fêmea", "Macho"]
+      },
+      {
+        "nome": "especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["P.brasiliensis", "P.schimitti"]
+      }
+    ]
+  },
+  "cangulo_crescimento": {
+    "nome": "cangulo_crescimento",
+    "arquivo": "cangulo_crescimento.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 16,
+    "colunas": 7,
+    "bytes": 943,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "comprimento_cm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 12,
+        "max": 42,
+        "niveis": {}
+      },
+      {
+        "nome": "p1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 40.5,
+        "max": 1570,
+        "niveis": {}
+      },
+      {
+        "nome": "p2",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 43.7,
+        "max": 1612.5,
+        "niveis": {}
+      },
+      {
+        "nome": "p3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 44.8,
+        "max": 1546.7,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 43,
+        "max": 1576.4,
+        "niveis": {}
+      },
+      {
+        "nome": "ln_peso",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 2.4849,
+        "max": 3.7377,
+        "niveis": {}
+      },
+      {
+        "nome": "ln_comp",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 3.7612,
+        "max": 7.3629,
+        "niveis": {}
+      }
+    ]
+  },
+  "captura_pescada_amarela": {
+    "nome": "captura_pescada_amarela",
+    "arquivo": "captura_pescada_amarela.rda",
+    "classe": "data.frame",
+    "linhas": 252,
+    "colunas": 16,
+    "bytes": 2959,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "embarcacao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 7,
+        "min": {},
+        "max": {},
+        "niveis": ["B1", "B2", "B3", "B4", "B5", "B6", "B7"]
+      },
+      {
+        "nome": "tamanho_m",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 16,
+        "max": 22,
+        "niveis": {}
+      },
+      {
+        "nome": "precipitacao",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 35,
+        "min": 110.8,
+        "max": 763.8,
+        "niveis": {}
+      },
+      {
+        "nome": "mes",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 12,
+        "min": {},
+        "max": {},
+        "niveis": ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 3,
+        "min": 2019,
+        "max": 2021,
+        "niveis": {}
+      },
+      {
+        "nome": "periodo_sazonal",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["chuvoso", "seco"]
+      },
+      {
+        "nome": "mes_ano",
+        "classe": "Date",
+        "na": 0,
+        "distintos": 36,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "data_de_saida",
+        "classe": "Date",
+        "na": 0,
+        "distintos": 223,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "data_de_chegada",
+        "classe": "Date",
+        "na": 0,
+        "distintos": 223,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "dias_ao_mar",
+        "classe": "numeric",
+        "na": 239,
+        "distintos": 10,
+        "min": 15,
+        "max": 23,
+        "niveis": {}
+      },
+      {
+        "nome": "cpue_pescada",
+        "classe": "numeric",
+        "na": 252,
+        "distintos": 1,
+        "min": null,
+        "max": null,
+        "niveis": {}
+      },
+      {
+        "nome": "cpue",
+        "classe": "numeric",
+        "na": 251,
+        "distintos": 2,
+        "min": 0,
+        "max": 0,
+        "niveis": {}
+      },
+      {
+        "nome": "pessoal_embarcado",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 8,
+        "max": 10,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_balanca",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 197,
+        "min": 1140,
+        "max": 14571,
+        "niveis": {}
+      },
+      {
+        "nome": "nome_aparelho_pesca",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Espinhel", "Rede"]
+      },
+      {
+        "nome": "quantidade_aparelho_pesca",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 3500,
+        "max": 15000,
+        "niveis": {}
+      }
+    ]
+  },
+  "captura_pescada_amarela_bruta": {
+    "nome": "captura_pescada_amarela_bruta",
+    "arquivo": "captura_pescada_amarela_bruta.rda",
+    "classe": "data.frame",
+    "linhas": 252,
+    "colunas": 16,
+    "bytes": 3720,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "Embarcacao",
+        "classe": "character",
+        "na": 0,
+        "distintos": 7,
+        "min": {},
+        "max": {},
+        "niveis": ["B1", "B2", "B3", "B4", "B5", "B6", "B7"]
+      },
+      {
+        "nome": "Tamanho (m)",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 16,
+        "max": 22,
+        "niveis": {}
+      },
+      {
+        "nome": "Precipitação",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 35,
+        "min": 110.8,
+        "max": 763.8,
+        "niveis": {}
+      },
+      {
+        "nome": "Mês",
+        "classe": "character",
+        "na": 0,
+        "distintos": 12,
+        "min": {},
+        "max": {},
+        "niveis": ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+      },
+      {
+        "nome": "Ano",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 2019,
+        "max": 2021,
+        "niveis": {}
+      },
+      {
+        "nome": "Período sazonal",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["chuvoso", "seco"]
+      },
+      {
+        "nome": "Mês/ano",
+        "classe": "POSIXct/POSIXt",
+        "na": 0,
+        "distintos": 36,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "Data de Saida",
+        "classe": "POSIXct/POSIXt",
+        "na": 0,
+        "distintos": 223,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "Data de Chegada",
+        "classe": "character",
+        "na": 0,
+        "distintos": 223,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "Dias ao mar",
+        "classe": "numeric",
+        "na": 239,
+        "distintos": 10,
+        "min": 15,
+        "max": 23,
+        "niveis": {}
+      },
+      {
+        "nome": "CPUE pescada",
+        "classe": "logical",
+        "na": 252,
+        "distintos": 1,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "CPUE",
+        "classe": "numeric",
+        "na": 251,
+        "distintos": 2,
+        "min": 0,
+        "max": 0,
+        "niveis": {}
+      },
+      {
+        "nome": "Pessoal Embarcado",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 8,
+        "max": 10,
+        "niveis": {}
+      },
+      {
+        "nome": "Peso Balanca",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 197,
+        "min": 1140,
+        "max": 14571,
+        "niveis": {}
+      },
+      {
+        "nome": "Nome Aparelho Pesca",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Rede", "Espinhel"]
+      },
+      {
+        "nome": "Quantidade Aparelho Pesca",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 3500,
+        "max": 15000,
+        "niveis": {}
+      }
+    ]
+  },
+  "captura_petrechos": {
+    "nome": "captura_petrechos",
+    "arquivo": "captura_petrechos.rda",
+    "classe": "data.frame",
+    "linhas": 50,
+    "colunas": 3,
+    "bytes": 357,
+    "duplicadas": 17,
+    "colunas_detalhe": [
+      {
+        "nome": "Especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Corvina", "Pescada", "Sardinha"]
+      },
+      {
+        "nome": "Petrecho",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Arrasto Fundo", "Linha Anzol", "Rede Emalhe"]
+      },
+      {
+        "nome": "CPUE",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 9,
+        "min": 1,
+        "max": 11,
+        "niveis": {}
+      }
+    ]
+  },
+  "cpue_tubarao": {
+    "nome": "cpue_tubarao",
+    "arquivo": "cpue_tubarao.rda",
+    "classe": "data.frame",
+    "linhas": 424,
+    "colunas": 5,
+    "bytes": 4333,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "Vessel",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["MB", "MC", "SB"]
+      },
+      {
+        "nome": "Year",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 13,
+        "min": 1995,
+        "max": 2007,
+        "niveis": {}
+      },
+      {
+        "nome": "Month",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 12,
+        "min": 1,
+        "max": 12,
+        "niveis": {}
+      },
+      {
+        "nome": "CPUE",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 415,
+        "min": 0.45,
+        "max": 68.33,
+        "niveis": {}
+      },
+      {
+        "nome": "Data",
+        "classe": "Date",
+        "na": 0,
+        "distintos": 397,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      }
+    ]
+  },
+  "crabs_morfometria": {
+    "nome": "crabs_morfometria",
+    "arquivo": "crabs_morfometria.rda",
+    "classe": "data.frame",
+    "linhas": 200,
+    "colunas": 10,
+    "bytes": 1983,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_caranguejo",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 200,
+        "min": 1,
+        "max": 200,
+        "niveis": {}
+      },
+      {
+        "nome": "forma_cor",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["azul", "laranja"]
+      },
+      {
+        "nome": "sexo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["macho", "fêmea"]
+      },
+      {
+        "nome": "indice_no_grupo",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 50,
+        "min": 1,
+        "max": 50,
+        "niveis": {}
+      },
+      {
+        "nome": "largura_lobo_frontal_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 104,
+        "min": 7.2,
+        "max": 23.1,
+        "niveis": {}
+      },
+      {
+        "nome": "largura_posterior_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 91,
+        "min": 6.5,
+        "max": 20.2,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_carapaca_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 152,
+        "min": 14.7,
+        "max": 47.6,
+        "niveis": {}
+      },
+      {
+        "nome": "largura_carapaca_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 145,
+        "min": 17.1,
+        "max": 54.6,
+        "niveis": {}
+      },
+      {
+        "nome": "profundidade_corpo_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 102,
+        "min": 6.1,
+        "max": 21.6,
+        "niveis": {}
+      },
+      {
+        "nome": "classe_largura_carapaca",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["largura_carapaca_Q1", "largura_carapaca_Q2", "largura_carapaca_Q3", "largura_carapaca_Q4"]
+      }
+    ]
+  },
+  "darter_ontario": {
+    "nome": "darter_ontario",
+    "arquivo": "darter_ontario.rda",
+    "classe": "data.frame",
+    "linhas": 54,
+    "colunas": 3,
+    "bytes": 437,
+    "duplicadas": 4,
+    "colunas_detalhe": [
+      {
+        "nome": "idade_anos",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 5,
+        "min": 1,
+        "max": 5,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_total_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 43,
+        "min": 37.8,
+        "max": 63.5,
+        "niveis": {}
+      },
+      {
+        "nome": "rio",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Salmon", "Trent"]
+      }
+    ]
+  },
+  "dicionario_variaveis_amostragem": {
+    "nome": "dicionario_variaveis_amostragem",
+    "arquivo": "dicionario_variaveis_amostragem.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 28,
+    "colunas": 6,
+    "bytes": 1439,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "base",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["walleye_erie", "snapper_hg", "crabs_morfometria"]
+      },
+      {
+        "nome": "variavel",
+        "classe": "character",
+        "na": 0,
+        "distintos": 24,
+        "min": {},
+        "max": {},
+        "niveis": ["id_peixe", "id_lance_rede", "codigo_local", "local_regional", "grade_amostral", "ano", "comprimento_total_mm", "peso_g", "sexo", "maturidade", "idade_anos", "classe_comprimento", "levantamento", "comprimento_cm", "tem_idade_atribuida", "id_caranguejo", "forma_cor", "indice_no_grupo", "largura_lobo_frontal_mm", "largura_posterior_mm", "comprimento_carapaca_mm", "largura_carapaca_mm", "profundidade_corpo_mm", "classe_largura_carapaca"]
+      },
+      {
+        "nome": "descricao",
+        "classe": "character",
+        "na": 0,
+        "distintos": 26,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "unidade",
+        "classe": "character",
+        "na": 17,
+        "distintos": 6,
+        "min": {},
+        "max": {},
+        "niveis": [null, "ano", "mm", "g", "anos", "cm"]
+      },
+      {
+        "nome": "tipo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["inteiro", "categórica", "numérica", "categórica ordinal", "lógica"]
+      },
+      {
+        "nome": "uso_na_amostragem",
+        "classe": "character",
+        "na": 0,
+        "distintos": 13,
+        "min": {},
+        "max": {},
+        "niveis": ["Identificação da unidade amostral.", "Pode ser usado para reconhecer agrupamentos operacionais.", "Estrato regional.", "Estrato espacial mais detalhado.", "Estrato temporal.", "Variável de interesse ou base para criar estratos por tamanho.", "Variável de interesse.", "Estrato biológico.", "Estrato por tamanho.", "Estrato principal para amostragem proporcional.", "Controle de seleção dos registros usados.", "Estrato morfológico.", "Controle interno do desenho balanceado original."]
+      }
+    ]
+  },
+  "doubs_ambiente": {
+    "nome": "doubs_ambiente",
+    "arquivo": "doubs_ambiente.rda",
+    "classe": "data.frame",
+    "linhas": 30,
+    "colunas": 13,
+    "bytes": 1289,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "dfs",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 3,
+        "max": 4530,
+        "niveis": {}
+      },
+      {
+        "nome": "alt",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 172,
+        "max": 934,
+        "niveis": {}
+      },
+      {
+        "nome": "slo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 1.099,
+        "max": 6.176,
+        "niveis": {}
+      },
+      {
+        "nome": "flo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 84,
+        "max": 6900,
+        "niveis": {}
+      },
+      {
+        "nome": "pH",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": 77,
+        "max": 86,
+        "niveis": {}
+      },
+      {
+        "nome": "har",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 40,
+        "max": 110,
+        "niveis": {}
+      },
+      {
+        "nome": "pho",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 22,
+        "min": 1,
+        "max": 422,
+        "niveis": {}
+      },
+      {
+        "nome": "nit",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 15,
+        "max": 620,
+        "niveis": {}
+      },
+      {
+        "nome": "amm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 13,
+        "min": 0,
+        "max": 180,
+        "niveis": {}
+      },
+      {
+        "nome": "oxy",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 23,
+        "min": 41,
+        "max": 124,
+        "niveis": {}
+      },
+      {
+        "nome": "bdo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 27,
+        "min": 13,
+        "max": 167,
+        "niveis": {}
+      },
+      {
+        "nome": "riqueza",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 14,
+        "min": 0,
+        "max": 26,
+        "niveis": {}
+      },
+      {
+        "nome": "trecho",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["Alto curso", "Médio curso", "Baixo curso", "Trecho impactado"]
+      }
+    ]
+  },
+  "estacoes_ictiofauna": {
+    "nome": "estacoes_ictiofauna",
+    "arquivo": "estacoes_ictiofauna.rda",
+    "classe": "data.frame",
+    "linhas": 14,
+    "colunas": 9,
+    "bytes": 715,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_estacao",
+        "classe": "character",
+        "na": 0,
+        "distintos": 14,
+        "min": {},
+        "max": {},
+        "niveis": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E14"]
+      },
+      {
+        "nome": "latitude",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": -1.0536,
+        "max": -0.5,
+        "niveis": {}
+      },
+      {
+        "nome": "longitude",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": -47.356,
+        "max": -46.604,
+        "niveis": {}
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 2,
+        "min": 2023,
+        "max": 2024,
+        "niveis": {}
+      },
+      {
+        "nome": "campanha",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Chuvosa", "Seca"]
+      },
+      {
+        "nome": "ambiente",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["Estuario", "Manguezal", "Plataforma", "Praia"]
+      },
+      {
+        "nome": "especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Bagre", "Pescada-amarela", "Robalo"]
+      },
+      {
+        "nome": "cpue",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 9.6,
+        "max": 52.3,
+        "niveis": {}
+      },
+      {
+        "nome": "abundancia",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 14,
+        "min": 22,
+        "max": 110,
+        "niveis": {}
+      }
+    ]
+  },
+  "exportacao_pargo": {
+    "nome": "exportacao_pargo",
+    "arquivo": "exportacao_pargo.rda",
+    "classe": "data.frame",
+    "linhas": 4,
+    "colunas": 48,
+    "bytes": 1245,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "Países",
+        "classe": "character",
+        "na": 0,
+        "distintos": 1,
+        "min": {},
+        "max": {},
+        "niveis": "Estados Unidos"
+      },
+      {
+        "nome": "Código NCM",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["03038932", "03048910", "03037933", "03042920"]
+      },
+      {
+        "nome": "Descrição NCM",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["Pargo (Lutjanus purpureus), congelado", "Filé de pargo (Lutjanus purpureus)", "Pargos congelados", "Filé/pargo (Lutjanus purpureus) congelados"]
+      },
+      {
+        "nome": "Código ISIC Grupo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 1,
+        "min": {},
+        "max": {},
+        "niveis": "102"
+      },
+      {
+        "nome": "Descrição ISIC Grupo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 1,
+        "min": {},
+        "max": {},
+        "niveis": "Processamento e conservação de peixes, crustáceos e moluscos"
+      },
+      {
+        "nome": "UF do Produto",
+        "classe": "character",
+        "na": 0,
+        "distintos": 1,
+        "min": {},
+        "max": {},
+        "niveis": "Pará"
+      },
+      {
+        "nome": "2025 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 16572033,
+        "niveis": {}
+      },
+      {
+        "nome": "2025 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 1808316,
+        "niveis": {}
+      },
+      {
+        "nome": "2024 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 20975716,
+        "niveis": {}
+      },
+      {
+        "nome": "2024 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2271000,
+        "niveis": {}
+      },
+      {
+        "nome": "2023 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 20832092,
+        "niveis": {}
+      },
+      {
+        "nome": "2023 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2569862,
+        "niveis": {}
+      },
+      {
+        "nome": "2022 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 22462973,
+        "niveis": {}
+      },
+      {
+        "nome": "2022 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2700161,
+        "niveis": {}
+      },
+      {
+        "nome": "2021 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 23711889,
+        "niveis": {}
+      },
+      {
+        "nome": "2021 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2885228,
+        "niveis": {}
+      },
+      {
+        "nome": "2020 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 18245286,
+        "niveis": {}
+      },
+      {
+        "nome": "2020 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2931771,
+        "niveis": {}
+      },
+      {
+        "nome": "2019 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 13027086,
+        "niveis": {}
+      },
+      {
+        "nome": "2019 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2040014,
+        "niveis": {}
+      },
+      {
+        "nome": "2018 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 21801214,
+        "niveis": {}
+      },
+      {
+        "nome": "2018 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 3486212,
+        "niveis": {}
+      },
+      {
+        "nome": "2017 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 15491236,
+        "niveis": {}
+      },
+      {
+        "nome": "2017 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2540491,
+        "niveis": {}
+      },
+      {
+        "nome": "2016 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 12547520,
+        "niveis": {}
+      },
+      {
+        "nome": "2016 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2156461,
+        "niveis": {}
+      },
+      {
+        "nome": "2015 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 11867173,
+        "niveis": {}
+      },
+      {
+        "nome": "2015 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2029726,
+        "niveis": {}
+      },
+      {
+        "nome": "2014 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 8339587,
+        "niveis": {}
+      },
+      {
+        "nome": "2014 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 1455820,
+        "niveis": {}
+      },
+      {
+        "nome": "2013 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 11272860,
+        "niveis": {}
+      },
+      {
+        "nome": "2013 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 2026649,
+        "niveis": {}
+      },
+      {
+        "nome": "2012 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 29401,
+        "max": 11309066,
+        "niveis": {}
+      },
+      {
+        "nome": "2012 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 2740,
+        "max": 2057392,
+        "niveis": {}
+      },
+      {
+        "nome": "2011 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 5021197,
+        "niveis": {}
+      },
+      {
+        "nome": "2011 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 903037,
+        "niveis": {}
+      },
+      {
+        "nome": "2010 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 7681820,
+        "niveis": {}
+      },
+      {
+        "nome": "2010 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 1491163,
+        "niveis": {}
+      },
+      {
+        "nome": "2009 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 624137,
+        "niveis": {}
+      },
+      {
+        "nome": "2009 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 136511,
+        "niveis": {}
+      },
+      {
+        "nome": "2008 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 1486365,
+        "niveis": {}
+      },
+      {
+        "nome": "2008 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 316823,
+        "niveis": {}
+      },
+      {
+        "nome": "2007 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 5601657,
+        "niveis": {}
+      },
+      {
+        "nome": "2007 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 1212636,
+        "niveis": {}
+      },
+      {
+        "nome": "2006 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 0,
+        "max": 7207022,
+        "niveis": {}
+      },
+      {
+        "nome": "2006 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 0,
+        "max": 1867941,
+        "niveis": {}
+      },
+      {
+        "nome": "2005 - Valor US$ FOB",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 0,
+        "max": 5273554,
+        "niveis": {}
+      },
+      {
+        "nome": "2005 - Quilograma Líquido",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 0,
+        "max": 1654670,
+        "niveis": {}
+      }
+    ]
+  },
+  "gammarus_dieta_temperatura_resumo": {
+    "nome": "gammarus_dieta_temperatura_resumo",
+    "arquivo": "gammarus_dieta_temperatura_resumo.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 12,
+    "colunas": 11,
+    "bytes": 857,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "dieta",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Fucus", "Folhas_de_cenoura", "Polpa_de_coco"]
+      },
+      {
+        "nome": "temperatura_c",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 5,
+        "max": 20,
+        "niveis": {}
+      },
+      {
+        "nome": "n_repeticoes",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 1,
+        "min": 4,
+        "max": 4,
+        "niveis": {}
+      },
+      {
+        "nome": "sobrevivencia_media_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 8.75,
+        "max": 73.75,
+        "niveis": {}
+      },
+      {
+        "nome": "sobrevivencia_dp_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 4.79,
+        "max": 28.28,
+        "niveis": {}
+      },
+      {
+        "nome": "biomassa_media_mg",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 11,
+        "min": 27.25,
+        "max": 159,
+        "niveis": {}
+      },
+      {
+        "nome": "biomassa_dp_mg",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 9,
+        "max": 43.14,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_final_medio_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 5.31,
+        "max": 11.59,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_final_dp_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 0.1,
+        "max": 8,
+        "niveis": {}
+      },
+      {
+        "nome": "taxa_crescimento_especifica_media_pct_dia",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 11,
+        "min": -0.1,
+        "max": 1.68,
+        "niveis": {}
+      },
+      {
+        "nome": "taxa_crescimento_especifica_dp_pct_dia",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 11,
+        "min": 0.04,
+        "max": 0.58,
+        "niveis": {}
+      }
+    ]
+  },
+  "idades_savel_repetibilidade": {
+    "nome": "idades_savel_repetibilidade",
+    "arquivo": "idades_savel_repetibilidade.rda",
+    "classe": "data.frame",
+    "linhas": 53,
+    "colunas": 8,
+    "bytes": 624,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "fish_id",
+        "classe": "character",
+        "na": 0,
+        "distintos": 53,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "true_age",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 6,
+        "min": 3,
+        "max": 8,
+        "niveis": {}
+      },
+      {
+        "nome": "reader_a_1",
+        "classe": "integer",
+        "na": 2,
+        "distintos": 8,
+        "min": 2,
+        "max": 8,
+        "niveis": {}
+      },
+      {
+        "nome": "reader_a_2",
+        "classe": "integer",
+        "na": 2,
+        "distintos": 8,
+        "min": 2,
+        "max": 8,
+        "niveis": {}
+      },
+      {
+        "nome": "reader_b_1",
+        "classe": "integer",
+        "na": 20,
+        "distintos": 6,
+        "min": 3,
+        "max": 7,
+        "niveis": {}
+      },
+      {
+        "nome": "reader_b_2",
+        "classe": "integer",
+        "na": 20,
+        "distintos": 6,
+        "min": 3,
+        "max": 7,
+        "niveis": {}
+      },
+      {
+        "nome": "reader_c_1",
+        "classe": "integer",
+        "na": 1,
+        "distintos": 8,
+        "min": 2,
+        "max": 8,
+        "niveis": {}
+      },
+      {
+        "nome": "reader_c_2",
+        "classe": "integer",
+        "na": 1,
+        "distintos": 6,
+        "min": 2,
+        "max": 6,
+        "niveis": {}
+      }
+    ]
+  },
+  "isoproteica_bagre": {
+    "nome": "isoproteica_bagre",
+    "arquivo": "isoproteica_bagre.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 19,
+    "colunas": 2,
+    "bytes": 280,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "racao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["A", "B", "C", "D"]
+      },
+      {
+        "nome": "peso_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 83,
+        "max": 105,
+        "niveis": {}
+      }
+    ]
+  },
+  "lagostas_kelp_sexo": {
+    "nome": "lagostas_kelp_sexo",
+    "arquivo": "lagostas_kelp_sexo.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 1457,
+    "colunas": 8,
+    "bytes": 3741,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_lagosta",
+        "classe": "character",
+        "na": 0,
+        "distintos": 1457,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "data_amostragem",
+        "classe": "Date",
+        "na": 0,
+        "distintos": 6,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 2,
+        "min": 2024,
+        "max": 2025,
+        "niveis": {}
+      },
+      {
+        "nome": "mes",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 6,
+        "min": 1,
+        "max": 12,
+        "niveis": {}
+      },
+      {
+        "nome": "mes_nome",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 6,
+        "min": {},
+        "max": {},
+        "niveis": ["setembro", "outubro", "dezembro", "janeiro", "marco", "abril"]
+      },
+      {
+        "nome": "sitio",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["DIAZ", "SWB"]
+      },
+      {
+        "nome": "sexo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["femea", "macho"]
+      },
+      {
+        "nome": "comprimento_cefalotorax_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 120,
+        "min": 23,
+        "max": 100.5,
+        "niveis": {}
+      }
+    ]
+  },
+  "morfometria_barbo": {
+    "nome": "morfometria_barbo",
+    "arquivo": "morfometria_barbo.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 100,
+    "colunas": 13,
+    "bytes": 8444,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_peixe",
+        "classe": "character",
+        "na": 0,
+        "distintos": 100,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "populacao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["POP06", "POP07", "POP08", "POP09", "POP10"]
+      },
+      {
+        "nome": "rio",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["rio_pop06", "rio_pop07", "rio_pop08", "rio_pop09", "rio_pop10"]
+      },
+      {
+        "nome": "comprimento_cabeca",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 26.1014,
+        "max": 35.8159,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_pre_anal",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 85.251,
+        "max": 92.7202,
+        "niveis": {}
+      },
+      {
+        "nome": "focinho_occipital",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 23.0845,
+        "max": 31.4456,
+        "niveis": {}
+      },
+      {
+        "nome": "distancia_pre_peitoral",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 27.1521,
+        "max": 36.6614,
+        "niveis": {}
+      },
+      {
+        "nome": "distancia_dorsal_pelvica",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 19.5724,
+        "max": 25.7968,
+        "niveis": {}
+      },
+      {
+        "nome": "focinho_operculo_ventral",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 20.3555,
+        "max": 29.2562,
+        "niveis": {}
+      },
+      {
+        "nome": "distancia_pre_dorsal",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 57.0461,
+        "max": 64.26,
+        "niveis": {}
+      },
+      {
+        "nome": "distancia_dorsal_peitoral",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 29.7264,
+        "max": 36.9527,
+        "niveis": {}
+      },
+      {
+        "nome": "diametro_horizontal_olho",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 4.437,
+        "max": 6.3579,
+        "niveis": {}
+      },
+      {
+        "nome": "altura_maxima_corpo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 100,
+        "min": 20.3503,
+        "max": 28.1436,
+        "niveis": {}
+      }
+    ]
+  },
+  "ocorrencias_peixes": {
+    "nome": "ocorrencias_peixes",
+    "arquivo": "ocorrencias_peixes.rda",
+    "classe": "data.frame",
+    "linhas": 125,
+    "colunas": 5,
+    "bytes": 2364,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 125,
+        "min": 1,
+        "max": 125,
+        "niveis": {}
+      },
+      {
+        "nome": "longitude",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 125,
+        "min": -47.6585,
+        "max": -46.3735,
+        "niveis": {}
+      },
+      {
+        "nome": "latitude",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 124,
+        "min": -1.2223,
+        "max": -0.0228,
+        "niveis": {}
+      },
+      {
+        "nome": "especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Camarao-rosa", "Pescada-amarela"]
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 2,
+        "min": 2023,
+        "max": 2024,
+        "niveis": {}
+      }
+    ]
+  },
+  "peixes_morfometria_multivariada": {
+    "nome": "peixes_morfometria_multivariada",
+    "arquivo": "peixes_morfometria_multivariada.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 299,
+    "colunas": 39,
+    "bytes": 79757,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Barbus petenyi", "Gobio sp.", "Lepomis gibbosus"]
+      },
+      {
+        "nome": "especie_codigo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["barbus_petenyi", "gobio_sp", "lepomis_gibbosus"]
+      },
+      {
+        "nome": "populacao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 15,
+        "min": {},
+        "max": {},
+        "niveis": ["POP01", "POP02", "POP03", "POP04", "POP05", "POP06", "POP07", "POP08", "POP09", "POP10", "POP11", "POP12", "POP13", "POP14", "POP15"]
+      },
+      {
+        "nome": "id_individuo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 299,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "da",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 15.269,
+        "max": 102.2659,
+        "niveis": {}
+      },
+      {
+        "nome": "dalc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 14.7751,
+        "max": 41.2364,
+        "niveis": {}
+      },
+      {
+        "nome": "dauc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 15.7773,
+        "max": 56.8087,
+        "niveis": {}
+      },
+      {
+        "nome": "dlc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 29.1614,
+        "max": 91.0508,
+        "niveis": {}
+      },
+      {
+        "nome": "dod",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 13.8851,
+        "max": 54.6183,
+        "niveis": {}
+      },
+      {
+        "nome": "dopl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 10.5555,
+        "max": 69.8351,
+        "niveis": {}
+      },
+      {
+        "nome": "dpc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 4.9166,
+        "max": 53.3433,
+        "niveis": {}
+      },
+      {
+        "nome": "dpl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 10.2947,
+        "max": 38.8457,
+        "niveis": {}
+      },
+      {
+        "nome": "dso",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 12.0122,
+        "max": 42.1181,
+        "niveis": {}
+      },
+      {
+        "nome": "dsv",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 4.7517,
+        "max": 38.0884,
+        "niveis": {}
+      },
+      {
+        "nome": "duc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 5.7802,
+        "max": 87.1023,
+        "niveis": {}
+      },
+      {
+        "nome": "dvpl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 13.3433,
+        "max": 66.4093,
+        "niveis": {}
+      },
+      {
+        "nome": "eh",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 292,
+        "min": 3.0262,
+        "max": 8.6921,
+        "niveis": {}
+      },
+      {
+        "nome": "ev",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 292,
+        "min": 2.2453,
+        "max": 28.8261,
+        "niveis": {}
+      },
+      {
+        "nome": "fl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 32.4035,
+        "max": 193.8968,
+        "niveis": {}
+      },
+      {
+        "nome": "hd",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 14.5726,
+        "max": 63.4198,
+        "niveis": {}
+      },
+      {
+        "nome": "hh",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 297,
+        "min": 7.7432,
+        "max": 59.3971,
+        "niveis": {}
+      },
+      {
+        "nome": "hl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 13.5427,
+        "max": 63.0419,
+        "niveis": {}
+      },
+      {
+        "nome": "hmax",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 11.2158,
+        "max": 49.0712,
+        "niveis": {}
+      },
+      {
+        "nome": "hmin",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 298,
+        "min": 4.5749,
+        "max": 19.7018,
+        "niveis": {}
+      },
+      {
+        "nome": "la",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 8.1466,
+        "max": 35.766,
+        "niveis": {}
+      },
+      {
+        "nome": "lbd",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 6.5351,
+        "max": 41.6178,
+        "niveis": {}
+      },
+      {
+        "nome": "ld",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 9.0495,
+        "max": 41.9099,
+        "niveis": {}
+      },
+      {
+        "nome": "llc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 11.1399,
+        "max": 36.9959,
+        "niveis": {}
+      },
+      {
+        "nome": "lpec",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 9.9944,
+        "max": 37.507,
+        "niveis": {}
+      },
+      {
+        "nome": "lpl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 298,
+        "min": 6.6413,
+        "max": 36.1093,
+        "niveis": {}
+      },
+      {
+        "nome": "luc",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 11.2956,
+        "max": 45.5551,
+        "niveis": {}
+      },
+      {
+        "nome": "mo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 295,
+        "min": 3.2273,
+        "max": 23.8765,
+        "niveis": {}
+      },
+      {
+        "nome": "pa",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 30.137,
+        "max": 135.2438,
+        "niveis": {}
+      },
+      {
+        "nome": "pd",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 16.7204,
+        "max": 91.3432,
+        "niveis": {}
+      },
+      {
+        "nome": "poo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 5.9931,
+        "max": 20.5886,
+        "niveis": {}
+      },
+      {
+        "nome": "ppec",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 13.6526,
+        "max": 46.5142,
+        "niveis": {}
+      },
+      {
+        "nome": "ppl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 19.8253,
+        "max": 97.2786,
+        "niveis": {}
+      },
+      {
+        "nome": "pre",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 299,
+        "min": 5.016,
+        "max": 46.8571,
+        "niveis": {}
+      },
+      {
+        "nome": "sl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 298,
+        "min": 45.04,
+        "max": 174.8408,
+        "niveis": {}
+      }
+    ]
+  },
+  "peixes_nutricao_portugal": {
+    "nome": "peixes_nutricao_portugal",
+    "arquivo": "peixes_nutricao_portugal.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 40,
+    "colunas": 22,
+    "bytes": 2821,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_base",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 40,
+        "min": 800,
+        "max": 2120000015,
+        "niveis": {}
+      },
+      {
+        "nome": "nome_comum",
+        "classe": "character",
+        "na": 0,
+        "distintos": 40,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "nome_cientifico",
+        "classe": "character",
+        "na": 0,
+        "distintos": 39,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "cluster_autores",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["0", "1", "2"]
+      },
+      {
+        "nome": "perfil_nutricional_autores",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["atipicos", "gordos", "magros"]
+      },
+      {
+        "nome": "energia_kcal_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 34,
+        "min": 58,
+        "max": 314,
+        "niveis": {}
+      },
+      {
+        "nome": "proteina_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 29,
+        "min": 13.4,
+        "max": 24.1,
+        "niveis": {}
+      },
+      {
+        "nome": "lipideos_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 28,
+        "min": 0.1,
+        "max": 27.7,
+        "niveis": {}
+      },
+      {
+        "nome": "umidade_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 36,
+        "min": 54.3,
+        "max": 81.7,
+        "niveis": {}
+      },
+      {
+        "nome": "cinzas_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 13,
+        "min": 1,
+        "max": 1.9,
+        "niveis": {}
+      },
+      {
+        "nome": "sfa_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 18,
+        "min": 0,
+        "max": 8.6,
+        "niveis": {}
+      },
+      {
+        "nome": "mufa_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 18,
+        "min": 0,
+        "max": 11.8,
+        "niveis": {}
+      },
+      {
+        "nome": "pufa_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 0,
+        "max": 9.4,
+        "niveis": {}
+      },
+      {
+        "nome": "epa_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 22,
+        "min": 0,
+        "max": 2.2,
+        "niveis": {}
+      },
+      {
+        "nome": "dha_g_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 24,
+        "min": 0,
+        "max": 3.5,
+        "niveis": {}
+      },
+      {
+        "nome": "sodio_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 29,
+        "min": 38,
+        "max": 350,
+        "niveis": {}
+      },
+      {
+        "nome": "potassio_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 180,
+        "max": 530,
+        "niveis": {}
+      },
+      {
+        "nome": "calcio_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 29,
+        "min": 4,
+        "max": 160,
+        "niveis": {}
+      },
+      {
+        "nome": "fosforo_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 80,
+        "max": 320,
+        "niveis": {}
+      },
+      {
+        "nome": "magnesio_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 17,
+        "min": 15,
+        "max": 40,
+        "niveis": {}
+      },
+      {
+        "nome": "ferro_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 0.1,
+        "max": 4.1,
+        "niveis": {}
+      },
+      {
+        "nome": "zinco_mg_100g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 16,
+        "min": 0.2,
+        "max": 2.7,
+        "niveis": {}
+      }
+    ]
+  },
+  "pinguins": {
+    "nome": "pinguins",
+    "arquivo": "pinguins.rda",
+    "classe": "data.frame",
+    "linhas": 344,
+    "colunas": 8,
+    "bytes": 2499,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "especie",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Adelie", "Chinstrap", "Gentoo"]
+      },
+      {
+        "nome": "ilha",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Biscoe", "Dream", "Torgersen"]
+      },
+      {
+        "nome": "comprimento_bico_mm",
+        "classe": "numeric",
+        "na": 2,
+        "distintos": 165,
+        "min": 32.1,
+        "max": 59.6,
+        "niveis": {}
+      },
+      {
+        "nome": "profundidade_bico_mm",
+        "classe": "numeric",
+        "na": 2,
+        "distintos": 81,
+        "min": 13.1,
+        "max": 21.5,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_nadadeira_mm",
+        "classe": "integer",
+        "na": 2,
+        "distintos": 56,
+        "min": 172,
+        "max": 231,
+        "niveis": {}
+      },
+      {
+        "nome": "massa_g",
+        "classe": "integer",
+        "na": 2,
+        "distintos": 95,
+        "min": 2700,
+        "max": 6300,
+        "niveis": {}
+      },
+      {
+        "nome": "sexo",
+        "classe": "factor",
+        "na": 11,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["femea", "macho"]
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 3,
+        "min": 2007,
+        "max": 2009,
+        "niveis": {}
+      }
+    ]
+  },
+  "qfasa_acidos_graxos": {
+    "nome": "qfasa_acidos_graxos",
+    "arquivo": "qfasa_acidos_graxos.rda",
+    "classe": "data.frame",
+    "linhas": 39,
+    "colunas": 1,
+    "bytes": 291,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "FA",
+        "classe": "character",
+        "na": 0,
+        "distintos": 39,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      }
+    ]
+  },
+  "qfasa_predadores": {
+    "nome": "qfasa_predadores",
+    "arquivo": "qfasa_predadores.rda",
+    "classe": "data.frame",
+    "linhas": 10,
+    "colunas": 70,
+    "bytes": 1717,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "SampleCode",
+        "classe": "character",
+        "na": 0,
+        "distintos": 10,
+        "min": {},
+        "max": {},
+        "niveis": ["3-01A", "3-01B", "3-01C", "3-02A", "3-02B", "3-02C", "3-04A", "3-04B", "3-04C", "3-05A"]
+      },
+      {
+        "nome": "AnimalCode",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["P031", "P032", "P034", "P035"]
+      },
+      {
+        "nome": "SampleGroup",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["T", "T1", "T2"]
+      },
+      {
+        "nome": "Biopsy",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["A", "B", "C"]
+      },
+      {
+        "nome": "c12.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": 0.1,
+        "max": 0.18,
+        "niveis": {}
+      },
+      {
+        "nome": "c13.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 0.02,
+        "max": 0.03,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso14",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.02,
+        "max": 0.04,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 4.19,
+        "max": 5.45,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.13,
+        "max": 0.23,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.05,
+        "max": 0.12,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.1w5",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 0.76,
+        "max": 2.26,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso15",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.13,
+        "max": 0.19,
+        "niveis": {}
+      },
+      {
+        "nome": "Anti15",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.04,
+        "max": 0.11,
+        "niveis": {}
+      },
+      {
+        "nome": "c15.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 0.27,
+        "max": 0.37,
+        "niveis": {}
+      },
+      {
+        "nome": "c15.1w8",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 1,
+        "min": 0.01,
+        "max": 0.01,
+        "niveis": {}
+      },
+      {
+        "nome": "c15.1w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.04,
+        "max": 0.08,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso16",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.07,
+        "max": 0.14,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 11.55,
+        "max": 13.77,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.48,
+        "max": 0.61,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": 0.26,
+        "max": 0.47,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 14.67,
+        "max": 22.78,
+        "niveis": {}
+      },
+      {
+        "nome": "c7Mec16.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.17,
+        "max": 0.25,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w5",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.04,
+        "max": 0.1,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.08,
+        "max": 0.1,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso17",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.1,
+        "max": 0.17,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.2w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.1,
+        "max": 0.26,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.3w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": 0.46,
+        "max": 0.74,
+        "niveis": {}
+      },
+      {
+        "nome": "c17.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.11,
+        "max": 0.2,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.3w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": 0.28,
+        "max": 0.47,
+        "niveis": {}
+      },
+      {
+        "nome": "c17.1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.3,
+        "max": 0.46,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.11,
+        "max": 0.16,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.4w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 0.37,
+        "max": 0.73,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 1.02,
+        "max": 1.36,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w13",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": 0.09,
+        "max": 0.2,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 0.52,
+        "max": 1.46,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 18.8,
+        "max": 22.57,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 4,
+        "max": 4.3,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w5",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.25,
+        "max": 0.34,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2d5.11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.04,
+        "max": 0.11,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.07,
+        "max": 0.16,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 1.02,
+        "max": 1.56,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 0.14,
+        "max": 0.17,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.09,
+        "max": 0.11,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 0.11,
+        "max": 0.16,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": 0.43,
+        "max": 0.57,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": 0.03,
+        "max": 0.1,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 0.88,
+        "max": 1.15,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.4w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.16,
+        "max": 0.21,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.07,
+        "max": 0.11,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 1.23,
+        "max": 2.53,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 2.17,
+        "max": 4.51,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.18,
+        "max": 0.49,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.2w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.03,
+        "max": 0.07,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": 0.17,
+        "max": 0.31,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.3w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.06,
+        "max": 0.08,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.4w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 0.52,
+        "max": 0.97,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.3w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.04,
+        "max": 0.06,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.35,
+        "max": 0.42,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.5w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 5.63,
+        "max": 8.35,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 1.17,
+        "max": 3.07,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0.16,
+        "max": 0.25,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.05,
+        "max": 0.07,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 0.03,
+        "niveis": {}
+      },
+      {
+        "nome": "c21.5w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 8,
+        "min": 0.3,
+        "max": 0.39,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.4w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.04,
+        "max": 0.12,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.5w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 4,
+        "min": 0.08,
+        "max": 0.28,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0.04,
+        "max": 0.06,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.5w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 1.48,
+        "max": 2.82,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.6w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 5.18,
+        "max": 10.82,
+        "niveis": {}
+      },
+      {
+        "nome": "c24.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0.07,
+        "max": 0.12,
+        "niveis": {}
+      }
+    ]
+  },
+  "qfasa_presas": {
+    "nome": "qfasa_presas",
+    "arquivo": "qfasa_presas.rda",
+    "classe": "data.frame",
+    "linhas": 302,
+    "colunas": 70,
+    "bytes": 18587,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "Lab.Code",
+        "classe": "character",
+        "na": 0,
+        "distintos": 302,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "Species",
+        "classe": "character",
+        "na": 0,
+        "distintos": 11,
+        "min": {},
+        "max": {},
+        "niveis": ["mackerel", "capelin", "coho", "eulachon", "herring", "pilchard", "pollock", "sandlance", "squid", "surfsmelt_lg", "surfsmelt_s"]
+      },
+      {
+        "nome": "lipid",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 251,
+        "min": 0.86,
+        "max": 27.13,
+        "niveis": {}
+      },
+      {
+        "nome": "c12.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 0.01,
+        "max": 0.25,
+        "niveis": {}
+      },
+      {
+        "nome": "c13.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 0,
+        "max": 0.15,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso14",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 10,
+        "min": 0,
+        "max": 0.1,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 227,
+        "min": 0.63,
+        "max": 8.78,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 40,
+        "min": 0.02,
+        "max": 0.52,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 11,
+        "min": 0,
+        "max": 0.11,
+        "niveis": {}
+      },
+      {
+        "nome": "c14.1w5",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 21,
+        "min": 0,
+        "max": 0.21,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso15",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 42,
+        "min": 0.01,
+        "max": 0.62,
+        "niveis": {}
+      },
+      {
+        "nome": "Anti15",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 26,
+        "min": 0.01,
+        "max": 0.43,
+        "niveis": {}
+      },
+      {
+        "nome": "c15.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 63,
+        "min": 0.1,
+        "max": 1.2,
+        "niveis": {}
+      },
+      {
+        "nome": "c15.1w8",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0,
+        "max": 0.05,
+        "niveis": {}
+      },
+      {
+        "nome": "c15.1w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 5,
+        "min": 0,
+        "max": 0.06,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso16",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 65,
+        "min": 0.02,
+        "max": 1.12,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 273,
+        "min": 8.23,
+        "max": 26.68,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 72,
+        "min": 0.08,
+        "max": 2.67,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 42,
+        "min": 0.05,
+        "max": 0.72,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 250,
+        "min": 0.33,
+        "max": 12.6,
+        "niveis": {}
+      },
+      {
+        "nome": "c7Me16.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 0.05,
+        "max": 0.37,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.1w5",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 28,
+        "min": 0.01,
+        "max": 0.32,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 21,
+        "min": 0,
+        "max": 0.2,
+        "niveis": {}
+      },
+      {
+        "nome": "Iso17",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 0.02,
+        "max": 0.35,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.2w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 68,
+        "min": 0,
+        "max": 1.19,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.3w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 99,
+        "min": 0,
+        "max": 1.05,
+        "niveis": {}
+      },
+      {
+        "nome": "c17.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 90,
+        "min": 0.04,
+        "max": 1.65,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.3w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 81,
+        "min": 0.01,
+        "max": 1.6,
+        "niveis": {}
+      },
+      {
+        "nome": "c17.1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 39,
+        "min": 0.04,
+        "max": 0.51,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.3w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 0,
+        "max": 0.17,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 54,
+        "min": 0.03,
+        "max": 0.69,
+        "niveis": {}
+      },
+      {
+        "nome": "c16.4w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 110,
+        "min": 0.02,
+        "max": 3.57,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 206,
+        "min": 0.72,
+        "max": 6.33,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w13",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 42,
+        "min": 0,
+        "max": 0.98,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 89,
+        "min": 0,
+        "max": 2.34,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 276,
+        "min": 1.37,
+        "max": 52.94,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 215,
+        "min": 0.02,
+        "max": 6.46,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.1w5",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 57,
+        "min": 0.07,
+        "max": 0.69,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2d5.11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 37,
+        "min": 0,
+        "max": 2.25,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 0,
+        "max": 0.55,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 114,
+        "min": 0.16,
+        "max": 1.96,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.2w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 39,
+        "min": 0.02,
+        "max": 0.49,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 32,
+        "min": 0.02,
+        "max": 0.36,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w4",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 26,
+        "min": 0,
+        "max": 0.34,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 103,
+        "min": 0.06,
+        "max": 1.46,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.3w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 34,
+        "min": 0,
+        "max": 0.47,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 180,
+        "min": 0.04,
+        "max": 4.07,
+        "niveis": {}
+      },
+      {
+        "nome": "c18.4w1",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 43,
+        "min": 0,
+        "max": 0.52,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.0",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 21,
+        "min": 0.05,
+        "max": 0.26,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 158,
+        "min": 0.06,
+        "max": 14.85,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 227,
+        "min": 0.35,
+        "max": 22.88,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 102,
+        "min": 0.05,
+        "max": 2.9,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.2w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 29,
+        "min": 0,
+        "max": 0.45,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 39,
+        "min": 0.05,
+        "max": 0.5,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.3w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 0,
+        "max": 0.19,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.4w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 155,
+        "min": 0.16,
+        "max": 5.12,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.3w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 48,
+        "min": 0,
+        "max": 1.05,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 93,
+        "min": 0.04,
+        "max": 1.97,
+        "niveis": {}
+      },
+      {
+        "nome": "c20.5w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 278,
+        "min": 1,
+        "max": 22.83,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.1w11",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 202,
+        "min": 0.02,
+        "max": 20.94,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 135,
+        "min": 0.01,
+        "max": 3.48,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.1w7",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 57,
+        "min": 0,
+        "max": 0.78,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.2w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 18,
+        "min": 0,
+        "max": 0.22,
+        "niveis": {}
+      },
+      {
+        "nome": "c21.5w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 69,
+        "min": 0.1,
+        "max": 1.41,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.4w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 59,
+        "min": 0,
+        "max": 9.23,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.5w6",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 63,
+        "min": 0.03,
+        "max": 1.55,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.4w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 21,
+        "min": 0,
+        "max": 0.42,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.5w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 181,
+        "min": 0.3,
+        "max": 5.63,
+        "niveis": {}
+      },
+      {
+        "nome": "c22.6w3",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 288,
+        "min": 2.56,
+        "max": 36.51,
+        "niveis": {}
+      },
+      {
+        "nome": "c24.1w9",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 106,
+        "min": 0.16,
+        "max": 1.55,
+        "niveis": {}
+      }
+    ]
+  },
+  "recifes_ostras_heatmap": {
+    "nome": "recifes_ostras_heatmap",
+    "arquivo": "recifes_ostras_heatmap.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 301,
+    "colunas": 26,
+    "bytes": 11517,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_recife",
+        "classe": "character",
+        "na": 0,
+        "distintos": 33,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "id_levantamento",
+        "classe": "character",
+        "na": 0,
+        "distintos": 301,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "sitio",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["OP-CR", "SY-PH", "SY-TP"]
+      },
+      {
+        "nome": "numero_recife",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 20,
+        "min": 1,
+        "max": 57,
+        "niveis": {}
+      },
+      {
+        "nome": "zona_recife",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Centre", "Edge", "Off"]
+      },
+      {
+        "nome": "estacao",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["Summer", "Winter"]
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 3,
+        "min": 2019,
+        "max": 2021,
+        "niveis": {}
+      },
+      {
+        "nome": "avaliador_video",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["Chris.P", "Daniella.C", "Katie.E", "Lydia.K", "Sophie.R"]
+      },
+      {
+        "nome": "duracao_video_min",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 25,
+        "max": 61,
+        "niveis": {}
+      },
+      {
+        "nome": "visibilidade_media_m",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 21,
+        "min": 1.1429,
+        "max": 4,
+        "niveis": {}
+      },
+      {
+        "nome": "pradaria_marinha_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 27,
+        "min": 0,
+        "max": 51.8,
+        "niveis": {}
+      },
+      {
+        "nome": "riqueza_especies_zona",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 19,
+        "min": 1,
+        "max": 19,
+        "niveis": {}
+      },
+      {
+        "nome": "indice_shannon_h",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 297,
+        "min": 0.0144,
+        "max": 2.0107,
+        "niveis": {}
+      },
+      {
+        "nome": "abundancia_total",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 179,
+        "min": 1,
+        "max": 1244,
+        "niveis": {}
+      },
+      {
+        "nome": "area_2d",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 7.8768,
+        "max": 2072.9043,
+        "niveis": {}
+      },
+      {
+        "nome": "indice_forma",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 32,
+        "min": 1.0583,
+        "max": 3.0139,
+        "niveis": {}
+      },
+      {
+        "nome": "indice_isometria",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 27,
+        "min": 0.05,
+        "max": 271.83,
+        "niveis": {}
+      },
+      {
+        "nome": "indice_circularidade",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 0.3041,
+        "max": 0.9044,
+        "niveis": {}
+      },
+      {
+        "nome": "indice_fractal",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 1.0683,
+        "max": 1.5169,
+        "niveis": {}
+      },
+      {
+        "nome": "indice_para",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 0.2123,
+        "max": 1.8819,
+        "niveis": {}
+      },
+      {
+        "nome": "perimetro",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 10.58,
+        "max": 505.02,
+        "niveis": {}
+      },
+      {
+        "nome": "razao_perimetro_area",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 0.2127,
+        "max": 1.4947,
+        "niveis": {}
+      },
+      {
+        "nome": "distancia_media_recifes_proximos",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 6.1398,
+        "max": 147.8997,
+        "niveis": {}
+      },
+      {
+        "nome": "distancia_vizinho_mais_proximo",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 26,
+        "min": 0.2396,
+        "max": 27.6141,
+        "niveis": {}
+      },
+      {
+        "nome": "rugosidade",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 32,
+        "min": 1.299,
+        "max": 1.961,
+        "niveis": {}
+      },
+      {
+        "nome": "area_3d",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 33,
+        "min": 15.37,
+        "max": 2652.19,
+        "niveis": {}
+      }
+    ]
+  },
+  "referencias_dados_amostragem": {
+    "nome": "referencias_dados_amostragem",
+    "arquivo": "referencias_dados_amostragem.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 5,
+    "colunas": 4,
+    "bytes": 817,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "base",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["walleye_erie", "snapper_hg", "crabs_morfometria"]
+      },
+      {
+        "nome": "citacao_curta",
+        "classe": "character",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["FSAdata::WalleyeErie2", "FSAdata::SnapperHG1", "Davies and Walsh (2002)", "MASS::crabs", "Venables and Ripley (2002)"]
+      },
+      {
+        "nome": "referencia",
+        "classe": "character",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["Biological data for Walleye from Lake Erie, 2003-2014.", "Age (subsample) and length (all fish) of Snapper from two survey locations.", "Snapper age and length samples from Kaharoa research trawl surveys KAH8810 and KAH0012 of the Hauraki Gulf.", "Morphological Measurements on Leptograpsus Crabs.", "Modern Applied Statistics with S."]
+      },
+      {
+        "nome": "observacao",
+        "classe": "character",
+        "na": 0,
+        "distintos": 5,
+        "min": {},
+        "max": {},
+        "niveis": ["Dados biológicos de Walleye do Lago Erie, preparados com nomes de variáveis em português.", "No preparo para o EAPADados, foram mantidos por padrão apenas registros com idade atribuída.", "Título original mantido conforme documentação do pacote FSAdata.", "Dados morfométricos de caranguejos, preparados com nomes de variáveis em português.", "Referência bibliográfica indicada na documentação do conjunto crabs."]
+      }
+    ]
+  },
+  "salvelino_formalina_remocao": {
+    "nome": "salvelino_formalina_remocao",
+    "arquivo": "salvelino_formalina_remocao.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 30,
+    "colunas": 7,
+    "bytes": 806,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "unidade_experimental",
+        "classe": "character",
+        "na": 0,
+        "distintos": 30,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "formalin",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["sem", "com"]
+      },
+      {
+        "nome": "remocao_semanal",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["sem", "com"]
+      },
+      {
+        "nome": "ovos_iniciais",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 27,
+        "min": 189,
+        "max": 393,
+        "niveis": {}
+      },
+      {
+        "nome": "ovos_eclodidos",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 15,
+        "min": 0,
+        "max": 35,
+        "niveis": {}
+      },
+      {
+        "nome": "mortalidade_total",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 27,
+        "min": 166,
+        "max": 393,
+        "niveis": {}
+      },
+      {
+        "nome": "sobrevivencia_eclosao_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 0,
+        "max": 12.1693,
+        "niveis": {}
+      }
+    ]
+  },
+  "snapper_hg": {
+    "nome": "snapper_hg",
+    "arquivo": "snapper_hg.rda",
+    "classe": "data.frame",
+    "linhas": 1331,
+    "colunas": 6,
+    "bytes": 2448,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_peixe",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 1331,
+        "min": 1,
+        "max": 10166,
+        "niveis": {}
+      },
+      {
+        "nome": "levantamento",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["KAH8810", "KAH0012"]
+      },
+      {
+        "nome": "comprimento_cm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 59,
+        "min": 7,
+        "max": 70,
+        "niveis": {}
+      },
+      {
+        "nome": "idade_anos",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 1,
+        "max": 20,
+        "niveis": {}
+      },
+      {
+        "nome": "tem_idade_atribuida",
+        "classe": "logical",
+        "na": 0,
+        "distintos": 1,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "classe_comprimento",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["comprimento_Q1", "comprimento_Q2", "comprimento_Q3", "comprimento_Q4"]
+      }
+    ]
+  },
+  "sst_costa_norte": {
+    "nome": "sst_costa_norte",
+    "arquivo": "sst_costa_norte.rda",
+    "classe": "data.frame",
+    "linhas": 204,
+    "colunas": 5,
+    "bytes": 1880,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "lon",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 17,
+        "min": -48.5,
+        "max": -46.1,
+        "niveis": {}
+      },
+      {
+        "nome": "lat",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": -1.5,
+        "max": 0.15,
+        "niveis": {}
+      },
+      {
+        "nome": "sst",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 124,
+        "min": 27.41,
+        "max": 29.07,
+        "niveis": {}
+      },
+      {
+        "nome": "clorofila",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 103,
+        "min": 0.35,
+        "max": 4.32,
+        "niveis": {}
+      },
+      {
+        "nome": "profundidade",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 161,
+        "min": 3.7,
+        "max": 66.7,
+        "niveis": {}
+      }
+    ]
+  },
+  "tilapia_crescimento": {
+    "nome": "tilapia_crescimento",
+    "arquivo": "tilapia_crescimento.rda",
+    "classe": "data.frame",
+    "linhas": 30,
+    "colunas": 4,
+    "bytes": 727,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "Tratamento",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["A", "B", "C"]
+      },
+      {
+        "nome": "Semana",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 10,
+        "min": 1,
+        "max": 10,
+        "niveis": {}
+      },
+      {
+        "nome": "PesoMedio",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 30,
+        "min": 46.2493,
+        "max": 127.3524,
+        "niveis": {}
+      },
+      {
+        "nome": "DataColeta",
+        "classe": "Date",
+        "na": 0,
+        "distintos": 30,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      }
+    ]
+  },
+  "tilapia_microalgas": {
+    "nome": "tilapia_microalgas",
+    "arquivo": "tilapia_microalgas.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 15,
+    "colunas": 32,
+    "bytes": 2759,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_tanque",
+        "classe": "character",
+        "na": 0,
+        "distintos": 15,
+        "min": {},
+        "max": {},
+        "niveis": ["cr1", "cr2", "cr3", "n25r1", "n25r2", "n25r3", "n50r1", "n50r2", "n50r3", "t25r1", "t25r2", "t25r3", "t50r1", "t50r2", "t50r3"]
+      },
+      {
+        "nome": "tratamento_codigo",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 15,
+        "min": {},
+        "max": {},
+        "niveis": ["CR1", "CR2", "CR3", "N25R1", "N25R2", "N25R3", "N50R1", "N50R2", "N50R3", "T25R1", "T25R2", "T25R3", "T50R1", "T50R2", "T50R3"]
+      },
+      {
+        "nome": "tipo_microalga",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["controle", "nannochloropsis", "tetraselmis"]
+      },
+      {
+        "nome": "nivel_substituicao_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 0,
+        "max": 50,
+        "niveis": {}
+      },
+      {
+        "nome": "repeticao",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 3,
+        "min": 1,
+        "max": 3,
+        "niveis": {}
+      },
+      {
+        "nome": "sgr_pct_dia",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 6.7017,
+        "max": 8.0667,
+        "niveis": {}
+      },
+      {
+        "nome": "sobrevivencia_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 55.5556,
+        "max": 94.4444,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_inicial_medio_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 9,
+        "min": 0.0221,
+        "max": 0.0235,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_final_medio_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 1.0022,
+        "max": 2.13,
+        "niveis": {}
+      },
+      {
+        "nome": "peixes_estocados",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 1,
+        "min": 18,
+        "max": 18,
+        "niveis": {}
+      },
+      {
+        "nome": "peixes_colhidos",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 6,
+        "min": 10,
+        "max": 17,
+        "niveis": {}
+      },
+      {
+        "nome": "temperatura_c",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 27.4571,
+        "max": 28.0518,
+        "niveis": {}
+      },
+      {
+        "nome": "oxigenio_dissolvido_mg_l",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 6.45,
+        "max": 6.7056,
+        "niveis": {}
+      },
+      {
+        "nome": "ph",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 8.2893,
+        "max": 8.6107,
+        "niveis": {}
+      },
+      {
+        "nome": "tan_mg_l",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 0.4661,
+        "max": 0.6771,
+        "niveis": {}
+      },
+      {
+        "nome": "no2_n_mg_l",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 0.4124,
+        "max": 0.5242,
+        "niveis": {}
+      },
+      {
+        "nome": "srp_mg_l",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 0.103,
+        "max": 0.1541,
+        "niveis": {}
+      },
+      {
+        "nome": "rbc_10_6_ul",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 1.44,
+        "max": 1.77,
+        "niveis": {}
+      },
+      {
+        "nome": "hemoglobina_g_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 6.6,
+        "max": 9.8,
+        "niveis": {}
+      },
+      {
+        "nome": "pcv_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 23,
+        "max": 32.9,
+        "niveis": {}
+      },
+      {
+        "nome": "wbc_10_3_ul",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 17.9,
+        "max": 26.9,
+        "niveis": {}
+      },
+      {
+        "nome": "linfocitos_pct",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 47,
+        "max": 59,
+        "niveis": {}
+      },
+      {
+        "nome": "plaquetas_10_3_ul",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 28.5,
+        "max": 66.4,
+        "niveis": {}
+      },
+      {
+        "nome": "proteina_total_g_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 3.9,
+        "max": 6.15,
+        "niveis": {}
+      },
+      {
+        "nome": "albumina_g_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 13,
+        "min": 1.9,
+        "max": 2.5,
+        "niveis": {}
+      },
+      {
+        "nome": "globulina_g_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 1.99,
+        "max": 3.68,
+        "niveis": {}
+      },
+      {
+        "nome": "razao_albumina_globulina",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 0.6712,
+        "max": 0.9604,
+        "niveis": {}
+      },
+      {
+        "nome": "glicose_mg_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 67,
+        "max": 79.8,
+        "niveis": {}
+      },
+      {
+        "nome": "triglicerideos_mg_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 193.8,
+        "max": 214,
+        "niveis": {}
+      },
+      {
+        "nome": "colesterol_mg_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 204,
+        "max": 250.7,
+        "niveis": {}
+      },
+      {
+        "nome": "ureia_mg_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 23.5546,
+        "max": 31.9058,
+        "niveis": {}
+      },
+      {
+        "nome": "bun_mg_dl",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 11,
+        "max": 14.9,
+        "niveis": {}
+      }
+    ]
+  },
+  "treino_coletas": {
+    "nome": "treino_coletas",
+    "arquivo": "treino_coletas.rda",
+    "classe": "data.frame",
+    "linhas": 15,
+    "colunas": 5,
+    "bytes": 552,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 15,
+        "min": 1,
+        "max": 15,
+        "niveis": {}
+      },
+      {
+        "nome": "codigo_coleta",
+        "classe": "character",
+        "na": 0,
+        "distintos": 13,
+        "min": {},
+        "max": {},
+        "niveis": ["SERRA-2023-AUG", "PESCADA-2021-AUG", "PESCADA-2023-AUG", "PESCADA-2023-BEL", "SERRA-2021-BEL", "PESCADA-2021-VIG", "PESCADA-2023-BRA", "SERRA-2021-VIG", "PARGO-2021-VIG", "PESCADA-2022-BEL", "SERRA-2023-BRA", "PESCADA-2021-BRA", "PARGO-2023-BEL"]
+      },
+      {
+        "nome": "estacao_periodo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 10,
+        "min": {},
+        "max": {},
+        "niveis": ["E04_Chuvosa", "E01_Seca", "E01_Chuvosa", "E03_Chuvosa", "E02_Seca", "E03_Seca", "E06_Chuvosa", "E05_Seca", "E05_Chuvosa", "E04_Seca"]
+      },
+      {
+        "nome": "comprimento_cm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 14,
+        "min": 18.7,
+        "max": 53,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 15,
+        "min": 76.6,
+        "max": 1289.4,
+        "niveis": {}
+      }
+    ]
+  },
+  "treino_desembarque": {
+    "nome": "treino_desembarque",
+    "arquivo": "treino_desembarque.rda",
+    "classe": "data.frame",
+    "linhas": 12,
+    "colunas": 8,
+    "bytes": 679,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "Porto",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["Bragança", "Vigia", "Belém", "Augusto Corrêa"]
+      },
+      {
+        "nome": "Especie",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Pargo", "Serra", "Pescada"]
+      },
+      {
+        "nome": "2021 - Captura_t",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 46.8,
+        "max": 233.6,
+        "niveis": {}
+      },
+      {
+        "nome": "2021 - Receita_mil",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 495.9,
+        "max": 3098.5,
+        "niveis": {}
+      },
+      {
+        "nome": "2022 - Captura_t",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 53,
+        "max": 192,
+        "niveis": {}
+      },
+      {
+        "nome": "2022 - Receita_mil",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 506.6,
+        "max": 2760.6,
+        "niveis": {}
+      },
+      {
+        "nome": "2023 - Captura_t",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 51.6,
+        "max": 186.9,
+        "niveis": {}
+      },
+      {
+        "nome": "2023 - Receita_mil",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 12,
+        "min": 500.9,
+        "max": 2471.1,
+        "niveis": {}
+      }
+    ]
+  },
+  "truta_riacho_crescimento": {
+    "nome": "truta_riacho_crescimento",
+    "arquivo": "truta_riacho_crescimento.rda",
+    "classe": ["tbl_df", "tbl", "data.frame"],
+    "linhas": 69,
+    "colunas": 8,
+    "bytes": 1852,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_peixe",
+        "classe": "character",
+        "na": 0,
+        "distintos": 69,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "tanque",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 7,
+        "min": {},
+        "max": {},
+        "niveis": ["2", "3", "4", "5", "6", "7", "8"]
+      },
+      {
+        "nome": "crescimento_especifico_pct_dia",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 69,
+        "min": -0.8557,
+        "max": 2.9849,
+        "niveis": {}
+      },
+      {
+        "nome": "temperatura_c",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 2,
+        "min": 15,
+        "max": 22,
+        "niveis": {}
+      },
+      {
+        "nome": "racao_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": 0.0904,
+        "max": 0.3276,
+        "niveis": {}
+      },
+      {
+        "nome": "massa_inicial_g",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 54,
+        "min": 10.3,
+        "max": 28.1,
+        "niveis": {}
+      },
+      {
+        "nome": "eficiencia_conversao",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 7,
+        "min": 0.3,
+        "max": 1.55,
+        "niveis": {}
+      },
+      {
+        "nome": "racao_fator",
+        "classe": "factor",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["high", "low"]
+      }
+    ]
+  },
+  "walleye_erie": {
+    "nome": "walleye_erie",
+    "arquivo": "walleye_erie.rda",
+    "classe": "data.frame",
+    "linhas": 33734,
+    "colunas": 12,
+    "bytes": 123634,
+    "duplicadas": 0,
+    "colunas_detalhe": [
+      {
+        "nome": "id_peixe",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 33734,
+        "min": 1,
+        "max": 33734,
+        "niveis": {}
+      },
+      {
+        "nome": "id_lance_rede",
+        "classe": "character",
+        "na": 0,
+        "distintos": 512,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "codigo_local",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["1", "2", "3"]
+      },
+      {
+        "nome": "local_regional",
+        "classe": "character",
+        "na": 0,
+        "distintos": 3,
+        "min": {},
+        "max": {},
+        "niveis": ["Toledo a Huron", "Huron a Fairport Harbor", "Fairport Harbor a Conneaut"]
+      },
+      {
+        "nome": "grade_amostral",
+        "classe": "character",
+        "na": 0,
+        "distintos": 86,
+        "min": {},
+        "max": {},
+        "niveis": {}
+      },
+      {
+        "nome": "ano",
+        "classe": "integer",
+        "na": 0,
+        "distintos": 12,
+        "min": 2003,
+        "max": 2014,
+        "niveis": {}
+      },
+      {
+        "nome": "comprimento_total_mm",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 492,
+        "min": 222,
+        "max": 778,
+        "niveis": {}
+      },
+      {
+        "nome": "peso_g",
+        "classe": "numeric",
+        "na": 413,
+        "distintos": 3169,
+        "min": 104,
+        "max": 5186,
+        "niveis": {}
+      },
+      {
+        "nome": "sexo",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["macho", "fêmea"]
+      },
+      {
+        "nome": "maturidade",
+        "classe": "character",
+        "na": 0,
+        "distintos": 2,
+        "min": {},
+        "max": {},
+        "niveis": ["maduro", "imaturo"]
+      },
+      {
+        "nome": "idade_anos",
+        "classe": "numeric",
+        "na": 0,
+        "distintos": 20,
+        "min": 0,
+        "max": 20,
+        "niveis": {}
+      },
+      {
+        "nome": "classe_comprimento",
+        "classe": "character",
+        "na": 0,
+        "distintos": 4,
+        "min": {},
+        "max": {},
+        "niveis": ["comprimento_Q1", "comprimento_Q2", "comprimento_Q3", "comprimento_Q4"]
+      }
+    ]
+  }
+}

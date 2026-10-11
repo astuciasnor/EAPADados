@@ -1,0 +1,159 @@
+{
+  "datasets::ToothGrowth": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "ToothGrowth",
+    "linhas": 60,
+    "colunas": 3,
+    "variaveis": ["len", "supp", "dose"],
+    "na": 0,
+    "niveis": {
+      "len": {},
+      "supp": ["OJ", "VC"],
+      "dose": {}
+    }
+  },
+  "datasets::sleep": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "sleep",
+    "linhas": 20,
+    "colunas": 3,
+    "variaveis": ["extra", "group", "ID"],
+    "na": 0,
+    "niveis": {
+      "extra": {},
+      "group": ["1", "2"],
+      "ID": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "datasets::Orange": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "Orange",
+    "linhas": 35,
+    "colunas": 3,
+    "variaveis": ["Tree", "age", "circumference"],
+    "na": 0,
+    "niveis": {
+      "Tree": ["3", "1", "5", "2", "4"],
+      "age": {},
+      "circumference": {}
+    }
+  },
+  "datasets::co2": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "co2",
+    "linhas": 468,
+    "colunas": 1,
+    "variaveis": {},
+    "na": 0,
+    "niveis": {}
+  },
+  "datasets::InsectSprays": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "InsectSprays",
+    "linhas": 72,
+    "colunas": 2,
+    "variaveis": ["count", "spray"],
+    "na": 0,
+    "niveis": {
+      "count": {},
+      "spray": ["A", "B", "C", "D", "E", "F"]
+    }
+  },
+  "datasets::chickwts": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "chickwts",
+    "linhas": 71,
+    "colunas": 2,
+    "variaveis": ["weight", "feed"],
+    "na": 0,
+    "niveis": {
+      "weight": {},
+      "feed": ["casein", "horsebean", "linseed", "meatmeal", "soybean", "sunflower"]
+    }
+  },
+  "datasets::quakes": {
+    "pacote": "datasets",
+    "versao": "4.6.1",
+    "nome": "quakes",
+    "linhas": 1000,
+    "colunas": 5,
+    "variaveis": ["lat", "long", "depth", "mag", "stations"],
+    "na": 0,
+    "niveis": {
+      "lat": {},
+      "long": {},
+      "depth": {},
+      "mag": {},
+      "stations": {}
+    }
+  },
+  "nlme::Orthodont": {
+    "pacote": "nlme",
+    "versao": "3.1.169",
+    "nome": "Orthodont",
+    "linhas": 108,
+    "colunas": 4,
+    "variaveis": ["distance", "age", "Subject", "Sex"],
+    "na": 0,
+    "niveis": {
+      "distance": {},
+      "age": {},
+      "Subject": ["M16", "M05", "M02", "M11", "M07", "M08", "M03", "M12", "M13", "M14", "M09", "M15", "M06", "M04", "M01", "M10", "F10", "F09", "F06", "F01", "F05", "F07", "F02", "F08", "F03", "F04", "F11"],
+      "Sex": ["Male", "Female"]
+    }
+  },
+  "MASS::ships": {
+    "pacote": "MASS",
+    "versao": "7.3.65",
+    "nome": "ships",
+    "linhas": 40,
+    "colunas": 5,
+    "variaveis": ["type", "year", "period", "service", "incidents"],
+    "na": 0,
+    "niveis": {
+      "type": ["A", "B", "C", "D", "E"],
+      "year": {},
+      "period": {},
+      "service": {},
+      "incidents": {}
+    }
+  },
+  "MASS::bacteria": {
+    "pacote": "MASS",
+    "versao": "7.3.65",
+    "nome": "bacteria",
+    "linhas": 220,
+    "colunas": 6,
+    "variaveis": ["y", "ap", "hilo", "week", "ID", "trt"],
+    "na": 0,
+    "niveis": {
+      "y": ["n", "y"],
+      "ap": ["a", "p"],
+      "hilo": ["hi", "lo"],
+      "week": {},
+      "ID": ["X01", "X02", "X03", "X04", "X05", "X06", "X07", "X08", "X09", "X10", "X11", "X12", "X13", "X14", "X15", "X16", "X17", "X18", "X19", "X20", "X21", "Y01", "Y02", "Y03", "Y04", "Y05", "Y06", "Y07", "Y08", "Y09", "Y10", "Y11", "Y12", "Y13", "Y14", "Z01", "Z02", "Z03", "Z05", "Z06", "Z07", "Z09", "Z10", "Z11", "Z14", "Z15", "Z19", "Z20", "Z24", "Z26"],
+      "trt": ["placebo", "drug", "drug+"]
+    }
+  },
+  "rpart::kyphosis": {
+    "pacote": "rpart",
+    "versao": "4.1.27",
+    "nome": "kyphosis",
+    "linhas": 81,
+    "colunas": 4,
+    "variaveis": ["Kyphosis", "Age", "Number", "Start"],
+    "na": 0,
+    "niveis": {
+      "Kyphosis": ["absent", "present"],
+      "Age": {},
+      "Number": {},
+      "Start": {}
+    }
+  }
+}

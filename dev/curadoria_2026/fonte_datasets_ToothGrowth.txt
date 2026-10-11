@@ -1,0 +1,43 @@
+_T_h_e _E_f_f_e_c_t _o_f _V_i_t_a_m_i_n _C _o_n _T_o_o_t_h _G_r_o_w_t_h _i_n _G_u_i_n_e_a _P_i_g_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The response is the length of odontoblasts (cells responsible for
+     tooth growth) in 60 guinea pigs.  Each animal received one of
+     three dose levels of vitamin C (0.5, 1, and 2 mg/day) by one of
+     two delivery methods, orange juice or ascorbic acid (a form of
+     vitamin C and coded as 'VC').
+
+_U_s_a_g_e:
+
+     ToothGrowth
+     
+_F_o_r_m_a_t:
+
+     A data frame with 60 observations on 3 variables.
+
+       [,1]  'len'   numeric  Tooth length                
+       [,2]  'supp'  factor   Supplement type (VC or OJ). 
+       [,3]  'dose'  numeric  Dose in milligrams/day      
+      
+_S_o_u_r_c_e:
+
+     Bliss CI (1952). _The Statistics of Bioassay_. Academic Press, New
+     York, NY. ISBN 9781483256627.
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Crampton EW (1947). "The Growth of the Odontoblasts of the Incisor
+     Tooth as a Criterion of the Vitamin C Intake of the Guinea Pig."
+     _The Journal of Nutrition_, *33*(5), 491-504.
+     doi:10.1093/jn/33.5.491 <https://doi.org/10.1093/jn/33.5.491>.
+
+     McNeil D (1977). _Interactive Data Analysis: A Practical Primer_.
+     John Wiley & Sons. ISBN 978-0471026310.
+
+_E_x_a_m_p_l_e_s:
+
+     require(graphics)
+     coplot(len ~ dose | supp, data = ToothGrowth, panel = panel.smooth,
+            xlab = "ToothGrowth data: length vs dose, given type of supplement")
+     
