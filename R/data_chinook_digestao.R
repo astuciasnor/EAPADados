@@ -1,0 +1,46 @@
+#' Perda de sinal de Chinook durante a digestão em black bass
+#'
+#' @description
+#' Leituras de metabarcoding e qPCR para DNA de salmão Chinook no trato
+#' digestivo de black bass, após alimentação controlada. É o recorte pré-definido
+#' do ensaio com 18,5 °C e oferta de três smolts por peixe.
+#'
+#' @format Um data frame com 91 observações e 6 variáveis:
+#' \describe{
+#'   \item{id_peixe}{Inteiro: identificador do peixe predador.}
+#'   \item{classe_tempo_h}{Inteiro: classe planejada de dissecção, em horas.}
+#'   \item{tempo_ingestao_h}{Numérico: tempo efetivo desde a ingestão, em horas.}
+#'   \item{leitura_metabarcoding}{Inteiro: número de leituras atribuídas ao Chinook.}
+#'   \item{copias_qpcr}{Numérico: quantidade por qPCR; \code{NA} significa não detecção/resultado indisponível.}
+#'   \item{qpcr_detectado}{Lógico: indica se a quantidade por qPCR foi detectada.}
+#' }
+#'
+#' @details
+#' Cada linha representa um peixe independente, sacrificado uma vez no horário
+#' indicado; não são medidas repetidas do mesmo animal. A resposta principal
+#' para uma exploração de decaimento é \code{leitura_metabarcoding}. Ela cai
+#' até valores próximos a zero, mas é uma contagem com zeros e variância não
+#' constante. Assim, o ajuste exponencial simples é didático e descritivo, não
+#' substitui uma análise de contagens nem transforma ausências de qPCR em zero.
+#'
+#' O recorte fixa espécie predadora (black bass), temperatura (18,5 °C) e oferta
+#' (três smolts) para que o tempo seja a diferença experimental principal.
+#'
+#' @source Dick, C.; Larson, W.; Karpan, K.; Baetscher, D.; Shi, Y.; Fangue, N.
+#' (2023). \emph{Chinook salmon digestion data within predatory largemouth bass
+#' and channel catfish through controlled feed trials}. Dryad.
+#' DOI: \doi{10.5061/dryad.fj6q5740x}. Licença CC0 1.0.
+#'
+#' @docType data
+#' @keywords datasets aquicultura digestao decaimento regressao-nao-linear
+#' @name chinook_digestao
+#' @usage data(chinook_digestao)
+#'
+#' @examples
+#' data(chinook_digestao)
+#' modelo <- nls(leitura_metabarcoding ~ a + b * exp(-k * tempo_ingestao_h),
+#'               data = chinook_digestao,
+#'               start = list(a = 0, b = 9000, k = 0.03),
+#'               algorithm = "port", lower = c(a = 0, b = 0, k = 0))
+#' log(2) / coef(modelo)["k"]
+"chinook_digestao"

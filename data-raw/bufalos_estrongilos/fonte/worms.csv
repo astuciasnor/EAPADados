@@ -1,0 +1,1135 @@
+animalID,captureID,trt,captureinterval,season,captureherd,age,worms_yn,fec
+B50b,B50b-1109,bolus,25,early wet,Lower Sabie,73,0,0
+Y30c,Y30c-0811,control,28,late dry,Crocodile Bridge,73,0,0
+Y23b,Y23b-0811,control,30,late dry,Crocodile Bridge,65,1,50
+Y40,Y40-0612,control,33,early dry,Other,75,1,300
+R1,R1-0712,bolus,35,late dry,Lower Sabie,100,1,50
+O32b,O32b-1109,control,43,early wet,Lower Sabie,31,1,300
+R29b,R29b-0712,bolus,62,late dry,Lower Sabie,78,0,0
+Y34b,Y34b-0712,control,62,late dry,Other,75,1,50
+R30,R30-0712,bolus,63,late dry,Lower Sabie,106,0,0
+Y11,Y11-0712,bolus,68,late dry,Lower Sabie,91,0,0
+Y14,Y14-0712,bolus,68,late dry,Lower Sabie,90,0,0
+W2,W2-0712,bolus,70,late dry,Lower Sabie,75,0,0
+Y39b,Y39b-0712,bolus,71,late dry,Lower Sabie,81,0,0
+Y20b,Y20b-0712,bolus,71,late dry,Lower Sabie,78,0,0
+Y37b,Y37b-0712,bolus,71,late dry,Lower Sabie,93,0,0
+Y4,Y4-0712,control,71,late dry,Lower Sabie,93,0,0
+Y43b,Y43b-0811,bolus,76,late dry,Crocodile Bridge,70,0,0
+Y27,Y27-0811,bolus,76,late dry,Crocodile Bridge,89,0,0
+Y18,Y18-0811,bolus,78,late dry,Crocodile Bridge,143,0,0
+R30,R30-0811,bolus,78,late dry,Crocodile Bridge,95,0,0
+B25,B25-0609,control,79,early dry,Lower Sabie,32,1,100
+R43,R43-0811,control,79,late dry,Crocodile Bridge,155,0,0
+R46b,R46b-0909,control,80,late dry,Crocodile Bridge,57,1,100
+Y34b,Y34b-0811,control,81,late dry,Crocodile Bridge,64,0,0
+Y39b,Y39b-0811,bolus,82,late dry,Crocodile Bridge,70,0,0
+Y15b,Y15b-0909,bolus,83,late dry,Crocodile Bridge,63,0,0
+O23,O23-0609,control,83,early dry,Lower Sabie,51,0,0
+R13,R13-0811,control,83,late dry,Crocodile Bridge,80,1,50
+R22,R22-0712,bolus,83,late dry,Lower Sabie,90,0,0
+W2,W2-0811,bolus,84,late dry,Crocodile Bridge,65,0,0
+R17,R17-0811,bolus,84,late dry,Crocodile Bridge,101,0,0
+Y40,Y40-0911,control,84,late dry,Other,66,1,300
+R11,R11-0811,control,85,late dry,Crocodile Bridge,143,0,0
+R51,R51-0811,bolus,85,late dry,Crocodile Bridge,76,0,0
+R1,R1-0811,bolus,86,late dry,Crocodile Bridge,89,0,0
+B6,B6-1109,bolus,88,early wet,Lower Sabie,83,0,0
+B7,B7-1111,bolus,88,early wet,Lower Sabie,76,0,0
+Y6,Y6-0811,bolus,89,late dry,Crocodile Bridge,77,0,0
+B33,B33-1111,control,89,early wet,Crocodile Bridge,92,1,200
+B57,B57-1109,control,90,early wet,Lower Sabie,56,1,50
+Y29,Y29-0811,bolus,90,late dry,Crocodile Bridge,98,0,0
+R15d,R15d-0812,control,91,late dry,Crocodile Bridge,80,1,50
+R4b,R4b-0911,bolus,91,late dry,Other,94,1,50
+R17,R17-0812,bolus,91,late dry,Crocodile Bridge,113,0,0
+Y13,Y13-0909,control,92,late dry,Crocodile Bridge,42,1,200
+Y13,Y13-0811,control,92,late dry,Crocodile Bridge,66,0,0
+Y28,Y28-0811,bolus,93,late dry,Crocodile Bridge,76,0,0
+R20,R20-0811,control,93,late dry,Crocodile Bridge,82,1,100
+B31,B31-0510,control,94,early dry,Crocodile Bridge,40,0,0
+W6,W6-0811,control,94,late dry,Crocodile Bridge,64,1,250
+Y30b,Y30b-0909,control,95,late dry,Crocodile Bridge,53,1,50
+Y18,Y18-0909,bolus,95,late dry,Crocodile Bridge,119,0,0
+B5,B5-1109,control,95,early wet,Lower Sabie,47,0,0
+R19,R19-0811,control,95,late dry,Crocodile Bridge,70,0,0
+R52,R52-0811,control,95,late dry,Crocodile Bridge,167,1,150
+R46b,R46b-0712,control,95,late dry,Lower Sabie,91,1,100
+B8,B8-1111,bolus,96,early wet,Crocodile Bridge,95,0,0
+R22,R22-0811,bolus,96,late dry,Crocodile Bridge,79,0,0
+Y1b,Y1b-0812,control,96,late dry,Crocodile Bridge,81,1,100
+O14,O14-0709,control,97,late dry,Crocodile Bridge,64,1,300
+B37,B37-0609,control,97,early dry,Lower Sabie,50,1,250
+Y20b,Y20b-0811,bolus,97,late dry,Crocodile Bridge,68,0,0
+Y47,Y47-0811,control,97,late dry,Crocodile Bridge,66,0,0
+Y14,Y14-0811,bolus,98,late dry,Crocodile Bridge,80,0,0
+O14,O14-1111,control,98,early wet,Crocodile Bridge,93,1,500
+Y29,Y29-0812,bolus,99,late dry,Crocodile Bridge,109,1,50
+Y45,Y45-0909,control,100,late dry,Crocodile Bridge,52,1,100
+R15d,R15d-0311,control,102,late wet,Crocodile Bridge,63,0,0
+Y20b,Y20b-0909,bolus,102,late dry,Crocodile Bridge,44,0,0
+B13b,B13b-1109,control,103,early wet,Crocodile Bridge,45,1,200
+O45b,O45b-0611,control,103,early dry,Lower Sabie,87,0,0
+O36,O36-1109,control,104,early wet,Lower Sabie,101,0,0
+O30,O30-0610,control,104,early dry,Other,65,1,50
+B43,B43-0611,control,104,early dry,Lower Sabie,132,0,0
+O45b,O45b-0709,control,105,late dry,Lower Sabie,64,0,0
+O23b,O23b-1109,control,105,early wet,Crocodile Bridge,32,1,50
+B2b,B2b-1109,control,105,early wet,Crocodile Bridge,48,1,50
+O13,O13-1109,control,105,early wet,Lower Sabie,101,1,150
+R40,R40-0810,control,105,late dry,Lower Sabie,54,0,0
+R45c,R45c-0312,bolus,105,late wet,Crocodile Bridge,87,0,0
+Y35c,Y35c-0810,bolus,106,late dry,Crocodile Bridge,44,0,0
+B7,B7-1109,bolus,106,early wet,Crocodile Bridge,52,0,0
+O11,O11-1109,bolus,106,early wet,Lower Sabie,101,0,0
+B47b,B47b-0611,control,107,early dry,Lower Sabie,105,0,0
+O39c,O39c-0611,bolus,107,early dry,Lower Sabie,64,0,0
+B3,B3-1109,bolus,107,early wet,Lower Sabie,68,0,0
+O43,O43-1109,control,107,early wet,Other,57,1,350
+Y18,Y18-0712,bolus,107,late dry,Lower Sabie,154,0,0
+Y5b,Y5b-0909,bolus,108,late dry,Crocodile Bridge,54,1,50
+Y2,Y2-0909,control,108,late dry,Crocodile Bridge,42,1,550
+R36,R36-0811,bolus,108,late dry,Crocodile Bridge,131,0,0
+Y13,Y13-0712,control,108,late dry,Lower Sabie,77,0,0
+Y27,Y27-0712,bolus,108,late dry,Lower Sabie,100,0,0
+Y31d,Y31d-0312,bolus,109,late wet,Crocodile Bridge,63,0,0
+B42b,B42b-1109,control,109,early wet,Lower Sabie,35,1,250
+O22,O22-1109,bolus,109,early wet,Crocodile Bridge,59,0,0
+O31,O31-1109,control,109,early wet,Other,46,0,0
+O38,O38-1109,bolus,109,early wet,Other,45,0,0
+R46b,R46b-0911,control,109,late dry,Crocodile Bridge,82,0,0
+O29b,O29b-1109,control,110,early wet,Lower Sabie,36,1,250
+B30,B30-0809,control,110,late dry,Other,40,1,100
+O12,O12-1109,control,110,early wet,Lower Sabie,71,0,0
+O41,O41-1109,control,110,early wet,Lower Sabie,59,0,0
+Y46b,Y46b-0212,control,110,late wet,Crocodile Bridge,89,0,0
+B30,B30-1111,control,110,early wet,Lower Sabie,68,1,50
+O19,O19-1109,bolus,111,early wet,Lower Sabie,77,0,0
+O39c,O39c-0612,bolus,111,early dry,Other,76,0,0
+O29b,O29b-0709,control,112,late dry,Lower Sabie,33,1,500
+R19,R19-0712,control,112,late dry,Lower Sabie,81,1,300
+B43,B43-1109,control,113,early wet,Lower Sabie,113,0,0
+O34,O34-1109,bolus,113,early wet,Lower Sabie,89,0,0
+Y15c,Y15c-0812,bolus,113,late dry,Crocodile Bridge,81,0,0
+R14b,R14b-0612,bolus,113,early dry,Other,81,0,0
+O49,O49-0709,bolus,114,late dry,Lower Sabie,52,0,0
+B29,B29-1109,control,114,early wet,Lower Sabie,34,0,0
+R47,R47-0811,bolus,115,late dry,Crocodile Bridge,65,0,0
+R33,R33-0712,control,115,late dry,Lower Sabie,87,1,300
+R20,R20-0712,control,115,late dry,Lower Sabie,93,1,50
+R6b,R6b-0810,bolus,116,late dry,Crocodile Bridge,54,0,0
+R9,R9-0909,control,116,late dry,Crocodile Bridge,42,1,400
+R46b,R46b-0910,control,116,late dry,Crocodile Bridge,69,0,0
+O4,O4-1109,control,116,early wet,Lower Sabie,41,1,350
+O23b,O23b-1111,control,116,early wet,Lower Sabie,57,0,0
+O18,O18-0611,bolus,116,early dry,Lower Sabie,77,0,0
+O24,O24-0611,bolus,116,early dry,Lower Sabie,78,0,0
+Y6,Y6-0712,bolus,116,late dry,Lower Sabie,88,1,50
+W5b,W5b-0312,bolus,117,late wet,Crocodile Bridge,51,0,0
+O45b,O45b-1109,control,117,early wet,Lower Sabie,67,0,0
+O47b,O47b-1109,control,117,early wet,Other,40,0,0
+B20,B20-1109,control,117,early wet,Lower Sabie,46,0,0
+B22,B22-1109,control,117,early wet,Lower Sabie,89,0,0
+R1,R1-0910,bolus,117,late dry,Crocodile Bridge,78,0,0
+Y43,Y43-0910,bolus,117,late dry,Crocodile Bridge,65,0,0
+Y2b,Y2b-0910,control,118,late dry,Crocodile Bridge,64,0,0
+B42b,B42b-0709,control,118,late dry,Lower Sabie,31,1,50
+B39c,B39c-0611,bolus,118,early dry,Lower Sabie,66,0,0
+R52,R52-0910,control,118,late dry,Crocodile Bridge,156,0,0
+Y45,Y45-0311,control,118,late wet,Crocodile Bridge,71,1,350
+Y11,Y11-0811,bolus,118,late dry,Crocodile Bridge,80,0,0
+O4,O4-0611,control,118,early dry,Lower Sabie,60,1,550
+Y43,Y43-0909,bolus,119,late dry,Crocodile Bridge,52,0,0
+O32c,O32c-0611,control,119,early dry,Lower Sabie,94,0,0
+R12,R12-0810,control,119,late dry,Crocodile Bridge,63,0,0
+B2b,B2b-1111,control,119,early wet,Lower Sabie,74,1,450
+B29,B29-1111,control,119,early wet,Lower Sabie,59,0,0
+R11,R11-0909,control,120,late dry,Crocodile Bridge,119,0,0
+O28b,O28b-1111,bolus,120,early wet,Lower Sabie,57,0,0
+O18,O18-1109,bolus,120,early wet,Lower Sabie,58,0,0
+R10,R10-0810,bolus,120,late dry,Crocodile Bridge,68,0,0
+R35,R35-0910,bolus,120,late dry,Crocodile Bridge,84,0,0
+R11,R11-0910,control,120,late dry,Crocodile Bridge,132,0,0
+R51,R51-0910,bolus,120,late dry,Crocodile Bridge,65,0,0
+R19,R19-0910,control,120,late dry,Crocodile Bridge,59,1,400
+Y16,Y16-0910,control,120,late dry,Crocodile Bridge,54,1,850
+R1,R1-0909,bolus,121,late dry,Crocodile Bridge,65,0,0
+Y20b,Y20b-0910,bolus,121,late dry,Crocodile Bridge,57,0,0
+R47,R47-0910,bolus,121,late dry,Crocodile Bridge,54,0,0
+R24b,R24b-0312,bolus,122,late wet,Crocodile Bridge,64,0,0
+O37,O37-1109,bolus,122,early wet,Lower Sabie,46,0,0
+O21,O21-1109,control,122,early wet,Lower Sabie,46,1,50
+O12,O12-0611,control,122,early dry,Lower Sabie,90,1,50
+R51,R51-0712,bolus,122,late dry,Lower Sabie,87,0,0
+R43,R43-0909,control,123,late dry,Crocodile Bridge,132,0,0
+Y10,Y10-0909,control,123,late dry,Crocodile Bridge,70,0,0
+Y27,Y27-0910,bolus,123,late dry,Crocodile Bridge,78,0,0
+Y47,Y47-0910,control,123,late dry,Crocodile Bridge,55,1,200
+O52,O52-1110,bolus,123,early wet,Lower Sabie,149,0,0
+O47b,O47b-0809,control,124,late dry,Other,36,0,0
+R16,R16-1009,bolus,124,early wet,Crocodile Bridge,54,0,0
+O46,O46-0609,bolus,124,early dry,Lower Sabie,108,0,0
+R27b,R27b-0312,bolus,124,late wet,Crocodile Bridge,58,0,0
+R39,R39-0910,control,124,late dry,Crocodile Bridge,58,0,0
+O36,O36-0611,control,124,early dry,Lower Sabie,120,0,0
+R41,R41-0312,control,124,late wet,Crocodile Bridge,87,0,0
+R16,R16-0312,bolus,124,late wet,Crocodile Bridge,84,0,0
+O26,O26-0709,control,125,late dry,Crocodile Bridge,51,0,0
+B46,B46-1109,bolus,125,early wet,Lower Sabie,77,0,0
+O14,O14-1109,control,125,early wet,Crocodile Bridge,69,1,100
+Y1b,Y1b-0811,control,125,late dry,Crocodile Bridge,70,1,100
+Y32b,Y32b-0812,control,125,late dry,Crocodile Bridge,93,0,0
+B27,B27-0611,bolus,125,early dry,Lower Sabie,65,0,0
+B37,B37-0611,control,125,early dry,Crocodile Bridge,75,1,50
+Y17,Y17-0812,control,125,late dry,Crocodile Bridge,105,1,66
+O11,O11-0709,bolus,126,late dry,Lower Sabie,97,0,0
+O8b,O8b-0611,control,126,early dry,Lower Sabie,77,1,550
+O13,O13-0611,control,126,early dry,Lower Sabie,120,0,0
+O15,O15-0611,bolus,126,early dry,Lower Sabie,99,0,0
+O22,O22-1211,bolus,126,early wet,Crocodile Bridge,84,0,0
+B36b,B36b-1109,bolus,127,early wet,Lower Sabie,53,0,0
+Y6,Y6-0909,bolus,127,late dry,Crocodile Bridge,53,0,0
+O25,O25-0610,bolus,127,early dry,Lower Sabie,68,0,0
+R52,R52-0909,control,127,late dry,Crocodile Bridge,143,1,50
+R24b,R24b-0712,bolus,127,late dry,Lower Sabie,68,0,0
+B36b,B36b-0611,bolus,127,early dry,Lower Sabie,72,0,0
+R7b,R7b-0211,control,127,late wet,Lower Sabie,50,0,0
+B35,B35-0510,bolus,127,early dry,Lower Sabie,58,0,0
+B44,B44-0611,bolus,127,early dry,Lower Sabie,75,0,0
+B5,B5-0611,control,127,early dry,Lower Sabie,66,0,0
+Y44b,Y44b-0310,bolus,128,late wet,Crocodile Bridge,61,1,50
+R31,R31-0909,control,128,late dry,Crocodile Bridge,143,0,0
+Y11,Y11-0909,bolus,128,late dry,Crocodile Bridge,56,1,50
+R19,R19-0909,control,128,late dry,Crocodile Bridge,46,1,200
+Y42,Y42-0909,control,128,late dry,Crocodile Bridge,83,1,350
+B50b,B50b-0611,bolus,128,early dry,Lower Sabie,92,0,0
+O20,O20-0611,bolus,128,early dry,Lower Sabie,65,0,0
+Y19,Y19-0909,bolus,129,late dry,Crocodile Bridge,32,0,0
+B33,B33-0609,control,129,early dry,Crocodile Bridge,62,1,500
+O26,O26-1109,control,129,early wet,Crocodile Bridge,56,0,0
+O24,O24-1109,bolus,129,early wet,Lower Sabie,59,0,0
+R43,R43-0910,control,129,late dry,Crocodile Bridge,144,0,0
+W6,W6-0712,control,129,late dry,Lower Sabie,75,1,50
+Y42,Y42-0811,control,129,late dry,Crocodile Bridge,107,1,400
+R47,R47-0712,bolus,129,late dry,Lower Sabie,76,0,0
+Y47,Y47-0712,control,129,late dry,Lower Sabie,76,1,150
+R2,R2-0909,bolus,130,late dry,Crocodile Bridge,52,0,0
+R22,R22-0909,bolus,130,late dry,Crocodile Bridge,55,0,0
+R5,R5-0909,bolus,130,late dry,Crocodile Bridge,68,1,50
+Y36,Y36-0909,control,130,late dry,Crocodile Bridge,69,1,550
+O37,O37-0611,bolus,130,early dry,Lower Sabie,65,0,0
+R35,R35-0909,bolus,131,late dry,Crocodile Bridge,71,0,0
+R50,R50-0909,bolus,131,late dry,Crocodile Bridge,41,0,0
+R17,R17-0909,bolus,131,late dry,Crocodile Bridge,77,0,0
+Y11,Y11-0910,bolus,131,late dry,Crocodile Bridge,69,0,0
+R17,R17-1010,bolus,131,early wet,Crocodile Bridge,90,0,0
+R29,R29-0909,bolus,132,late dry,Crocodile Bridge,119,0,0
+O51b,O51b-1110,control,132,early wet,Other,73,1,350
+B23,B23-1109,bolus,132,early wet,Lower Sabie,137,0,0
+O44,O44-0710,bolus,132,late dry,Other,70,0,0
+Y42,Y42-0910,control,132,late dry,Crocodile Bridge,96,1,650
+O19,O19-0711,bolus,132,late dry,Lower Sabie,97,0,0
+R45c,R45c-0712,bolus,132,late dry,Lower Sabie,91,0,0
+O5,O5-0612,control,132,early dry,Other,74,1,50
+Y4,Y4-0909,control,133,late dry,Crocodile Bridge,58,0,0
+R47,R47-0909,bolus,133,late dry,Crocodile Bridge,41,0,0
+Y1,Y1-0909,control,133,late dry,Crocodile Bridge,58,1,50
+O46,O46-1109,bolus,133,early wet,Crocodile Bridge,113,0,0
+O47b,O47b-1211,control,133,early wet,Lower Sabie,65,0,0
+O6,O6-0711,bolus,133,late dry,Lower Sabie,76,0,0
+O21,O21-0612,control,133,early dry,Crocodile Bridge,78,0,0
+Y9,Y9-0712,bolus,133,late dry,Crocodile Bridge,92,0,0
+O13,O13-0712,control,133,late dry,Lower Sabie,134,0,0
+O51,O51-0609,control,134,early dry,Crocodile Bridge,42,0,0
+B21,B21-0509,bolus,134,early dry,Crocodile Bridge,41,0,0
+Y47,Y47-0909,control,134,late dry,Crocodile Bridge,42,1,100
+Y38,Y38-1009,control,134,early wet,Other,36,1,50
+Y30b,Y30b-0910,control,134,late dry,Crocodile Bridge,66,1,100
+R6b,R6b-0312,bolus,134,late wet,Crocodile Bridge,73,0,0
+R33,R33-0311,control,135,late wet,Crocodile Bridge,71,1,850
+O28b,O28b-0711,bolus,136,late dry,Lower Sabie,53,0,0
+R39b,R39b-0212,control,136,late wet,Crocodile Bridge,61,0,0
+Y34,Y34-0909,control,136,late dry,Crocodile Bridge,39,1,250
+B16,B16-0609,control,136,early dry,Lower Sabie,55,1,150
+Y9,Y9-0311,bolus,136,late wet,Crocodile Bridge,76,0,0
+W2,W2-0909,bolus,137,late dry,Crocodile Bridge,41,0,0
+Y14,Y14-0909,bolus,137,late dry,Crocodile Bridge,56,0,0
+Y35d,Y35d-0212,bolus,137,late wet,Lower Sabie,65,0,0
+B23,B23-0611,bolus,137,early dry,Lower Sabie,156,0,0
+Y26b,Y26b-0310,control,138,late wet,Crocodile Bridge,65,0,0
+Y27,Y27-0909,bolus,138,late dry,Crocodile Bridge,65,0,0
+O9,O9-0609,control,138,early dry,Lower Sabie,41,1,450
+B30,B30-0610,control,138,early dry,Other,51,0,0
+O48,O48-0711,bolus,138,late dry,Lower Sabie,76,0,0
+R2,R2-0312,bolus,138,late wet,Crocodile Bridge,83,0,0
+B41,B41-1111,control,138,early wet,Other,59,1,250
+Y26b,Y26b-0810,control,139,late dry,Crocodile Bridge,69,0,0
+R20,R20-0909,control,139,late dry,Crocodile Bridge,58,1,100
+Y41b,Y41b-0409,bolus,140,early dry,Crocodile Bridge,54,0,0
+O48,O48-0609,bolus,140,early dry,Lower Sabie,51,0,0
+R30,R30-0910,bolus,140,late dry,Crocodile Bridge,84,0,0
+R15b,R15b-0712,control,140,late dry,Other,81,1,50
+R4b,R4b-0712,bolus,140,late dry,Other,104,0,0
+O27,O27-0712,control,140,late dry,Other,89,1,100
+R14b,R14b-0310,bolus,141,late wet,Crocodile Bridge,54,0,0
+B19,B19-1108,control,141,early wet,Lower Sabie,101,0,0
+R30,R30-0909,bolus,141,late dry,Crocodile Bridge,72,0,0
+B44,B44-0609,bolus,141,early dry,Lower Sabie,51,0,0
+R39,R39-0909,control,141,late dry,Crocodile Bridge,46,1,100
+B34,B34-1109,bolus,141,early wet,Lower Sabie,44,0,0
+Y10,Y10-0910,control,141,late dry,Crocodile Bridge,83,0,0
+B3,B3-0611,bolus,141,early dry,Lower Sabie,88,0,0
+Y9,Y9-0312,bolus,141,late wet,Crocodile Bridge,88,0,0
+R12,R12-0712,control,141,late dry,Crocodile Bridge,86,0,0
+O17b,O17b-1109,bolus,142,early wet,Lower Sabie,34,0,0
+R51,R51-0909,bolus,142,late dry,Crocodile Bridge,52,0,0
+B41,B41-0709,control,142,late dry,Lower Sabie,30,0,0
+Y16,Y16-0909,control,143,late dry,Crocodile Bridge,41,1,300
+B8,B8-1109,bolus,143,early wet,Lower Sabie,71,0,0
+O17b,O17b-1111,bolus,143,early wet,Crocodile Bridge,58,0,0
+O40,O40-0611,control,143,early dry,Lower Sabie,96,1,50
+B3,B3-0709,bolus,144,late dry,Lower Sabie,64,0,0
+Y8,Y8-0909,control,144,late dry,Crocodile Bridge,56,1,600
+R22,R22-0910,bolus,144,late dry,Crocodile Bridge,68,0,0
+O29b,O29b-0611,control,144,early dry,Lower Sabie,56,1,500
+B17,B17-0611,bolus,144,early dry,Other,99,0,0
+B2,B2-0609,control,145,early dry,Lower Sabie,96,0,0
+B46,B46-0709,bolus,145,late dry,Lower Sabie,73,0,0
+B17,B17-1109,bolus,145,early wet,Lower Sabie,80,0,0
+B27,B27-0609,bolus,146,early dry,Lower Sabie,40,0,0
+Y15c,Y15c-0311,bolus,146,late wet,Crocodile Bridge,64,1,100
+B16,B16-1109,control,146,early wet,Lower Sabie,59,0,0
+Y16b,Y16b-0812,control,146,late dry,Lower Sabie,55,1,250
+R28,R28-0312,control,146,late wet,Crocodile Bridge,87,0,0
+Y24b,Y24b-0812,control,146,late dry,Lower Sabie,95,0,0
+B12,B12-1111,bolus,146,early wet,Lower Sabie,92,0,0
+R16,R16-0812,bolus,146,late dry,Lower Sabie,89,0,0
+Y5c,Y5c-0910,bolus,147,late dry,Crocodile Bridge,45,0,0
+B12,B12-1108,bolus,147,early wet,Lower Sabie,56,0,0
+O38,O38-0809,bolus,147,late dry,Other,42,0,0
+Y5c,Y5c-0812,bolus,147,late dry,Crocodile Bridge,68,0,0
+Y12,Y12-0811,bolus,147,late dry,Crocodile Bridge,95,0,0
+B35,B35-0711,bolus,147,late dry,Lower Sabie,72,0,0
+O34,O34-1108,bolus,148,early wet,Lower Sabie,77,0,0
+Y39,Y39-0909,bolus,148,late dry,Crocodile Bridge,53,0,0
+Y9,Y9-0909,bolus,148,late dry,Crocodile Bridge,57,0,0
+B34,B34-0609,bolus,148,early dry,Lower Sabie,40,0,0
+Y26,Y26-0909,control,148,late dry,Crocodile Bridge,35,1,150
+Y17,Y17-0909,control,148,late dry,Crocodile Bridge,71,1,150
+O52,O52-1109,bolus,148,early wet,Lower Sabie,137,0,0
+O6,O6-1109,bolus,148,early wet,Lower Sabie,56,0,0
+O28,O28-1109,bolus,148,early wet,Lower Sabie,36,0,0
+O46,O46-1110,bolus,148,early wet,Crocodile Bridge,125,1,50
+B34,B34-0611,bolus,148,early dry,Other,64,0,0
+O31,O31-0611,control,148,early dry,Other,66,0,0
+O31,O31-1108,control,149,early wet,Lower Sabie,34,1,300
+O41,O41-1108,control,149,early wet,Lower Sabie,47,1,100
+W5b,W5b-0812,bolus,149,late dry,Crocodile Bridge,56,0,0
+Y28,Y28-0909,bolus,149,late dry,Crocodile Bridge,52,0,0
+Y31d,Y31d-0812,bolus,149,late dry,Crocodile Bridge,68,0,0
+O15,O15-1109,bolus,149,early wet,Lower Sabie,79,0,0
+B26,B26-0610,control,149,early dry,Lower Sabie,51,1,100
+R15b,R15b-0212,control,149,late wet,Other,76,1,500
+R4b,R4b-0212,bolus,149,late wet,Other,99,0,0
+R2,R2-0812,bolus,149,late dry,Crocodile Bridge,88,0,0
+O52,O52-1108,bolus,150,early wet,Lower Sabie,125,0,0
+B40,B40-1108,bolus,150,early wet,Lower Sabie,43,0,0
+O6,O6-0609,bolus,150,early dry,Lower Sabie,51,0,0
+R14b,R14b-0212,bolus,150,late wet,Other,77,0,0
+O49,O49-0611,bolus,150,early dry,Lower Sabie,77,0,0
+O2,O2-0609,bolus,151,early dry,Crocodile Bridge,66,0,0
+O20,O20-0609,bolus,151,early dry,Lower Sabie,41,0,0
+O48,O48-1109,bolus,151,early wet,Lower Sabie,56,0,0
+Y7b,Y7b-0911,control,151,late dry,Other,71,1,100
+B48b,B48b-0612,bolus,151,early dry,Other,90,0,0
+O41,O41-1111,control,151,early wet,Lower Sabie,83,0,0
+R37,R37-0909,bolus,152,late dry,Crocodile Bridge,42,0,0
+R34,R34-0909,control,152,late dry,Crocodile Bridge,35,1,300
+B33,B33-1109,control,152,early wet,Crocodile Bridge,67,1,100
+O20,O20-0610,bolus,152,early dry,Lower Sabie,53,0,0
+O14,O14-0811,control,152,late dry,Crocodile Bridge,90,1,550
+B33,B33-0811,control,152,late dry,Crocodile Bridge,89,1,150
+O29b,O29b-1111,control,152,early wet,Lower Sabie,61,1,50
+O19b,O19b-0712,bolus,153,late dry,Lower Sabie,77,0,0
+R36,R36-0909,bolus,153,late dry,Crocodile Bridge,108,0,0
+B26b,B26b-0712,control,153,late dry,Lower Sabie,84,0,0
+Y36,Y36-0810,control,153,late dry,Crocodile Bridge,80,1,100
+R27b,R27b-0812,bolus,153,late dry,Crocodile Bridge,63,0,0
+B4,B4-0711,bolus,153,late dry,Lower Sabie,68,0,0
+O31,O31-1111,control,153,early wet,Lower Sabie,71,0,0
+R41,R41-0812,control,153,late dry,Crocodile Bridge,92,0,0
+B19,B19-0712,control,153,late dry,Lower Sabie,145,0,0
+O36,O36-0712,control,153,late dry,Lower Sabie,133,0,0
+Y46b,Y46b-0909,control,154,late dry,Crocodile Bridge,59,0,0
+B22,B22-1208,control,154,early wet,Lower Sabie,77,0,0
+Y41b,Y41b-0909,bolus,154,late dry,Crocodile Bridge,59,0,0
+Y44b,Y44b-0810,bolus,154,late dry,Crocodile Bridge,66,0,0
+R28,R28-0909,control,154,late dry,Crocodile Bridge,57,1,350
+Y24b,Y24b-0810,control,154,late dry,Crocodile Bridge,70,0,0
+Y32b,Y32b-0311,control,154,late wet,Crocodile Bridge,76,0,0
+Y37b,Y37b-0810,bolus,154,late dry,Crocodile Bridge,70,1,150
+R16,R16-0810,bolus,154,late dry,Crocodile Bridge,65,0,0
+Y43b,Y43b-0812,bolus,154,late dry,Crocodile Bridge,82,0,0
+O49,O49-0610,bolus,154,early dry,Lower Sabie,64,0,0
+Y2b,Y2b-0812,control,154,late dry,Crocodile Bridge,86,0,0
+B29,B29-0711,control,154,late dry,Lower Sabie,55,0,0
+O9,O9-0711,control,154,late dry,Lower Sabie,66,0,0
+B3,B3-1111,bolus,154,early wet,Lower Sabie,93,0,0
+Y12,Y12-0812,bolus,154,late dry,Crocodile Bridge,106,0,0
+B6,B6-1108,bolus,155,early wet,Lower Sabie,71,0,0
+O28,O28-1108,bolus,155,early wet,Lower Sabie,24,0,0
+R6,R6-0909,bolus,155,late dry,Crocodile Bridge,47,0,0
+O27,O27-0609,control,155,early dry,Lower Sabie,51,0,0
+Y40,Y40-0909,control,155,late dry,Crocodile Bridge,41,1,77
+O44,O44-1210,bolus,155,early wet,Lower Sabie,75,1,50
+R35,R35-1011,bolus,155,early wet,Lower Sabie,97,0,0
+Y46b,Y46b-0812,control,155,late dry,Crocodile Bridge,95,0,0
+B1,B1-1108,control,156,early wet,Lower Sabie,44,0,0
+O22,O22-1108,bolus,156,early wet,Lower Sabie,47,0,0
+O40,O40-1108,control,156,early wet,Lower Sabie,65,0,0
+R40,R40-0909,control,156,late dry,Crocodile Bridge,41,0,0
+Y2b,Y2b-0312,control,156,late wet,Crocodile Bridge,81,0,0
+B25,B25-0711,control,156,late dry,Lower Sabie,58,0,0
+O38,O38-0612,bolus,156,early dry,Other,77,0,0
+B16,B16-0712,control,156,late dry,Lower Sabie,92,1,150
+R29b,R29b-1010,bolus,157,early wet,Crocodile Bridge,56,1,50
+B12,B12-1109,bolus,157,early wet,Lower Sabie,68,0,0
+Y35d,Y35d-0712,bolus,157,late dry,Lower Sabie,70,0,0
+B27,B27-1109,bolus,157,early wet,Lower Sabie,46,0,0
+O9,O9-1109,control,157,early wet,Lower Sabie,46,1,50
+R41,R41-0311,control,157,late wet,Crocodile Bridge,75,0,0
+B16,B16-1110,control,157,early wet,Lower Sabie,71,1,50
+Y29,Y29-1009,bolus,158,early wet,Crocodile Bridge,75,0,0
+B43,B43-0709,control,158,late dry,Lower Sabie,109,0,0
+R39b,R39b-0812,control,158,late dry,Crocodile Bridge,67,0,0
+B26,B26-0110,control,158,late wet,Lower Sabie,46,0,0
+Y17,Y17-0311,control,158,late wet,Crocodile Bridge,88,1,50
+O44,O44-1111,bolus,158,early wet,Lower Sabie,87,0,0
+R33,R33-0312,control,158,late wet,Crocodile Bridge,83,1,150
+B8,B8-1208,bolus,159,early wet,Lower Sabie,59,0,0
+R10,R10-1009,bolus,159,early wet,Crocodile Bridge,57,0,0
+Y12,Y12-0909,bolus,159,late dry,Crocodile Bridge,71,0,0
+R4b,R4b-1110,bolus,159,early wet,Other,84,0,0
+R12,R12-1009,control,159,early wet,Crocodile Bridge,52,1,100
+Y16b,Y16b-0312,control,159,late wet,Crocodile Bridge,50,1,250
+B47b,B47b-1111,control,159,early wet,Lower Sabie,110,1,100
+Y10b,Y10b-0812,control,159,late dry,Crocodile Bridge,89,1,33
+B46,B46-1110,bolus,159,early wet,Lower Sabie,89,0,0
+Y24b,Y24b-0312,control,159,late wet,Crocodile Bridge,90,0,0
+O9,O9-1211,control,159,early wet,Lower Sabie,71,0,0
+Y44c,Y44c-0812,bolus,160,late dry,Crocodile Bridge,80,0,0
+O8b,O8b-0610,control,160,early dry,Lower Sabie,65,1,200
+R24,R24-0909,bolus,160,late dry,Crocodile Bridge,53,0,0
+Y24b,Y24b-0310,control,160,late wet,Crocodile Bridge,65,0,0
+Y37b,Y37b-0310,bolus,160,late wet,Crocodile Bridge,65,0,0
+O19,O19-0709,bolus,160,late dry,Lower Sabie,73,0,0
+R13,R13-0909,control,160,late dry,Crocodile Bridge,57,1,200
+R16,R16-0310,bolus,160,late wet,Crocodile Bridge,60,1,200
+B42b,B42b-1110,control,160,early wet,Lower Sabie,47,1,50
+B1,B1-1110,control,160,early wet,Lower Sabie,68,0,0
+B17,B17-1211,bolus,160,early wet,Lower Sabie,105,0,0
+O40,O40-1111,control,160,early wet,Lower Sabie,102,1,50
+B25,B25-0712,control,160,late dry,Other,70,0,0
+R34b,R34b-0910,control,161,late dry,Crocodile Bridge,47,0,0
+B48b,B48b-1109,bolus,161,early wet,Other,59,0,0
+Y1b,Y1b-1010,control,161,early wet,Crocodile Bridge,59,1,50
+O15,O15-0609,bolus,161,early dry,Lower Sabie,74,1,200
+B12,B12-1110,bolus,161,early wet,Lower Sabie,80,0,0
+B46,B46-1111,bolus,161,early wet,Lower Sabie,101,0,0
+O15,O15-1211,bolus,161,early wet,Lower Sabie,104,0,0
+R45c,R45c-0310,bolus,162,late wet,Crocodile Bridge,63,0,0
+R5b,R5b-0910,bolus,162,late dry,Crocodile Bridge,47,1,100
+R27,R27-0909,bolus,162,late dry,Crocodile Bridge,45,0,0
+B17,B17-0609,bolus,162,early dry,Lower Sabie,76,0,0
+B4,B4-0110,bolus,162,late wet,Lower Sabie,50,0,0
+R44,R44-0909,control,162,late dry,Crocodile Bridge,71,1,200
+O21,O21-0709,control,162,late dry,Lower Sabie,42,1,50
+O21,O21-1110,control,162,early wet,Crocodile Bridge,58,1,350
+B57,B57-1111,control,162,early wet,Lower Sabie,81,1,100
+R15b,R15b-0310,control,163,late wet,Crocodile Bridge,52,1,650
+B44,B44-1109,bolus,163,early wet,Other,56,0,0
+O5,O5-0110,control,163,late wet,Other,45,1,50
+Y45,Y45-0312,control,163,late wet,Crocodile Bridge,83,1,550
+R25,R25-0909,bolus,164,late dry,Crocodile Bridge,72,0,0
+O24,O24-0709,bolus,164,late dry,Lower Sabie,54,0,0
+B37,B37-0510,control,164,early dry,Crocodile Bridge,61,0,0
+O51b,O51b-1211,control,164,early wet,Other,86,1,400
+B34,B34-1211,bolus,164,early wet,Other,70,0,0
+B29,B29-0709,control,165,late dry,Lower Sabie,31,0,0
+O40,O40-0610,control,165,early dry,Lower Sabie,84,1,150
+B20,B20-1111,control,165,early wet,Lower Sabie,71,0,0
+O18,O18-1111,bolus,165,early wet,Lower Sabie,83,0,0
+Y35d,Y35d-1011,bolus,166,early wet,Lower Sabie,60,0,0
+Y10b,Y10b-0212,control,166,late wet,Crocodile Bridge,83,1,100
+Y2b,Y2b-0311,control,166,late wet,Crocodile Bridge,69,1,600
+B39c,B39c-1111,bolus,166,early wet,Lower Sabie,72,0,0
+O17b,O17b-1110,bolus,167,early wet,Lower Sabie,46,0,0
+Y46b,Y46b-0311,control,167,late wet,Crocodile Bridge,77,0,0
+B21,B21-0610,bolus,167,early dry,Lower Sabie,54,0,0
+R12,R12-0312,control,167,late wet,Crocodile Bridge,82,0,0
+O6,O6-0712,bolus,167,late dry,Lower Sabie,88,0,0
+O26b,O26b-1110,control,168,early wet,Lower Sabie,45,1,350
+R27b,R27b-0311,bolus,168,late wet,Crocodile Bridge,46,0,0
+O25,O25-1110,bolus,168,early wet,Lower Sabie,73,0,0
+O32c,O32c-1111,control,168,early wet,Lower Sabie,100,0,0
+Y6,Y6-0910,bolus,168,late dry,Crocodile Bridge,66,0,0
+B19,B19-0810,control,168,late dry,Lower Sabie,122,0,0
+R27b,R27b-1010,bolus,169,early wet,Crocodile Bridge,41,0,0
+Y10b,Y10b-0911,control,169,late dry,Crocodile Bridge,78,1,550
+R15d,R15d-0811,control,169,late dry,Crocodile Bridge,69,0,0
+B25,B25-1109,control,169,early wet,Other,38,1,50
+R33,R33-1009,control,170,early wet,Crocodile Bridge,53,1,200
+R29b,R29b-0311,bolus,171,late wet,Crocodile Bridge,62,0,0
+B41,B41-0110,control,171,late wet,Lower Sabie,36,1,200
+B30,B30-0110,control,171,late wet,Other,46,1,450
+R2,R2-0311,bolus,171,late wet,Crocodile Bridge,71,1,300
+O41,O41-1110,control,171,early wet,Lower Sabie,72,1,50
+O38,O38-0112,bolus,171,late wet,Other,71,0,0
+B35,B35-0712,bolus,171,late dry,Lower Sabie,84,0,0
+B35,B35-0110,bolus,172,late wet,Lower Sabie,54,0,0
+R28,R28-0311,control,172,late wet,Crocodile Bridge,75,1,550
+O11,O11-0712,bolus,172,late dry,Lower Sabie,134,0,0
+O5,O5-0809,control,173,late dry,Other,40,1,200
+R7b,R7b-1010,control,173,early wet,Lower Sabie,46,0,0
+B37,B37-1109,control,173,early wet,Crocodile Bridge,56,1,200
+Y29,Y29-0310,bolus,173,late wet,Crocodile Bridge,81,1,150
+Y38,Y38-0410,control,173,early dry,Crocodile Bridge,41,1,200
+Y17,Y17-0811,control,173,late dry,Crocodile Bridge,94,0,0
+B41,B41-0711,control,173,late dry,Other,54,1,450
+O12,O12-1111,control,173,early wet,Lower Sabie,96,1,100
+O18,O18-0709,bolus,174,late dry,Lower Sabie,54,0,0
+R41,R41-0310,control,174,late wet,Crocodile Bridge,63,0,0
+R13,R13-0910,control,174,late dry,Crocodile Bridge,69,0,0
+Y5c,Y5c-0312,bolus,174,late wet,Crocodile Bridge,63,0,0
+R28,R28-0910,control,174,late dry,Crocodile Bridge,69,0,0
+Y4,Y4-0910,control,174,late dry,Crocodile Bridge,71,1,50
+O5,O5-0111,control,174,late wet,Other,58,1,50
+O46,O46-0812,bolus,174,late dry,Lower Sabie,147,0,0
+Y46b,Y46b-0310,control,175,late wet,Crocodile Bridge,65,0,0
+B23,B23-0709,bolus,175,late dry,Lower Sabie,132,0,0
+O26b,O26b-1111,control,175,early wet,Lower Sabie,57,1,650
+Y40,Y40-0910,control,175,late dry,Crocodile Bridge,54,0,0
+B31,B31-1111,control,175,early wet,Other,59,0,0
+B23,B23-1211,bolus,175,early wet,Lower Sabie,162,0,0
+Y34b,Y34b-1010,control,176,early wet,Crocodile Bridge,54,1,150
+O8,O8-0709,control,176,late dry,Lower Sabie,85,0,0
+O3,O3-0709,bolus,176,late dry,Lower Sabie,44,0,0
+O35,O35-0709,control,176,late dry,Lower Sabie,31,0,0
+B6,B6-1110,bolus,176,early wet,Lower Sabie,95,0,0
+W5,W5-1009,bolus,177,early wet,Crocodile Bridge,58,0,0
+Y7b,Y7b-0909,control,177,late dry,Crocodile Bridge,47,1,50
+R41,R41-1009,control,177,early wet,Crocodile Bridge,57,1,150
+R33,R33-0310,control,177,late wet,Crocodile Bridge,59,1,50
+R20,R20-0910,control,177,late dry,Crocodile Bridge,71,1,100
+O8b,O8b-1111,control,177,early wet,Lower Sabie,83,1,50
+B36b,B36b-1111,bolus,177,early wet,Lower Sabie,78,1,150
+B20,B20-0611,control,177,early dry,Lower Sabie,66,0,0
+O25,O25-0812,bolus,177,late dry,Lower Sabie,95,0,0
+B4,B4-0812,bolus,177,late dry,Lower Sabie,81,0,0
+B44,B44-1211,bolus,177,early wet,Lower Sabie,81,0,0
+O52,O52-1211,bolus,177,early wet,Lower Sabie,162,0,0
+O4,O4-1211,control,177,early wet,Lower Sabie,66,1,1000
+B27,B27-1211,bolus,177,early wet,Lower Sabie,71,1,100
+O5,O5-0212,control,177,late wet,Other,70,1,50
+B43,B43-0812,control,177,late dry,Lower Sabie,146,0,0
+O24,O24-0812,bolus,177,late dry,Lower Sabie,93,0,0
+Y24b,Y24b-1009,control,178,early wet,Crocodile Bridge,60,0,0
+Y37b,Y37b-1009,bolus,178,early wet,Crocodile Bridge,60,0,0
+R15b,R15b-1009,control,178,early wet,Crocodile Bridge,47,1,300
+Y14,Y14-0310,bolus,178,late wet,Crocodile Bridge,62,1,200
+B19,B19-0111,control,178,late wet,Lower Sabie,127,0,0
+B19,B19-0711,control,178,late dry,Lower Sabie,133,1,550
+O45b,O45b-1211,control,178,early wet,Lower Sabie,92,1,50
+O37,O37-0709,bolus,179,late dry,Lower Sabie,42,0,0
+Y28,Y28-0310,bolus,179,late wet,Crocodile Bridge,58,0,0
+Y5c,Y5c-0911,bolus,179,late dry,Crocodile Bridge,57,0,0
+R36,R36-0910,bolus,179,late dry,Crocodile Bridge,120,0,0
+Y12,Y12-0910,bolus,179,late dry,Crocodile Bridge,84,1,50
+Y29,Y29-0910,bolus,179,late dry,Crocodile Bridge,87,1,50
+Y4,Y4-0311,control,179,late wet,Crocodile Bridge,77,0,0
+O11,O11-0711,bolus,179,late dry,Other,122,0,0
+O30,O30-0712,control,179,late dry,Other,91,0,0
+Y32b,Y32b-0310,control,180,late wet,Crocodile Bridge,64,0,0
+B13,B13-0709,control,180,late dry,Lower Sabie,43,1,550
+O35,O35-0110,control,180,late wet,Lower Sabie,37,1,200
+B41,B41-0710,control,180,late dry,Lower Sabie,42,1,150
+Y32b,Y32b-0412,control,180,early dry,Crocodile Bridge,89,1,50
+O32c,O32c-0211,control,181,late wet,Lower Sabie,90,1,350
+B48b,B48b-1210,bolus,181,early wet,Other,72,0,0
+Y15c,Y15c-0412,bolus,181,early dry,Crocodile Bridge,77,1,50
+R14b,R14b-0910,bolus,182,late dry,Crocodile Bridge,60,0,0
+Y39,Y39-0310,bolus,182,late wet,Crocodile Bridge,59,0,0
+R14b,R14b-0911,bolus,182,late dry,Other,72,0,0
+B50b,B50b-1211,bolus,182,early wet,Lower Sabie,98,0,0
+B5,B5-1211,control,182,early wet,Lower Sabie,72,0,0
+O11,O11-0112,bolus,182,late wet,Lower Sabie,128,0,0
+Y5c,Y5c-0311,bolus,183,late wet,Crocodile Bridge,51,1,150
+Y7b,Y7b-0310,control,183,late wet,Crocodile Bridge,53,1,150
+R14b,R14b-0311,bolus,183,late wet,Crocodile Bridge,66,0,0
+Y18,Y18-0310,bolus,183,late wet,Crocodile Bridge,125,0,0
+R36,R36-0310,bolus,183,late wet,Crocodile Bridge,114,0,0
+Y17,Y17-0310,control,183,late wet,Crocodile Bridge,77,0,0
+R45c,R45c-0311,bolus,183,late wet,Crocodile Bridge,76,1,50
+Y36,Y36-0310,control,183,late wet,Crocodile Bridge,75,1,700
+O35,O35-0710,control,183,late dry,Lower Sabie,43,1,300
+B57,B57-1110,control,183,early wet,Lower Sabie,69,1,50
+O30,O30-1210,control,183,early wet,Lower Sabie,71,1,50
+R40,R40-1011,control,183,early wet,Lower Sabie,66,0,0
+O4,O4-0709,control,184,late dry,Lower Sabie,37,1,450
+B1,B1-1209,control,184,early wet,Lower Sabie,57,0,0
+R29b,R29b-0512,bolus,184,early dry,Crocodile Bridge,76,0,0
+Y12,Y12-0409,bolus,185,early dry,Crocodile Bridge,66,1,150
+R45c,R45c-0910,bolus,185,late dry,Crocodile Bridge,70,0,0
+R5b,R5b-0311,bolus,185,late wet,Crocodile Bridge,54,1,100
+W2,W2-0310,bolus,185,late wet,Crocodile Bridge,47,1,100
+Y7b,Y7b-0910,control,185,late dry,Crocodile Bridge,59,1,50
+B33,B33-0510,control,185,early dry,Crocodile Bridge,74,0,0
+B16,B16-0112,control,185,late wet,Other,86,1,100
+Y13,Y13-0310,control,186,late wet,Crocodile Bridge,48,0,0
+O19,O19-0510,bolus,186,early dry,Lower Sabie,83,0,0
+B34,B34-0111,bolus,186,late wet,Other,59,0,0
+B20,B20-1210,control,186,early wet,Lower Sabie,60,1,50
+Y4,Y4-0911,control,186,late dry,Crocodile Bridge,83,0,0
+Y12,Y12-0312,bolus,186,late wet,Crocodile Bridge,101,1,150
+Y40,Y40-0409,control,187,early dry,Crocodile Bridge,36,0,0
+B20,B20-0109,control,187,late wet,Lower Sabie,36,0,0
+B48b,B48b-0610,bolus,187,early dry,Other,66,0,0
+R7b,R7b-0410,control,187,early dry,Crocodile Bridge,40,1,100
+Y41b,Y41b-0310,bolus,187,late wet,Crocodile Bridge,65,0,0
+R24,R24-0310,bolus,187,late wet,Crocodile Bridge,59,1,250
+Y13,Y13-0910,control,187,late dry,Crocodile Bridge,55,0,0
+O31,O31-0610,control,187,early dry,Other,53,0,0
+R13,R13-0409,control,188,early dry,Crocodile Bridge,51,1,100
+O23b,O23b-0510,control,188,early dry,Crocodile Bridge,39,0,0
+O13,O13-0709,control,188,late dry,Lower Sabie,97,0,0
+B2b,B2b-0510,control,188,early dry,Crocodile Bridge,55,1,100
+O12,O12-0709,control,188,late dry,Lower Sabie,67,1,150
+Y1b,Y1b-0411,control,188,early dry,Crocodile Bridge,65,0,0
+Y8,Y8-0310,control,188,late wet,Crocodile Bridge,62,0,0
+Y12,Y12-0310,bolus,188,late wet,Crocodile Bridge,78,1,150
+Y45,Y45-0310,control,188,late wet,Crocodile Bridge,59,1,250
+Y18,Y18-0910,bolus,188,late dry,Crocodile Bridge,132,0,0
+B1,B1-0610,control,188,early dry,Lower Sabie,63,0,0
+Y14,Y14-0910,bolus,188,late dry,Crocodile Bridge,69,1,150
+O47b,O47b-0711,control,188,late dry,Lower Sabie,60,0,0
+R41,R41-0409,control,189,early dry,Crocodile Bridge,51,0,0
+R25,R25-0409,bolus,189,early dry,Crocodile Bridge,66,0,0
+B23,B23-0109,bolus,189,late wet,Lower Sabie,126,0,0
+B21,B21-0109,bolus,189,late wet,Lower Sabie,36,0,0
+R24,R24-0409,bolus,189,early dry,Crocodile Bridge,47,1,50
+B20,B20-0709,control,189,late dry,Lower Sabie,43,0,0
+B31,B31-1110,control,189,early wet,Crocodile Bridge,46,0,0
+O22,O22-0510,bolus,189,early dry,Crocodile Bridge,65,0,0
+O14,O14-0510,control,189,early dry,Crocodile Bridge,75,1,600
+B27,B27-0510,bolus,189,early dry,Lower Sabie,52,1,450
+O38,O38-0610,bolus,189,early dry,Other,52,1,50
+B17,B17-0109,bolus,190,late wet,Lower Sabie,69,0,0
+B57,B57-0109,control,190,late wet,Lower Sabie,46,0,0
+Y9,Y9-0409,bolus,190,early dry,Crocodile Bridge,52,1,100
+B4,B4-0710,bolus,190,late dry,Lower Sabie,56,0,0
+R2,R2-0910,bolus,190,late dry,Crocodile Bridge,65,0,0
+B17,B17-0111,bolus,190,late wet,Other,94,0,0
+O51b,O51b-0612,control,190,early dry,Other,93,0,0
+O38,O38-0711,bolus,190,late dry,Other,66,1,50
+B30,B30-0711,control,190,late dry,Other,64,1,200
+Y15c,Y15c-1010,bolus,191,early wet,Crocodile Bridge,59,0,0
+B35,B35-0109,bolus,191,late wet,Lower Sabie,41,0,0
+R27,R27-0409,bolus,191,early dry,Crocodile Bridge,39,1,50
+B13b,B13b-0510,control,191,early dry,Crocodile Bridge,52,1,200
+O32b,O32b-0510,control,191,early dry,Lower Sabie,38,1,50
+B13b,B13b-1110,control,191,early wet,Crocodile Bridge,58,1,50
+B41,B41-0111,control,191,late wet,Lower Sabie,48,0,0
+B6,B6-0212,bolus,191,late wet,Lower Sabie,110,1,50
+Y8,Y8-0409,control,192,early dry,Crocodile Bridge,51,1,300
+R28,R28-0310,control,192,late wet,Crocodile Bridge,63,0,0
+Y40,Y40-0310,control,192,late wet,Crocodile Bridge,48,1,250
+O47b,O47b-0610,control,192,early dry,Other,46,1,300
+Y32b,Y32b-1011,control,192,early wet,Crocodile Bridge,83,0,0
+B13b,B13b-1211,control,192,early wet,Crocodile Bridge,71,0,0
+R40,R40-0409,control,193,early dry,Crocodile Bridge,35,0,0
+Y27,Y27-0409,bolus,193,early dry,Crocodile Bridge,60,0,0
+R51,R51-0409,bolus,193,early dry,Crocodile Bridge,47,1,100
+Y28,Y28-0409,bolus,193,early dry,Crocodile Bridge,47,1,100
+Y16,Y16-0409,control,193,early dry,Crocodile Bridge,36,1,100
+B1,B1-0609,control,193,early dry,Lower Sabie,51,0,0
+B7,B7-0709,bolus,193,late dry,Lower Sabie,48,0,0
+O44,O44-0210,bolus,193,late wet,Other,65,0,0
+Y17,Y17-1010,control,193,early wet,Crocodile Bridge,83,0,0
+O22,O22-1110,bolus,193,early wet,Crocodile Bridge,71,0,0
+O20,O20-1211,bolus,193,early wet,Lower Sabie,71,0,0
+B31,B31-0210,control,194,late wet,Crocodile Bridge,36,1,200
+R44,R44-0409,control,194,early dry,Crocodile Bridge,65,1,50
+R6,R6-0409,bolus,194,early dry,Crocodile Bridge,41,1,200
+O44,O44-0809,bolus,194,late dry,Other,59,1,50
+B2b,B2b-1110,control,194,early wet,Crocodile Bridge,61,0,0
+R2,R2-0310,bolus,194,late wet,Crocodile Bridge,59,1,100
+O23b,O23b-1110,control,194,early wet,Crocodile Bridge,45,1,250
+R20,R20-0310,control,194,late wet,Crocodile Bridge,65,1,250
+R10,R10-0410,bolus,194,early dry,Lower Sabie,64,1,50
+O21,O21-0510,control,194,early dry,Crocodile Bridge,52,0,0
+B44,B44-0610,bolus,194,early dry,Lower Sabie,63,0,0
+R7b,R7b-0812,control,194,late dry,Other,67,1,100
+O5,O5-0811,control,194,late dry,Other,64,1,300
+B25,B25-0212,control,194,late wet,Lower Sabie,65,0,0
+R28,R28-0409,control,195,early dry,Crocodile Bridge,52,1,100
+R12,R12-0410,control,195,early dry,Crocodile Bridge,59,0,0
+O49,O49-0110,bolus,195,late wet,Lower Sabie,59,0,0
+Y34,Y34-0310,control,195,late wet,Crocodile Bridge,46,1,50
+O30,O30-0109,control,196,late wet,Lower Sabie,48,0,0
+R33,R33-0409,control,196,early dry,Crocodile Bridge,48,1,300
+R37,R37-0409,bolus,196,early dry,Crocodile Bridge,37,1,250
+O26b,O26b-0611,control,196,early dry,Lower Sabie,51,1,850
+R13,R13-0310,control,196,late wet,Crocodile Bridge,63,1,50
+B29,B29-0510,control,196,early dry,Lower Sabie,41,0,0
+B57,B57-0510,control,196,early dry,Lower Sabie,63,0,0
+B6,B6-0510,bolus,196,early dry,Lower Sabie,89,1,150
+O5,O5-0810,control,196,late dry,Other,52,1,150
+B31,B31-0612,control,196,early dry,Other,65,0,0
+B57,B57-0611,control,196,early dry,Lower Sabie,76,1,100
+O44,O44-0612,bolus,196,early dry,Other,93,0,0
+O2,O2-0109,bolus,197,late wet,Lower Sabie,61,0,0
+B27,B27-0109,bolus,197,late wet,Lower Sabie,36,0,0
+R34,R34-0409,control,197,early dry,Crocodile Bridge,30,1,100
+W2,W2-0409,bolus,197,early dry,Crocodile Bridge,37,1,200
+B7,B7-0109,bolus,197,late wet,Lower Sabie,42,1,50
+O36,O36-0809,control,197,late dry,Lower Sabie,98,0,0
+B5,B5-0809,control,197,late dry,Other,44,0,0
+Y9,Y9-0310,bolus,197,late wet,Crocodile Bridge,64,0,0
+B13b,B13b-0611,control,197,early dry,Crocodile Bridge,65,1,100
+B46,B46-0611,bolus,197,early dry,Lower Sabie,96,0,0
+R39b,R39b-1011,control,198,early wet,Crocodile Bridge,57,0,0
+R14,R14-0409,bolus,198,early dry,Crocodile Bridge,67,0,0
+R7b,R7b-1009,control,198,early wet,Lower Sabie,34,1,400
+Y46b,Y46b-0910,control,198,late dry,Crocodile Bridge,72,0,0
+Y12,Y12-0411,bolus,198,early dry,Crocodile Bridge,90,1,200
+B1,B1-0611,control,198,early dry,Lower Sabie,75,0,0
+O52,O52-0611,bolus,198,early dry,Lower Sabie,156,0,0
+R12,R12-0911,control,198,late dry,Crocodile Bridge,76,1,50
+B26,B26-0109,control,199,late wet,Lower Sabie,34,0,0
+O3,O3-0109,bolus,199,late wet,Lower Sabie,39,0,0
+R23,R23-0409,bolus,199,early dry,Crocodile Bridge,30,1,100
+B8,B8-0609,bolus,199,early dry,Lower Sabie,66,0,0
+R5b,R5b-1011,bolus,199,early wet,Crocodile Bridge,60,0,0
+O30,O30-0210,control,199,late wet,Other,61,1,200
+Y28,Y28-0910,bolus,199,late dry,Crocodile Bridge,65,1,100
+R10,R10-1011,bolus,199,early wet,Lower Sabie,82,0,0
+O15,O15-0109,bolus,200,late wet,Lower Sabie,69,0,0
+Y17,Y17-0409,control,200,early dry,Crocodile Bridge,66,1,50
+Y4,Y4-0310,control,200,late wet,Crocodile Bridge,65,0,0
+R46b,R46b-0412,control,200,early dry,Crocodile Bridge,88,1,50
+R51,R51-0312,bolus,200,late wet,Crocodile Bridge,83,0,0
+Y47,Y47-0312,control,200,late wet,Crocodile Bridge,72,1,50
+Y1b,Y1b-0510,control,201,early dry,Crocodile Bridge,54,1,200
+Y47,Y47-0409,control,201,early dry,Crocodile Bridge,38,1,50
+Y23b,Y23b-0312,control,201,late wet,Crocodile Bridge,72,0,0
+W2,W2-0910,bolus,201,late dry,Crocodile Bridge,54,0,0
+B7,B7-1210,bolus,201,early wet,Crocodile Bridge,65,0,0
+Y37b,Y37b-0512,bolus,201,early dry,Crocodile Bridge,91,1,100
+Y19,Y19-0409,bolus,202,early dry,Crocodile Bridge,28,1,400
+B50,B50-0109,bolus,202,late wet,Lower Sabie,37,1,50
+B12,B12-0609,bolus,202,early dry,Lower Sabie,63,1,50
+B43,B43-0610,control,202,early dry,Lower Sabie,120,0,0
+O9,O9-0211,control,202,late wet,Lower Sabie,61,0,0
+O6,O6-0212,bolus,202,late wet,Lower Sabie,83,0,0
+O48,O48-0812,bolus,202,late dry,Lower Sabie,90,0,0
+Y4,Y4-0409,control,203,early dry,Crocodile Bridge,54,0,0
+R20,R20-0409,control,203,early dry,Crocodile Bridge,54,0,0
+Y42,Y42-0409,control,203,early dry,Crocodile Bridge,79,1,150
+B35,B35-0709,bolus,203,late dry,Lower Sabie,48,0,0
+W6,W6-0312,control,203,late wet,Crocodile Bridge,71,0,0
+Y2b,Y2b-0911,control,203,late dry,Crocodile Bridge,76,1,100
+O35,O35-0211,control,203,late wet,Lower Sabie,50,0,0
+B48b,B48b-0112,bolus,203,late wet,Other,85,0,0
+O13,O13-0211,control,203,late wet,Lower Sabie,116,1,150
+O41,O41-0611,control,203,early dry,Lower Sabie,78,1,50
+O44,O44-0611,bolus,203,early dry,Other,81,1,50
+R47,R47-0312,bolus,203,late wet,Crocodile Bridge,72,0,0
+B28,B28-0109,control,204,late wet,Lower Sabie,46,0,0
+O27,O27-0109,control,204,late wet,Lower Sabie,46,0,0
+O40,O40-0609,control,204,early dry,Lower Sabie,72,0,0
+B19,B19-0210,control,204,late wet,Lower Sabie,116,0,0
+O28,O28-0610,bolus,204,early dry,Lower Sabie,43,0,0
+B48b,B48b-0611,bolus,204,early dry,Other,78,0,0
+Y14,Y14-0409,bolus,205,early dry,Crocodile Bridge,52,0,0
+B34,B34-0109,bolus,205,late wet,Lower Sabie,35,0,0
+O4,O4-0109,control,205,late wet,Lower Sabie,31,1,450
+B31,B31-0611,control,205,early dry,Lower Sabie,53,0,0
+O41,O41-0610,control,205,early dry,Lower Sabie,66,0,0
+O17b,O17b-0611,bolus,205,early dry,Crocodile Bridge,53,1,550
+Y6,Y6-0312,bolus,205,late wet,Crocodile Bridge,84,1,150
+Y31,Y31-0509,bolus,206,early dry,Crocodile Bridge,54,0,0
+O43,O43-0109,control,206,late wet,Lower Sabie,47,0,0
+R10,R10-0409,bolus,206,early dry,Crocodile Bridge,52,1,50
+O30,O30-0611,control,206,early dry,Other,78,1,300
+Y39,Y39-0509,bolus,207,early dry,Crocodile Bridge,48,0,0
+R12,R12-0409,control,207,early dry,Crocodile Bridge,47,0,0
+R39,R39-0409,control,207,early dry,Crocodile Bridge,41,1,200
+Y26,Y26-0509,control,207,early dry,Crocodile Bridge,30,1,50
+Y29,Y29-0509,bolus,207,early dry,Crocodile Bridge,70,1,250
+Y34,Y34-0509,control,207,early dry,Crocodile Bridge,35,1,150
+O28,O28-0609,bolus,207,early dry,Lower Sabie,31,0,0
+R6b,R6b-0311,bolus,207,late wet,Crocodile Bridge,61,1,100
+Y42,Y42-0411,control,207,early dry,Crocodile Bridge,103,1,50
+O48,O48-0112,bolus,207,late wet,Lower Sabie,83,0,0
+R52,R52-0509,control,208,early dry,Crocodile Bridge,139,1,50
+R30,R30-0409,bolus,208,early dry,Crocodile Bridge,67,1,50
+Y36,Y36-0509,control,208,early dry,Crocodile Bridge,65,1,150
+W6,W6-0511,control,208,early dry,Crocodile Bridge,61,1,250
+O12,O12-0109,control,208,late wet,Lower Sabie,61,1,50
+B26,B26-0809,control,208,late dry,Other,41,0,0
+O43,O43-0809,control,208,late dry,Other,54,0,0
+Y26b,Y26b-0311,control,208,late wet,Crocodile Bridge,76,0,0
+Y44b,Y44b-0311,bolus,208,late wet,Crocodile Bridge,73,0,0
+Y43b,Y43b-0312,bolus,208,late wet,Crocodile Bridge,77,0,0
+O40,O40-0110,control,208,late wet,Lower Sabie,79,1,350
+Y24b,Y24b-0311,control,208,late wet,Crocodile Bridge,77,0,0
+B19,B19-0212,control,208,late wet,Lower Sabie,140,0,0
+Y39b,Y39b-0511,bolus,209,early dry,Crocodile Bridge,67,0,0
+R47,R47-0409,bolus,209,early dry,Crocodile Bridge,37,0,0
+O20,O20-0109,bolus,209,late wet,Lower Sabie,36,0,0
+O24,O24-0109,bolus,209,late wet,Lower Sabie,49,0,0
+O36,O36-0109,control,209,late wet,Lower Sabie,91,0,0
+O37,O37-0109,bolus,209,late wet,Lower Sabie,36,0,0
+R17,R17-0409,bolus,209,early dry,Crocodile Bridge,73,1,50
+R21,R21-0409,control,209,early dry,Crocodile Bridge,72,1,400
+O17b,O17b-0610,bolus,209,early dry,Lower Sabie,41,0,0
+O34,O34-0610,bolus,209,early dry,Lower Sabie,96,0,0
+B7,B7-0510,bolus,209,early dry,Lower Sabie,58,1,100
+B36b,B36b-0612,bolus,209,early dry,Lower Sabie,85,0,0
+B4,B4-0212,bolus,209,late wet,Lower Sabie,75,0,0
+O19,O19-0112,bolus,209,late wet,Lower Sabie,104,0,0
+O46,O46-0212,bolus,209,late wet,Lower Sabie,141,0,0
+Y1,Y1-0509,control,210,early dry,Crocodile Bridge,54,0,0
+Y10,Y10-0509,control,210,early dry,Crocodile Bridge,66,0,0
+O6,O6-0109,bolus,210,late wet,Lower Sabie,46,0,0
+Y11,Y11-0509,bolus,210,early dry,Crocodile Bridge,52,1,150
+O30,O30-0809,control,210,late dry,Other,55,1,150
+Y15c,Y15c-1011,bolus,210,early wet,Crocodile Bridge,71,0,0
+Y6,Y6-0410,bolus,210,early dry,Crocodile Bridge,60,1,100
+Y36,Y36-0311,control,210,late wet,Crocodile Bridge,87,1,150
+R33,R33-1011,control,210,early wet,Crocodile Bridge,78,1,50
+Y45,Y45-1011,control,210,early wet,Crocodile Bridge,78,1,200
+R5,R5-0409,bolus,211,early dry,Crocodile Bridge,64,0,0
+R45,R45-0509,bolus,211,early dry,Crocodile Bridge,66,1,50
+B13,B13-0109,control,211,late wet,Lower Sabie,37,1,50
+B33,B33-0109,control,211,late wet,Lower Sabie,58,1,200
+O52,O52-0609,bolus,211,early dry,Lower Sabie,132,0,0
+Y37b,Y37b-0311,bolus,211,late wet,Crocodile Bridge,77,1,350
+B12,B12-0611,bolus,211,early dry,Lower Sabie,87,1,100
+O13,O13-0109,control,212,late wet,Lower Sabie,91,0,0
+B39c,B39c-0211,bolus,212,late wet,Lower Sabie,62,0,0
+B44,B44-0109,bolus,212,late wet,Lower Sabie,46,0,0
+O18,O18-0109,bolus,212,late wet,Lower Sabie,48,0,0
+R22,R22-0509,bolus,212,early dry,Crocodile Bridge,51,1,50
+R29,R29-0509,bolus,212,early dry,Crocodile Bridge,115,1,550
+R50,R50-0509,bolus,212,early dry,Crocodile Bridge,37,1,50
+Y16b,Y16b-1011,control,212,early wet,Lower Sabie,45,1,600
+O35,O35-0109,control,212,late wet,Lower Sabie,25,1,50
+B42b,B42b-0610,control,212,early dry,Lower Sabie,42,0,0
+B46,B46-0610,bolus,212,early dry,Lower Sabie,84,0,0
+O36,O36-0610,control,212,early dry,Lower Sabie,108,0,0
+B16,B16-0610,control,212,early dry,Lower Sabie,66,1,250
+B35,B35-0212,bolus,212,late wet,Lower Sabie,79,0,0
+R35,R35-0509,bolus,213,early dry,Crocodile Bridge,67,0,0
+R2,R2-0509,bolus,213,early dry,Crocodile Bridge,48,1,400
+R19,R19-0509,control,213,early dry,Crocodile Bridge,42,1,50
+O9,O9-0109,control,213,late wet,Lower Sabie,36,1,100
+R41,R41-1010,control,213,early wet,Crocodile Bridge,52,0,0
+O15,O15-0610,bolus,213,early dry,Lower Sabie,86,0,0
+R12,R12-0311,control,213,late wet,Crocodile Bridge,70,0,0
+R16,R16-0311,bolus,213,late wet,Crocodile Bridge,72,1,250
+R19,R19-0312,control,213,late wet,Crocodile Bridge,77,1,400
+B16,B16-0209,control,214,late wet,Lower Sabie,49,0,0
+B50b,B50b-0610,bolus,214,early dry,Lower Sabie,80,0,0
+O27,O27-0110,control,214,late wet,Lower Sabie,58,0,0
+B12,B12-0610,bolus,214,early dry,Lower Sabie,75,1,250
+Y7b,Y7b-0411,control,214,early dry,Other,66,1,150
+B5,B5-0111,control,214,late wet,Lower Sabie,62,0,0
+B42b,B42b-0611,control,214,early dry,Other,54,0,0
+O11,O11-0111,bolus,214,late wet,Other,116,0,0
+R28,R28-1011,control,214,early wet,Crocodile Bridge,82,0,0
+Y18,Y18-0312,bolus,214,late wet,Crocodile Bridge,150,0,0
+R20,R20-0312,control,214,late wet,Crocodile Bridge,89,1,250
+B57,B57-0809,control,215,late dry,Other,54,1,200
+B20,B20-0610,control,215,early dry,Lower Sabie,54,0,0
+O29b,O29b-0111,control,215,late wet,Lower Sabie,51,1,550
+Y13,Y13-0312,control,215,late wet,Crocodile Bridge,73,0,0
+Y27,Y27-0312,bolus,215,late wet,Crocodile Bridge,96,0,0
+Y43,Y43-0509,bolus,216,early dry,Crocodile Bridge,48,0,0
+B2,B2-0109,control,216,late wet,Lower Sabie,91,0,0
+B26b,B26b-0212,control,216,late wet,Lower Sabie,79,0,0
+B29,B29-0209,control,216,late wet,Lower Sabie,25,0,0
+Y32,Y32-0509,control,216,early dry,Crocodile Bridge,39,1,250
+B5,B5-0109,control,216,late wet,Lower Sabie,37,1,50
+Y32b,Y32b-1010,control,216,early wet,Crocodile Bridge,71,0,0
+B36b,B36b-0610,bolus,216,early dry,Lower Sabie,60,1,300
+O20,O20-0110,bolus,216,late wet,Lower Sabie,48,0,0
+B23,B23-0610,bolus,216,early dry,Lower Sabie,144,0,0
+O18,O18-0610,bolus,216,early dry,Lower Sabie,65,1,50
+R2,R2-1011,bolus,216,early wet,Crocodile Bridge,78,1,50
+O30,O30-0112,control,216,late wet,Other,85,1,50
+B9,B9-0109,bolus,217,late wet,Lower Sabie,47,0,0
+O44,O44-0109,bolus,217,late wet,Lower Sabie,52,0,0
+O48,O48-0109,bolus,217,late wet,Lower Sabie,46,0,0
+Y6,Y6-0509,bolus,217,early dry,Crocodile Bridge,49,1,150
+Y43b,Y43b-0511,bolus,217,early dry,Crocodile Bridge,67,1,100
+O39,O39-0109,bolus,217,late wet,Lower Sabie,47,1,150
+Y30c,Y30c-0312,control,217,late wet,Crocodile Bridge,80,1,250
+B4,B4-0211,bolus,217,late wet,Lower Sabie,63,0,0
+O40,O40-0111,control,217,late wet,Lower Sabie,92,0,0
+Y37b,Y37b-1011,bolus,217,early wet,Lower Sabie,85,0,0
+O37,O37-0111,bolus,217,late wet,Lower Sabie,61,1,150
+R41,R41-1111,control,217,early wet,Crocodile Bridge,83,0,0
+B3,B3-0712,bolus,217,late dry,Lower Sabie,101,0,0
+O40,O40-0712,control,217,late dry,Lower Sabie,110,0,0
+R24b,R24b-1111,bolus,218,early wet,Crocodile Bridge,60,0,0
+R33,R33-1110,control,218,early wet,Crocodile Bridge,66,1,150
+R47,R47-0411,bolus,218,early dry,Crocodile Bridge,61,0,0
+O9,O9-0712,control,218,late dry,Lower Sabie,78,0,0
+O25,O25-0611,bolus,219,early dry,Lower Sabie,81,0,0
+Y11,Y11-0411,bolus,219,early dry,Crocodile Bridge,76,1,350
+Y17,Y17-0412,control,219,early dry,Crocodile Bridge,101,0,0
+O51b,O51b-0611,control,220,early dry,Other,81,1,150
+Y24b,Y24b-1011,control,220,early wet,Lower Sabie,85,0,0
+B25,B25-0211,control,221,late wet,Lower Sabie,53,0,0
+R1,R1-0509,bolus,222,early dry,Crocodile Bridge,61,1,50
+R11,R11-0509,control,222,early dry,Crocodile Bridge,115,1,200
+Y34b,Y34b-0611,control,222,early dry,Crocodile Bridge,61,0,0
+R25,R25-0510,bolus,222,early dry,Crocodile Bridge,79,0,0
+Y9,Y9-1110,bolus,222,early wet,Crocodile Bridge,71,0,0
+O12,O12-0610,control,222,early dry,Lower Sabie,78,1,50
+B23,B23-0111,bolus,222,late wet,Lower Sabie,151,0,0
+O20,O20-0111,bolus,222,late wet,Lower Sabie,61,0,0
+Y4,Y4-0412,control,222,early dry,Crocodile Bridge,90,1,50
+O21,O21-0209,control,223,late wet,Lower Sabie,36,1,50
+O8b,O8b-0111,control,223,late wet,Lower Sabie,73,1,350
+R40,R40-0410,control,223,early dry,Crocodile Bridge,48,0,0
+O37,O37-0610,bolus,223,early dry,Lower Sabie,53,1,50
+B5,B5-0712,control,223,late dry,Other,79,1,50
+R43,R43-0509,control,224,early dry,Crocodile Bridge,127,0,0
+O51,O51-0209,control,224,late wet,Lower Sabie,37,0,0
+O8,O8-0209,control,224,late wet,Lower Sabie,79,0,0
+O29b,O29b-0610,control,224,early dry,Lower Sabie,44,1,100
+O6,O6-0311,bolus,224,late wet,Lower Sabie,72,0,0
+B3,B3-0211,bolus,224,late wet,Lower Sabie,83,1,100
+B50b,B50b-0712,bolus,224,late dry,Lower Sabie,105,0,0
+R32,R32-0509,control,225,early dry,Crocodile Bridge,116,0,0
+O24,O24-0610,bolus,225,early dry,Lower Sabie,66,0,0
+O47b,O47b-0111,control,225,late wet,Other,54,0,0
+B30,B30-0111,control,225,late wet,Other,58,0,0
+O48,O48-0610,bolus,226,early dry,Lower Sabie,63,0,0
+R52,R52-0412,control,226,early dry,Crocodile Bridge,174,0,0
+R36,R36-0412,bolus,226,early dry,Crocodile Bridge,139,1,50
+B22,B22-0709,control,227,late dry,Lower Sabie,85,0,0
+B3,B3-0610,bolus,227,early dry,Lower Sabie,75,1,200
+O4,O4-0211,control,227,late wet,Lower Sabie,56,1,250
+Y9,Y9-1011,bolus,227,early wet,Crocodile Bridge,83,0,0
+B5,B5-0710,control,228,late dry,Other,55,0,0
+O21,O21-0611,control,228,early dry,Crocodile Bridge,65,0,0
+B50b,B50b-0111,bolus,229,late wet,Lower Sabie,88,0,0
+O45b,O45b-0610,control,229,early dry,Lower Sabie,75,0,0
+B25,B25-0710,control,229,late dry,Lower Sabie,46,0,0
+O4,O4-0610,control,229,early dry,Lower Sabie,48,1,800
+O49,O49-0111,bolus,229,late wet,Lower Sabie,72,0,0
+B17,B17-0712,bolus,229,late dry,Lower Sabie,112,0,0
+B44,B44-0712,bolus,229,late dry,Lower Sabie,88,0,0
+O20,O20-0812,bolus,229,late dry,Crocodile Bridge,79,1,50
+R27b,R27b-1111,bolus,230,early wet,Crocodile Bridge,54,0,0
+O11,O11-0710,bolus,230,late dry,Other,109,0,0
+O8b,O8b-0712,control,230,late dry,Lower Sabie,91,1,100
+O38,O38-0111,bolus,230,late wet,Other,59,1,50
+B39c,B39c-0712,bolus,231,late dry,Lower Sabie,80,0,0
+O12,O12-0211,control,231,late wet,Lower Sabie,86,0,0
+R36,R36-0511,bolus,231,early dry,Crocodile Bridge,128,1,100
+Y31d,Y31d-1111,bolus,232,early wet,Crocodile Bridge,60,0,0
+O22,O22-0709,bolus,232,late dry,Lower Sabie,55,0,0
+Y28,Y28-0511,bolus,232,early dry,Crocodile Bridge,73,1,400
+O48,O48-0211,bolus,232,late wet,Lower Sabie,71,1,50
+B13b,B13b-0812,control,232,late dry,Crocodile Bridge,79,1,100
+Y36,Y36-1011,control,232,early wet,Lower Sabie,95,1,600
+O21,O21-0212,control,232,late wet,Crocodile Bridge,73,0,0
+O47b,O47b-0712,control,232,late dry,Other,72,0,0
+B46,B46-0209,bolus,233,late wet,Lower Sabie,68,0,0
+R29b,R29b-1111,bolus,233,early wet,Crocodile Bridge,70,0,0
+B36b,B36b-0111,bolus,233,late wet,Lower Sabie,68,1,150
+O26b,O26b-0712,control,233,late dry,Lower Sabie,65,1,200
+B26,B26-0211,control,233,late wet,Lower Sabie,59,0,0
+R17,R17-0511,bolus,233,early dry,Crocodile Bridge,98,1,50
+B7,B7-0811,bolus,233,late dry,Crocodile Bridge,73,1,50
+B43,B43-0209,control,234,late wet,Lower Sabie,104,0,0
+R30,R30-0510,bolus,234,early dry,Crocodile Bridge,79,1,100
+O46,O46-0610,bolus,234,early dry,Crocodile Bridge,120,1,250
+B44,B44-0111,bolus,234,late wet,Lower Sabie,70,0,0
+Y29,Y29-0511,bolus,235,early dry,Crocodile Bridge,95,0,0
+Y47,Y47-0511,control,235,early dry,Crocodile Bridge,63,0,0
+R22,R22-0510,bolus,236,early dry,Crocodile Bridge,63,0,0
+R40,R40-0411,control,236,early dry,Lower Sabie,59,0,0
+O25,O25-0212,bolus,236,late wet,Lower Sabie,89,0,0
+O22,O22-0812,bolus,236,late dry,Crocodile Bridge,82,0,0
+R4b,R4b-0611,bolus,237,early dry,Other,91,1,100
+Y20b,Y20b-0511,bolus,237,early dry,Crocodile Bridge,65,0,0
+O24,O24-0211,bolus,237,late wet,Lower Sabie,74,0,0
+O31,O31-0111,control,237,late wet,Other,61,0,0
+B21,B21-0110,bolus,238,late wet,Lower Sabie,49,1,50
+R45c,R45c-1111,bolus,238,early wet,Crocodile Bridge,84,0,0
+Y26b,Y26b-1011,control,238,early wet,Crocodile Bridge,84,1,50
+Y45,Y45-1110,control,238,early wet,Crocodile Bridge,67,1,50
+Y40,Y40-0512,control,238,early dry,Other,74,1,100
+O46,O46-0209,bolus,239,late wet,Lower Sabie,104,0,0
+B37,B37-0209,control,239,late wet,Lower Sabie,47,1,150
+Y41b,Y41b-1110,bolus,239,early wet,Crocodile Bridge,73,0,0
+R24,R24-1110,bolus,239,early wet,Crocodile Bridge,67,1,100
+W2,W2-0511,bolus,239,early dry,Crocodile Bridge,62,0,0
+O34,O34-0211,bolus,239,late wet,Lower Sabie,104,0,0
+Y14,Y14-0511,bolus,239,early dry,Crocodile Bridge,77,1,300
+O19,O19-0209,bolus,240,late wet,Lower Sabie,68,0,0
+Y11,Y11-0510,bolus,240,early dry,Crocodile Bridge,64,1,100
+O27,O27-0212,control,240,late wet,Other,84,0,0
+Y10,Y10-0510,control,241,early dry,Crocodile Bridge,78,0,0
+O32c,O32c-0712,control,241,late dry,Lower Sabie,108,1,250
+Y6,Y6-0511,bolus,241,early dry,Crocodile Bridge,74,1,100
+B20,B20-0712,control,241,late dry,Lower Sabie,79,0,0
+O14,O14-0712,control,241,late dry,Lower Sabie,101,1,200
+O51b,O51b-0710,control,242,late dry,Other,69,0,0
+R16,R16-0509,bolus,242,early dry,Crocodile Bridge,50,1,50
+R9,R9-0509,control,242,early dry,Crocodile Bridge,38,1,300
+O5,O5-0209,control,242,late wet,Lower Sabie,34,1,250
+Y30b,Y30b-0510,control,242,early dry,Crocodile Bridge,61,0,0
+O45b,O45b-0211,control,242,late wet,Lower Sabie,83,0,0
+R22,R22-0511,bolus,242,early dry,Crocodile Bridge,76,0,0
+Y46b,Y46b-1111,control,242,early wet,Crocodile Bridge,85,0,0
+O36,O36-0211,control,242,late wet,Lower Sabie,116,0,0
+Y18,Y18-0609,bolus,243,early dry,Crocodile Bridge,116,1,50
+Y45,Y45-0609,control,243,early dry,Crocodile Bridge,49,1,200
+O18,O18-0211,bolus,243,late wet,Lower Sabie,73,0,0
+R10,R10-0411,bolus,243,early dry,Crocodile Bridge,76,1,150
+Y13,Y13-0609,control,244,early dry,Crocodile Bridge,39,0,0
+Y22,Y22-0609,bolus,244,early dry,Crocodile Bridge,38,1,50
+O9,O9-0710,control,244,late dry,Lower Sabie,54,0,0
+R35,R35-0511,bolus,244,early dry,Crocodile Bridge,92,0,0
+R20,R20-0511,control,244,early dry,Crocodile Bridge,79,0,0
+R52,R52-0511,control,244,early dry,Crocodile Bridge,164,1,100
+Y13,Y13-0511,control,244,early dry,Crocodile Bridge,63,1,50
+R19,R19-0511,control,244,early dry,Crocodile Bridge,67,1,600
+Y2,Y2-0609,control,245,early dry,Crocodile Bridge,38,0,0
+Y38,Y38-0609,control,245,early dry,Crocodile Bridge,31,1,350
+O36,O36-0212,control,245,late wet,Lower Sabie,128,0,0
+O18,O18-0712,bolus,245,late dry,Lower Sabie,91,0,0
+O41,O41-0712,control,245,late dry,Lower Sabie,91,0,0
+B12,B12-0712,bolus,245,late dry,Lower Sabie,100,0,0
+B57,B57-0712,control,245,late dry,Lower Sabie,89,1,450
+R43,R43-0510,control,246,early dry,Crocodile Bridge,140,0,0
+R6b,R6b-1111,bolus,246,early wet,Lower Sabie,69,0,0
+O26,O26-0209,control,247,late wet,Lower Sabie,47,0,0
+R39,R39-0510,control,247,early dry,Crocodile Bridge,54,1,100
+B47b,B47b-0712,control,247,late dry,Lower Sabie,118,1,100
+Y20b,Y20b-0510,bolus,248,early dry,Crocodile Bridge,53,0,0
+R1,R1-0511,bolus,248,early dry,Crocodile Bridge,86,1,250
+R13,R13-0511,control,248,early dry,Crocodile Bridge,77,1,50
+R22,R22-0512,bolus,248,early dry,Crocodile Bridge,88,0,0
+O52,O52-0710,bolus,249,late dry,Lower Sabie,145,0,0
+O37,O37-0212,bolus,249,late wet,Other,73,1,400
+B34,B34-0812,bolus,249,late dry,Other,78,0,0
+O34,O34-0709,bolus,250,late dry,Lower Sabie,85,0,0
+O41,O41-0709,control,250,late dry,Lower Sabie,55,0,0
+O28b,O28b-0712,bolus,250,late dry,Crocodile Bridge,65,0,0
+O23b,O23b-0711,control,250,late dry,Lower Sabie,54,1,400
+B2b,B2b-0711,control,250,late dry,Lower Sabie,70,1,200
+R16,R16-1111,bolus,250,early wet,Crocodile Bridge,80,0,0
+O46,O46-0711,bolus,250,late dry,Lower Sabie,134,1,150
+R47,R47-0510,bolus,251,early dry,Crocodile Bridge,50,0,0
+R43,R43-0611,control,251,early dry,Crocodile Bridge,152,0,0
+R11,R11-0511,control,251,early dry,Crocodile Bridge,140,0,0
+R30,R30-0611,bolus,251,early dry,Crocodile Bridge,92,1,50
+B41,B41-0309,control,252,late wet,Lower Sabie,25,1,250
+R15d,R15d-0512,control,252,early dry,Crocodile Bridge,77,1,300
+R19,R19-0510,control,252,early dry,Crocodile Bridge,55,1,150
+R51,R51-0511,bolus,252,early dry,Crocodile Bridge,73,1,50
+B29,B29-0812,control,252,late dry,Crocodile Bridge,68,0,0
+O15,O15-0812,bolus,252,late dry,Lower Sabie,112,1,100
+B19,B19-0709,control,253,late dry,Lower Sabie,109,0,0
+R51,R51-0510,bolus,253,early dry,Crocodile Bridge,61,1,50
+O15,O15-0211,bolus,253,late wet,Lower Sabie,95,1,50
+B1,B1-0212,control,253,late wet,Lower Sabie,83,0,0
+B30,B30-0712,control,253,late dry,Other,76,1,50
+B41,B41-0812,control,253,late dry,Other,68,1,150
+R11,R11-0510,control,254,early dry,Crocodile Bridge,128,0,0
+Y47,Y47-0510,control,254,early dry,Crocodile Bridge,51,0,0
+R52,R52-0510,control,254,early dry,Crocodile Bridge,152,1,150
+Y16,Y16-0510,control,254,early dry,Crocodile Bridge,50,1,150
+B6,B6-0711,bolus,254,late dry,Lower Sabie,104,1,100
+B3,B3-0309,bolus,255,late wet,Lower Sabie,60,1,50
+R46b,R46b-0611,control,255,early dry,Crocodile Bridge,78,1,50
+B16,B16-0711,control,255,late dry,Lower Sabie,79,0,0
+Y42,Y42-0510,control,256,early dry,Crocodile Bridge,92,0,0
+Y27,Y27-0510,bolus,257,early dry,Crocodile Bridge,74,0,0
+O6,O6-0710,bolus,257,late dry,Lower Sabie,64,0,0
+B17,B17-0710,bolus,257,late dry,Other,88,0,0
+Y27,Y27-0611,bolus,257,early dry,Crocodile Bridge,86,1,250
+Y1b,Y1b-0512,control,257,early dry,Crocodile Bridge,78,1,200
+B27,B27-0211,bolus,257,late wet,Lower Sabie,61,1,150
+O24,O24-0212,bolus,257,late wet,Lower Sabie,87,0,0
+Y20b,Y20b-0512,bolus,258,early dry,Crocodile Bridge,76,0,0
+B43,B43-0212,control,258,late wet,Lower Sabie,140,0,0
+R30,R30-0512,bolus,258,early dry,Crocodile Bridge,104,1,200
+O45b,O45b-0812,control,258,late dry,Lower Sabie,100,1,50
+O49,O49-0309,bolus,259,late wet,Lower Sabie,49,0,0
+R35,R35-0510,bolus,259,early dry,Crocodile Bridge,80,0,0
+Y39b,Y39b-0412,bolus,259,early dry,Crocodile Bridge,78,0,0
+R1,R1-0510,bolus,259,early dry,Crocodile Bridge,74,1,50
+Y18,Y18-0611,bolus,259,early dry,Crocodile Bridge,140,1,50
+Y11,Y11-0512,bolus,259,early dry,Crocodile Bridge,88,1,400
+Y14,Y14-0512,bolus,259,early dry,Crocodile Bridge,88,1,150
+B23,B23-0812,bolus,259,late dry,Lower Sabie,170,0,0
+O4,O4-0812,control,259,late dry,Lower Sabie,74,1,750
+Y43,Y43-0510,bolus,260,early dry,Crocodile Bridge,61,0,0
+B34,B34-0710,bolus,260,late dry,Other,53,0,0
+O13,O13-0710,control,260,late dry,Lower Sabie,109,1,50
+B35,B35-0211,bolus,260,late wet,Lower Sabie,67,0,0
+W2,W2-0512,bolus,260,early dry,Crocodile Bridge,73,1,250
+Y29,Y29-0512,bolus,260,early dry,Crocodile Bridge,106,1,250
+O31,O31-0812,control,260,late dry,Other,80,0,0
+O39c,O39c-0212,bolus,261,late wet,Other,72,0,0
+B43,B43-0211,control,261,late wet,Lower Sabie,128,0,0
+R17,R17-0510,bolus,262,early dry,Crocodile Bridge,86,1,50
+O22,O22-0811,bolus,263,late dry,Crocodile Bridge,80,0,0
+R10,R10-0712,bolus,263,late dry,Lower Sabie,91,0,0
+B2b,B2b-0812,control,264,late dry,Lower Sabie,83,1,300
+O38,O38-0309,bolus,265,late wet,Lower Sabie,37,1,50
+O31,O31-0809,control,265,late dry,Other,43,0,0
+R46b,R46b-0510,control,265,early dry,Crocodile Bridge,66,1,50
+R17,R17-0512,bolus,265,early dry,Crocodile Bridge,110,1,50
+B25,B25-0309,control,266,late wet,Lower Sabie,30,1,50
+O23b,O23b-0812,control,267,late dry,Lower Sabie,66,1,66
+O29b,O29b-0812,control,267,late dry,Crocodile Bridge,70,1,100
+B37,B37-0111,control,269,late wet,Crocodile Bridge,70,0,0
+O17b,O17b-0812,bolus,270,late dry,Crocodile Bridge,67,1,100
+B33,B33-0812,control,271,late dry,Crocodile Bridge,101,1,500
+O23,O23-0309,control,275,late wet,Lower Sabie,48,0,0
+O11,O11-0309,bolus,276,late wet,Lower Sabie,93,0,0
+O14,O14-0309,control,276,late wet,Crocodile Bridge,61,1,350
+B7,B7-0812,bolus,276,late dry,Crocodile Bridge,85,1,150
+Y34b,Y34b-0512,control,277,early dry,Other,73,1,100
+B29,B29-0211,control,277,late wet,Lower Sabie,50,0,0
+B8,B8-0811,bolus,279,late dry,Crocodile Bridge,92,0,0
+O19,O19-0211,bolus,279,late wet,Lower Sabie,93,1,50
+Y40,Y40-0711,control,287,late dry,Other,63,1,100
+B30,B30-0409,control,289,early dry,Other,37,1,150
+Y36,Y36-0812,control,291,late dry,Lower Sabie,105,1,650
+R1,R1-0612,bolus,292,early dry,Crocodile Bridge,99,1,100
+O14,O14-0311,control,302,late wet,Crocodile Bridge,85,0,0
+B33,B33-0311,control,302,late wet,Crocodile Bridge,84,1,400
+Y42,Y42-0712,control,316,late dry,Lower Sabie,118,1,150
+R11,R11-0712,control,321,late dry,Lower Sabie,154,0,0
+Y28,Y28-0712,bolus,322,late dry,Lower Sabie,87,1,150
+R43,R43-0712,control,327,late dry,Lower Sabie,166,0,0
+R13,R13-0712,control,328,late dry,Lower Sabie,91,1,550
+R7b,R7b-0212,control,346,late wet,Other,61,0,0
+B8,B8-1110,bolus,361,early wet,Crocodile Bridge,83,1,50
+O49,O49-0712,bolus,382,late dry,Other,90,0,0
+B4,B4-0809,bolus,397,late dry,Other,44,0,0
+O27,O27-0611,control,525,early dry,Other,76,1,250
+R4b,R4b-0510,bolus,547,early dry,Other,78,1,50
+R15b,R15b-0911,control,561,late dry,Other,71,1,750
+B9,B9-0810,bolus,562,late dry,Other,66,1,50
+B40,B40-0710,bolus,599,late dry,Other,63,1,150

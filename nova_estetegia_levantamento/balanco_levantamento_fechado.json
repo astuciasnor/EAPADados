@@ -132,20 +132,20 @@
       "id": "L006"
     },
     {
-      "nome": "cabritos_fa_coltro",
+      "nome": "truta_acidos_graxos",
       "origem": "EAPADados",
-      "analise": "PCA; HCA; comparação de dietas",
-      "situacao": "precisa de ajuste",
-      "avaliacao": "Manter 32 animais e 10 colunas. n3/n6/sfa/mufa/pufa → omega_3_pct/omega_6_pct/saturados_pct/monoinsaturados_pct/poli_insaturados_pct; razões com prefixo razao_. T1…T4 → dieta_1…dieta_4, mantendo energia_mj_kg. Não inserir automaticamente razões junto com componentes na PCA.",
+      "analise": "PCA; HCA; exploração de dietas",
+      "situacao": "substituição aplicada",
+      "avaliacao": "Semana 12: 21 aquários (UEs), sete dietas, 27 ácidos; 31 colunas. Fonte Mendeley Data V2 CC BY 4.0 preservada; sobrevivência baixa/desigual e extremo mantido. Preparo e PCA conferidos em R.",
       "papel": "Núcleo proposto",
-      "bytes": 2035,
-      "dimensao": "32 × 10",
+      "bytes": 4728,
+      "dimensao": "21 × 31",
       "natureza": "Real",
-      "fonte": "R/data_cabritos_fa_coltro.R",
+      "fonte": "R/data_truta_acidos_graxos.R",
       "decisao_anterior": "Aprovar proposta",
       "comentario_anterior": "",
-      "decisao_fase2": "Pendente",
-      "avaliacao_autor": "",
+      "decisao_fase2": "Aprovar substituição",
+      "avaliacao_autor": "Aprovado em 12/10/2026. Biplot aprovado como referência para futura reprodução em R.",
       "id_anterior": "E007",
       "id": "L007"
     },
@@ -2072,5 +2072,32 @@
       "Curadoria obrigatória",
       "Pronto na fonte não significa aprovado para incorporar. Alertas automáticos de fonte precisam leitura humana."
     ]
+  ],
+  "substituicoes_aplicadas": [
+    {
+      "data": "12/10/2026",
+      "id": "L007",
+      "codigo_clara": "D18",
+      "anterior": {
+        "nome": "cabritos_fa_coltro",
+        "origem": "EAPADados",
+        "analise": "PCA; HCA; comparação de dietas",
+        "situacao": "precisa de ajuste",
+        "avaliacao": "Manter 32 animais e 10 colunas. n3/n6/sfa/mufa/pufa → omega_3_pct/omega_6_pct/saturados_pct/monoinsaturados_pct/poli_insaturados_pct; razões com prefixo razao_. T1…T4 → dieta_1…dieta_4, mantendo energia_mj_kg. Não inserir automaticamente razões junto com componentes na PCA.",
+        "papel": "Núcleo proposto",
+        "bytes": 2035,
+        "dimensao": "32 × 10",
+        "natureza": "Real",
+        "fonte": "R/data_cabritos_fa_coltro.R",
+        "decisao_anterior": "Aprovar proposta",
+        "comentario_anterior": "",
+        "decisao_fase2": "Pendente",
+        "avaliacao_autor": "",
+        "id_anterior": "E007",
+        "id": "L007"
+      },
+      "atual": "truta_acidos_graxos",
+      "nota": "Totais globais em bytes e hashes de entradas são a fotografia histórica de 10/10/2026. Mantidas 60 entradas."
+    }
   ]
 }

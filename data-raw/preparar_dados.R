@@ -86,11 +86,8 @@ colnames(isoproteica_bagre) <- c("racao", "peso_g")
 usethis::use_data(isoproteica_bagre, overwrite = TRUE)
 
 # Multivariadas (PCA e AAH/HCA) -------------------------------------
-# cabritos_fa_coltro - acidos graxos em carne de cabritos (Coltro et al. 2005)
-cabritos_fa_coltro <- as.data.frame(read_excel(brutos, sheet = "cabritos_fa_coltro"))
-cabritos_fa_coltro$tratamento <- factor(cabritos_fa_coltro$tratamento,
-                                        levels = c("T1", "T2", "T3", "T4"))
-usethis::use_data(cabritos_fa_coltro, overwrite = TRUE)
+# truta_acidos_graxos - semana 12, médias por aquário (Happel et al. 2021)
+local(source("data-raw/truta_acidos_graxos.R", local = TRUE))
 
 # brine_carbonatos - salmouras de unidades carbonaticas (Davis 2002 / KGS)
 brine_carbonatos <- as.data.frame(read_excel(brutos, sheet = "brine_carbonatos"))
