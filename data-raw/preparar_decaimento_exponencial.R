@@ -1,7 +1,7 @@
 # =============================================================================
 #  preparar_decaimento_exponencial.R
-#  Prepara dois conjuntos reais para estudar decaimento exponencial na ClaRa:
-#  secagem de vegetais e perda de sinal de DNA de presa durante a digestao.
+#  Prepara um conjunto real para estudar decaimento exponencial na ClaRa:
+#  perda de sinal de DNA de presa durante a digestao.
 #
 #  Fontes brutas, sem alteracao, em data-raw/curados/. Os objetos finais usam
 #  nomes em portugues; as ressalvas de cada fonte ficam no codigo e no roxygen.
@@ -16,48 +16,13 @@ suppressPackageStartupMessages({
   library(readxl)
 })
 
-# -----------------------------------------------------------------------------
-# 1) Secagem de beterraba e gengibre
-#
-# O deposito declara dois produtos e dois pre-tratamentos, mas a planilha so
-# identifica esses grupos pelos codigos B/G e C/E. Nao atribuimos significados
-# aos codigos ate que o depositante publique o dicionario. A unidade de time
-# tambem nao vem declarada no arquivo nem na pagina do deposito: tempo_origem
-# conserva o numero como foi entregue e nao autoriza chamar a meia-vida de h
-# ou min.
-# -----------------------------------------------------------------------------
-secagem_bruta <- readxl::read_excel(
-  "data-raw/curados/beterraba_gengibre_fonte.xlsx",
-  sheet = "Planilha1"
-)
-
-secagem_beterraba_gengibre <- secagem_bruta |>
-  transmute(
-    id_amostra = as.character(ID),
-    produto_codigo = as.factor(product),
-    tratamento_codigo = as.factor(treatment),
-    temperatura_c = as.numeric(temp),
-    repeticao = as.integer(rep),
-    tempo_origem = round(as.numeric(time), 3),
-    razao_umidade = as.numeric(mr)
-  ) |>
-  mutate(
-    id_serie = interaction(produto_codigo, tratamento_codigo,
-                           temperatura_c, repeticao, drop = TRUE)
-  ) |>
-  select(id_serie, id_amostra, produto_codigo, tratamento_codigo,
-         temperatura_c, repeticao, tempo_origem, razao_umidade)
-
-stopifnot(
-  nrow(secagem_beterraba_gengibre) == 594L,
-  nlevels(secagem_beterraba_gengibre$id_serie) == 36L,
-  !anyNA(secagem_beterraba_gengibre$razao_umidade),
-  all(secagem_beterraba_gengibre$razao_umidade > 0),
-  identical(sort(unique(secagem_beterraba_gengibre$temperatura_c)), c(60, 70, 80))
-)
+# A secagem de beterraba e gengibre, que ficava aqui, saiu do pacote em
+# 13/10/2026 (vegetais, fora do contexto de pesca); fonte, documentacao e
+# .rda estao em data-raw/substituidos/secagem_beterraba_gengibre/. A curva
+# de secagem de pescado passou a ser o D52 da ClaRa (secagem_bagre).
 
 # -----------------------------------------------------------------------------
-# 2) Digestao de Chinook em black bass
+# Digestao de Chinook em black bass
 #
 # Recorte didatico pre-declarado: LMB, 18,5 C e tres smolts. Cada linha e um
 # peixe sacrificado uma vez no tempo indicado. A resposta de metabarcoding e
@@ -93,6 +58,6 @@ stopifnot(
   sum(!chinook_digestao$qpcr_detectado) == 26L
 )
 
-usethis::use_data(secagem_beterraba_gengibre, chinook_digestao, overwrite = TRUE)
+usethis::use_data(chinook_digestao, overwrite = TRUE)
 
-cat("OK: secagem_beterraba_gengibre e chinook_digestao salvos em data/.\n")
+cat("OK: chinook_digestao salvo em data/.\n")
