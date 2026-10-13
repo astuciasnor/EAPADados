@@ -89,10 +89,9 @@ usethis::use_data(isoproteica_bagre, overwrite = TRUE)
 # truta_acidos_graxos - semana 12, médias por aquário (Happel et al. 2021)
 local(source("data-raw/truta_acidos_graxos.R", local = TRUE))
 
-# brine_carbonatos - salmouras de unidades carbonaticas (Davis 2002 / KGS)
-brine_carbonatos <- as.data.frame(read_excel(brutos, sheet = "brine_carbonatos"))
-brine_carbonatos$grupo <- factor(brine_carbonatos$grupo)
-usethis::use_data(brine_carbonatos, overwrite = TRUE)
+# brine_carbonatos (salmouras de rochas carbonaticas) saiu em 13/10/2026: geologia,
+# fora do contexto de pesca. Os caps. 10 e 13 do livro passaram a usar
+# peixes_nutricao_portugal; o objeto antigo esta em data-raw/substituidos/brine_carbonatos/.
 
 # pinguins - palmerpenguins contextualizado em portugues (CC0) ------
 # Requer: install.packages("palmerpenguins")
